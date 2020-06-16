@@ -1,0 +1,20 @@
+--- 
+title: "DBG0061 - Portfólio"
+author: "João Vitor Ferreira Cavalcante"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Meu portfólio para a disciplina DBG0061-RNAs não codantes"
+---
+
+# Prefácio
+
+Esse é o meu portfólio para a disciplina DBG0061 - RNAs Não Codantes, cursada no semestre suplementar 2020.5.
+
+Aqui estarão contidas respostas para os exercícios de cada dia, dúvidas e reflexões sobre os seminários.

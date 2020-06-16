@@ -1,0 +1,14 @@
+book_filename: "ncRNA_port"
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabela '
+    def: 'Definição '
+    exm: 'Exemplo '
+    exr: 'Exercício '
+  ui:
+    edit: Edit
+    chapter_name: ''
+    appendix_name: 'Apêndice '
+delete_merged_file: true
+output_dir: "portfolio"

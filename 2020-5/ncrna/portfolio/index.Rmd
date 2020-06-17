@@ -3,9 +3,7 @@ title: "DBG0061 - Portfólio"
 author: "João Vitor Ferreira Cavalcante"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output:
-  bookdown::gitbook: default
-  #bookdown::pdf_book: default
+output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike

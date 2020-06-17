@@ -1,0 +1,21 @@
+bookdown::gitbook:
+  split_bib: no
+  citation_package: natbib
+  config:
+    fontsettings:
+      theme: sepia
+      family: sans
+      size: 2
+    sharing:
+      facebook: no
+      twitter: no
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">DBG0061 - Portfólio</a></li>
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

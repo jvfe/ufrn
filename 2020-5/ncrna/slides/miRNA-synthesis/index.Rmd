@@ -55,11 +55,13 @@ options(htmltools.dir.version = FALSE)
 
 ---
 class: center, middle, inverse
+background-color: #DA70D6
 
 # OK! Mas me deixa ver como é esse processo!
   
 ---
 class: center, middle, inverse
+background-color: #ffc371
 
 # Cropping
 
@@ -70,6 +72,7 @@ Créditos das imagens: [Oxford Academic](https://www.youtube.com/watch?v=5YsTW5i
 
 ---
 class: center, middle, inverse
+background-color: #9ce34b
 
 # Exportação e Processamento Citoplasmático
 
@@ -89,6 +92,7 @@ Mas todo esse processo é fortemente regulado...
 
 ---
 class: inverse
+background-color: #DA70D6
 
 # Regulação
 
@@ -103,14 +107,19 @@ class: inverse
 
 ---
 class: center, inverse
+background-color: #ffc371
+
 
 <img src="./pics/regulation1.png" style="width: 70%" />
 ---
 class: center, inverse
+background-color: #ffc371
 
 <img src="./pics/regulation.png" style="width: 60%" />
 ---
 class: inverse
+background-color: #9ce34b
+
 # Modificações pós-transcricionais
 
 - **Modificações na cauda Poli-A** podem interferir com o procesamento por Dicer ou Drosha, como é observado com a adição de uracila na cauda do let-7.
@@ -156,6 +165,8 @@ Fontes: Ender et al, 2013. Dueck e Maester, 2010.
 
 ---
 class: inverse
+background-color: #DA70D6
+
 # Degradação
 - Pela AGO ser um componente indispensável da função dos miRNAs, muitas vezes ela é o alvo para regulação negativa.
   

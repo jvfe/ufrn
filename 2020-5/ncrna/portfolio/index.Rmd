@@ -10,6 +10,10 @@ biblio-style: apalike
 link-citations: yes
 description: "Meu portfólio para a disciplina DBG0061-RNAs não codantes"
 ---
+<style>
+body {
+text-align: justify}
+</style>
 
 # Prefácio
 

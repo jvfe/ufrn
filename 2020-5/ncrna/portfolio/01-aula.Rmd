@@ -19,7 +19,7 @@ Inicialmente, o mRNA possui 3 principais componentes: Os íntrons, que não codi
 
 ### mRNA
 
-![](./pics/transcription.webm){width="90%"}
+![**(Oxford)**](./pics/transcription.webm){width="90%"}
 
 A **transcrição**, em eucariotos, ocorre por meio da RNA Polimerase II, que junto a um ou mais fatores de transcrição, se liga
 ao promotor, formando a bolha de transcrição, posteriormente, à medida que as ligações de hidrogênio vão sendo quebradas pela forquilha, vai se formando a fita, com a adição de nucleotídeos de RNA complementares. Ao fim deste processo teremos o pre-mRNA, que passará pelo processamento mencionado em \@ref(regioes)

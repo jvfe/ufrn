@@ -14,7 +14,6 @@ output:
       countIncrementalSlides: false
     seal: false
 ---
-
 name: titulo
 class: left, middle
 background-image: url(./pics/bg.png)
@@ -22,6 +21,10 @@ background-size: cover
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+library(RefManageR)
+BibOptions(check.entries = FALSE, bib.style = "authoryear", style = "markdown",
+           dashed = TRUE)
+bib <- ReadBib("ref.bib")
 ```
 
 # ncRNA 🧬🧬 
@@ -51,7 +54,7 @@ options(htmltools.dir.version = FALSE)
 - Porém, também existem aqueles transcritos pela RNAPol III, como os miRNAs virais
 --
 
-- Além dos que são formados por fragmentos de tRNAs (Barbiaz, 2008) e... **Enfim, muitas possibilidades!**
+- Além dos que são formados por fragmentos de tRNAs e... **Enfim, muitas possibilidades!**
 
 ---
 class: center, middle, inverse
@@ -66,6 +69,7 @@ background-color: #ffc371
 # Cropping
 
 ![](./pics/formprimiRNA.gif)
+.center[`r Citet(bib, "youtube")`]
 ???
 
 Créditos das imagens: [Oxford Academic](https://www.youtube.com/watch?v=5YsTW5i0Xro)
@@ -96,13 +100,11 @@ background-color: #DA70D6
 
 # Regulação
 
-
-
 - Assim como mRNAS, a transcrição de miRNAs pode ser controlada por fatores de transcrição e modificações epigenéticas
 
   - Existem, inclusive, circuitos de feedback com o miRNA e seus FTs!
   
-- Já se foram observadas regulações alternativas em situações de estresse, como câncer ou hipóxia (Shen et al, 2013)
+- Já se foram observadas regulações alternativas em situações de estresse, como câncer ou hipóxia `r Citep(bib, "Shen_2013")`
 
 
 ---
@@ -110,12 +112,18 @@ class: center, inverse
 background-color: #ffc371
 
 
-<img src="./pics/regulation1.png" style="width: 70%" />
+<img src="./pics/regulation1.png" style="width: 65%" />
+
+`r Citep(bib, "Ha_2014")`
+
 ---
 class: center, inverse
 background-color: #ffc371
 
-<img src="./pics/regulation.png" style="width: 60%" />
+<img src="./pics/regulation.png" style="width: 55%" />
+
+`r Citep(bib, "Ha_2014")`
+
 ---
 class: inverse
 background-color: #9ce34b
@@ -150,18 +158,17 @@ class: inverse
 ---
 class: center, inverse
 # Vias não canônicas da biogênese
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1097276508007338-gr5_lrg.jpg" style="width: 70%">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S1097276508007338-gr5_lrg.jpg" style="width: 65%">
+
+`r Citep(bib, "Ender_2008")`
 
 
 ---
 class: center, inverse
 # Vias não canônicas da biogênese
-<img src="./pics/nodrosha.png" style="width: 100%">
+<img src="./pics/nodrosha.png" style="width: 90%">
 
-
-???
-
-Fontes: Ender et al, 2013. Dueck e Maester, 2010.
+`r Citep(bib, "Dueck_2010")`
 
 ---
 class: inverse
@@ -176,8 +183,35 @@ background-color: #DA70D6
 --
 
 - Porém os miRNAs em si também podem ser alvos da degradação
-  - XRN-2 em *C. elegans*
-  - Existem, no entanto, muitos mecanismos ainda desconhecidos, como a degradação de miR-29b durante o ciclo celular (Hwang et al, 2007) e miR-27a durante a infecção por MCMV (Buck et al, 2010).
+  - XRN-2 em *C. elegans* e SDNs em *Arabidopsis*
+  - Existem, no entanto, muitos mecanismos ainda desconhecidos, como a degradação de miR-29b durante o ciclo celular `r Citep(bib, "Hwang_2007")`
+ e miR-27a durante a infecção por MCMV `r Citep(bib, "Buck_2010")`.
 .center[
 ![](./pics/estabilidade.png)
 ]
+
+---
+class: center, inverse
+background-color: #DA70D6
+
+# Degradação
+
+<img src="./pics/degrad.jpg" style="width: 75%">
+
+`r Citep(bib, "Kai_2010")`
+
+---
+class: inverse
+# Referências
+
+```{r, results='asis', echo=FALSE}
+PrintBibliography(bib[1:4])
+```
+
+---
+class: inverse
+# Referências
+
+```{r, results='asis', echo=FALSE}
+PrintBibliography(bib[4:length(bib)])
+```

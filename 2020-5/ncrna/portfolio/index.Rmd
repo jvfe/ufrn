@@ -20,3 +20,5 @@ text-align: justify}
 Esse é o meu portfólio para a disciplina DBG0061 - RNAs Não Codantes, cursada no semestre suplementar 2020.5.
 
 Aqui estarão contidas respostas para os exercícios de cada dia, dúvidas e reflexões sobre os seminários.
+
+As duas principais referências usadas foram os encontros de cada aula e o livro "Introdução ao universo dos non-coding RNAs" de Tiago Campos Pereira. Fontes alternativas, se utilizadas, são citadas em cada capítulo.

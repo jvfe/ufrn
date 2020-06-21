@@ -52,5 +52,3 @@ Formam os complexos de snoRNPs, com as porções ribonucleotídicas agindo como 
 * **Síndrome de Prader-Willi**: Foi observado que perdas de cópias do SNORD116 está associado ao surgimento dessa síndrome [@Sahoo_2008].
 
 * **Autismo**: Ganho de cópias do SNORD115 pode estar associado ao surgimento de algumas formas de autismo [@Bolton_2004]
-
-## Referências

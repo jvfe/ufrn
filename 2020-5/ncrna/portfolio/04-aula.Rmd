@@ -1,0 +1,32 @@
+# Histórico dos miRNAs
+
+## Qual foi o primeiro miRNA e como ele foi identificado?
+
+![(Rfam database)](./pics/lin4.jpg)
+
+O lin-4 foi descoberto em um experimento que pretendia elucidar funções de genes heterocrônicos do *C. elegans*, inicialmente, se foi observado que na diferenciação dos estágios de vida L1 e L2, havia aumento do RNA lin-4 e diminuição da **proteína** lin-14, porém isso não se refletia numa diminuição dos transcritos de lin-14, o que indica uma regulação negativa pós-transcricional. Foi observado, posteriormente, que essa regulação estava associada com a região 3' UTR do lin-14.
+
+## Que alvos ele controla?
+
+Regula negativamente a tradução da proteína lin-14, o que possibilita o desenvolvimento adequado do *C. elegans* em seus estágios larvais. Posteriormente também foi descoberto que ele regula negativamente o lin-28.
+
+## Qual seu mecanismo de ação;
+
+Ele pareia com a região 3' UTR do lin-14, alterando o prosseguimento da tradução - impedindo a finalização ou prolongamento desta.
+
+## Identificar e comentar as 3 outras descobertas importantes sobre os miRNAs
+
+* Descobertas anteriores sobre a capacidade de RNAs antisenso de afetarem a estabilidade e alterarem a tradução de RNAs mensageiros.
+
+* A descoberta de que o lin-14 não atua impedindo o início da tradução, atuando posteriormente ao início, inclusive podendo atuar em mais de uma etapa diferente.
+
+* A descoberta do segundo miRNA, o let-7, que altera o gene lin-41, também importante no desenvolvimento do *C. elegans*, porém agora na transição para o estágio L4.
+
+
+## Ideias gerais de 3 artigos seminais
+
+* [@Lau_2001] miRNAs podem ser transcritos na forma de cluster. Também podendo ser co-expressos durante a embriogênese. Porém, talvez mais relevante, a existência de ortólogos potenciais dos genes de miRNA em humanos.
+
+* [@Lagos_Quintana_2001] Isolamento de miRNAs em *Drosophila* e células HeLa. Identificando-se 21 miRNAs diferentes em humano.
+
+* [@Lee_2001] Descoberta de vários novos miRNAs em *C. elegans* indicando também possíveis homólogos no ser humano.

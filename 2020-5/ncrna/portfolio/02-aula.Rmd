@@ -13,7 +13,7 @@ São gerados pela primase, que se acopla à fita de DNA quando ligada a uma mol�
 
 ## Onde são usados?
 
-São usados na síntese de DNA, como falado anteriomente, visto que as DNAs polimerases não tem capacidade de iniciar o processo sozinhas. Mas também são usados na transcrição reversa, como é o caso da Telomerase em humanos, em que seu componente TERC é fundamental auxilia na manutenção da longevidade da molécula de DNA. 
+São usados na síntese de DNA, como falado anteriomente, visto que as DNAs polimerases não tem capacidade de iniciar o processo sozinhas. Mas também são usados na transcrição reversa, como é o caso da Telomerase em humanos, em que seu componente TERC é fundamental, auxiliando na manutenção da longevidade da molécula de DNA. 
 
 E, é claro, possuem inúmeras aplicações na biologia molecular, destacando-se as principais técnicas usadas nessa área, o PCR e o Sequenciamento, para as quais os primers são indispensáveis.
 

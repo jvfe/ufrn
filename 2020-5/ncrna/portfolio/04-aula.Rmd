@@ -20,7 +20,7 @@ Ele pareia com a região 3' UTR do lin-14, alterando o prosseguimento da traduç
 
 * A descoberta de que o lin-14 não atua impedindo o início da tradução, atuando posteriormente ao início, inclusive podendo atuar em mais de uma etapa diferente.
 
-* A descoberta do segundo miRNA, o let-7, que altera o gene lin-41, também importante no desenvolvimento do *C. elegans*, porém agora na transição para o estágio L4.
+* A descoberta do segundo miRNA, o let-7, que regula negativamente o lin-41, também importante no desenvolvimento do *C. elegans*, porém agora na transição para o estágio L4.
 
 
 ## Ideias gerais de 3 artigos seminais

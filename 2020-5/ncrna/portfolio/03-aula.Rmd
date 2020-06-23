@@ -33,11 +33,11 @@ A grande maioria participa do spliceossomo (Abaixo descreve-se splicing U2):
   * Inicialmente, há a ligação do complexo U1 ao sítio de splicing 5', mediada pela complementaridade do snRNA que possui. 
   * Logo em seguida, ocorre a ligação do complexo U2 ao ponto de ramificação do íntron. 
   
-  * As reações de transestefiricação subsequentes, propiciadas inicialmente pela hidroxila 2' do ponto de ramificação, irão resultar na ligação dos éxons adjacentes e a liberação do íntron na forma de laço.
+  * As reações de transestefiricação subsequentes, propiciadas inicialmente pela hidroxila 2 do ponto de ramificação, irão resultar na ligação dos éxons adjacentes e a liberação do íntron na forma de laço.
 
 ### snoRNAs
 
-Formam os complexos de snoRNPs, com as porções ribonucleotídicas agindo como um "guia", indicando seções nos rRNAs não processados, com o pareamento destes, proporcionando reações de metilação e pseudouridinilação, necessárias para a clivagem e formação da estrutura final do ribossomo. 
+Formam os complexos de snoRNPs, com as porções ribonucleotídicas agindo como um "guia", indicando seções nos rRNAs não processados e, com o pareamento destes, proporcionam reações de metilação e pseudouridinilação, estas necessárias para a clivagem e formação da estrutura final do ribossomo. 
   
 ## A quais doenças estão relacionados?
 

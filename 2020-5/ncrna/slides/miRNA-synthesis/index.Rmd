@@ -51,7 +51,7 @@ bib <- ReadBib("ref.bib")
   - E pode ter mais de 1000 nt!
 --
 
-- Porém, também existem aqueles transcritos pela RNAPol III, como os miRNAs virais
+- Porém, também existem aqueles transcritos pela RNAPol III.
 --
 
 - Além dos que são formados por fragmentos de tRNAs e... **Enfim, muitas possibilidades!**

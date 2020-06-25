@@ -1,0 +1,43 @@
+# Origem e Evolução dos miRNAs
+
+## Quando teriam surgido os miRNAs?
+
+Precedem o surgimento dos organismos multicelulares, com os ortólogos mais antigos sendo achados na alga *Chlamydomonas reinhardtii*.
+
+## De que forma miRNAs estão relacionados com complexidade biológica?
+
+## Como e quando surgiram os primeiros genes de miRNAS?
+
+## Comentar a figura 1.
+
+![](./pics/arvore.jpg.png)
+
+A imagem ilustra a distribuição de genes nas diversas espécies do reino animal. Notamos uma ausência nos cianoflagelados e nos placozoa, mas à parte disso, há uma ubiquidade de miRNAs no Animalia. Alguns pontos de destaque importante é que, inicialmente acreditava-se na ausência de miRNAs em descendentes de Radiata, como poríferos e cnidários, porém isso foi algo questionado e na árvore observada temos representantes nessas duas seções. Com os miRNAs de cnidários apresentando características muito semelhantes àqueles de outros animais, no entanto, os de poríferos abrem pauta para dúvidas, visto que alguns dos seus miRNA não apresentam homologia significativa com outras espécies, sugerindo um possível surgimento independente. 
+
+## Discorra sobre o miRBase
+
+[miRBase](http://www.mirbase.org/index.shtml) é um banco de dados de informação estrutural e funcional de miRNAs, gerenciado pela Universidade de Manchester. Criado em 2010, possue em registro quase 40 mil miRNAs, categorizados por meio de um identificador, sinalizando-se também informação filogenética, abrangendo mais de 70 espécies. 
+
+## Descrever a organização genômica, conceituando, diferenciando e distinguindo cada uma delas
+
+![](./pics/orggenomica.png)
+
+### Intergênicos
+
+Podendo se organizar singularmente ou em *cluster*, possuem características semelhantes a genes codantes, contendo em seua estrutura um promotores e regiões regulatórias.
+
+### Intrônicos
+
+Se apresentam em íntrons, podendo até serem os íntrons, podem possuir seus próprios promotores ou dependerem da unidade que os contém. Sua localização peculiar resulta em interações interessantes com a maquinaria de splicing, como, caso eles ocupem o total espaço do íntron (*miRtrons*), podendo virar pre-miRNA durante o processo transcricional comum.
+
+### Exônicos
+
+Apresentam-se, geralmente, nas junções éxon-íntron e, por sua localização, acarretam, também, interações de nota com a maquinaria de splicing, com sua transcrição podendo ser regulada por uma competição entre DROSHA e spliceossomo.
+
+## O que vem a ser análise filogenética e como o genoma auxilia neste estudo?
+
+Intergênicos tem CpGs espécie-específica
+
+## De que forma o genoma age como subtrato para o surgimento de novos miRNAs?
+
+## Listar e comentar quais processos geram diversificação dos transcritos de miRNAs

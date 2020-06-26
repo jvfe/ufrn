@@ -2,11 +2,14 @@
 
 ## Quando teriam surgido os miRNAs?
 
-Precedem o surgimento dos organismos multicelulares, com os ortólogos mais antigos sendo achados na alga *Chlamydomonas reinhardtii*.
+Precedem o surgimento dos organismos multicelulares, com os ortólogos mais antigos sendo achados na alga *Chlamydomonas reinhardtii*. Há duas hipóteses vigentes, uma relacionando o surgimento dos miRNAs a ancestrais de todos os eucariotos, visto que há uma maquinaria de silenciamento conservada, esta associada diretamente aos miRNAs de hoje. A outra argumenta o surgimento independente de miRNAs em plantas e animais, visto a significativa diferença entre seus processos de biogênese.
 
 ## De que forma miRNAs estão relacionados com complexidade biológica?
 
+Por ser, em sua essência, um mecanismo de regulação gênica, proporciona variação fenotípica que pode resultar no surgimento de diferenças e características marcantes em uma mesma espécie, colaborando com que, a partir de uma população quase-homogênea de células simples, possa surgir células mais complexas e heterogêneas.  
+
 ## Como e quando surgiram os primeiros genes de miRNAS?
+
 
 ## Comentar a figura 1.
 
@@ -36,8 +39,39 @@ Apresentam-se, geralmente, nas junções éxon-íntron e, por sua localização,
 
 ## O que vem a ser análise filogenética e como o genoma auxilia neste estudo?
 
-Intergênicos tem CpGs espécie-específica
+Análise filogenética é um campo da sistemática que trata de estabelecer relações evolutivas entre organismos a partir de características genéticas e moleculares destes.
+
+Ela se torna relevante porque a nomenclatura estabelecida pelo miRBase pode ser capciosa, não agindo como um verdadeiro sistema taxonômico de classificação. Algo que acontece com frequência é uma série de miRNAs possuintes de uma mesma região seed terem nomes significativamente diferentes entre espécies, a partir daí torna-se indispensável utilizar suas localizações e estruturas no genoma para relacioná-los. 
+
+Características como a organização em cluster, transcrição anti-senso (relativa àqueles que se encontram em regiões codantes) e outras são essenciais para se traçar a origem evolutiva desses miRNAs. Diferenças organizacionais entre espécies próximas podem indicar eventos moleculares interessantes, como deleções, duplicações, perdas ou ganhos de função e translocações.
 
 ## De que forma o genoma age como subtrato para o surgimento de novos miRNAs?
 
+Os mesmos eventos geradores de variação que se aplicam a genes codificadores de proteínas se aplicam a genes de miRNAs, com a singular diferença que a estrutura do transcrito de miRNAs é conformacionalmente simples e estável, sendo muito maior a probabilidade de variações nos genes de miRNAs gerarem transcritos funcionais que as mesmas variações em genes de proteínas.
+
+Um exemplo de mecanismo é a duplicação gênica. Ela pode ocorrer em tandem, porém, talvez mais interessante ainda, a possibilidade de ocorrer insercionalmente, resultando em sequências similares em regiões diferentes do genoma. Essas sequências separadas podem continuamente divergir, resultando no surgimento de novos genes. A aquisição de novas funções no gene duplicado é chamado de *neofuncionalização*.
+
 ## Listar e comentar quais processos geram diversificação dos transcritos de miRNAs
+
+### isomiRs e alterações do *seed*
+
+![](./pics/isomirs.png)
+
+Pela imprecisão da clivagem de Dicer/DROSHA, uma gama de variantes podem ser formadas a partir do mesmo pri-miRNA, essas variantes são chamas de **isomiRs**. Nessas isoformas, variações em 5' são possivelmente as mais importantes, porque elas resultam na mutação da sequência mais conservada do miRNA, ou sequência seed, responsável pela especificadade e endereçamento desse miRNA. Essas mudanças, ou *seed-shifting*, podem alterar o alvo do miRNA, desencadeando até o surgimento de uma nova função. 
+
+### Edição de miRNA
+
+Edições na sequência do transcrito que não refletem alterações na sequência genômica. Em mamíferos, geralmente ocorrem por meio das enzimas ADAR, que se ligam ao RNA de dupla fita, alterando as bases de Adenosina por **Inosina**. Esse processo pode direcionar o miRNA para outros alvos ou até impedir a ação de Dicer e DROSHA no mesmo. 
+
+### *Arm switching*
+
+![](./pics/armswitch.png)
+
+Arm switching regulado por uridinilação em miR-324 [@Kim_2020] 
+
+A simples escolha de um dos "braços" de um miRNA, que tem como consequência a mudança da fita guia final. Nesse caso os braços recebem a nomenclatura 3p e 5p, referente à sua extremidade. A escolha de um braço versus o outro tem impactos funcionais extremamente importantes dentro da célula, com casos de braços opostos agindo em funções divergentes dentro da célula, como é no miR155, em que seus braços atuam positivamente (3p) ou negativamente (5p) na produção de IFN-I [@Alivernini_2018]. 
+
+### Mudança de *hairpin*
+![](./pics/hairpinswitch.png)
+
+Reconfiguração da estrutura do *hairpin*, gerando uma nova sequência para o miRNA. Geralmente ocorre uma mudança upstream da formação do grampo, como ilustrado no esquema do livro (acima). Levando, por negligenciar um dos braços, a um *arm switching*!

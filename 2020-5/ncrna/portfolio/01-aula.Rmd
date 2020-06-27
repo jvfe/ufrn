@@ -15,6 +15,8 @@ ele é o passo inicial para a produção de proteínas.
 
 Inicialmente, o mRNA possui 3 principais componentes: Os íntrons, que não codificam a informação proteica final, os éxons, a porção codante, e as UTRs em cada ponta, que são, também, regiões não traduzidas. Após o processamento, observa-se a adição de um "capacete" na extremidade 5' e uma sequência poli-A na extremidade 3', ambas estruturas que auxiliam na proteção do mRNA de exonucleases.
 
+> *Comentário da Profª Sílvia*: Cap 5' e cauda poli-A também auxiliam no início da tradução.
+
 ## Geração e modificações pós-transcricionais
 
 ### mRNA
@@ -40,6 +42,6 @@ Em eucariotos, ocorre no nucléolo, com a síntese do 45S pela RNA Polimerase I,
 
 É o processo no qual ocorrem modificações no RNA que não refletem mutações na sequência genômica original. Essas modificações podem ser inserções, deleções e substituições. Algumas modificações de nota são:
 
-  * Edição do gene da ApoB - uma troca de C para U - reflete nas isoformas observadas da proteína no organismo, a ApoB-100 (hepática) e a ApoB-48 (intestinal), essa última que possui seu tamanho reduzido pois a troca gera um códon de parada.
+  * Edição do gene da ApoB - desaminação de citosina - reflete nas isoformas observadas da proteína no organismo, a ApoB-100 (hepática) e a ApoB-48 (intestinal), essa última que possui seu tamanho reduzido pois a troca gera um códon de parada.
   
   * Conversão de A para Inosina pela **ADAR** em miRNAs, que pode impedir o processamento por DROSHA e DICER.

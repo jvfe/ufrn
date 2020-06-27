@@ -1,0 +1,28 @@
+# miRNAs virais e miRNAs contra vírus
+
+## Vírus produzem miRNAs?
+
+Sim, o miRbase cataloga 686 miRNAs virais, sendo a maioria deles pertencentes à família de vírus de DNA *Herpeviridae*. 
+A síntese desses miRNAs costuma ocorrer usufruindo-se da via canônica de biogênese do hospedeiro. Estes miRNAs podem ter como alvo tanto a rede regulatória do hospedeiro quanto genes especificamente virais.
+
+## Qual é o papel dos miRNA na modulação da interação virus-hospedeiro?
+
+![](./pics/viruscategorias.jpg)
+
+Uma categorização geral de possíveis alvos de miRNAs virais, segundo [@Skalsky_2010].
+
+Os miRNAs estão diretamente associados com os estágios do ciclo de vida viral: Durante o ciclo lisogênico, eles agem no sentido de minimizar a expressão de genes virais, evitando o reconhecimento precoce pelo sistema imune. Durante a fase lítica, a expressão dos próprios miRNAs é minimizada, no sentido de suportar o aumento da replicação viral.
+
+Certas espécies virais também tem a capacidade de **influenciar a longevidade das células do hospedeiro**, isto é, miRNAs codificados por estes vírus podem agir inibindo a expressão de genes pró-apoptóticos, no sentido de possibilitar que a célula seja um ambiente favorável para a replicação viral.
+
+Em algumas situações, observa-se também modulação direta do sistema imune, algo que brevemente mencionei na minha apresentação, com o exemplo da infecção viral de MCMV, cujo miRNAs podem dificultar a função de células NK.
+
+## Como os miRNAs celulares atuam em resposta a vírus?
+
+Eles podem atuar tanto na restrição quanto no estímulo da replicação viral. 
+
+* **Caso da hepatite C**: O miR-122, celular, se liga na extremidade 5' do RNA viral, aparentemente protegendo-o da degradação exonucleotídica e possivelmente auxiliando na sua tradução, provavelmente existem outros mecanismos subjacentes, porém há a regulação positiva da replicação viral por esse miRNA endógeno.
+
+* **Caso do HIV**: Observam-se alguns miRNAs de ação direta sobre o genoma viral, como aqueles que se ligam a extremidade 3' do genoma, promovendo a fase de latência em TCD4, restringindo ou diminuindo a replicação viral. Também há aqueles que visam uma regulação indireta da replicação do HIV, mirando a regulação negativa de cofatores da proteína Tat, esta que agiria aumentando a eficiência da transcrição viral.
+
+![](./pics/mirhiv.png)

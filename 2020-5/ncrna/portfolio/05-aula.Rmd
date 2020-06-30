@@ -2,11 +2,11 @@
 
 ## Quando teriam surgido os miRNAs?
 
-Precedem o surgimento dos organismos multicelulares, com os ortólogos mais antigos sendo achados na alga *Chlamydomonas reinhardtii*. Há duas hipóteses vigentes, uma relacionando o surgimento dos miRNAs a ancestrais de todos os eucariotos, visto que há uma maquinaria de silenciamento conservada, esta associada diretamente aos miRNAs de hoje. A outra argumenta o surgimento independente de miRNAs em plantas e animais, visto a significativa diferença entre seus processos de biogênese.
+Provavelmente precedem o surgimento dos organismos multicelulares, surgindo inicialmente como um mecanismo de defesa a parasitas e regulação gênica. Os ortólogos mais antigos foram achados na alga *Chlamydomonas reinhardtii*. Há duas hipóteses vigentes, uma relacionando o surgimento dos miRNAs a ancestrais de todos os eucariotos, visto que há uma maquinaria de silenciamento conservada, esta associada diretamente aos miRNAs de hoje. A outra argumenta o surgimento independente de miRNAs em plantas e animais, visto a significativa diferença entre seus processos de biogênese.
 
 ## De que forma miRNAs estão relacionados com complexidade biológica?
 
-Por ser, em sua essência, um mecanismo de regulação gênica, proporciona variação fenotípica que pode resultar no surgimento de diferenças e características marcantes em uma mesma espécie, colaborando com que, a partir de uma população quase-homogênea de células simples, possa surgir células mais complexas e heterogêneas.  
+Por ser, em sua essência, um mecanismo de regulação gênica, proporciona variação fenotípica que pode resultar no surgimento de diferenças e características marcantes em uma mesma espécie, colaborando com que, a partir de uma população quase-homogênea de células simples, possa surgir células mais complexas e heterogêneas. Isto é ilustrado ainda mais pela crescente contínua de genes de miRNAs ao longo do tempo, acompanhando o crescimento em complexidade de tipo celular dos organismos.
 
 ## Comentar a figura 1.
 

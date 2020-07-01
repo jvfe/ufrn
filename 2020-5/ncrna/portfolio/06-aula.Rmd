@@ -8,7 +8,7 @@
 
 * **Competição pelo cap 5'**: Possivelmente, a AGO impede o reconhecimento do cap 5' pela *Cap-binding protein*, etapa necessária para o início da tradução.
 
-* **Inibição da montagem dos ribossomos**: AGO2 se associa a um fator de iniciação da tradução, __eIF6__ - esta que impede a formação da organela, e à subunidade maior do ribossomo, impossibilitando a formação do ribossomo.
+* **Inibição da montagem dos ribossomos**: AGO2 se associa a um fator de iniciação da tradução, __eIF6__ - esta que impede a formação, e à subunidade maior do ribossomo, impossibilitando a formação do ribossomo.
 
 * **Deadenilação e bloqueio do início**: É um dos mecanismos de ação propostos para o ***let-7***, em que este miRNA promove a remoção da cauda poli-A, ou deadenilação, evento este que impede a circularização do mRNA, algo indispensável para o início da tradução.
 

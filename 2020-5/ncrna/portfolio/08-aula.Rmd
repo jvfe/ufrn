@@ -1,0 +1,33 @@
+# miRNAs na fisiologia humana
+
+## myomiRs
+
+### No coração {#coracao1}
+
+Destacou-se a importância inicial dos miRNAs com um experimento onde observou-se que a deleção do gene da Dicer estava associada a uma cardiomiopatia dilatada progressiva e eventual morte. De grande destaque é o miR-1, que tem como um de seus alvos o Hand2, que atua na formação do ventrículo direito e do arco aórtico. Camundongos *knockout* para um dos genes que origina miR-1 apresentaram deformações letais na formação do coração.
+
+miRNAs também podem atuar na fase de remodelamento cardíaco, com ilustres exemplos sendo:
+
+  * **miR-208a**, que provavelmente atua na regulação de miosinas de cadeia pesada, proteínas essenciais no processo de hipertrofia. *Knockouts* para miR-208a apresentam viabilidade inicial porém perda progressiva da contratilidade cardíaca em idades mais avançadas. Provavelmente é regulado em si por outro miRNA, o miR-499 - que também atua na remodelação - visto que a reposição deste nos animais knockout se mostrou promissora.
+  
+  * **miR-195**, foi visto que seu aumento se relaciona diretamente com a hipetrofia dos cadiomiócitos.
+
+### No musculo esquelético 
+
+* **miR-206**, este da mesma família que o miR-1, aparentemente induz diferenciação muscular.
+
+* **miR-1** e **miR-133** atuam em sentidos opostos, com o miR-1 promovendo a miogênese, por meio de miogenina e MHC, e a redução da proliferação, enquanto o miR-133 inibe a miogênese e estimula a proliferação.
+
+* **miR-208b** e **miR-499** parecem estar relacionados a um balanço entre fibras rápidas e fibras lentas, ou explosivas e de resistência, através da regulação indireta de βMHC.
+
+## No sistema nervoso
+
+Outro caso em que a deleção da Dicer se mostrou extremamente negativa, originando uma extensiva hipotrofia do sistema nervoso central, sinalizando que miRNAs provavelmente preenchem um papel nas fases de desenvolvimento mais precoces do sistema.
+
+* **miR-124**, possuindo mais de 100 alvos, aparenta suprimir a expressão de genes não relacionados a diferenciação neuronal. Isto ocorre por diversos mecanismos diferentes, como modulação de proteínas de adesão e subexpressão de fatores inibitórios da neurogênese, como Sox9 e REST.
+
+* **miR-219** parece estar relacionado com a ativação do receptor glutamatérgico NMDA, além de que, quando agindo conjunto ao miR-132, parece alterar a responsividade do neurônio a neurotransmissores excitatórios.
+
+* Também existem microRNAs, como o **miR-134** e o **miR-138**, que atuam na própria fenda sináptica, inibindo enzimas.
+
+* Porém, talvez o mais interessante sejam os miRNAs que atuam em regiões fundamentais para a plasticidade neuronal, como as espículas dendríticas, dessa forma estando fortemente relacionados a alterações cognitivo-comportamentais, como é o caso do **miR-189** de humanos, que aparenta se associar a proteínas envolvidas na manifestação da Síndrome de Tourette.

@@ -1,0 +1,59 @@
+# miRNAs e patologias
+
+## Epilepsia
+
+Em um estudo comparando-se amostras de epilepsia do lobo temporal mesial, foi observada uma mudança massiva nos níveis de expressão de +200miRNAs, indicando uma possível regulação realizada por miRNAs dos mecanismos do distúrbio. Posteriormente, foram analisados alguns de nota:
+
+  * **miR-146a** que foi encontrado com níveis elevados em camundongos após crises epilépticas. Ele está associado à regulação da expressão de receptores de reconhecimento padrão TLRs, indicando a inflamação subjacente característica da crise. 
+  
+  * **miR-132**, associado a plasticidade sináptica, foi observado aumentado após administração de convulsivantes, indicando que sua expressão tem regulação, pelo menos em parte, pela atividade elétrica do neurônio.
+  
+  * **miR-134** talvez o mais interessante em termos terapêuticos, pois foi observada associação entre seu bloqueio por antagonistas, ou *Antagomirs*, e diminuição da severidade das crises epilépticas.
+  
+## Doença de Alzheimer
+
+* **miR-107**, que parece estar associado à regulação da proteína BACE1, esta responsável por gerar o peptídeo β-amilóide, este formador das placas senis. Outros dois miRNAs aparentemente associados, de forma inversa, com a presença de BACE1, são o **miR-339-5p** e a família do **miR-29**.
+
+* **miR-146a**, mencionado anteriormente, também relacionado à imunidade inata, também parece estar associado à via inflamatória da doença de Alzheimer.
+
+* **miR-153**, que aparenta regular genes da proteína precursora à β-amilóide.
+
+## Huntington
+
+Com os poucos estudos que tentam traçar associações, talvez o mais interessante de pontuar seja a observação de que proteínas e complexos proteicos da biogênese dos miRNAs sofrem regulações diferentes de acordo com a fase da doença.
+
+## Transtornos psiquiátricos
+
+### Esquizofrenia
+
+O achado de maior destaque é o caso do SNP rs1625579, no gene do miR-137, que, em um estudo de GWAS, mostrou forte correlação com o quadro de esquizofrenia. Vale comentar que é um miRNA que regula partes do desenvolvimento do sistema nervoso.
+
+### Transtorno afetivo bipolar (TAB)
+
+O mesmo miRNA comentado anteriormente na seção de epilepsia, **miR-132** apresentou associações com o TAB, estando reduzido no córtex pré-frontal de animais afetados pelo distúrbio. 
+
+### Autismo
+
+Existem por volta de 28 miRNAs em que foram observados diferenças de expressão em autismo, dentre estes, alguns aparentam ter a capacidade de modular a expressão de genes relacionados com atividade sináptica e ciclo circadiano.
+
+## Doenças cardiovasculares
+
+Na seção \@ref(coracao1) entro em maiores detalhes sobre a associação de miRNAs com a cardiomiopatia dilatada progressiva, algo que resultou na descoberta dos chamados myomiRs.
+
+Algo que não mencionei anteriormente é que, durante a miocardite viral, observam-se quedas de expressão de myomiRs como miR-1 e **miR-155**, este último que se apresenta, surpreendentemente, no infiltrado inflamatório e cuja redução na expressão parece atenuar a reação imune.
+
+## Doenças autoimunes ou inflamatórias crônicas
+
+### Lúpus eritematoso sistêmico (LES)
+
+O mesmo **miR-146a**, mencionado duas vezes nesta seção, apresenta subexpressão nas células sanguíneas de pacientes com LES, e, além disso, quando sua superexpressão é induzida, apresenta-se uma redução de interferons do tipo I, componentes fundamentais do mecanismo da doença.
+
+### Artrite reumatóide
+
+Em amostras de líquido sinovial de pacientes com a doença, foi observada diferença na expressão de alguns miRNAs, talvez o de maior destaque seja o **miR-146**, que apresenta associação positiva com o agente pró-inflamatório TNF-α. 
+
+Outro interessante é o **miR-124a**, que *in vitro* aparenta reduzir a proliferação das células produtoras do líquido sinovial, os sinoviócitos.
+
+### Doenças inflamatórias intestinais
+
+Em um estudo foram observados 11 miRNAs diferencialmente expressos na colite ulcerativa, porém associações desses miRNAs com os mecanismos agentes das doenças ainda continuam sendo elusivas.

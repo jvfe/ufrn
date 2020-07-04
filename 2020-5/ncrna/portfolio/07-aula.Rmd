@@ -2,7 +2,7 @@
 
 ## Vírus produzem miRNAs?
 
-Sim, o miRbase cataloga 686 miRNAs virais, sendo a maioria deles pertencentes à família de vírus de DNA *Herpeviridae*. 
+Sim, o miRbase cataloga por volta de 700 miRNAs virais, sendo a maioria deles pertencentes à família de vírus de DNA *Herpeviridae*. 
 A síntese desses miRNAs costuma ocorrer usufruindo-se da via canônica de biogênese do hospedeiro. Estes miRNAs podem ter como alvo tanto a rede regulatória do hospedeiro quanto genes especificamente virais.
 
 ## Qual é o papel dos miRNA na modulação da interação virus-hospedeiro?
@@ -23,6 +23,8 @@ Eles podem atuar tanto na restrição quanto no estímulo da replicação viral.
 
 * **Caso da hepatite C**: O miR-122, celular, se liga na extremidade 5' do RNA viral, aparentemente protegendo-o da degradação exonucleotídica e possivelmente auxiliando na sua tradução, provavelmente existem outros mecanismos subjacentes, porém há a regulação positiva da replicação viral por esse miRNA endógeno.
 
-* **Caso do HIV**: Observam-se alguns miRNAs de ação direta sobre o genoma viral, como aqueles que se ligam a extremidade 3' do genoma, promovendo a fase de latência em TCD4, restringindo ou diminuindo a replicação viral. Também há aqueles que visam uma regulação indireta da replicação do HIV, mirando a regulação negativa de cofatores da proteína Tat, esta que agiria aumentando a eficiência da transcrição viral.
+* **Caso do HIV**: Observam-se alguns miRNAs de ação direta sobre o genoma viral, como aqueles que se ligam a extremidade 3' do genoma, promovendo a fase de latência em TCD4, restringindo ou diminuindo a replicação viral. Também há aqueles miRNAs que visam uma regulação indireta da replicação do HIV, a exemplo da regulação negativa da expressão de cofatores da proteína Tat, esta proteína que agiria aumentando a eficiência da transcrição viral.
+
+> *Comentário da Profª Sílvia*: Na figura abaixo, as diferentes cores representam proteínas celulares que podem ativar ou reprimir a transcrição e os miRNAs que podem atuar sobre os mRNA destas proteínas, alterando a função das mesmas.
 
 ![](./pics/mirhiv.png)

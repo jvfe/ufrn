@@ -16,7 +16,7 @@ A imagem ilustra a distribuição de genes nas diversas espécies do reino anima
 
 ## Discorra sobre o miRBase
 
-[miRBase](http://www.mirbase.org/index.shtml) é um banco de dados de informação estrutural e funcional de miRNAs, gerenciado pela Universidade de Manchester. Criado em 2010, possue em registro quase 40 mil miRNAs, categorizados por meio de um identificador, sinalizando-se também informação filogenética, abrangendo mais de 70 espécies. 
+[miRBase](http://www.mirbase.org/index.shtml) é um banco de dados de informação estrutural e funcional de miRNAs, gerenciado pela Universidade de Manchester. Criado em 2010, possui em registro quase 40 mil miRNAs, categorizados por meio de um identificador, sinalizando-se também informação filogenética, abrangendo mais de 270 espécies. 
 
 ## Descrever a organização genômica, conceituando, diferenciando e distinguindo cada uma delas
 

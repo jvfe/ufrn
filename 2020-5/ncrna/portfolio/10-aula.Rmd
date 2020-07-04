@@ -1,0 +1,25 @@
+# miRNAs no diagnóstico, prognóstico e terapêutica
+
+## Neoplasias
+
+As primeiras associações de miRNAs com câncer ocorreu com a descoberta de que miR-15a e miR-16a poderiam atuar como supressores tumorais na Leucemia Linfocítica Crônica. Posteriormente, foi verificado como a expressão de miRNAs podem caracterizar doenças, seus estágios e subtipos. Ver a figura abaixo, em que se ilustra miRNAs atuando nas diversas fases do processo de metástase, como invasão, extravasão e colonização.
+
+![](./pics/metastasemicro.jpg)
+[@Kasinski_2011]
+
+Dado isto, microRNAs são candidatos bastate promissores para biomarcadores de doenças, visto sua difusão dentro do organismo, estando presente em diversos flúidos, e estando frequentemente em exossomos, o que auxilia na sua estabilidade.
+
+A figura abaixo ilustra o potencial miRNAs como ferramenta médica, trazendo como exemplo o câncer de pulmão.
+
+![](./pics/mirnasbiomark.jpg)
+[@Madhavan_2013]
+
+## Aplicações terapêuticas
+
+### Baseada na inibição de miRNAs
+
+Existem iniciativas que visam modular a atividade de oncomiRs, ou miRNAs que regulam negativamente genes supressores tumorais. Um estudo verificou como a inibição de miR-21 pôde atenuar a fibrose hepática em um camundongo. O livro traz o exemplo do Miravisen, um inibidor do miR-122, um microRNA potencializador da replicação viral do vírus da hepatite C, porém não precisamos olhar longe para ver uma série de ensaios clínicos sobre miRNAs sendo realizados, objetivando a criação de perfis de expressão de miRNAs que possam caracterizar doenças, como é o caso [deste](https://clinicaltrials.gov/ct2/show/NCT03824613), que observa o perfil de expressão em amostras de urina de pacientes com câncer endometrial.
+
+### Baseada na reposição de miRNAs
+
+Um exemplo trazido são os miRNAs do cluster miR-15a/16-1, estes que regulam o gene central da apoptose BCL2, a perspectiva é que esses miRNAs possam auxiliar no balanceamento desses genes anti-apoptóticos, que pode ser extremamente relevante para neoplasias como Linfoma folicular. Outro exemplo trazido é do miR-34, cuja regulação de genes proliferativos pode acarretar em diminuições da massa tumoral.

@@ -5,6 +5,7 @@
 As primeiras associações de miRNAs com câncer ocorreu com a descoberta de que miR-15a e miR-16a poderiam atuar como supressores tumorais na Leucemia Linfocítica Crônica. Posteriormente, foi verificado como a expressão de miRNAs podem caracterizar doenças, seus estágios e subtipos. Ver a figura abaixo, em que se ilustra miRNAs atuando nas diversas fases do processo de metástase, como invasão, extravasão e colonização.
 
 ![](./pics/metastasemicro.jpg)
+
 [@Kasinski_2011]
 
 Dado isto, microRNAs são candidatos bastate promissores para biomarcadores de doenças, visto sua difusão dentro do organismo, estando presente em diversos flúidos, e estando frequentemente em exossomos, o que auxilia na sua estabilidade.
@@ -12,6 +13,7 @@ Dado isto, microRNAs são candidatos bastate promissores para biomarcadores de d
 A figura abaixo ilustra o potencial miRNAs como ferramenta médica, trazendo como exemplo o câncer de pulmão.
 
 ![](./pics/mirnasbiomark.jpg)
+
 [@Madhavan_2013]
 
 ## Aplicações terapêuticas

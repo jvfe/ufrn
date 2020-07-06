@@ -1,5 +1,5 @@
 ---
-title: "Ribozimas"
+title: "Ribozimas e piRNAs"
 author: "João Vitor F. Cavalcante"
 institute: "UFRN"
 date: "10/07/2020"
@@ -102,17 +102,98 @@ class: center, middle, inverse
 
 # piRNAS
 ---
+
+# Histórico e Características
+
+- Inicialmente (2001) pequenos RNAs (26-31nt) chamados de *rasiRNAs* em *Drosophila*, mudaram seu nome com a descoberta da sua interação com subfamília de proteínas PIWI, com quem formam o **piRISC**.
+
+- Sua função mais característica e a qual foi primeiro descrita, é o controle da expressão e da transposição de transposons.
+
+- Em grande parte, se organizam genomicamente em *clusters* intergênicos, que em seu interior possuem sequências homólogas a transposons do organismo.
+
+.center[<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/PiRNA.jpg">]
+
+- Em mamíferos, podem ser classificados de acordo com o estágio de desenvolvimento da célula germinativa.
+
+--
+- Mas como que eles são formados?
+
+---
+class: inverse
+
+# Biogênese - Via primária
+
+.center[
+<img src="./pics/viaprimaria.png" width="65%">
+
+`r Citep(bib, "Weick_2014")`
+]
+
+---
+# Biogênese - Ping-pong
+
+.center[<img src="./pics/pingpong.png" width="70%">]
+
+???
+- Ago3 geralmente carrega senso, Aub anti-senso. 
+
+---
+class: inverse
+
+# Biogênese - Ping-pong
+
+.center[
+<img src="./pics/regulacaopingpong.jpg" width="70%">
+
+`r Citep(bib, "Webster_2015")`]
+
+--
+- E ainda: piRNAs gênicos; piRNA *phasing* e epiRNAs!
+
+???
+Falar sobre phasing agora
+
+---
+# Função biológica
+
+* Quanto mais ativo é um transposon, maior é a probabilidade deste se inserir em um cluster de piRNA, levando possivelmente a quedas na sua atividade, por meio dos novos piRNAs formados.
+
+* Proteção do genoma de células germinativas primordiais
+
+.center[<img src="./pics/pirnamecanismo.png">]
+
+* Mutações deletérias em vias de piRNAs em *Drosophila* e camundongos reduzem ou até impossibilitam fertilidade! 
+`r Citep(bib, "Brennecke_2008")`
+
+---
+class: inverse
+
+# piRNAs e câncer?
+
+.pull-left[
+<img src="./pics/cancerpubli.jpg">
+
+`r Citep(bib, "Ng_2016")`
+]
+
+.pull-right[
+<img src="./pics/cancerpirna.jpg">
+
+`r Citep(bib, "Cheng_2019")`
+]
+
+---
 # Referências
 
 ```{r, results='asis', echo=FALSE}
-PrintBibliography(bib)
+PrintBibliography(bib[1:5])
 ```
 
 ---
 # Referências
 
 ```{r, results='asis', echo=FALSE}
-# PrintBibliography(bib[4:length(bib)])
+PrintBibliography(bib[6:length(bib)])
 ```
 
  

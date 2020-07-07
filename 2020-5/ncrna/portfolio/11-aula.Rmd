@@ -8,9 +8,9 @@
 
 O isolamento deve possibilitar a obtenção de uma amostra o mais pura possível, com RNAs íntegros, livres de proteínas e DNA. Existem alguns métodos para realizar esse fim:
 
-* **Extração com solventes orgânicos**: Utilização de solventes com base em fenol e clofórmio para a precipitação, com a utilização de cloreto de lítio, que possbilita uma precipitação preferencial de RNAs menores sobre os mais longos. 
+* **Extração com solventes orgânicos**: Utilização de solventes com base em fenol e clorofórmio para a precipitação, com a utilização de cloreto de lítio, que possibilita uma precipitação preferencial de RNAs menores sobre os mais longos. 
 
-* **GFF**: Imobilização em matriz de sílica ou fibra de vidro. Ocorre geralmente o isolamento do RNA total numa coluna, com subsequente separação dos miRNAs por eletroforese de poliacrilamida, de onde possam ser extraídos os RNAs finais.
+* **GFF**: Imobilização em matriz de sílica ou fibra de vidro. Ocorre geralmente o isolamento do RNA total numa coluna, com subsequente separação dos miRNAs por eletroforese de poliacrilamida, de onde podem ser extraídos os RNAs de interesse.
 
 * **Outras técnicas**: Podem ser realizadas extração por meio de uma coluna cromatográfica de troca aniônica ou, também, por imunoprecipitação - com anticorpos primários se ligando no RISC.
 
@@ -20,9 +20,9 @@ Medição da densidade óptica/absorbância por meio de espectrofotômetros adap
 
 ### Clonagem
 
-É necessária a ligação de sequências adaptadoras às extremidades do miRNA para a realização de uma PCR, esta ligação podendo ser feita por meio de diversas estratégias diferentes, porém com uma etapa de desfosforiliação, que evita a circularização da molécula. 
+É necessária a ligação de sequências adaptadoras às extremidades do miRNA para a realização de uma PCR, esta ligação podendo ser feita por meio de diversas estratégias diferentes, porém sempre com uma etapa de desfosforiliação, que evita a circularização da molécula. 
 
-Uma das estratégias é utilizar uma cauda poli-A como adaptador 3', que possibilita uma realização subsequente de transcrição reversa, e a inserção de citosinas resultante desse processo possibilita a inserção de um adaptador 5' de guanosinas, acontecendo o processo chamado de *troca da fita molde*, visto que a molécula final é complementar ao cDNA originalmente gerado pela RT, para que sua sequência direta seja igual ao miRNA original.
+Uma das estratégias é utilizar uma cauda poli-A como adaptador 3', que possibilita uma realização subsequente de transcrição reversa, e a formação de citosinas resultante desse processo possibilita a inserção de um adaptador 5' de guanosinas, assim acontecendo o processo chamado de *troca da fita molde*, assim chamado pois a molécula final é complementar ao cDNA originalmente gerado pela RT, para que dessa forma sua sequência direta seja igual ao miRNA original.
 
 Por fim, ocorre a amplificação do cDNA. 
 
@@ -32,7 +32,9 @@ Por fim, ocorre a amplificação do cDNA.
 
 ![](./pics/Northern_blot_diagram.png)
 
-Técnica extensivamente vista em outras disciplinas, necessita, é claro, o conhecimento da sequência do miRNA de estudo ou no mínimo a sequência de seu mRNA. A dificuldade da realização dessa técnica para miRNAs é o tamanho curto de sua sequência, por isso é tão relevante a utilização de *locked nucleic acids* (LNAs), um RNA em que a 2'O está ligada ao carbono 4, estabilizando a sonda. 
+A figura acima ilustra o processo geral de um Northern blot, técnica extensivamente estudada em disciplinas anteriores.
+
+Porém, a dificuldade da realização dessa técnica para miRNAs é o tamanho curto de sua sequência, por isso é tão relevante a utilização de *locked nucleic acids* (LNAs), um RNA em que a 2'O está ligada ao carbono 4, estabilizando a sonda. 
 
 ### Hibridização *in situ*
 
@@ -40,17 +42,21 @@ Hibridização direta das sondas no local, permitindo a observação da express�
 
 ### RT-qPCR
 
-Necessita a modificação inicial dos miRNAs, com poliadenilação ou primers *stem-loop*, esses últimos são desenhados para que sua extremidade 3' seja complementar aos últimos nucleotídeos da 3' do RNA-alvo. 
+O processo necessita a modificação inicial dos miRNAs, com poliadenilação ou primers *stem-loop*, esses últimos que são desenhados para que sua extremidade 3' seja complementar aos últimos nucleotídeos da 3' do RNA-alvo. 
 
 A detecção pode ser realizada por agentes intercalantes, como *SYBR-Green*, que são mais inespecíficos por se ligarem em qualquer dsDNA, portanto para sua melhor eficácia é necessária uma condição de hibridização mais restritiva. Ou então *Taqman*, que são bem mais específicas, apesar de serem também mais caras.
 
-Muitas vezes se vê necessária a utilização de um RNA normalizador, este que seria minimamente impactado por diferentes condições.
+![](https://upload.wikimedia.org/wikipedia/commons/1/1d/TaqMan_Probes.jpg)
+
+(S. Jähnichen)
+
+A figura acima mostra o processo geral de uma RT-qPCR usando sondas fluorescentes específicas (*Taqman*), ilustra-se como o *quencher* inicialmente impede a emissão da fluorescência pelo repórter, esta que é só detectada uma vez que a TaqP rompa a proximidade do *quencher* do repórter, por meio de sua clivagem, emitindo a fluorescência, que pode então ser detectada pelo aparelho.
 
 ### Microarranjo
 
 ![](pics/microarray.png)
 
-Intuitivamente simples de compreender, consiste na utilização de miRNAs marcados com fluorescência que se ligaram em um chip possuindo sondas. Portanto, impede a descoberta de novos miRNAs, restringindo o pesquisador apenas ao que é encontrado no chip, mesmo assim, é extremamente útil para *screenings* ou análises simples de expressão diferencial entre amostras. 
+Intuitivamente simples de compreender, consiste na utilização de miRNAs marcados com fluorescência que se ligam em sondas ancoradas em um chip. Portanto, é fácil compreender que o processo impede a descoberta de novos miRNAs, restringindo o pesquisador apenas ao que é encontrado no chip, mesmo assim, é extremamente útil para *screenings* ou análises simples de expressão diferencial entre amostras. 
 
 Após a leitura das intensidades do chip, é criado um arquivo contendo a informação luminosa, que varia de plataforma a plataforma, sendo o formato mais comum chamado de *CELfiles*, esses arquivos podem então passar por análises de bioinformática, em que ocorre um breve pré-processamento, com leitura e normalizações de intensidades, seguida geralmente de uma análise de expressão diferencial, passos possibilitados pela utilização de ferramentas como *limma*.
 
@@ -58,13 +64,13 @@ Após a leitura das intensidades do chip, é criado um arquivo contendo a inform
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fCd6B5HRaZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Sendo o método mais comum o *método de síntese*, capitaneado pela companhia **Illumina**. O vídeo acima explica em maiores detalhes, porém, resumidamente, há a associação de adaptadores e sequências indicadoras, em seguida a geração de *clusters*, que é na sua essência uma amplificação, a limpeza de sequências anti-senso, e, então, o *sequenciamento*, em que a chamada de bases é feita de acordo com as bases que vão se ligando, uma por uma, ao fragmento ancorado, gerando sinais fluorescentes distintos até que haja a formação da *read* completa. O aparelho irá ler e processar as intensidades das diferentes fluorescências, resultando num arquivo bruto de sequências, acompanhadas da confiabilidade de cada base ou *Phred score*, que pode passar por análises subsequentes de bioinformática.
+Sendo o método mais comum o *método de síntese*, capitaneado pela companhia **Illumina**. O vídeo acima explica o processo em maiores detalhes, porém, resumidamente, há a associação de adaptadores e sequências indicadoras, em seguida a geração de *clusters*, que é na sua essência uma amplificação, há a limpeza de sequências anti-senso, e, então, o *sequenciamento*, em que a chamada de bases é feita de acordo com as bases que vão se ligando, uma por uma, ao fragmento ancorado, gerando sinais fluorescentes distintos até que haja a formação da *read* completa. O aparelho irá ler e processar as intensidades das diferentes fluorescências, resultando num arquivo bruto de sequências, acompanhadas da confiabilidade de cada base, similares ao *Phred score*, que pode passar por análises subsequentes de bioinformática.
 
-As análises subsequentes podem ser diversas, porém costumam iniciar com um pré-processamento similar, isto é, remoção de sequências indicadas com pouca confiança, alinhamento com o genoma referência da espécie analisada (com sequências não alinhadas podendo até ser utilizadas para predição de novos miRNAs!), e quantificação, intercaladas por cuidadosas análises de controle de qualidade. Diferentes ferramentas podem ser utilizadas para estes propósitos, porém algumas delas são, para remoção, *trimmommatic* ou *fastp*, alinhamento podendo ser feita por ferramentas como *BowTie*, *hisat2* ou *STAR*, e quantificação por *featureCounts* ou *Cufflinks*.
+As análises subsequentes podem ser diversas, porém costumam iniciar com um pré-processamento praticamente igual, isto é, remoção de bases indicadas com pouca confiança (*trimming*), alinhamento com o genoma referência da espécie analisada (com sequências não alinhadas podendo até serem utilizadas para predição de novos miRNAs!), e quantificação, todas intercaladas por cuidadosas análises de controle de qualidade. Diferentes ferramentas podem ser utilizadas para estes propósitos, porém algumas delas são, para remoção, *trimmommatic* ou *fastp*, alinhamento podendo ser feita por ferramentas como *BowTie*, *hisat2* ou *STAR*, e quantificação por *featureCounts* ou *Cufflinks*.
 
 As análises posteriores a estas variam de acordo com o propósito da pesquisa, porém é comum realizar uma expressão diferencial, por meio de ferramentas como *DESeq2* ou *edgeR*.
 
 ## Bancos de dados para análises de identificação de miRNAs
 
-O banco de dados mais popular e abrangente é, é claro, o miRBase, porém existem outros bancos, alguns espécie-específicos(LeishDB), outros que catalogam associam de miRNAs com patologias (HMDD) e, ainda mais, alguns que acompanham *toolkits* para predição de alvos (miRmap) e identificação de redes regulatórias (Diana).
+O banco de dados mais popular e abrangente é, é claro, o miRBase, porém existem outros bancos, alguns espécie-específicos (LeishDB), outros que catalogam a associação de miRNAs com patologias (HMDD) e, ainda mais, alguns que acompanham *toolkits* para predição de alvos (miRmap) e identificação de redes regulatórias (Diana).
 

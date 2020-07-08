@@ -1,0 +1,45 @@
+# Abordagens computacionais e moleculares para identificação de alvos
+
+## Como identificar os alvos dos miRNAs in silico? Quais são as possíveis estratégias?
+
+Existem diversas estratégias, algumas delas espécie-específicas e outras mais abrangentes, que pressupõem características da sequência para seu bom funcionamento, algumas delas são:
+
+* **TargetScan**, esse *software*, além de analisar se a *seed* do miRNA pareia totalmente com a sequência 3' UTR do alvo, realiza a interseção das interações encontradas com informação de ortólogos, sendo somente as interações semelhantes às observadas em grupos ortólogos mantidas.
+
+* Outros programas, como **miRanda** e **Diana**, permitem uma flexibilização crescente em questão ao pareamento da *seed* com a 3' UTR, alguns permitindo também pareamentos com a sequência codante.
+
+* Uma que já tive oportunidade de usar no trabalho de outra disciplina é a **MiRmap** [@Vejnar_2012], que utiliza uma série de 11 *features* ou caracteristicas da análise em questão, características estatísticas, químicas, filogenéticas e moleculares, e as insere em um modelo de aprendizagem de máquina para realizar a predição.
+
+## Como identificar alvos baseado na superexpressão de miRNAs?
+
+### Como Northern blot auxilia nessa busca?
+
+### Acompanhada por ensaios de bioluminescência
+
+#### Controles negativos 
+
+#### Normalização 
+
+#### Limitações
+
+### Seguida por microarranjos, NGS ou proteômica
+
+## Como identificar alvos clivados por miRNAs usando a 5' RACE?
+
+## Como identificar alvos de miRNAs em escala genômica?
+
+* **GMUCT**
+
+## Imunoprecipitação de proteínas Argonauta
+
+* **RIP-Chip**
+
+* **TAP-Tar**
+
+* **HITS-CLIP**
+
+* **PAR-CLIP**
+
+* **iCLIP**
+
+* **CLASH**

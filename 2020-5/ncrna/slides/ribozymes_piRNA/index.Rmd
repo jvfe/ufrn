@@ -49,7 +49,7 @@ class: center, middle, inverse
 - Seu centro catalítico, ou **PTC**, se origina antes até das próprias células organizadas.
 
 --
-  - Alguns grupos de pesquisa sugerem que sua formação se deu pela união tRNAs e pode até ter funcionado de forma semelhante a um genoma. `r Citep(bib, "Farias_2014")`
+  - Alguns grupos de pesquisa sugerem que sua formação se deu pela união de tRNAs. `r Citep(bib, "Farias_2014")`
   - Essa hipótese se deu inicialmente devido à estrutura secundária do PTC ser similar em tamanho e forma aos tRNAs de hoje. `r Citep(bib, "Tamura_2011")`
   
   .pull-left[<img src="./pics/dominio5_ptc.png" style="width: 65%" />] 
@@ -66,7 +66,7 @@ class: center, middle, inverse
 .center[`r Citep(bib, "Tamura_2011")`]
 
 --
-- Foi mostrado que a ausência da 2'OH da ribose da A2451 impede a realização da função
+- Foi mostrado que a ausência da 2'OH da ribose da A2451 impede a realização da sua função.
 
 --
 - Apesar de grande parte do trabalho aparentar ser feito pela subunidade maior, o posicionamento correto do tRNA se dá pela subunidade menor.
@@ -86,9 +86,19 @@ class: inverse
   
 
 --
-* **RNase MRP**, cuja função ainda é elusiva, apresenta similaridades com a RNase P e possivelmente está associada ao processamento de pré-rRNA.
+* **RNase MRP**, cuja função ainda é elusiva, é evolucionalmente relacionada à RNAse P.
+  * Está associada ao processamento de pré-rRNA e está envolvida na iniciação da repl. mitocondrial.
+  * Outras funções?
+.center[<img src="https://upload.wikimedia.org/wikipedia/commons/d/de/RNA_MRP_Regulation_of_Cell_Cycle.png" width="40%"/>]
 
---
+???
+
+RNAse P tem diferenças nos eucariotos (mais auxiliares). Ela cliva elementos 5' do tRNA.
+---
+class: inverse
+
+# Outras ribozimas
+
 * Viróides possuem a ribozima **Hammerhead**, que proporciona a clivagem do seu genoma, este inicialmente sintetizado como um concatâmero.
 
 .pull-left[<img src="./pics/hammerhead.jpg" style="width: 65%" />]
@@ -151,7 +161,7 @@ class: inverse
 - E ainda: piRNAs gênicos; piRNA *phasing* e epiRNAs!
 
 ???
-Falar sobre phasing agora
+Falar sobre phasing agora. Ilustração de dois mecanismos, Aub corta e sai ou Aub é carregada no Krimper, corta e passa pra Ago3.
 
 ---
 # Função biológica
@@ -164,6 +174,9 @@ Falar sobre phasing agora
 
 * Mutações deletérias em vias de piRNAs em *Drosophila* e camundongos reduzem ou até impossibilitam fertilidade! 
 `r Citep(bib, "Brennecke_2008")`
+
+???
+Não se sabe se o pirna interage com o transcrito nascente ou com a fita de dna. MAEL n tem funçao conhecida.
 
 ---
 class: inverse

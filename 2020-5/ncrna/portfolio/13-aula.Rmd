@@ -1,0 +1,25 @@
+# Estratégias para depleção de miRNAs
+
+## O que são os antimiRs? Quais são seus tipos e como eles atuam?
+
+São sequências curtas complementares aos miRNAs, construídas artificialmente, nesse sentido, agem interferindo com a ação normal dos miRNAs, impedindo que eles, por exemplo, inibam a expressão de um mRNA-alvo. É claro, para garantir sua estabilidade no organismo, o que possibilitaria a realização de suas funções, os antimiRs precisam passar por uma série de modificações, e existem várias estratégias diferentes para este fim. Portanto, uma classificação de antimiRs vai de acordo com o tipo de modificação que eles sofrem, abaixo trago algumas.
+
+* **antagomiRs** são antimiRs conjugados a uma molécula de colesterol, pela molécula de colesterol ser tão difusa dentro do organismo e existirem mecanismos auxiliares na sua proteção e carreamento, a conjugação do oligonucleotídeo com esses componentes por vezes traz benefícios para seu uso *in vivo*.
+
+* **LNAs**, comentados brevemente anteriormente, são oligonts que possuem ponte de metil entre o 2'O e o 4'-C, essa modificação encapsula as suas riboses, favorecendo uma menor reatividade com o meio em que se encontram e, portanto, maior estabilidade.
+
+* Existem ainda os **Morfolinos**, que não constituem exatamente uma classe de antimiRs, apesar de apresentarem funções similares, são sequências oligonucleotídicas de DNA associadas a um esqueleto de metilenomorfolina.
+
+A geração desses antimiRs geralmente é guiada por etapa precendente *in silico*, existindo diversos softwares que possam auxiliar nesse sentido, como o *Exiqon* para LNAs. Por vezes é necessária o design de um controle negativo também, que segue muitas das mesmas estratégias abordadas em outras seções, como o uso de sequências *scrambled* e sequências com *mismatches* propositais.
+
+## Quais são as vantagens e desvantagens dos antimiRs?
+
+É vantajoso por serem relativamentes de design e uso, porém, por causa da multiplicidade de sequências *seed* semelhantes nos miRNAs, o efeito final pode não ser o desejado, além do fato de que, por serem direcionados para essa sequência *seed*, não tem muita abrangência em sua ação.
+
+## O que são esponjas artificiais de miRNAs?
+
+
+
+## Quais são as vantagens e desvantagens das esponjas artificiais de miRNAs?
+
+## Como modificar genes de miRNAs?

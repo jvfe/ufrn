@@ -65,10 +65,12 @@ Permitem a análise de alvos que não são regulados apenas por clivagem, como �
 
 * **TAP-Tar**: Mesmo processo que RIP-Chip, porém com a utilização de duas imunoprecipitações em conjunto à inserção de um miRNA marcado com biotina na amostra. Presume-se que o miRNA marcado será incorporado na argonauta e o segundo processo de precipitação reduzirá significativamente o número de falsos positivos. Ainda assim, resultados falsos podem vir a luz, visto que as técnicas utilizam extratos celulares, podendo ocorrer interações anômalas entre miRNAs e mRNAs que não seriam observadas *in vivo*.
 
-* **HITS-CLIP**: "Congelamento" dos miRNAs ligados à argonauta ainda na célula, por meio de ultravioleta, evitando interações que não ocorreriam *in vivo*. 
+* **HITS-CLIP**: "Congelamento" dos miRNAs ligados à argonauta ainda na célula, por meio de ultravioleta - que catalisa a formação de ligações covalentes entre RNA e proteínas, evitando interações que não ocorreriam *in vivo*. 
 
 * **PAR-CLIP**: Aprimoramento da HITS-CLIP, com uma faixa mais restrita de ultravioleta e a utilização de nucleotídeos fotoativos.
 
-* **iCLIP**: 
+Não tenho certeza se entendi totalmente as duas técnicas seguintes, porém aqui vão as ideias gerais que tive.
+
+* **iCLIP**: Em que peptídeos ancorados na sequência impedem a realização normal da transcrição reversa, gerando fragmentos "truncados", precisamente na posição onde há a interação. Esses fragmentos, que circularizam, podem ser então linearizados com enzimas de restrição, amplificados e sequenciados.
 
 * **CLASH**: Ocorre a formação de uma quimera do miRNA com seu mRNA alvo, esses RNAs híbridos são sequenciados e posteriormente, por bioinformática, é reconstruído o pareamento original.

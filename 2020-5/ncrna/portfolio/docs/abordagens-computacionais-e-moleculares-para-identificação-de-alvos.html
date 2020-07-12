@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>16 Referências | DBG0061 - Portfólio</title>
+  <title>13 Abordagens computacionais e moleculares para identificação de alvos | DBG0061 - Portfólio</title>
   <meta name="description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta property="og:title" content="13 Abordagens computacionais e moleculares para identificação de alvos | DBG0061 - Portfólio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta name="twitter:title" content="13 Abordagens computacionais e moleculares para identificação de alvos | DBG0061 - Portfólio" />
   
   <meta name="twitter:description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html"/>
-
+<link rel="prev" href="análise-molecular-de-mirnas.html"/>
+<link rel="next" href="estratégias-para-depleção-de-mirnas.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -235,43 +235,80 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="referências" class="section level1">
-<h1><span class="header-section-number">16</span> Referências</h1>
+<div id="abordagens-computacionais-e-moleculares-para-identificação-de-alvos" class="section level1">
+<h1><span class="header-section-number">13</span> Abordagens computacionais e moleculares para identificação de alvos</h1>
+<div id="como-identificar-os-alvos-dos-mirnas-in-silico-quais-são-as-possíveis-estratégias" class="section level2">
+<h2><span class="header-section-number">13.1</span> Como identificar os alvos dos miRNAs in silico? Quais são as possíveis estratégias?</h2>
+<p>Existem diversas estratégias, algumas delas espécie-específicas e outras mais abrangentes, que pressupõem características da sequência para seu bom funcionamento, algumas delas são:</p>
+<ul>
+<li><p><strong>TargetScan</strong>, esse <em>software</em>, além de analisar se a <em>seed</em> do miRNA pareia totalmente com a sequência 3’ UTR do alvo, realiza a interseção das interações encontradas com informação de ortólogos, sendo somente as interações semelhantes às observadas em grupos ortólogos mantidas.</p></li>
+<li><p>Outros programas, como <strong>miRanda</strong> e <strong>Diana</strong>, permitem uma flexibilização crescente em questão ao pareamento da <em>seed</em> com a 3’ UTR, alguns permitindo também pareamentos com a sequência codante.</p></li>
+<li><p>Uma que já tive oportunidade de usar no trabalho de outra disciplina é a <strong>MiRmap</strong> <span class="citation">(Vejnar and Zdobnov <a href="referências.html#ref-Vejnar_2012" role="doc-biblioref">2012</a>)</span>, que utiliza uma série de 11 <em>features</em> ou caracteristicas da análise em questão, características estatísticas, químicas, filogenéticas e moleculares, e as insere em um modelo de aprendizagem de máquina para realizar a predição.</p></li>
+</ul>
+</div>
+<div id="como-identificar-alvos-baseado-na-superexpressão-de-mirnas" class="section level2">
+<h2><span class="header-section-number">13.2</span> Como identificar alvos baseado na superexpressão de miRNAs?</h2>
+<p>Pressupõe que a superexpressão do miRNA (muitas vezes acompanhada de um aumento concomitante da expressão do alvo computacionalmente predito) provavelmente aumentará a regulação do seu alvo de forma a ser experimentalmente visível.</p>
+<div id="como-northern-blot-auxilia-nessa-busca" class="section level3">
+<h3><span class="header-section-number">13.2.1</span> Como Northern blot auxilia nessa busca?</h3>
+<p>O exemplo trazido ilustra o uso do blotting para detectar o acúmulo do alvo predito: Em amostras com ausência do miRNA
+observou-se altas concentrações do alvo, porém em amostras com superexpressão do miRNA, havia decréscimo considerável da expressão do alvo. Porém, é claro, esse método só detecta miRNAs que clivam seu alvo.</p>
+</div>
+<div id="acompanhada-por-ensaios-de-bioluminescência" class="section level3">
+<h3><span class="header-section-number">13.2.2</span> Acompanhada por ensaios de bioluminescência</h3>
+<p>No sentido de abranger mais mecanismos que apenas a clivagem, pesquisadores desenvolveram um método em que é realizada a transfecção de um vetor contendo a sequência 3’ UTR do alvo predito junto a uma luciferase ou outra proteína fluorescente; se a interação predita em silico for de fato real, ao haver a transfecção de um vetor contendo a sequência do miRNA de estudo, deve observar-se uma queda no sinal de fluorescência, que pode ser tanto devido a clivagem quanto a inibição da tradução.</p>
+<div id="controles-negativos" class="section level4">
+<h4><span class="header-section-number">13.2.2.1</span> Controles negativos</h4>
+<p>Alternativas são:</p>
+<ul>
+<li><p>A utilização de miRNAs <em>scrambled</em>, ou seja, incapazes de interagir com os elementos regulatórios da 3’ UTR, que indicaria a importância da sequência para o reconhecimento.</p></li>
+<li><p>A mesma ideia da anterior, porém o contrário, com a ocorrência de alterações na sequência da 3’ UTR, que indicaria precisamente em que seções da sequência o miRNA interage.</p></li>
+</ul>
+</div>
+<div id="normalização" class="section level4">
+<h4><span class="header-section-number">13.2.2.2</span> Normalização</h4>
+<p>Utilização de duas fluorescências, uma não relacionada ao miRNA, que possibilitaria visualizar que houve a transfecção do vetor na célula.</p>
+</div>
+<div id="limitações" class="section level4">
+<h4><span class="header-section-number">13.2.2.3</span> Limitações</h4>
+<p>Possui baixa escalabilidade, pois fica inviável analisar mais de um alvo de uma só vez.</p>
+</div>
+</div>
+<div id="seguida-por-microarranjos-ngs-ou-proteômica" class="section level3">
+<h3><span class="header-section-number">13.2.3</span> Seguida por microarranjos, NGS ou proteômica</h3>
+<ul>
+<li><p><strong>Microarranjos</strong>: Observar genes com aparente baixa expressão, que pode indicar que sejam alvos do miRNA de estudo. Para controlar falsos positivos, realizar o mesmo teste em amostras com miRNAs não funcionais. Só detecta alvos que são regulados por clivagem.</p></li>
+<li><p><strong>NGS</strong>: Mesmo desenho experimental que microarranjos, com as mesmas limitações, porém com as vantagens que NGS carrega consigo.</p></li>
+<li><p><strong>Proteômica</strong>: Observaria o impacto da superexpressão dos miRNAs no produto final: As proteínas.</p></li>
+</ul>
+</div>
+</div>
+<div id="como-identificar-alvos-clivados-por-mirnas-usando-a-5-race" class="section level2">
+<h2><span class="header-section-number">13.3</span> Como identificar alvos clivados por miRNAs usando a 5’ RACE?</h2>
+<p><img src="pics/race.png" /></p>
+<p>Após a clivagem do RNA alvo pela argonauta, acontece a ligação de um adaptador na extremidade recém-exposta, há a síntese de uma fita de cDNA por meio da transcriptase reversa, e então essa fita passa por PCR, uma não-específica, e outra específica, de forma que após o sequenciamento dos fragmentos amplificados, possam ser discriminadas a sequência alvo onde o miRNA se ligou e onde houve a clivagem.d</p>
+</div>
+<div id="como-identificar-alvos-de-mirnas-em-escala-genômica" class="section level2">
+<h2><span class="header-section-number">13.4</span> Como identificar alvos de miRNAs em escala genômica?</h2>
+<ul>
+<li><strong>GMUCT</strong>: Técnica derivada da PARE, que por sua vez é derivada da 5’ RACE. Ocorre com a ligação de adaptadores à 5’ exposta pela clivagem do miRNA, onde a enzima MmeI ancora e cliva, gerando uma sequência de 20nt a qual provavelmente é o ponto de reconhecimento do miRNA e expondo uma extremidade a 3’, onde outro adaptador pode se ligar. A biblioteca é então amplificada por PCR direcionada aos oligonucleotídoes das sequências adaptadora. A biblioteca pode passar então, por sequenciamento (NGS), podendo assim ser analisada por bioinformática.</li>
+</ul>
+</div>
+<div id="imunoprecipitação-de-proteínas-argonauta" class="section level2">
+<h2><span class="header-section-number">13.5</span> Imunoprecipitação de proteínas Argonauta</h2>
+<p>Permitem a análise de alvos que não são regulados apenas por clivagem, como é o caso da maioria dos processos anteriores.</p>
+<ul>
+<li><p><strong>RIP-Chip</strong>: Em que o RNA extraído com a imunoprecipitação é hibridizado em um microarranjo. Gera muitos falsos positivos, visto que utiliza todo o RNA extraído, não apenas aqueles que interagem com Argonauta.</p></li>
+<li><p><strong>TAP-Tar</strong>: Mesmo processo que RIP-Chip, porém com a utilização de duas imunoprecipitações em conjunto à inserção de um miRNA marcado com biotina na amostra. Presume-se que o miRNA marcado será incorporado na argonauta e o segundo processo de precipitação reduzirá significativamente o número de falsos positivos. Ainda assim, resultados falsos podem vir a luz, visto que as técnicas utilizam extratos celulares, podendo ocorrer interações anômalas entre miRNAs e mRNAs que não seriam observadas <em>in vivo</em>.</p></li>
+<li><p><strong>HITS-CLIP</strong>: “Congelamento” dos miRNAs ligados à argonauta ainda na célula, por meio de ultravioleta - que catalisa a formação de ligações covalentes entre RNA e proteínas, evitando interações que não ocorreriam <em>in vivo</em>.</p></li>
+<li><p><strong>PAR-CLIP</strong>: Aprimoramento da HITS-CLIP, com uma faixa mais restrita de ultravioleta e a utilização de nucleotídeos fotoativos.</p></li>
+</ul>
+<p>Não tenho certeza se entendi totalmente as duas técnicas seguintes, porém aqui vão as ideias gerais que tive.</p>
+<ul>
+<li><p><strong>iCLIP</strong>: Em que peptídeos ancorados na sequência impedem a realização normal da transcrição reversa, gerando fragmentos “truncados”, precisamente na posição onde há a interação. Esses fragmentos, que circularizam, podem ser então linearizados com enzimas de restrição, amplificados e sequenciados.</p></li>
+<li><p><strong>CLASH</strong>: Ocorre a formação de uma quimera do miRNA com seu mRNA alvo, esses RNAs híbridos são sequenciados e posteriormente, por bioinformática, é reconstruído o pareamento original.</p></li>
+</ul>
 
-<div id="refs" class="references">
-<div id="ref-Alivernini_2018">
-<p>Alivernini, Stefano, Elisa Gremese, Charles McSharry, Barbara Tolusso, Gianfranco Ferraccioli, Iain B. McInnes, and Mariola Kurowska-Stolarska. 2018. “MicroRNA-155at the Critical Interface of Innate and Adaptive Immunity in Arthritis.” <em>Frontiers in Immunology</em> 8 (January). <a href="https://doi.org/10.3389/fimmu.2017.01932">https://doi.org/10.3389/fimmu.2017.01932</a>.</p>
-</div>
-<div id="ref-Bolton_2004">
-<p>Bolton, Patrick F., Marijcke W. M. Veltman, Emma Weisblatt, Joanne R. Holmes, N. Simon Thomas, Sheila A. Youings, Russell J. Thompson, et al. 2004. “Chromosome 15q11-13 Abnormalities and Other Medical Conditions in Individuals with Autism Spectrum Disorders.” <em>Psychiatric Genetics</em> 14 (3): 131–37. <a href="https://doi.org/10.1097/00041444-200409000-00002">https://doi.org/10.1097/00041444-200409000-00002</a>.</p>
-</div>
-<div id="ref-Kasinski_2011">
-<p>Kasinski, Andrea L., and Frank J. Slack. 2011. “MicroRNAs En Route to the Clinic: Progress in Validating and Targeting microRNAs for Cancer Therapy.” <em>Nature Reviews Cancer</em> 11 (12): 849–64. <a href="https://doi.org/10.1038/nrc3166">https://doi.org/10.1038/nrc3166</a>.</p>
-</div>
-<div id="ref-Kim_2020">
-<p>Kim, Haedong, Jimi Kim, Sha Yu, Young-Yoon Lee, Junseong Park, Ran Joo Choi, Seon-Jin Yoon, Seok-Gu Kang, and V. Narry Kim. 2020. “MicroRNA Arm Switching Regulated by Uridylation,” April. <a href="https://doi.org/10.1101/2020.04.06.027813">https://doi.org/10.1101/2020.04.06.027813</a>.</p>
-</div>
-<div id="ref-Lagos_Quintana_2001">
-<p>Lagos-Quintana, M. 2001. “Identification of Novel Genes Coding for Small Expressed RNAs.” <em>Science</em> 294 (5543): 853–58. <a href="https://doi.org/10.1126/science.1064921">https://doi.org/10.1126/science.1064921</a>.</p>
-</div>
-<div id="ref-Lau_2001">
-<p>Lau, N. C. 2001. “An Abundant Class of Tiny RNAs with Probable Regulatory Roles in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 858–62. <a href="https://doi.org/10.1126/science.1065062">https://doi.org/10.1126/science.1065062</a>.</p>
-</div>
-<div id="ref-Lee_2001">
-<p>Lee, R. C. 2001. “An Extensive Class of Small RNAs in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 862–64. <a href="https://doi.org/10.1126/science.1065329">https://doi.org/10.1126/science.1065329</a>.</p>
-</div>
-<div id="ref-Madhavan_2013">
-<p>Madhavan, Dharanija, Katarina Cuk, Barbara Burwinkel, and Rongxi Yang. 2013. “Cancer Diagnosis and Prognosis Decoded by Blood-Based Circulating microRNA Signatures.” <em>Frontiers in Genetics</em> 4. <a href="https://doi.org/10.3389/fgene.2013.00116">https://doi.org/10.3389/fgene.2013.00116</a>.</p>
-</div>
-<div id="ref-Sahoo_2008">
-<p>Sahoo, Trilochan, Daniela del Gaudio, Jennifer R German, Marwan Shinawi, Sarika U Peters, Richard E Person, Adolfo Garnica, Sau Wai Cheung, and Arthur L Beaudet. 2008. “Prader-Willi Phenotype Caused by Paternal Deficiency for the HBII-85 c/d Box Small Nucleolar RNA Cluster.” <em>Nature Genetics</em> 40 (6): 719–21. <a href="https://doi.org/10.1038/ng.158">https://doi.org/10.1038/ng.158</a>.</p>
-</div>
-<div id="ref-Skalsky_2010">
-<p>Skalsky, Rebecca L., and Bryan R. Cullen. 2010. “Viruses, microRNAs, and Host Interactions.” <em>Annual Review of Microbiology</em> 64 (1): 123–41. <a href="https://doi.org/10.1146/annurev.micro.112408.134243">https://doi.org/10.1146/annurev.micro.112408.134243</a>.</p>
-</div>
-<div id="ref-Vejnar_2012">
-<p>Vejnar, Charles E., and Evgeny M. Zdobnov. 2012. “miRmap: Comprehensive Prediction of microRNA Target Repression Strength.” <em>Nucleic Acids Research</em> 40 (22): 11673–83. <a href="https://doi.org/10.1093/nar/gks901">https://doi.org/10.1093/nar/gks901</a>.</p>
-</div>
 </div>
 </div>
             </section>
@@ -279,8 +316,8 @@
           </div>
         </div>
       </div>
-<a href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="análise-molecular-de-mirnas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="estratégias-para-depleção-de-mirnas.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>16 Referências | DBG0061 - Portfólio</title>
+  <title>14 Estratégias para depleção de miRNAs | DBG0061 - Portfólio</title>
   <meta name="description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta property="og:title" content="14 Estratégias para depleção de miRNAs | DBG0061 - Portfólio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta name="twitter:title" content="14 Estratégias para depleção de miRNAs | DBG0061 - Portfólio" />
   
   <meta name="twitter:description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html"/>
-
+<link rel="prev" href="abordagens-computacionais-e-moleculares-para-identificação-de-alvos.html"/>
+<link rel="next" href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -235,42 +235,52 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="referências" class="section level1">
-<h1><span class="header-section-number">16</span> Referências</h1>
+<div id="estratégias-para-depleção-de-mirnas" class="section level1">
+<h1><span class="header-section-number">14</span> Estratégias para depleção de miRNAs</h1>
+<div id="o-que-são-os-antimirs-quais-são-seus-tipos-e-como-eles-atuam" class="section level2">
+<h2><span class="header-section-number">14.1</span> O que são os antimiRs? Quais são seus tipos e como eles atuam?</h2>
+<p>São sequências curtas complementares aos miRNAs, construídas artificialmente, nesse sentido, agem interferindo com a ação normal dos miRNAs, impedindo que eles, por exemplo, inibam a expressão de um mRNA-alvo. É claro, para garantir sua estabilidade no organismo, o que possibilitaria a realização de suas funções, os antimiRs precisam passar por uma série de modificações, e existem várias estratégias diferentes para este fim. Portanto, uma classificação de antimiRs vai de acordo com o tipo de modificação que eles sofrem, abaixo trago algumas.</p>
+<ul>
+<li><p><strong>antagomiRs</strong> são antimiRs conjugados a uma molécula de colesterol, pela molécula de colesterol ser tão difusa dentro do organismo e existirem mecanismos auxiliares na sua proteção e carreamento, a conjugação do oligonucleotídeo com esses componentes por vezes traz benefícios para seu uso <em>in vivo</em>.</p></li>
+<li><p><strong>LNAs</strong>, comentados brevemente anteriormente, são oligonts que possuem ponte de metil entre o 2’O e o 4’-C, essa modificação encapsula as suas riboses, favorecendo uma menor reatividade com o meio em que se encontram e, portanto, maior estabilidade.</p></li>
+<li><p>Existem ainda os <strong>Morfolinos</strong>, que não constituem exatamente uma classe de antimiRs, apesar de apresentarem funções similares, são sequências oligonucleotídicas de DNA associadas a um esqueleto de metilenomorfolina.</p></li>
+</ul>
+<p>A geração desses antimiRs geralmente é guiada por etapa precendente <em>in silico</em>, existindo diversos softwares que possam auxiliar nesse sentido, como o <em>Exiqon</em> para LNAs. Por vezes é necessária o design de um controle negativo também, que segue muitas das mesmas estratégias abordadas em outras seções, como o uso de sequências <em>scrambled</em> e sequências com <em>mismatches</em> propositais.</p>
+<div id="quais-são-as-vantagens-e-desvantagens-dos-antimirs" class="section level3">
+<h3><span class="header-section-number">14.1.1</span> Quais são as vantagens e desvantagens dos antimiRs?</h3>
+<p>É vantajoso por serem relativamentes de design e uso, porém, por causa da multiplicidade de sequências <em>seed</em> semelhantes nos miRNAs, o efeito final pode não ser o desejado, além do fato de que, por serem direcionados para essa sequência <em>seed</em>, não tem muita abrangência em sua ação.</p>
+</div>
+</div>
+<div id="o-que-são-esponjas-de-mirnas" class="section level2">
+<h2><span class="header-section-number">14.2</span> O que são esponjas de miRNAs?</h2>
+<p>São estruturas naturais de RNAs não codantes, agindo na captura simultânea de vários miRNAs possuintes da mesma sequência <em>seed</em>, por essa capacidade, possuem uma abrangência muito maior aos antimiRs mencionados anteriormente. Construtos <strong>artificiais</strong> dessas esponjas tem sido usadas com propósitos semelhantes aos dos antimiRs, porém muitas vezes se mostrando mais eficientes.</p>
+<p>Essas esponjas costumam possuir sequências caracterizadas como os sítios de ligação, estas que possuem <em>mismatches</em> centrais, como uma estratégia de impedir sua degradação pela AGO2, e também possuem sequências intercalantes desses sítios, que são muito variáveis.</p>
+<p>Seu desenho é auxiliado, assim como o dos antimiRs, por <em>softwares</em>, como o <em>PITA</em> e o <em>STarMir</em>. E, também, seus controles negativos vão de acordo às mesmas estratégias anteriormente mencionadas.</p>
+<div id="quais-são-as-vantagens-e-desvantagens-das-esponjas-artificiais-de-mirnas" class="section level3">
+<h3><span class="header-section-number">14.2.1</span> Quais são as vantagens e desvantagens das esponjas artificiais de miRNAs?</h3>
+<p>Esponjas possuem abrangência funcional e estabilidade que supracedem às dos antimiRs, porém o seu design é muito mais complexo e sua transfecção mais ineficiente.</p>
+</div>
+</div>
+<div id="como-modificar-genes-de-mirnas" class="section level2">
+<h2><span class="header-section-number">14.3</span> Como modificar genes de miRNAs?</h2>
+<p>Deve-se mencionar que mutações são alterações duradouras que carregam consigo mudanças fenotípicas que podem ser muito mais danosas que a inibição temporária causada pelas esponjas e pelos antimiRs. Dado isto, falo em seguida de algumas estratégias para atingir esse fim.</p>
+<div id="knockouts" class="section level3">
+<h3><span class="header-section-number">14.3.1</span> Knockouts</h3>
+<div id="tradicionais-e-condicionais" class="section level4">
+<h4><span class="header-section-number">14.3.1.1</span> Tradicionais e condicionais</h4>
+<p>Pode se dar de acordo com a metodologia mais tradicional, em que há a formação intermediária de uma quimera e cruzamentos subsequentes até que se gere o monozigoto mutado. Algo que muitas vezes torna esse procedimento elusivo é achar o indivíduo homozigoto, já que há extrema sobreposição funcional entre diferentes miRNAs, com os efeitos fenotípicos do knockout não sendo totalmente indicativos.</p>
+<p>Uma estratégia que existe para contornar possíveis letalidades advindas da mutação direta do miRNA é utilizar o <em>knockout</em> condicional, utilizando do sistema de <em>CreLoxP</em>, que permite um maior controle espacial e temporal da mutação estudada, isto por meio de uma recombinase (Cre) que reconhece locais próximos à LoxP, clivando-os. A imagem abaixo, de Matthias Zepper, ilustra como o processo geral ocorre, com o cruzamento da F0, em que um possui a Cre e o outro possui a loxP encapsulando a sequência de interesse, que pode ser alterada na geração seguinte, por meio da recombinação.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/CreLoxP_experiment.png/1024px-CreLoxP_experiment.png" /></p>
+<p>Como se pode notar, apesar desses métodos proporcionarem nulificação do miRNA de estudo, eles são extremamente laboriosos e sujeitos a erros de técnica que podem custar muito para o prosseguimento da pesquisa. Nesse sentido, tecnologias como o CRISPR/Cas9 se tornam muito relevantes.</p>
+</div>
+<div id="crisprcas9" class="section level4">
+<h4><span class="header-section-number">14.3.1.2</span> CRISPR/Cas9</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2pp17E4E-O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Técnica estudada em outras disciplinas, como biologia molecular e genética médica, está diretamente relacionada aos mecanismos de proteção genômica de procariotos e funciona de acordo com o que é mostrado no vídeo acima. Porém, resumidamente, há acoplamento de um RNA guia à endonuclease Cas9, gerando clivagens extremamente sítio-específicas, comumente resultando no reparo por junção de pontas não-homólogas, o que acarreta a perda de função do gene-alvo.</p>
+<p>Então, como se baseia essencialmente na complementaridade de um RNA guia, é possível utilizar RNAs guias desenhados para interagir com sequências genômicas de miRNAs, o que pode levar efetivamente ao <em>knockout</em> das tais. A tecnologia já é amplamente aplicada para genes codantes.</p>
 
-<div id="refs" class="references">
-<div id="ref-Alivernini_2018">
-<p>Alivernini, Stefano, Elisa Gremese, Charles McSharry, Barbara Tolusso, Gianfranco Ferraccioli, Iain B. McInnes, and Mariola Kurowska-Stolarska. 2018. “MicroRNA-155at the Critical Interface of Innate and Adaptive Immunity in Arthritis.” <em>Frontiers in Immunology</em> 8 (January). <a href="https://doi.org/10.3389/fimmu.2017.01932">https://doi.org/10.3389/fimmu.2017.01932</a>.</p>
 </div>
-<div id="ref-Bolton_2004">
-<p>Bolton, Patrick F., Marijcke W. M. Veltman, Emma Weisblatt, Joanne R. Holmes, N. Simon Thomas, Sheila A. Youings, Russell J. Thompson, et al. 2004. “Chromosome 15q11-13 Abnormalities and Other Medical Conditions in Individuals with Autism Spectrum Disorders.” <em>Psychiatric Genetics</em> 14 (3): 131–37. <a href="https://doi.org/10.1097/00041444-200409000-00002">https://doi.org/10.1097/00041444-200409000-00002</a>.</p>
-</div>
-<div id="ref-Kasinski_2011">
-<p>Kasinski, Andrea L., and Frank J. Slack. 2011. “MicroRNAs En Route to the Clinic: Progress in Validating and Targeting microRNAs for Cancer Therapy.” <em>Nature Reviews Cancer</em> 11 (12): 849–64. <a href="https://doi.org/10.1038/nrc3166">https://doi.org/10.1038/nrc3166</a>.</p>
-</div>
-<div id="ref-Kim_2020">
-<p>Kim, Haedong, Jimi Kim, Sha Yu, Young-Yoon Lee, Junseong Park, Ran Joo Choi, Seon-Jin Yoon, Seok-Gu Kang, and V. Narry Kim. 2020. “MicroRNA Arm Switching Regulated by Uridylation,” April. <a href="https://doi.org/10.1101/2020.04.06.027813">https://doi.org/10.1101/2020.04.06.027813</a>.</p>
-</div>
-<div id="ref-Lagos_Quintana_2001">
-<p>Lagos-Quintana, M. 2001. “Identification of Novel Genes Coding for Small Expressed RNAs.” <em>Science</em> 294 (5543): 853–58. <a href="https://doi.org/10.1126/science.1064921">https://doi.org/10.1126/science.1064921</a>.</p>
-</div>
-<div id="ref-Lau_2001">
-<p>Lau, N. C. 2001. “An Abundant Class of Tiny RNAs with Probable Regulatory Roles in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 858–62. <a href="https://doi.org/10.1126/science.1065062">https://doi.org/10.1126/science.1065062</a>.</p>
-</div>
-<div id="ref-Lee_2001">
-<p>Lee, R. C. 2001. “An Extensive Class of Small RNAs in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 862–64. <a href="https://doi.org/10.1126/science.1065329">https://doi.org/10.1126/science.1065329</a>.</p>
-</div>
-<div id="ref-Madhavan_2013">
-<p>Madhavan, Dharanija, Katarina Cuk, Barbara Burwinkel, and Rongxi Yang. 2013. “Cancer Diagnosis and Prognosis Decoded by Blood-Based Circulating microRNA Signatures.” <em>Frontiers in Genetics</em> 4. <a href="https://doi.org/10.3389/fgene.2013.00116">https://doi.org/10.3389/fgene.2013.00116</a>.</p>
-</div>
-<div id="ref-Sahoo_2008">
-<p>Sahoo, Trilochan, Daniela del Gaudio, Jennifer R German, Marwan Shinawi, Sarika U Peters, Richard E Person, Adolfo Garnica, Sau Wai Cheung, and Arthur L Beaudet. 2008. “Prader-Willi Phenotype Caused by Paternal Deficiency for the HBII-85 c/d Box Small Nucleolar RNA Cluster.” <em>Nature Genetics</em> 40 (6): 719–21. <a href="https://doi.org/10.1038/ng.158">https://doi.org/10.1038/ng.158</a>.</p>
-</div>
-<div id="ref-Skalsky_2010">
-<p>Skalsky, Rebecca L., and Bryan R. Cullen. 2010. “Viruses, microRNAs, and Host Interactions.” <em>Annual Review of Microbiology</em> 64 (1): 123–41. <a href="https://doi.org/10.1146/annurev.micro.112408.134243">https://doi.org/10.1146/annurev.micro.112408.134243</a>.</p>
-</div>
-<div id="ref-Vejnar_2012">
-<p>Vejnar, Charles E., and Evgeny M. Zdobnov. 2012. “miRmap: Comprehensive Prediction of microRNA Target Repression Strength.” <em>Nucleic Acids Research</em> 40 (22): 11673–83. <a href="https://doi.org/10.1093/nar/gks901">https://doi.org/10.1093/nar/gks901</a>.</p>
 </div>
 </div>
 </div>
@@ -279,8 +289,8 @@
           </div>
         </div>
       </div>
-<a href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="abordagens-computacionais-e-moleculares-para-identificação-de-alvos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

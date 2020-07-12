@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>16 Referências | DBG0061 - Portfólio</title>
+  <title>15 miRNAs artificiais, miméticos e superexpressão de miRNAs endógenos | DBG0061 - Portfólio</title>
   <meta name="description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta property="og:title" content="15 miRNAs artificiais, miméticos e superexpressão de miRNAs endógenos | DBG0061 - Portfólio" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="16 Referências | DBG0061 - Portfólio" />
+  <meta name="twitter:title" content="15 miRNAs artificiais, miméticos e superexpressão de miRNAs endógenos | DBG0061 - Portfólio" />
   
   <meta name="twitter:description" content="Meu portfólio para a disciplina DBG0061-RNAs não codantes" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html"/>
-
+<link rel="prev" href="estratégias-para-depleção-de-mirnas.html"/>
+<link rel="next" href="referências.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -235,43 +235,34 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="referências" class="section level1">
-<h1><span class="header-section-number">16</span> Referências</h1>
+<div id="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos" class="section level1">
+<h1><span class="header-section-number">15</span> miRNAs artificiais, miméticos e superexpressão de miRNAs endógenos</h1>
+<div id="qual-a-relevância-em-se-aumentar-os-niveis-de-mirnas" class="section level2">
+<h2><span class="header-section-number">15.1</span> Qual a relevância em se aumentar os niveis de miRNAs?</h2>
+<p>Assim como existem pontos relevantes em se superexpressar/inibir genes codantes, também existem tais pontos se tratando de miRNAs: Superexpressão pode acarretar o surgimento de novos fenótipos, servindo tanto para se estudar mais a fundo a função do miRNA analisado, quanto para criar características fenotípicas desejáveis para uma determinada aplicação, como a terapia anti-câncer.</p>
+<div id="quais-as-estratégias-para-aumentar-esta-expressão" class="section level3">
+<h3><span class="header-section-number">15.1.1</span> Quais as estratégias para aumentar esta expressão?</h3>
+<p>Algo coberto brevemente em aulas anteriores, as abordagens possíveis são, de forma geral, o mesmo que ocorre em genes codantes, se baseando na transfecção de vetores de expressão ou na realização de mutações de ganho de função.</p>
+</div>
+</div>
+<div id="o-que-são-amirnas-como-devem-ser-projetados-e-construidos" class="section level2">
+<h2><span class="header-section-number">15.2</span> O que são amiRNAs? Como devem ser projetados e construidos?</h2>
+<p>amiRNAs são microRNAs criados artificialmente, uma tecnologia parcialmente sintética e controlada para silenciamento gênico. Por tirarem proveito de um pre-miRNA natural para sua síntese, possuem maior estabilidade e proporcionam aos pesquisadores maior controle sobre o processo como um todo, algo que era preocupante em outras técnicas artificiais de silenciamento gênico, como a superexpressão de siRNAs, que acarretava consigo riscos de inespecificidade e baixa eficiência, podendo causar até eventos de auto-silenciamento, o que comprometeria o estudo.</p>
+<p>Na projeção dos amiRNAs, tem-se como regras gerais que eles preencham as mesmas características organizacionais que miRNAs naturais, isto é, uracila na ponta 5’, instabilidade na ligação dessa 5’ no dúplex, uma adenina na posição 10, favorecimento termodinâmico da fita guia, etc. Além dessas qualidades, os artificiais devem preencher requisitos específicos no seu pareamento com o alvo, de forma a evitar que a energia livre total exceda <strong>30kcal/mol</strong>. Nesse sentido, existem ferramentas de bioinformática para auxiliar na projeção, como o WMD, garantindo que essas demandas sejam preenchidas.</p>
+<p>A construção se baseia primariamente em uma mutação sítio-dirigida num pre-miRNA endógeno, resumidamente - como está descrito na imagem abaixo - há a combinação de produtos de PCR até que haja a estrutura secundária característica de um pre-miRNA endógeno, porém com a sequência funcional alterada, que então pode passar subsequentemente pelos procedimentos normais da biogênese de miRNAs.</p>
+<p><img src="pics/amirnas.png" /></p>
+</div>
+<div id="como-usar-o-silenciamento-gênico-no-estudo-da-função-gênica" class="section level2">
+<h2><span class="header-section-number">15.3</span> Como usar o silenciamento gênico no estudo da função gênica?</h2>
+<p>Alguns dos exemplos trazidos no livro demonstram o uso desses amiRs em câncer, com o exemplo de que a introdução de um amiRNA que antagoniza o receptor de quimiocina CXCR4 em células de câncer de mama reduziu a agressividade do processo metastático, ilustrando tanto a importância desse gene para o prosseguimento do câncer quanto a potencialidade desse amiRNA como um composto terapêutico.</p>
+</div>
+<div id="o-que-são-os-mirnas-miméticos-e-quais-suas-aplicações" class="section level2">
+<h2><span class="header-section-number">15.4</span> O que são os miRNAS miméticos e quais suas aplicações?</h2>
+<p>É um miRNA dúplex totalmente sintético, ou seja, não utiliza um esqueleto natural, como os amiRNAs. Isso traz consigo benefícios, como não depender do processamento que os amiRNAs dependem, porém também deixa as moléculas mais vulneráveis à degradação intracelular e possuindo a capacidade de desencadear respostas imunes.</p>
+<p>Os controles negativos seguem as mesmas ideias de outros controles negativos em experimentos laboratoriais que utilizam miRNAs, como mudanças na sequência <em>seed</em>, <em>scrambling</em>, etc. Existem diversas estratégias de introdução dessas moléculas na célula/organismo, podendo, por exemplo, serem inseridas através de lipossomos.</p>
+<p>miRNAs miméticos funcionais são aqueles com sequências totalmente novas, criados, por exemplo, para alvos que não possuem silenciadores endógenos.</p>
+<p>O livro traz como aplicação mais vista a utilização deles como supressores tumorais em eventos de câncer, a exemplo do mimético de miR-34, que age na regulação da apoptose e do ciclo celular, ilustrando assim, mais uma vez, o potencial de miRNAs e seus derivados no controle do processo neoplásico.</p>
 
-<div id="refs" class="references">
-<div id="ref-Alivernini_2018">
-<p>Alivernini, Stefano, Elisa Gremese, Charles McSharry, Barbara Tolusso, Gianfranco Ferraccioli, Iain B. McInnes, and Mariola Kurowska-Stolarska. 2018. “MicroRNA-155at the Critical Interface of Innate and Adaptive Immunity in Arthritis.” <em>Frontiers in Immunology</em> 8 (January). <a href="https://doi.org/10.3389/fimmu.2017.01932">https://doi.org/10.3389/fimmu.2017.01932</a>.</p>
-</div>
-<div id="ref-Bolton_2004">
-<p>Bolton, Patrick F., Marijcke W. M. Veltman, Emma Weisblatt, Joanne R. Holmes, N. Simon Thomas, Sheila A. Youings, Russell J. Thompson, et al. 2004. “Chromosome 15q11-13 Abnormalities and Other Medical Conditions in Individuals with Autism Spectrum Disorders.” <em>Psychiatric Genetics</em> 14 (3): 131–37. <a href="https://doi.org/10.1097/00041444-200409000-00002">https://doi.org/10.1097/00041444-200409000-00002</a>.</p>
-</div>
-<div id="ref-Kasinski_2011">
-<p>Kasinski, Andrea L., and Frank J. Slack. 2011. “MicroRNAs En Route to the Clinic: Progress in Validating and Targeting microRNAs for Cancer Therapy.” <em>Nature Reviews Cancer</em> 11 (12): 849–64. <a href="https://doi.org/10.1038/nrc3166">https://doi.org/10.1038/nrc3166</a>.</p>
-</div>
-<div id="ref-Kim_2020">
-<p>Kim, Haedong, Jimi Kim, Sha Yu, Young-Yoon Lee, Junseong Park, Ran Joo Choi, Seon-Jin Yoon, Seok-Gu Kang, and V. Narry Kim. 2020. “MicroRNA Arm Switching Regulated by Uridylation,” April. <a href="https://doi.org/10.1101/2020.04.06.027813">https://doi.org/10.1101/2020.04.06.027813</a>.</p>
-</div>
-<div id="ref-Lagos_Quintana_2001">
-<p>Lagos-Quintana, M. 2001. “Identification of Novel Genes Coding for Small Expressed RNAs.” <em>Science</em> 294 (5543): 853–58. <a href="https://doi.org/10.1126/science.1064921">https://doi.org/10.1126/science.1064921</a>.</p>
-</div>
-<div id="ref-Lau_2001">
-<p>Lau, N. C. 2001. “An Abundant Class of Tiny RNAs with Probable Regulatory Roles in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 858–62. <a href="https://doi.org/10.1126/science.1065062">https://doi.org/10.1126/science.1065062</a>.</p>
-</div>
-<div id="ref-Lee_2001">
-<p>Lee, R. C. 2001. “An Extensive Class of Small RNAs in Caenorhabditis Elegans.” <em>Science</em> 294 (5543): 862–64. <a href="https://doi.org/10.1126/science.1065329">https://doi.org/10.1126/science.1065329</a>.</p>
-</div>
-<div id="ref-Madhavan_2013">
-<p>Madhavan, Dharanija, Katarina Cuk, Barbara Burwinkel, and Rongxi Yang. 2013. “Cancer Diagnosis and Prognosis Decoded by Blood-Based Circulating microRNA Signatures.” <em>Frontiers in Genetics</em> 4. <a href="https://doi.org/10.3389/fgene.2013.00116">https://doi.org/10.3389/fgene.2013.00116</a>.</p>
-</div>
-<div id="ref-Sahoo_2008">
-<p>Sahoo, Trilochan, Daniela del Gaudio, Jennifer R German, Marwan Shinawi, Sarika U Peters, Richard E Person, Adolfo Garnica, Sau Wai Cheung, and Arthur L Beaudet. 2008. “Prader-Willi Phenotype Caused by Paternal Deficiency for the HBII-85 c/d Box Small Nucleolar RNA Cluster.” <em>Nature Genetics</em> 40 (6): 719–21. <a href="https://doi.org/10.1038/ng.158">https://doi.org/10.1038/ng.158</a>.</p>
-</div>
-<div id="ref-Skalsky_2010">
-<p>Skalsky, Rebecca L., and Bryan R. Cullen. 2010. “Viruses, microRNAs, and Host Interactions.” <em>Annual Review of Microbiology</em> 64 (1): 123–41. <a href="https://doi.org/10.1146/annurev.micro.112408.134243">https://doi.org/10.1146/annurev.micro.112408.134243</a>.</p>
-</div>
-<div id="ref-Vejnar_2012">
-<p>Vejnar, Charles E., and Evgeny M. Zdobnov. 2012. “miRmap: Comprehensive Prediction of microRNA Target Repression Strength.” <em>Nucleic Acids Research</em> 40 (22): 11673–83. <a href="https://doi.org/10.1093/nar/gks901">https://doi.org/10.1093/nar/gks901</a>.</p>
-</div>
 </div>
 </div>
             </section>
@@ -279,8 +270,8 @@
           </div>
         </div>
       </div>
-<a href="mirnas-artificiais-miméticos-e-superexpressão-de-mirnas-endógenos.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="estratégias-para-depleção-de-mirnas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referências.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

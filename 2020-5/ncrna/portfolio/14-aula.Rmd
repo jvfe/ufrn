@@ -1,0 +1,33 @@
+# miRNAs artificiais, miméticos e superexpressão de miRNAs endógenos
+
+## Qual a relevância em se aumentar os niveis de miRNAs?
+
+Assim como existem pontos relevantes em se superexpressar/inibir genes codantes, também existem tais pontos se tratando de miRNAs: Superexpressão pode acarretar o surgimento de novos fenótipos, servindo tanto para se estudar mais a fundo a função do miRNA analisado, quanto para criar características fenotípicas desejáveis para uma determinada aplicação, como a terapia anti-câncer.
+
+### Quais as estratégias para aumentar esta expressão?
+
+Algo coberto brevemente em aulas anteriores, as abordagens possíveis são, de forma geral, o mesmo que ocorre em genes codantes, se baseando na transfecção de vetores de expressão ou na realização de mutações de ganho de função.
+
+## O que são amiRNAs? Como devem ser projetados e construidos?
+
+amiRNAs são microRNAs criados artificialmente, uma tecnologia parcialmente sintética e controlada para silenciamento gênico. Por tirarem proveito de um pre-miRNA natural para sua síntese, possuem maior estabilidade e proporcionam aos pesquisadores maior controle sobre o processo como um todo, algo que era preocupante em outras técnicas artificiais de silenciamento gênico, como a superexpressão de siRNAs, que acarretava consigo riscos de inespecificidade e baixa eficiência, podendo causar até eventos de auto-silenciamento, o que comprometeria o estudo.
+
+Na projeção dos amiRNAs, tem-se como regras gerais que eles preencham as mesmas características organizacionais que miRNAs naturais, isto é, uracila na ponta 5', instabilidade na ligação dessa 5' no dúplex, uma adenina na posição 10, favorecimento termodinâmico da fita guia, etc. Além dessas qualidades, os artificiais devem preencher requisitos específicos no seu pareamento com o alvo, de forma a evitar que a energia livre total exceda **30kcal/mol**. Nesse sentido, existem ferramentas de bioinformática para auxiliar na projeção, como o WMD, garantindo que essas demandas sejam preenchidas. 
+
+A construção se baseia primariamente em uma mutação sítio-dirigida num pre-miRNA endógeno, resumidamente - como está descrito na imagem abaixo - há a combinação de produtos de PCR até que haja a estrutura secundária característica de um pre-miRNA endógeno, porém com a sequência funcional alterada, que então pode passar subsequentemente pelos procedimentos normais da biogênese de miRNAs.
+
+![](./pics/amirnas.png)
+
+## Como usar o silenciamento gênico no estudo da função gênica?
+
+Alguns dos exemplos trazidos no livro demonstram o uso desses amiRs em câncer, com o exemplo de que a introdução de um amiRNA que antagoniza o receptor de quimiocina CXCR4 em células de câncer de mama reduziu a agressividade do processo metastático, ilustrando tanto a importância desse gene para o prosseguimento do câncer quanto a potencialidade desse amiRNA como um composto terapêutico.
+
+## O que são os miRNAS miméticos e quais suas aplicações? 
+
+É um miRNA dúplex totalmente sintético, ou seja, não utiliza um esqueleto natural, como os amiRNAs. Isso traz consigo benefícios, como não depender do processamento que os amiRNAs dependem, porém também deixa as moléculas mais vulneráveis à degradação intracelular e possuindo a capacidade de desencadear respostas imunes. 
+
+Os controles negativos seguem as mesmas ideias de outros controles negativos em experimentos laboratoriais que utilizam miRNAs, como mudanças na sequência *seed*, *scrambling*, etc. Existem diversas estratégias de introdução dessas moléculas na célula/organismo, podendo, por exemplo, serem inseridas através de lipossomos.
+
+miRNAs miméticos funcionais são aqueles com sequências totalmente novas, criados, por exemplo, para alvos que não possuem silenciadores endógenos.
+
+O livro traz como aplicação mais vista a utilização deles como supressores tumorais em eventos de câncer, a exemplo do mimético de miR-34, que age na regulação da apoptose e do ciclo celular, ilustrando assim, mais uma vez, o potencial de miRNAs e seus derivados no controle do processo neoplásico.

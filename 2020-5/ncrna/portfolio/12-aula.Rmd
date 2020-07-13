@@ -51,11 +51,11 @@ Possui baixa escalabilidade, pois fica inviável analisar mais de um alvo de uma
 
 ![](./pics/race.png)
 
-Após a clivagem do RNA alvo pela argonauta, acontece a ligação de um adaptador na extremidade recém-exposta, há a síntese de uma fita de cDNA por meio da transcriptase reversa, e então essa fita passa por PCR, uma não-específica, e outra específica, de forma que após o sequenciamento dos fragmentos amplificados, possam ser discriminadas a sequência alvo onde o miRNA se ligou e onde houve a clivagem.d
+Após a clivagem do RNA alvo pela argonauta, acontece a ligação de um adaptador na extremidade recém-exposta, há a síntese de uma fita de cDNA por meio da transcriptase reversa, e então essa fita passa por PCR, uma não-específica, e outra específica, de forma que após o sequenciamento dos fragmentos amplificados, possam ser discriminadas a sequência alvo onde o miRNA se ligou e onde houve a clivagem.
 
 ## Como identificar alvos de miRNAs em escala genômica?
 
-* **GMUCT**: Técnica derivada da PARE, que por sua vez é derivada da 5' RACE. Ocorre com a ligação de adaptadores à 5' exposta pela clivagem do miRNA, onde a enzima MmeI ancora e cliva, gerando uma sequência de 20nt a qual provavelmente é o ponto de reconhecimento do miRNA e expondo uma extremidade a 3', onde outro adaptador pode se ligar. A biblioteca é então amplificada por PCR direcionada aos oligonucleotídoes das sequências adaptadora. A biblioteca pode passar então, por sequenciamento (NGS), podendo assim ser analisada por bioinformática.
+* **GMUCT**: Técnica derivada da PARE, que por sua vez é derivada da 5' RACE. Ocorre com a ligação de adaptadores à 5' exposta pela clivagem do miRNA, onde a enzima MmeI ancora e cliva, gerando uma sequência de 20nt a qual provavelmente é o ponto de reconhecimento do miRNA e expondo uma extremidade a 3', onde outro adaptador pode se ligar. A biblioteca é então amplificada por PCR direcionada aos oligonucleotídoes das sequências adaptadoras. A biblioteca pode passar então, por sequenciamento (NGS), podendo assim ser analisada por bioinformática.
 
 ## Imunoprecipitação de proteínas Argonauta
 

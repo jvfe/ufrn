@@ -2,7 +2,7 @@
 
 ## O que são os antimiRs? Quais são seus tipos e como eles atuam?
 
-São sequências curtas complementares aos miRNAs, construídas artificialmente, nesse sentido, agem interferindo com a ação normal dos miRNAs, impedindo que eles, por exemplo, inibam a expressão de um mRNA-alvo. É claro, para garantir sua estabilidade no organismo, o que possibilitaria a realização de suas funções, os antimiRs precisam passar por uma série de modificações, e existem várias estratégias diferentes para este fim. Portanto, uma classificação de antimiRs vai de acordo com o tipo de modificação que eles sofrem, abaixo trago algumas.
+São sequências curtas complementares aos miRNAs, construídas artificialmente. Nesse sentido, agem interferindo com a ação normal dos miRNAs, impedindo que eles, por exemplo, inibam a expressão de um mRNA-alvo. É claro, para garantir sua estabilidade no organismo, o que possibilitaria a realização de suas funções, os antimiRs precisam passar por uma série de modificações, e existem várias estratégias diferentes para este fim. Portanto, uma classificação de antimiRs vai de acordo com o tipo de modificação que eles sofrem, abaixo trago algumas.
 
 * **antagomiRs** são antimiRs conjugados a uma molécula de colesterol, pela molécula de colesterol ser tão difusa dentro do organismo e existirem mecanismos auxiliares na sua proteção e carreamento, a conjugação do oligonucleotídeo com esses componentes por vezes traz benefícios para seu uso *in vivo*.
 

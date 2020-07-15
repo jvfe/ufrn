@@ -1,0 +1,44 @@
+# Riboswitches e ncRNAs bifuncionais
+
+## Riboswitches
+
+O nome indica um mecanismo análogo à uma alavanca ou interruptor, controlando eventos moleculares: São segmentos regulatórios, geralmente em sequências 5' UTR de mRNAs de procariotos, que possuem a capacidade de detectar moleculas pequenas, como metabólitos, e regular a expressão gênica. Sua biogênese está diretamente associada a transcrição do miRNA que habitam e possuem dois principais componentes estruturais, o aptâmero, responsável pelo reconhecimento e interação com determinado metabólito, e a plataforma de expressão, que realiza sua função na regulação gênica.
+
+Ilustram mais um forte argumento para a teoria do mundo dos RNAs, caracterizando um mecanismo ancestral ribonucléico com a capacidade de se ligar especificamente a moléculas pequenas, algo que muitas vezes é associado unicamente a proteínas.
+
+Atuam a *cis*, portanto estão relacionados aos mesmos processos metabólicos do mRNA que habitam. Sua ação geralmente se resume a terminação prematura da transcrição ou tradução, a primeira das duas se dá pela formação de um *hairpin* seguido por uma sequência repetitiva de uracilas, caracterizando a terminação rhô-independente. A regulação da tradução é ocasionada por exposição ou bloqueio do *ribossome binding site*.
+
+### Análise e aplicações
+
+A análise de sua estrutura geralmente é guiada pela técnica mais comum de análise estrutural, a cristalografia de raios-X, que se baseia na projeção da difração dos raios-X numa estrutura cristalizada. Porém, essa análise também pode se dar por *in-line probing*, que se dá com uma interpretação comparativa da fragmentação espontânea de ribonucleotídeos pareados versus livres, o que pode elucidar sítios de ligação e a estrutura secundária, como ilustrado na figura abaixo. A análise funcional se baseia na conhecida utilização de genes repórteres na sequência de estudo. 
+
+![](./pics/inlineprob.png)
+[@Regulski_2008]
+
+Em biotecnologia, vê-se duas linhas principais de oportunidade dos riboswitches, uma delas é o desevolvimento de novos antibióticos, pois pode regular expressão de genes vitais à célula bacteriana, e outra é o uso delas para o controle da expressão em organismos eucarióticos, constituindo um componente em potencial da terapia gênica.
+
+## ncRNAs bifuncionais
+
+Impressionantes RNAs com a capacidade simultânea de regulação gênica e codificação proteica. O livro traz dois principais expoentes dessa classe, que falaremos a seguir.
+
+### RNAIII
+
+Exclusiva do gênero *Staphylococcus*, é a principal molécula efetora do *quorum sensing* (neste caso ativado por alta densidade celular), colaborando com a virulência desses organismos. 
+
+Sua expressão é aumentada no fim da fase exponencial, onde regulará negativamente proteínas de superfície, o que possibilita maior mobilidade no meio, e regulará positivamente exoproteínas associadas a lesão tecidual, como ocorre por sua regulação negativa do fator de transcrição *rot* - através da oclusão de sua sequência Shine-Dalgarno - o que possibilita maior produção dessas moléculas.
+
+E, é claro, não podemos esquecer a razão pela qual é caracterizado como bifuncional: Codifica, em sua porção 5', o pequeno peptídeo hemolítico **hld**.
+
+Por ser um fator tão importante para a virulência dessas bactérias, ele é estudado como possível alvo para inibição terapêutica, porém sua regulação negativa de proteínas superficiais pode agir como um contraponto a isto, possibilitando, caso haja sua inibição, uma maior adesão bacteriana, o que pode originar infecções mais duradouras.
+
+### SgrS RNA
+
+Originalmente visto apenas em *E. coli*, também foram observados homólogos em outras espécies e gêneros como *S. enterica* e *Citrobacter*, irei me ater ao de *E. coli*, por ser o mais bem descrito.
+
+Ativado em resposta a sinais de estresse de açúcares na célula, coisas que podem ocasionar redução metabólica ou morte, como a acumulação de intermediários glicolíticos (ex. G6P), seu principal processo regulatório se desencadeia através de sua ligação com a *Hfq*, uma chaperona que possbilita sua interação com o mRNA do transportador de glicose *ptsG*, o que resulta na sua degradação mediada por RNAse E e subsequente redução nos níveis de captação de glicose.
+
+Sua bifuncionalidade vem da codificação do peptídeo **SgrT**, que também atua nos captadores ptsG, porém no seu produto protéico, bloqueando a captação, e não no seu mRNA.
+
+### Análise de ncRNAs bifuncionais
+
+Geralmente se dá por métodos convencionais discutidos anteriormente, como RNA-Seq, hibridização e RT-qPCR, porém com forte auxílio de ferramentas de bioinformática que possam predizer estruturas secundárias e detectar motivos de ligação, como o SwiSpot [@Barsacchi_2016]. 

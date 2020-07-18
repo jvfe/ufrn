@@ -1,0 +1,26 @@
+# eRNA, uaRNAs e TASRs e aTASRs
+
+## eRNAs
+
+São uma classe de pequenos transcritos originados gerados a partir da sequência dos elementos regulatórios distais chamados *enhancer*. Podem ser ainda subdivididos em duas principais classes, *1D* e *2D*, que se diferenciam pelo estado de poliadenilação, tamanho e direção transcricional. Todos os conhecidos são transcritos pela RNA polimerase II, apresentam um cap em 5' e muitas vezes possuem diferentes modificações epigenéticas que podem caracterizá-los em subfamílias. A figura abaixo contrasta a formação de mRNAs e a transcrição de eRNAs.
+
+![](https://upload.wikimedia.org/wikipedia/commons/8/8f/Figure_1_final.png)
+Por <a href="//commons.wikimedia.org/w/index.php?title=User:Pclermont&amp;action=edit&amp;redlink=1" class="new" title="User:Pclermont">Pclermont </a><a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=24921630">Link</a>
+
+Seus mecanismos de ação na regulação positiva da expressão gênica são variados, porém são mencionadas 3 formas distintas e relativamente bem descritas:
+
+* Interação com o promotor do gene-alvo - regulando-o positivamente - através do *looping* possibilitado pela sua associação com o complexo mediador da transcrição.
+
+* Recrutamento de acetiltransferases para a região do gene-alvo.
+
+* Promover dissociação do fator negativo do elongamento, possibilitando ocorrência da transcrição.
+
+## uaRNAs
+
+Também chamados de PROMPTs, são originados da transcrição antisenso de regiões promotoras bidirecionais de genes codantes. Muitas vezes possuem uma meia vida curta, se mantendo em baixas concentrações na célulla, apesar de possuirem estruturas protetoras, como cauda poli-A e cap 5' estarem presentes. Apesar de ainda não terem função conhecida, possuem algumas características mútuas com os eRNAs, como modificações epigenéticas e degradação pelo complexo exossomo. 
+
+## TASRs e aTASRs
+
+São pequenos RNAs - descobertos em 2010 - associados às regiões terminais dos genes codantes (3'), podendo ser originados a senso (TASRs) ou antisendo (aTASRs) de seu respectivo gene. Ainda não se sabe exatamente como essa classe é formada dentro da célula, porém aparentam ser formados pela ação de DNA polimerases, sendo amplificados por RNA polimerases dependentes de RNA, cujo produto é finalmente clivado pela ação da RNase III. 
+
+Também não se sabe por completo seus mecanismos e sua função, porém, por consequência do seu processo de formação, possuem complementaridade com as regiões 3' dos genes que os encapsulam, portanto, possivelmente têm a capacidade de regulá-los negativamente. Outros mecanismos também parecem estar surgindo, como a sua participação na formação da subunidade menor do ribossomo em leveduras.

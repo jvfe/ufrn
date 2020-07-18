@@ -1,0 +1,39 @@
+# snRNP 7SK e 7SL e SL
+
+## 7SK RNA
+
+Um snRNA encontrado em Metazoa, tanto em invertebrados quanto em humanos, que atua indiretamente na regulação da expressão gênica, através da sua integração em um complexo riboproteico chamado 7SK snRNP.
+É transcrito pela RNA polimerase III e costuma possuir uma estrutura secundária variável, com motivos secundários conservados ao longo das espécies, ilustrada pela figura abaixo.
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/96/RF00100.jpg)
+
+Sua ação dentro da célula ocorre por meio da seguinte sequência de processos:
+
+* Ligação de LARP7 nas uracilas de sua extremidade 3' e MePCE, que metila sua região 5'. Estas ligações são necessárias para a estabilização inicial do RNA.
+
+* Ligação da proteína HEXIM a um motivo conservado de sua estrutura secundária chamado de SL1-loop, esta ligação altera a estrutura da HEXIM, permitindo que esta capture o fator de elongamento P-TEFb.
+
+* Uma vez ligado, o P-TEFb, um dos responsáveis pelo elongamento da RNA polimerase II, tem seu sítio ativo inativado, impedindo sua ação natural e, portanto, diminuindo a expressão gênica.
+
+* Esta ligação é reversível e, dado que haja necessidade da célula de utilizar a P-TEFb, surgem proteínas, como a Brd4, que causam a dissociação dela e da HEXIM, seus postos sendo ocupados por hnRNPs.
+
+A figura abaixo ilustra o processo geral, como descrito acima.
+
+![](https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Regulation_of_P-TEFb_by_the_7SK_snRNP.jpg/800px-Regulation_of_P-TEFb_by_the_7SK_snRNP.jpg)
+Por <a href="//en.wikipedia.org/w/index.php?title=User:David_H._Price&amp;action=edit&amp;redlink=1" class="new" title="User:David H. Price">David H. Price</a> <a href="https://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a>, <a href="https://en.wikipedia.org/w/index.php?curid=35473945">Link</a>
+
+## 7SL RNA
+
+Também chamado de SRP RNA, é um snRNA envolvido no processo de reconhecimento de sinal de direcionamento, ou seja, a migração intracelular do ribossomo, que é necessária no caso de proteínas como as transmembrana, que precisam passar por modificações pós-traducionais no retículo endoplasmático rugoso. É transcrito pela RNA polimerase III e possui em sua sequência promotores internos e externos **(Não tenho certeza se compreendi inteiramente isso)**.
+
+Sua principal função ocorre por meio da sua interação com outras ribonucleoproteínas, formando um complexo que irá reconhecer as sequências de direcionamento nas proteínas nascentes, realizando, com auxílio de GTP, a migração do ribossomo responsável para a membrana do R.E.R., onde elas poderão passar pelas modificações necessárias.
+
+Além disso, ele aparenta ter uma função oncogênica, pois pode se ligar à 3' UTR do GST TP53, regulando-o negativamente.
+
+## SL RNA
+
+São snRNAs observados geralmente em tripanossomatídeos e são componentes indispensáveis do processo molecular característico dessas espécies, o *trans-splicing*, sua sequência estando presente em quase todos os pre-mRNAs produzidos por elas.
+É transcrito inicialmente em forma de grampo pela RNA polimerase II com o auxílio de diversos fatores, como TRF4 e TFIIB - formadores do complexo de pré-iniciação. Possuem uma característica adição de um cap 5', que, uma vez realizada, os deixa prontos para realizar sua função.
+
+Sua função é basicamente a de possibilitar o processamento de pre-mRNAs (por meio do já mencionado *trans-splicing*): Ele (SL) é fusionado a esses transcritos no ponto de ramificação, 
+formando a sua porção 5' e proporcionando a ligação de uma cauda poli-A em 3'. Em decorrência dessa associação (SL-pre-mRNA), há a estabilização do transcrito e, também, a formação de uma estrutura secundária reconhecida pelo spliceossomo, permitindo o processamento dessas moléculas e subsequente expressão gênica.

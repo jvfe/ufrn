@@ -1,0 +1,29 @@
+# Fragmentos de tRNA e ncRNA derivados de pseudogenes
+
+## tRFs e tiRNAs {#trna_frag}
+
+São RNAs não codantes originados por fragmentos de RNAs transportadores. Há uma forte associação entre o nível de expressão desses fragmentos e a condição de estresse celular, a partir disso constituem-se os tiRNAs (também chamados de tRNAs halves - por serem exatamente metade de um tRNA completo), cujo nome aponta sua indução por estresse. Sua descoberta e o início de seu estudo datam de 2005, quando se pensava que esses fragmentos, por estarem relacionados intimamente com situações de estresse, seriam resultados de degradação aleatória, algo que posteriormente (2009) foi provado incorreto, quando o sequenciamento de células neoplásicas indicou um processamento separado e específico para essa classe.
+
+A sua biogênese ainda não foi totalmente elucidada, porém acredita-se que a formação de tiRNAs se dê pela clivagem de tRNAs maduros pelas RNases A e a formação dos tRFs originando-se ou da extremidade 3' de tRNAs imaturos ou da extremidade 5' de tRNAs maduros - que provavelmente passam por biogênese distinta. Além disso, há uma forte possibilidade de tRFs estarem associados ao processamento por Dicer, como os miRNAs, algo indicado por imunoprecipitações em que se observaram tRFs ligados a Argonautas.  
+
+Ainda também não se entende suas funções, porém alguns tRFs parecem regular negativamente a tradução, interagindo com o PTC e interferindo com sua atividade. Alguns tiRNAs parecem interferir com o início da tradução indiretamente, por meio da ativação de outros fatores regulatórios dentro da célula, como o YB1. Ainda mais, alguns tRFs parecem atuar na proteção genômica, como interferindo com a ação de transposons. Além disso, novas possíveis funções continuam sendo descobertas, o que ilustra a grande gama de processos nos quais esses ncRNAs podem estar envolvidos.
+
+## ncRNAs derivados de pseudogenes
+
+Pseudogenes foram caracterizados originalmente como segmentos genômicos que, decorrentes da retenção de mutações, se tornaram sem função aparente, apesar de se assemelharem a genes codantes, muitos deles sendo cópias desses genes. Porém, NGS e as tecnologias mais recentes mudaram totalmente essa perspectiva: Alguns pseudogenes possuem a capacidade de serem transcritos e, provavelmente, exercerem funções na célula. Características comuns de pseudogenes são sua ausência de íntrons e promotores próprios e a presença de mutações de *frame-shift*, além, é claro, de apresentarem uma organização similar a de genes codantes. 
+
+Os pseudogenes costumam ser classificados quanto à sua origem:
+
+* *Não processados* ainda possuem íntrons, promotor e outras estruturas genômicas comuns aos genes codantes, podendo até serem capazes de transcrição e tradução. Como são basicamentes uma segunda cópia de um gene, geralmente estando até próximos do gene original, não há bastante necessidade para protegê-los de eventos genômicos como mutações, deleções e inserções (baixa pressão seletiva), resultando muitas vezes em perdas da função original. 
+
+* *Processados* geralmente são resultados de retrotransposon, ou seja, a inserção da sequência de um mRNA processado no genoma. Por virtude desse processo, podem estar genomicamente distantes do gene original, possibilitando significativas alterações, porém também dependendo de um promotor alheio, portanto, pseudogenes processados só poderão ser transcritos se estiverem numa posição e num sentido favorável de um promotor de um gene próximo.
+
+* *Mitocondrial*, resultante de integrações falhas de genes mitocondriais no genoma nuclear.
+
+Quanto a função, ainda não se conhecem totalmente os mecanismos pelos quais os pseudogenes agem dentro da célula, no entanto, alguns papeis gerais já foram parcialmente elucidados:
+
+* Atuação na regulação da função de miRNAs por meio de sua ação como ceRNAs: Captura e, portanto, interferência em miRNAs por meio da formação de estruturas chamadas "esponjas".
+
+* Formação de pequenos RNAs de interferência que podem atuar regulando negativamente a expressão gênica de seus genes-alvo.
+
+A análise laboratorial se dá da mesma forma que outras extrações de RNA mencionadas anteriormente no portfólio, porém se atentando com maior cuidado à especificidade dos *primers* e evitando-se ao máximo contaminações, visto que possuem sequências semelhantes aos genes originais. Computacionalmente, há análises comuns de expressão gênica, porém, para identificá-los na amostra, necessitamos de mapeamentos mais restritivos e utilizar modelos preditivos de eventos genéticos, para se evitar possíveis falsos positivos advindos da semelhança natural que existe e esmiuçar exatamente como pode ter acontecido a perda de função. Nesse sentido, já existem metodologias e protocolos computacionais para esse fim, como *PseudoGeneQuest* e *PseudoPipe*, além de bancos de dados dedicados, como o *PseudoFam*.

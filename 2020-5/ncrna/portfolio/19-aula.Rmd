@@ -1,0 +1,39 @@
+# RNAs guia e o sistema CRISPR-Cas
+
+## RNAs guia
+
+São RNAs de fita simples observados nas espécies da ordem Kinetoplastida, atuantes na edição de mRNAs mitocondriais desses organismos. Sua estrutura, que muitas vezes pode se apresentar na forma de gramp, possui 3 principais componentes, a âncora em 5', a região de informação, esta que determinará sua função na célula, e a a cauda oligo(U) em 3'. 
+
+Sua biogênese é realizada através da transcrição de estruturas mitocondriais chamadas maxicírculos e minicírculos, localizadas nos cinetoplastos, onde estarão presentes os genes de gRNAs. Essa transcrição é inicialmente propiciada pelo reconhecimento de uma sequência conservada pelo complexo mtRNA polimerase-MRB1, após a transcrição há a formação de um transcrito com vários gRNAs, que é processado e poliuridilado pela KRET1, originando os gRNAs funcionais.
+
+O mecanismo de edição dos mRNAs mitocondriais, necessários para correções no seu *frame* e, consequentemente, geração de proteínas funcionais, se dá da seguinte forma:
+
+* Associação da região âncora com o pre-mRNA-alvo, o que propiciará a hibridização do restante da sequência do gRNA com seu alvo.
+
+* *Mismatches* da região de informação com a sequência do mRNA-alvo indicarão as regiões que devem passar por processamento, por exemplo, a quantidade de U que deve ser retirada ou adicionada.
+
+* Endonucleases reconhecem o mau-pareamento e clivam a sequência, que só permanece organizada por virtude da sua hibridização com as sequências terminais do gRNA.
+
+* KRET2 e KREX1 realizam inserções e deleções de U.
+
+* Por fim, os dois fragmentos do mRNA são concatenados por meio de uma RNA Ligase.
+
+O mRNA, uma vez processado, poderá gerar uma proteína funcional. Deve-se mencionar que gRNAs possivelmente também atuam na diversidade proteica intracelular, pois é observado que um mesmo gRNA pode proporcionar edições alternativas, resultando, dessa forma, em proteínas ligeiramente diferentes. 
+
+## CRIPSR-Cas
+
+Constitui uma forma primitiva de sistema imune contra bacteriófagos, presente em muitos procariotos. O mecanismo geral tira proveito do reconhecimento da sequência nucleica desses bacteriófagos, clivando-a e integrando seus fragmentos no genoma no que vai ser chamado de "sequências espaçadoras" (*clustered regularly interspaced short palindromic repeats*), dessa forma, o organismo retém a informação genética do seu parasita, podendo utilizá-la a seu favor caso haja outra infecção no futuro. 
+
+Essas sequências espaçadoras serão transcritas nos chamados RNAs CRISPR ou **crRNAs**, cuja forma precursora é processada pelos RNAs trans-ativadores ou **tracrRNAs** (No CRISPR-II). Essas duas classes de RNAs não codantes constituem o mecanismo de defesa desses procariotos, que foi extensivamente estudado e reaplicado em biotecnologia, porém utilizando os gRNAs anteriormente descritos.
+
+A biogênese dos *crRNAs* se dá com a transcrição inicial do pre-crRNA que, nas vias de tipo I e tipo III, são processados por endonucleases, porém, na via de tipo II e argumentavelmente a mais interessante, ocorre com reconhecimento das sequências espaçadoras pelos *tracrRNAs*, o que propiciará a clivagem pela RNase III, gerando um híbrido crRNA-tracrRNA funcionalmente ativos, que pode então ser acoplado à nuclease Cas9.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6tw_JVz_IEc?start=64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+O vídeo acima descreve de maneira intuitiva a forma de ação do complexo CRISPR-Cas9 na célula, além de suas aplicações biotecnológicas, porém, resumidamente ocorre da seguinte forma:
+
+* Infecção por patógeno desencadeia uma cascata de sinalização interna que resulta na formação de um crRNA. Esse transcrito, pós-processamento, se acopla na Cas9.
+
+* O complexo CRISPR-Cas reconhece as regiões complementares no material genético viral, com a atividade nuclease da Cas clivando-a.
+
+* No caso de uso do CRISPR-Cas em biotecnologia - ex. células eucarióticas - A zona de clivagem é então reparada, esse reparo pode se dar de duas formas, uma sendo a junção de pontas não-homólogas ou NHEJ, que realmente resultará na perda da região clivada, ou, caso haja a presença de uma fita homóloga, ocorre reparo direcionado por homologia ou HDR, que pode resultar num reparo mais competente da sequência.

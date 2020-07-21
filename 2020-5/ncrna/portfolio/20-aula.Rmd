@@ -1,0 +1,39 @@
+# RNAs associados a regiões promotoras e RNAs circulares
+
+## RNAs associados a regiões promotoras
+
+Por ser um processo intrisicamente complexo, a transcrição envolve diversos componentes, muitos deles associados com a regulação inicial, ou seja, como começar a transcrição. Tradicionalmente, a sequência de um gene possui uma estrutura chamada promotor, responsável pela reconhecimento e ligação inicial da RNA-Polimerase, além de servir como porto para outros fatores regulatórios. Ademais, foram descobertos uma série de RNAs codificantes associados a essas regiões, os quais discutiremos em seguida.
+
+### PASRs
+
+Pequenos RNAs localizados próximos de sítios de início de transcrição, podendo estar tanto a senso quanto a antisenso deste sítio.
+Sua organização genômica é difusa, podem estar presentes em regiões intrônicas, exônicas e até intergênicas.
+
+Não se conhece precisamente como esses RNAs são formados, porém a sua função celular provavelmente se relaciona com a regulação do processo transcricional, com estudos indicando quedas de expressão e promoção de modificações epigenéticas.
+
+### tiRNAs
+
+Não deve se confundir com os *tRNA halves* mencionados em \@ref(trna_frag), estes são assim chamados por que estão associados com o início da transcrição (*transcription initiation*).
+
+Possuem uma faixa mais restrita de tamanho que os PASRs, geralmente possuindo 18nt, também costuma estar em baixas concentrações. Dificilmente possuem vias próprias para biogênese, provavelmente dependendo de vias intracelulares já existentes, como a transcrição comum por RNA Polimerase II. Assim como os PASRs, possivelmente atuam na regulação da expressão gênica, talvez usufruindo de alterações epigenéticas.
+
+### STAR
+
+*Small Transcription Activating RNAs* - Sistema sintético para regulação da expressão gênica, baseia-se nos elementos atenuadores naturais da célula procariótica. Tira proveito de uma característica fundamental da terminação rhô-independente, a formação de um grampo que causa a dissociação da RNA polimerase do transcrito e o término da transcrição, no entanto, STARs são usados no sentido oposto: Ao hibridizarem com a sequência-alvo, impedem a formação completa do grampo, resultando na continuação da transcrição. A figura abaixo ilustra resumidamente o processo descrito, além de ilustrar a situação comum de término.
+
+![](https://main.bnchcdn.com/static/img/minisite/star/Figure2.png)
+
+[@Chappell_2015]
+
+## circRNAs
+
+RNAs não codantes que se organizam em uma estrutura circular ao invés da tradicional linear, portanto, constituem uma subclasse da grande família de RNAs circulares, na qual também possuimos variantes codantes, além de outras formas de processamento. 
+
+São formados por virtude de uma diferença no processamento spliceossômico, como está ilustrado na imagem abaixo. Esse mecanismo é chamado de *backsplicing*, pois há a união da extremidade 5' com a extremidade 3', formando-se uma ligação covalente e circularizando a molécula anteriomente linear. A figura abaixo ilustra como isso pode acarretar apenas a inclusão de alguns éxons ou também a inclusão de íntrons, além de mostrar o processo tradicional de *splicing* alternativo.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/CircRNA.svg/1280px-CircRNA.svg.png)
+Por <a href="//commons.wikimedia.org/wiki/User:Helixitta" title="User:Helixitta">Helixitta</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=56444195">Link</a>
+
+Podem agir como um RNA competitivo endógeno (ceRNA) na forma de *esponjas de miRNA*, agindo assim, na regulação da função de microRNAs. O exemplo trazido é do ciRS-7, que possui 60 sítios de ligação para o miR-7. No entanto, apenas uma pequena porção dos circRNAs atuam dessa forma, a exemplo dos ciRNAs, um tipo de circRNA derivado dos laços de íntrons formados durante o processamento que atuam na regulação transcricional dos seus mRNAs originais.
+
+Vale mencionar, por fim, que a análise computacional de circRNAs é algo que está sendo intensamente desenvolvido, pois etapas da preparação da biblioteca pré-sequenciamento podem interferir com a identificação desses RNAs *in silico*, apesar dos cuidados tomados, como degradação com RNase R e PCR validativa. Hoje existem vários métodos para predizer circRNAs em reads advindas de sequênciamento NGS, muitas baseadas numa simulação computacional subjacente dos mecanismos de *backsplicing*. Alguns deles são o KNIFE e o CIRCExplorer. [@L_pez_Jim_nez_2018]

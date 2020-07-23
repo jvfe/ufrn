@@ -13,6 +13,7 @@ Atuam a *cis*, portanto estão relacionados aos mesmos processos metabólicos do
 A análise de sua estrutura geralmente é guiada pela técnica mais comum de análise estrutural, a cristalografia de raios-X, que se baseia na projeção da difração dos raios-X numa estrutura cristalizada. Porém, essa análise também pode se dar por *in-line probing*, que se dá com uma interpretação comparativa da fragmentação espontânea de ribonucleotídeos pareados versus livres, o que pode elucidar sítios de ligação e a estrutura secundária, como ilustrado na figura abaixo. A análise funcional se baseia na conhecida utilização de genes repórteres na sequência de estudo. 
 
 ![](./pics/inlineprob.png)
+
 [@Regulski_2008]
 
 Em biotecnologia, vê-se duas linhas principais de oportunidade dos riboswitches, uma delas é o desevolvimento de novos antibióticos, pois pode regular expressão de genes vitais à célula bacteriana, e outra é o uso delas para o controle da expressão em organismos eucarióticos, constituindo um componente em potencial da terapia gênica.

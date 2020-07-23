@@ -26,7 +26,7 @@ Constitui uma forma primitiva de sistema imune contra bacteriófagos, presente e
 
 Essas sequências espaçadoras serão transcritas nos chamados RNAs CRISPR ou **crRNAs**, cuja forma precursora é processada pelos RNAs trans-ativadores ou **tracrRNAs** (No CRISPR-II). Essas duas classes de RNAs não codantes constituem o mecanismo de defesa desses procariotos, que foi extensivamente estudado e reaplicado em biotecnologia, porém utilizando os gRNAs anteriormente descritos.
 
-A biogênese dos *crRNAs* se dá com a transcrição inicial do pre-crRNA que, nas vias de tipo I e tipo III, são processados por endonucleases, porém, na via de tipo II e argumentavelmente a mais interessante, ocorre com reconhecimento das sequências espaçadoras pelos *tracrRNAs*, o que propiciará a clivagem pela RNase III, gerando um híbrido crRNA-tracrRNA funcionalmente ativos, que pode então ser acoplado à nuclease Cas9.
+A biogênese dos *crRNAs* se dá com a transcrição inicial do pre-crRNA que, nas vias de tipo I e tipo III, são processados por endonucleases, porém, na via de tipo II e argumentavelmente a mais interessante, ocorre com reconhecimento das sequências espaçadoras pelos *tracrRNAs*, o que propiciará a clivagem pela RNase III, gerando um híbrido crRNA-tracrRNA funcionalmente ativos, que pode então ser acoplado à nuclease Cas9. Deve-se mencionar que apesar do livro trazer apenas estes 3 tipos de CRISPR - por serem os melhores estudados, já foram descritos centenas de mecanismos diferentes, desde alguns extremamente similares, até muito distintos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6tw_JVz_IEc?start=64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

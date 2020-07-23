@@ -13,7 +13,7 @@ Não se conhece precisamente como esses RNAs são formados, porém a sua funçã
 
 ### tiRNAs
 
-Não deve se confundir com os *tRNA halves* mencionados em \@ref(trna_frag), estes são assim chamados por que estão associados com o início da transcrição (*transcription initiation*).
+Não deve se confundir com os *tRNA halves* mencionados em \@ref(frag), estes são assim chamados por que estão associados com o início da transcrição (*transcription initiation*).
 
 Possuem uma faixa mais restrita de tamanho que os PASRs, geralmente possuindo 18nt, também costuma estar em baixas concentrações. Dificilmente possuem vias próprias para biogênese, provavelmente dependendo de vias intracelulares já existentes, como a transcrição comum por RNA Polimerase II. Assim como os PASRs, possivelmente atuam na regulação da expressão gênica, talvez usufruindo de alterações epigenéticas.
 

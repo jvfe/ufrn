@@ -1,0 +1,53 @@
+# lncRNAs
+
+## Características gerais
+
+Hipotetizados por muito tempo, sua existência como molécula regulatória foi enfim comprovada nos anos 90, e posteriormente bastante estudado, levando a descobertas que alteraram os horizontes da genética molecular, como a do XIST, um longo RNA capaz de inibir um dos cromossomos X em mulheres. Para diferenciá-los de outros tipos de ncRNAs, é tido como regra geral um tamanho mínimo > 200nt. 
+
+Possuem estruturas secundárias complexas, ultrapassando a organização de um mRNA comum, muitas vezes formam um *hairpin* duplo, ou, como também é chamado, *double stem-loop*. lncRNAs podem interagir com outras moléculas na célula de várias maneiras diferentes, algumas das quais ainda nem são compreendidas. No entanto, didaticamente essas interações são divididas em 3 categorias distintas: 
+
+  * lncRNA-DNA, que pode, por exemplo, desencadear alterações epigenéticas, em que um lncRNA, servindo como um "endereçador" é acoplado a uma metiltransferase, alterando a estrutura das histonas. 
+
+  * lncRNA-Proteína, acredita-se que uma das formas de recrutamento de lncRNAs para a região genômica alvo se dá por meio de sua interação com complexos proteicos. 
+  
+  * lncRNA-RNA, visto que a complementaridade com um mRNA ou um miRNA pode interferir consideravelmente na sua função dentro da célula.
+  
+Uma modificação química extremamente relevante para a função adequada de lncRNAs, como o XIST, é a metilação de uma adenosina, formando o que é chamado N6-metiladenosina, que possibilita em muitos desses RNAs a organização de estruturas secundárias.
+
+## Biogênese e localização celular
+
+Apesar de serem normalmente transcritos pela RNA Polimerase II e posteriormente terem processamento similar aos mRNAs, muitos lncRNAs não seguem esse processo geral e possuem formações diferentes, como transcrição por RNA Polimerase II, capping de 3' e 5', *back-splicing*, dentre outros. Além disso, muitos lncRNAs podem ser apenas a forma primária de RNAs menores, como miRNAs ou piRNAs, que só se formarão após o processamento/fragmentação dessa molécula maior. 
+
+Quanto à sua localização celular, algo que está fortemente associado à sua função, os lncRNAs se dividem em três principais classes:
+
+* lncRNAs nucleares presentes em *cis* - Apesar do nome, podem atuar também em trans, a nomenclatura se deve ao local comum de acumulação - Podem, por exemplo, recrutar FTs e modificar a cromatina.
+
+* lncRNAs nucleares que atuam em *trans* - precisam sair do local original da transcrição para poderem agir.
+
+* lncRNAs citoplasmáticos - Após sua exportação para o citoplasma, podem agir na regulação da tradução e auxiliar modificações pós-traducionais.
+
+Existe uma grande variedade de perfis de expressão para os lncRNAs, justamente por se tratarem de uma classe tão diversa. No entanto, há algumas características que podem ser definidas para subgrupos: Existem aqueles que possuem uma meia-vida mais duradoura, por atuarem em processos de *housekeeping*; aqueles associados com desenvolvimento apresentam um padrão temporalmente específico; alguns lncRNAs normalmente pouco expressos apresentam altas de expressão em neoplasias, etc.
+
+## Controle da expressão gênica e mecanismos moleculares
+
+* **Alterações epigenéticas**: Por meio de recrutamento de fatores remodeladores da cromatina (Neste caso PRC2), os lncRNA XIST e HOTAIR executam suas funções dentro da célula: Repressão transcricional do cromossomo X e silenciamento de genes *Homeobox*, respectivamente.
+
+* **Regulação transcricional**: Podem atuar na regulação a nivel de promotor (plncRNAs) ou a nível de acentuador (elncRNAs). 
+
+* **Regulação pós-transcricional no núcleo**: Podem afetar a estabilidade dos transcritos que regulam, por exemplo acarretando degradação destes ou entãor regular o processo de splicing.
+
+* **Regulação pós-transcricional no citoplasma**: Podem atuar como esponjas de miRNAs ou então modular a tradução de mRNAs e modificações pós-traducionais.
+
+O livro agrupa os diferentes mecanismos usados por lncRNAs em quatro arquétipos:
+
+* ***Signal***: Sinalizadores intracelulares para eventos específicos, como o PANDA, um lncRNA induzido por dano genômico que ativa vias pró-apoptóticas por meio de sua interação com o FT NF-YA. 
+
+* ***Decoys***: lncRNAs que agem por meio de sequestro (ou captura) de outras moléculas, como proteínas e RNAs, impedindo sua função.
+
+* ***Guides***: Atuantes no endereçamento intracelular de outras moléculas, por exemplo, guiando complexo ribonucleoproteicos para reprimir genes-alvo.
+
+* ***Scaffolds***: Alguns lncRNAs que servem como "esqueletos" moleculares, nos quais outras moléculas (chamadas efetoras) podem se acoplar e realizar funções. O exemplo trazido é do ANRIL, no qual se acoplam metiltransferases e outros complexos proteicos, que atuam no silenciamento gênico.
+
+## Associações com doenças humanas
+
+Existem inúmeras associações de lncRNAs com doenças humanas, talvez a mais estudada destas sendo a associação com cânceres. O exemplo trazido é do lncRNA PCA3, que é um ótimo candidato a um biomarcador visto que sua expressão é muito mais específica pro câncer prostático do que o marcador atualmente usado, o PSA. Existem diversas outras associações traçadas. Para fins de estudo, um ótimo recurso é o banco de dados [lncRNAdisease](http://www.cuilab.cn/lncrnadisease), que contém informação experimentalmente curada de associações de lncRNAs com doenças humanas.

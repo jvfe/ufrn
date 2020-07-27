@@ -2,7 +2,7 @@
 
 ## Características gerais
 
-Hipotetizados por muito tempo, sua existência como molécula regulatória foi enfim comprovada nos anos 90, e posteriormente bastante estudado, levando a descobertas que alteraram os horizontes da genética molecular, como a do XIST, um longo RNA capaz de inibir um dos cromossomos X em mulheres. Para diferenciá-los de outros tipos de ncRNAs, é tido como regra geral um tamanho mínimo > 200nt. 
+Hipotetizados por muito tempo, sua existência como molécula regulatória foi enfim comprovada nos anos 90, e posteriormente bastante estudados, levando a descobertas que alteraram os horizontes da genética molecular, como a do XIST, um longo RNA capaz de inibir um dos cromossomos X em mulheres. Para diferenciá-los de outros tipos de ncRNAs, é tido como regra geral um tamanho mínimo > 200nt. 
 
 Possuem estruturas secundárias complexas, ultrapassando a organização de um mRNA comum, muitas vezes formam um *hairpin* duplo, ou, como também é chamado, *double stem-loop*. lncRNAs podem interagir com outras moléculas na célula de várias maneiras diferentes, algumas das quais ainda nem são compreendidas. No entanto, didaticamente essas interações são divididas em 3 categorias distintas: 
 
@@ -34,7 +34,7 @@ Existe uma grande variedade de perfis de expressão para os lncRNAs, justamente 
 
 * **Regulação transcricional**: Podem atuar na regulação a nivel de promotor (plncRNAs) ou a nível de acentuador (elncRNAs). 
 
-* **Regulação pós-transcricional no núcleo**: Podem afetar a estabilidade dos transcritos que regulam, por exemplo acarretando degradação destes ou entãor regular o processo de splicing.
+* **Regulação pós-transcricional no núcleo**: Podem afetar a estabilidade dos transcritos que regulam, por exemplo acarretando degradação destes ou então regular o processo de splicing.
 
 * **Regulação pós-transcricional no citoplasma**: Podem atuar como esponjas de miRNAs ou então modular a tradução de mRNAs e modificações pós-traducionais.
 

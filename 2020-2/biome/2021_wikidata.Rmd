@@ -85,20 +85,23 @@ class: inverse
 * **Tipos celulares**: Human Cell Atlas e PanglaoDB.
 
 ---
-class: inverse
-
-## O que essa integração pode proporcionar?
-
-![](data-integration-query.jpg)
-
-* Informações agregadas do GO, GWAS Catalog, Human Disease Ontology, Wikipathways, IUPHAR e Interpro numa única consulta.
-
----
 
 ## Conversão de identificadores
 
 ![](convert-id.jpg)
 <iframe style="width:100%;height:30%;" src="https://query.wikidata.org/embed.html#SELECT%20%2a%20WHERE%20%7B%0A%20%20VALUES%20%3Fsymbol%20%7B%0A%20%20%20%20%22CDK2%22%0A%20%20%20%20%22AKT1%22%0A%20%20%20%20%22RORA%22%0A%20%20%20%20%22VEGFA%22%0A%20%20%20%20%22COL2A1%22%0A%20%20%20%20%22NGLY1%22%0A%20%20%7D%0A%20%20%3Fgenewdt%20wdt%3AP353%20%3Fsymbol%3B%0A%20%20%20%20wdt%3AP351%20%3Fentrez.%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups" ></iframe>
+
+---
+class: inverse
+
+## O que essa integração pode proporcionar?
+
+* Um pulmonologista está interessado em identificar compostos químicos para testar em modelos animais de doença
+
+![](data-integration-query.jpg)
+
+* Informações agregadas do GO, GWAS Catalog, Human Disease Ontology, Wikipathways, IUPHAR e Interpro numa única consulta.
+
 
 ---
 class: center, inverse
@@ -113,6 +116,13 @@ class: center
 ## Reposicionamento de fármacos
 
 <img src="./drug-repurposing.jpg" style="height: 25rem;">
+
+---
+class: inverse
+
+## Wikidata para informações acadêmicas?
+
+<iframe src="https://scholia.toolforge.org/" style="width:100%;height:60%;"></iframe>
 
 ---
 class: inverse

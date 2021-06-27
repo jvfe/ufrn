@@ -20,7 +20,7 @@ options(htmltools.dir.version = FALSE)
 ```
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.retina = 3, out.width = "80%", out.height="450")
 library(DT)
 library(dplyr)
 library(ggplot2)
@@ -140,7 +140,7 @@ class: inverse
 
 * Nenhum dataset específico encontrado!
 
-* Porém, [GSE102827](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102827) pareceu promissor
+* Porém, GSE102827 pareceu promissor.
 
 ---
 ## O estudo
@@ -170,6 +170,8 @@ summarized %>%
 ```
 
 ---
+class: center
+
 ## Enriquecimentos - KEGG
 
 ```{r xaringan-panelset, echo=FALSE}
@@ -197,6 +199,8 @@ plot_barplot(enriched_kegg_h1_vs_h4)
 ]
 
 ---
+class: center, inverse
+
 ## Enriquecimentos - GO
 
 ```{r xaringan-panelset2, echo=FALSE}
@@ -226,7 +230,9 @@ plot_barplot(enriched_go_h1_vs_h4)
 ]
 
 ---
-# Wikidata as a knowledge graph for the life sciences
+class: center
+
+# Single-cell RNA-Seq do Córtex Visual de Camundongos
 
 ### João Vitor Ferreira
 ### Dalmolin Lab, BioME + UFRGS

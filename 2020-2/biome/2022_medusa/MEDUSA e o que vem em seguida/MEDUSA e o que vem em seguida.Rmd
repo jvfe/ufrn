@@ -1,0 +1,134 @@
+---
+title: "MEDUSA e o que vem em seguida"
+subtitle: "Dalmolin Lab, BioME"  
+author: 
+  - "João Vitor Cavalcante"
+date: '15 jun. 2022'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current% / %total%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+class: inverse, center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(
+  primary_color = "#1F4257",
+  secondary_color = "#F97B64",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+xaringanExtra::use_panelset()
+xaringanExtra::use_animate_css()
+xaringanExtra::use_animate_all("fade")
+```
+
+# O que é o MEDUSA?
+
+???
+
+- Me apresentar
+- Sofrimento contínuo do estágio
+- Bater tecla
+- MicroView + demo
+- Reconstrução de Pathways
+---
+
+# O Problema
+
+### Como analisar dados de metagenoma shotgun?
+
+--
+
+<div style="display: flex;align-items: center;justify-content: space-between;margin: 5rem 0;">
+<img src="./MEGAN6-logo.svg" style="height: 5rem;">
+<img src="./MGRAST_logo.png" style="height: 5rem;">
+</div>
+
+--
+
+- Depender de web-servers 
+- Serviços pagos
+- Código fechado
+- Pouca parametrização
+- Reproducibilidade dificultada
+
+---
+class: center
+
+# A Solução
+
+<iframe src="https://www.frontiersin.org/articles/10.3389/fgene.2022.814437/full#h1" style="width:100%;height:60%;"></iframe>
+
+---
+
+# O método e seus resultados
+
+--
+.right-column[
+<center><img src="./protocolo.jpg" style="height: 24rem;"></center>
+]
+
+--
+.left-column[
+- "MEDUSA outperformed MEGAN in these functional results, with MEGAN obtaining a negative MCC (-0.22 MEGAN against 0.59 MEDUSA)"
+
+- "Our pipeline assigned slightly more reads than MEGAN in the taxonomic analysis"
+]
+
+---
+class: center
+
+# O método e seus resultados
+
+.panelset[
+.panel[.panel-name[Taxonomia]
+<img src="./d1_tax.png" style="height: 10rem;">
+]
+.panel[.panel-name[Funcional]
+<img src="./go_terms.png" style="height: 20rem;">
+]
+]
+
+---
+class: inverse, center, middle
+
+# O que vem em seguida?
+
+---
+# Ideias iniciais
+
+--
+### Visualizar os dados que o MEDUSA gera (MicroView)
+
+--
+### Inferir perfil metabólico a partir do microbioma
+
+--
+### Anotação e caracterização de MAGs
+
+---
+class: inverse, center, middle
+
+# Obrigado!
+

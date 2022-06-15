@@ -56,7 +56,7 @@ xaringanExtra::use_animate_all("fade")
 
 # O Problema
 
-### Como analisar dados de metagenoma shotgun?
+### Como analisar dados de metagenoma?
 
 --
 

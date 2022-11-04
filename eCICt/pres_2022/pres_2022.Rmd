@@ -46,13 +46,13 @@ style_mono_light(base_color = "#23395b")
 
 - A visualização de redes se torna indispensável ao analisar esses dados
 
-- O ecossistema computacional em R não possui soluções nativas para a visualização e manipulação desses dados de forma intuitiva e reprodutível
+- Soluções nativas em R para a visualização e manipulação desses dados de forma intuitiva e reprodutível são insatisfatórias
 
 - Apresentamos a construção de um pacote em R, easylayout, para a criação de visualizações de redes que permite tanto a manipulação gráfica quanto a programática
 
 <div class="centerify">
 <img src="./easylayout_net.png" width="80%">
-<p align="center">Rede montada na ferramenta descrita</p>
+<p align="center">Rede montada no *easylayout*</p>
 </div>
 <div>
 
@@ -82,7 +82,7 @@ class: inverse
 
 - Desenvolvemos uma ferramenta em R que permite, através de uma interface gráfica amigável e uma API intuitiva, a criação de representações gráficas de redes de forma interativa e altamente parametrizável
 
-- A ferramenta possui a opção de transcrever as manipulações realizadas graficamente para manipulações programáticas facilmente compartilháveis, garantindo também, dessa forma, maior potencial para reprodutibilidade
+- A ferramenta possui a opção de transcrever as manipulações realizadas graficamente para obejetos R facilmente compartilháveis, garantindo também, dessa forma, maior potencial para reprodutibilidade
 
 - Por utilizar a biblioteca VivaGraphJS, permitimos a manipulação de redes com alta complexidade, sem obter prejuízos observáveis em performance ou na eficiência da análise
 
@@ -104,7 +104,7 @@ class: inverse
 ### Agradecimentos
 
 .pull-left[
-<img width="60%" src="https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png">
+<img width="60%" src="./dalmolin_group_logo.png">
 <img width="80%" src="https://logodownload.org/wp-content/uploads/2018/04/ufrn-logo.png">
 ]
 

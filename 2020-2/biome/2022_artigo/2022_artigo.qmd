@@ -1,19 +1,22 @@
 ---
-title: "Biosynthetic potential of the global ocean microbiome"
-author: "João Vitor Cavalcante"
-date: today
-date-format: long
 lang: pt
 format: 
   revealjs:
     theme: dark
     slide-number: true
-    smaller: true
     logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
 ---
 
-## Introdução
+---
 
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/nY1AvCE.png)
+
+### João Vitor Cavalcante
+16 de Novembro de 2022
+:::
+
+## Introdução
 
 - Microorganismos promovem ciclos biogeoquímicos e suportam cadeias alimentares e sua diversidade funcional potencializa a descoberta de novas enzimas, compostos e produtos naturais.
 
@@ -23,7 +26,7 @@ format:
 
 - **Objetivo**: Averiguar o potencial biosintético do microbioma oceânico a partir da detecção de grupos de genes biosintéticos (BGCs) em *contigs* de MAGs/SAGs/REFs. 
 
-## O que é um BGC?
+## O que é um BGC? {.smaller}
 
 - Conjuntos de genes não-homólogos e fisicamente próximos no genoma que geralmente são co-regulados e
 participam de uma mesma via metabólica
@@ -36,7 +39,7 @@ participam de uma mesma via metabólica
 
 
 
-## Resultados gerais
+## Resultados gerais {.smaller}
 
 - Integrou-se os dados de 10.000 genomas oceânicos já curados (REFs) e 25.000 novos genomas montados (MAGs) de mais de 1.000 amostras oceânicas para se obter um banco único de informação genética do microbioma oceânico.
 
@@ -47,9 +50,9 @@ participam de uma mesma via metabólica
 - Identificou-se uma nova linhagem (*Candidatus Eudoremicrobiaceae*) contendo os organismos de maior diversidade biossintética nesse ambiente. 
 
 
-- Na linhagem acima, se caracterizou as vias de fosfopeptinas e pitonamidas, revelando compostos bioativos de estrutura e enzimologia incomum.
+- Na linhagem acima, se caracterizou as vias de fosfopeptinas e pitonamidas, codificadas por dois BGCs, revelando compostos bioativos de estrutura e enzimologia incomum.
 
-## Representação filogenômica do microbioma oceânico
+## Representação filogenômica do microbioma oceânico {.smaller}
 
 - Selecionou-se 1.038 amostras oceânicas de 215 locações cobrindo as camadas epipelágicas, mesopelágicas e batipelágicas.
 
@@ -75,7 +78,7 @@ d, Grouping the OMD into species-level (95% average nucleotide identity) cluster
 e, A breakdown of the species by genome type reveals a high complementarity of MAGs, SAGs and REFs in capturing the phylogenomic diversity of the ocean microbiome. Specifically, 55%, 26% and 11% of the species were specific to MAGs, SAGs and REFs, respectively. BATS, Bermuda Atlantic Time-series; GEM, Genomes from Earth’s Microbiomes; GORG, Global Ocean Reference Genomes; HOT, Hawaiian Ocean Time-series.
 :::
 
-## Potencial biossintético do microbioma oceânico global
+## Potencial biossintético do microbioma oceânico global {.smaller}
 
 - Foram detectados 39.055 BGCs (antiSMASH)
 
@@ -85,7 +88,7 @@ e, A breakdown of the species by genome type reveals a high complementarity of M
 
 - Isso contrasta com resultados da anotação de BGCs no RefSeq, que mostrou dominância de BGCs associados a peptidil-sintetases não-ribossômicas (NRPS) e policetídeo-sintases (PKS)
 
-## Potencial biossintético do microbioma oceânico global
+## Potencial biossintético do microbioma oceânico global {.smaller}
 
 - 56% das GCFs não tiveram sobreposição com o RefSeq e >97% não estavam representadas no MIBiG.
 
@@ -111,7 +114,7 @@ e, A breakdown of the species by genome type reveals a high complementarity of M
 
 :::
 
-## Caracterização de linhagens ricas em BGCs
+## Caracterização de linhagens ricas em BGCs {.smaller}
 
 - Para estabelecer um contexto filogenômico para *Ca. E. malaspinii* - se buscou, através de alinhamento, por espécies relacionadas em genomas reconstruídos pela expedição *Tara oceans*.
 
@@ -125,15 +128,22 @@ e, A breakdown of the species by genome type reveals a high complementarity of M
 
 ![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-022-04862-3/MediaObjects/41586_2022_4862_Fig3_HTML.png?as=webp)
 
-
 ## Novas enzimas e produtos naturais
 
-- blabla
+::: {.r-stack}
+- Selecionaram dois BGCs que codificam vias RiPP
+
+- O primeiro foi denominado fosfopeptina e possui atividade inibitória de proteases. É encontrado em todos os genomas de *Ca. E. malaspinii*.
+
+- O segundo, denominado pitonamida, codifica uma proteusina de potencial interesse biotecnológico, pois possui a capacidade de realizar n-metilação de peptídeos - reação aplicável no estudo farmacocinético de compostos bioativos, e que, até a publicação, só havia sido observada em famílias RiPPs de borosina.
+
+![](https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-022-04862-3/MediaObjects/41586_2022_4862_Fig12_ESM.jpg?as=webp){.fragment}
+:::
 
 ## Conclusões
 
 - A construção de MAGs fornece uma fonte para o estudo de conteúdo funcional e filogenômico ainda não caracterizado.
 
-- Apesar de termos focado em uma linhagem, a quantidade de MAGs montados no presente estudo reflete um potencial futuro gigantesco para novas descobertas a respeito de enzimologia e biossíntese.
+- Apesar de focarmos em uma linhagem, a quantidade de MAGs montados no presente estudo reflete um potencial futuro gigantesco para novas descobertas a respeito de enzimologia e biossíntese.
 
 

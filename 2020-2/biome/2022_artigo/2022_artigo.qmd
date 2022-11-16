@@ -128,6 +128,16 @@ e, A breakdown of the species by genome type reveals a high complementarity of M
 
 ![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-022-04862-3/MediaObjects/41586_2022_4862_Fig3_HTML.png?as=webp)
 
+::: {.notes}
+a, Phylogenomic placement of five ‘Ca. Eudoremicrobiaceae’ spp. revealed a BGC richness specific to the ocean lineage discovered in this study. The phylogenomic tree includes all ‘Ca. Eremiobacterota’ MAGs available in the GTDB (release 89) and representatives from additional phyla (the number of genomes is indicated in parentheses) for evolutionary context (Methods). The outermost layer indicates family-level (‘Ca. Eudoremicrobiaceae’ and ‘Ca. Xenobiaceae’) and class-level (‘Ca. Eremiobacteria’) taxonomy. The five species described in this study are denoted by an alphanumeric code and a proposed binomial name (Supplementary Information). 
+
+b, ‘Ca. Eudoremicrobiaceae’ spp. share a core of seven BGCs. The missing BGC from clade A2 was attributed to incompleteness of the representative MAG (Supplementary Table 3). BGCs specific to ‘Ca. Amphithomicrobium’ and ‘Ca. Amphithomicrobium’ (clades A and B) are not displayed. 
+
+c, All BGCs encoded by ‘Ca. Eudoremicrobium taraoceanii’ were found to be expressed across the set of 623 metatranscriptomes sampled by Tara Oceans. The filled circles indicate active transcription. The orange circles indicate values below or above a log2-transformed fold change from the expression rate of housekeeping genes (Methods). 
+
+d, Relative abundance profiles (Methods) showed that ‘Ca. Eudoremicrobiaceae’ spp. are abundant and prevalent in most ocean basins and throughout the water column (from the surface to a depth of at least 4,000m). On the basis of these estimations, we found that ‘Ca. E. malaspinii’ comprises up to 6% of the prokaryotic cells in bathypelagic particle-associated communities. We considered a species to be present at a station if it was detected in any of the size fractions of a given depth layer.
+:::
+
 ## Novas enzimas e produtos naturais
 
 ::: {.r-stack}
@@ -138,6 +148,19 @@ e, A breakdown of the species by genome type reveals a high complementarity of M
 - O segundo, denominado pitonamida, codifica uma proteusina de potencial interesse biotecnológico, pois possui a capacidade de realizar n-metilação de peptídeos - reação aplicável no estudo farmacocinético de compostos bioativos, e que, até a publicação, só havia sido observada em famílias RiPPs de borosina.
 
 ![](https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-022-04862-3/MediaObjects/41586_2022_4862_Fig12_ESM.jpg?as=webp){.fragment}
+:::
+
+::: {.notes}
+
+Notably, Ca. Eudoremicrobium representatives encode for a particularly large (over 70 kbp)
+and architecturally complex type I PKS/NRPS hybrid. An unusual feature of this cluster is the
+presence of terminal reductase domains in both of the two NRPS proteins. Notably, the
+majority of characterized natural products modified by these domains have shown varied and
+enhanced bioactivity such as protease inhibition and antitumoral properties
+
+c), this cluster is highly
+characteristic of pore-forming β-helix peptides, such as the highly cytotoxic polytheonamides
+and aeronamides
 :::
 
 ## Conclusões

@@ -1,0 +1,159 @@
+---
+title: "Desenvolvimento de ferramentas para a análise de metagenomas"
+author: "João Vitor Cavalcante"
+lang: pt
+format: 
+  revealjs:
+    theme: dark
+    slide-number: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+## Introdução - Surgimento da metagenômica
+
+- Década de 90 - primeiro sequenciamento de um organismo de vida livre, a bactéria Haemophilus influenzae (WOOLEY; GODZIK; FRIEDBERG, 2010), sucesso do sequenciamento *shotgun*.
+
+- Com sequenciadores automatizados e refinamento das técnicas - se torna possível o estudo de microbiomas, presentes em uma amostra de origem ambiental.
+
+- Duas metodologias distintas: metataxonômica e metagenômica (MARCHESI; RAVEL, 2015).
+
+---
+
+![](https://astrobiomike.github.io/images/amplicon-vs-metagenomics-overview-w-background.png)
+
+::: {.notes}
+No sequenciamento de genes marcadores são desenhados primers de reação em cadeia da polimerase (PCR) para genes marcadores como 16S em bactérias e 18S em eucariotos, com o produto resultante sendo então sequenciado. As sequências são então agrupadas em unidades taxonômicas operacionais (OTUs) que são comparadas entre as amostras.
+:::
+
+## O ecossistema computacional da metagenômica
+
+- Duas principais abordagens de análise: A de classificação das leituras e a de montagem de genomas (BREITWIESER; LU; SALZBERG, 2019)
+
+- O conjunto de ferramentas computacionais a serem utilizadas é bastante variável
+
+- MEGAN 6 - apesar de comportar uma análise completa de um metagenoma shotgun, depende de bancos próprios
+e de uma interface gráfica pouco parametrizável.
+
+## Classificação taxonômica em metagenômica
+
+- Entre as ferramentas mais utilizadas hoje para se inferir a taxonomia de leituras metagenômicas, temos o Kraken, Kaiju e Centrifuge.
+
+- Utilizam estratégias diferentes mas produzem resultados similares - Arquivos tabulares contendo táxons e suas respectivas abundâncias.
+
+- Métodos guiados de análise secundária dos dados e ferramentas interativas de exploração e visualização desses dados se tornam indispensáveis
+
+## Surge o MEDUSA
+
+- Busca e desenvolvimentos de ferramentas no sentido de desenvolver uma análise completamente automatizável que permita maior modularidade e flexibilidade.
+
+---
+
+![](https://i.imgur.com/iiSOuQY.png)
+
+## Conjuntos de dados {.smaller}
+
+- ***Trimming*** - SRR5371509 (metagenoma fecal bovino) dividido em arquivos contendo 1, 5, 10 e 40 milhões de leituras
+
+- **Descontaminação** - 4 milhões de leituras, com leituras humanas contendo 25%, 50% e 75% do conjunto de dados, com leituras bacterianas geradas pelo InSilicoSeq compondo o restante da amostra simulada
+
+- **Montagem** - Os três tipos de dados do primeiro desafio CAMI: Baixa, média e alta complexidade.
+
+- **Classificação taxonômica** - **D1** - 509.688 leituras Illumina MiSeq seguindo uma distribuição log-normal fornecida pelo InSilicoSeq, com 99.918 sendo CN.
+
+- **Anotação funcional** - **D2** - 10 organismos bacterianos com associações GO específicas para servir como referência para a simulação de 400.433 leituras, que então são concatenadas com o CN de D1.
+
+- **Dados reais** - **D3** - metagenoma da microbiota intestinal humana de um paciente com doença de Crohn (SRR579292)
+
+---
+
+#### Benchmark das ferramentas de *trimming*
+
+![](https://www.frontiersin.org/files/Articles/814437/fgene-13-814437-HTML/image_m/fgene-13-814437-g002.jpg){width="900" fig-align="center"}
+
+::: {.notes}
+Como esperado, FastQC foi mais rápido que outras ferramentas utilizando um núcleo dado ao número reduzido de tarefas que realiza.
+
+Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no tempo de execução. Como um pré-processador de leituras “tudo-em-um”, fastp apresenta também funcionalidades bastante úteis, como a de mesclar leituras PE.
+:::
+
+---
+
+#### Coeficiente de Correlação de Matthews
+
+- Um MCC de -1 corresponde a apenas falsos negativos e positivos e um MCC de 1 corresponde a apenas verdadeiros negativos e positivos, isto é, uma classificação perfeita.
+
+![](https://i.imgur.com/BF7aI3u.png){fig-align="center"}
+
+![](https://i.imgur.com/iAsk5hC.png){width="500" fig-align="center"}
+
+---
+
+#### Benchmark das ferramentas de descontaminação
+
+::: {.r-stack}
+![](https://i.imgur.com/58KYZiC.png)
+
+![](https://i.imgur.com/jxJsE7Y.png){.fragment}
+
+![](https://i.imgur.com/Zl6wpFX.png){.fragment}
+
+![](https://i.imgur.com/RLA6uwl.png){.fragment}
+:::
+
+## Benchmark das ferramentas de montagem
+
+- Todos os testes feitos com MetaSPAdes falharam devido a problemas de memória
+
+- MetaSPAdes 3.15.2 foi incapaz de alocar a memória necessária para as amostras, e a versão 3.13 apresentou uma falha de segmentação após o início da execução.
+
+- Por essa razão e pelo fato de MEGAHIT ter lidado com todas as amostras e apresentar resultados positivos nos *benchmarks* CAMI, o escolhemos para compor o fluxo de trabalho
+
+## Escolha do alinhador {.smaller}
+
+- Para o alinhamento escolhemos o DIAMOND por sua rapidez e acurácia além de sua ampla adoção em outras ferramentas e fluxos de trabalho.
+
+- Como um alinhador de proteínas, o resultado do DIAMOND pode ser usado tanto para classificações taxonômicas como análises funcionais.
+
+- O DIAMOND foi utilizado no nosso fluxo de trabalho para alinhar as sequências após o pré-processamento, com o NCBI-nr servindo como nosso banco de dados de referência
+
+- Os identificadores protéicos resultantes do alinhamento são utilizados para adquirir os identificadores funcionais de interesse na etapa de anotação funcional
+
+---
+
+#### Benchmark das ferramentas de classificação taxonômica
+
+![](https://www.frontiersin.org/files/Articles/814437/fgene-13-814437-HTML/image_m/fgene-13-814437-g005.jpg){width="900" fig-align="center"}
+
+## MicroView {.smaller} 
+
+::: {.r-stack}
+
+<div> 
+- MicroView lê arquivos tabulares saídos de diferentes classificadores - as opções atuais sendo Kaiju, Kraken e Centrifuge - e gera relatórios HTML contendo métricas relativas à qualidade da classificação e à diversidade do dado.
+
+![](https://i.imgur.com/Gw31fIe.png)
+</div>
+
+![](https://i.imgur.com/k1xK2MV.png){.fragment}
+
+![](https://i.imgur.com/9W78fGR.png){.fragment}
+
+:::
+
+## Anotação funcional
+
+- O resultado do DIAMOND possui informação funcional intrínseca com os identificadores RefSeq e GenBank, resultantes do uso do NCBI-nr
+
+- Para permitir a reutilização de um resultado de alinhamento para obter identificadores funcionais, implementamos uma ferramenta em Python denominada annotate
+
+- Ela cria repositórios locais a partir de dicionários fornecidos pelo usuário, filtra os alinhamentos, e atribui os identificadores funcionais fornecidos pelo usuário
+
+## Comparação com MEGAN 6 CE
+
+::: {.r-stack}
+
+![](https://i.imgur.com/DBese0J.png)
+
+![](https://i.imgur.com/jLnmUn1.png){.fragment}
+:::
+

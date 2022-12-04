@@ -479,14 +479,72 @@
 <li><p>Ela cria repositórios locais a partir de dicionários fornecidos pelo usuário, filtra os alinhamentos, e atribui os identificadores funcionais fornecidos pelo usuário</p></li>
 </ul>
 </section>
-<section id="comparação-com-megan-6-ce" class="slide level2">
+<section id="comparação-com-megan-6-ce" class="slide level2 smaller">
 <h2>Comparação com MEGAN 6 CE</h2>
+<ul>
+<li><p>Utilizamos três conjuntos de dados, D1, D2 e D3, para avaliar os resultados do nosso protocolo com aqueles obtidos pelo MEGAN CE v6.18.3</p></li>
+<li><p>D1 foi utilizado para comparar as ferramentas taxonômicas.</p></li>
+<li><p>D2 foi criado a partir de 10 sequências bacterianas, cujos identificadores funcionais são conhecidos e catalogados no UniProt-Kb, de modo a ter um conteúdo funcional manualmente curado.</p></li>
+<li><p>Para o MEGAN, o único parâmetro diferente do padrão pré-configurado foi o limiar de identidade para o alinhamento, configurado aqui para 80%</p></li>
+<li><p>Para o calculo do MCC no resultado funcional, um positivo verdadeiro foi definido como ao menos um identificador GO esperado foi atribuído para a leitura</p></li>
+</ul>
+</section>
+<section class="slide level2">
+
 <div class="r-stack">
+<div class="quarto-figure quarto-figure-center">
+<figure>
 <p><img data-src="https://i.imgur.com/DBese0J.png"></p>
-<p><img data-src="https://i.imgur.com/jLnmUn1.png" class="fragment"></p>
+</figure>
 </div>
-<p><img src="https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://i.imgur.com/jLnmUn1.png" class="fragment"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="comparação-com-o-megan-6-ce---classificação-taxonômica" class="slide level2 smaller">
+<h2>Comparação com o MEGAN 6 CE - Classificação taxonômica</h2>
+<ul>
+<li><p>O resultado obtido pelo MEDUSA era mais padronizado que o fornecido pelo MEGAN.</p>
+<ul>
+<li>O resultado do MEGAN possui descrições como “NCBI” e “organismos celulares”, que, apesar de contarem como classificações válidas, não extrai muita informação biológica dos dados de sequenciamento.</li>
+</ul></li>
+<li><p>Os gêneros e espécies menos abundantes foram detectados apenas pelo MEDUSA.</p></li>
+<li><p>51% das espécies identificadas pelo MEGAN contra 95% do MEDUSA.</p></li>
+</ul>
+
+<img data-src="https://i.imgur.com/FnIq9dh.png" class="r-stretch quarto-figure-center"></section>
+<section id="comparação-com-o-megan-6-ce---anotação-funcional" class="slide level2 smaller">
+<h2>Comparação com o MEGAN 6 CE - Anotação funcional</h2>
+<ul>
+<li><p>Em D2, MEDUSA atribuiu 303 termos GO distintos, enquanto MEGAN atribuiu apenas 48.</p></li>
+<li><p>As atribuições realizadas pelo MEGAN tendem a ser termos vagos - Termos advindos de raízes ontológicas</p></li>
+</ul>
+
+<img data-src="https://i.imgur.com/koUit0y.png" width="800" class="r-stretch quarto-figure-center"></section>
+<section class="slide level2">
+
+
+<img data-src="https://i.imgur.com/7r1o4rW.png" class="r-stretch quarto-figure-center"></section>
+<section id="conclusões" class="slide level2">
+<h2>Conclusões</h2>
+<div class="r-fit-text">
+<ul>
+<li><p>O MEDUSA é um fluxo de trabalho para análise metagenômica disponibilizado através de um ambiente Conda e gerenciado pelo Snakemake</p></li>
+<li><p>Também introduzimos no fluxo de trabalho o annotate, uma ferramenta para transferência de anotações, e o MicroView, uma ferramenta para visualizar resultados de classificações taxonômicas</p></li>
+<li><p>O MEDUSA é fácil de adquirir, configurar e executar, simplificando análises metagenômicas</p></li>
+<li><p>Maior flexibilidade e sensibilidade do que o MEGAN 6 CE, além de possibilitar uma análise totalmente automatizada.</p></li>
+<li><p>Por sua natureza modular, também é possível substituir ferramentas do MEDUSA por outras que produzam um resultado compatível</p></li>
+</ul>
+</div>
+</section>
+<section id="desenvolvimento-de-ferramentas-para-a-análise-de-metagenomas" class="title-slide slide level1 center" style="text-align: center; display: grid; place-items: center;">
+<h1>Desenvolvimento de ferramentas para a análise de metagenomas</h1>
+<p>João Vitor Cavalcante</p>
+
+<img src="https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>

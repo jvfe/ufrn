@@ -148,12 +148,63 @@ Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no 
 
 - Ela cria repositórios locais a partir de dicionários fornecidos pelo usuário, filtra os alinhamentos, e atribui os identificadores funcionais fornecidos pelo usuário
 
-## Comparação com MEGAN 6 CE
+## Comparação com MEGAN 6 CE {.smaller}
+
+- Utilizamos três conjuntos de dados, D1, D2 e D3, para avaliar os resultados do nosso protocolo com aqueles obtidos pelo MEGAN CE v6.18.3
+
+- D1 foi utilizado para comparar as ferramentas taxonômicas.
+
+- D2 foi criado a partir de 10 sequências bacterianas, cujos identificadores funcionais são conhecidos e catalogados no UniProt-Kb, de modo a ter um conteúdo funcional manualmente curado.
+
+- Para o MEGAN, o único parâmetro diferente do padrão pré-configurado foi o limiar de identidade para o alinhamento, configurado aqui para 80%
+
+- Para o calculo do MCC no resultado funcional, um positivo verdadeiro foi definido como ao menos um identificador GO esperado foi atribuído para a leitura
+
+--- 
 
 ::: {.r-stack}
 
-![](https://i.imgur.com/DBese0J.png)
+![](https://i.imgur.com/DBese0J.png){fig-align="center"}
 
-![](https://i.imgur.com/jLnmUn1.png){.fragment}
+![](https://i.imgur.com/jLnmUn1.png){.fragment fig-align="center"}
 :::
 
+## Comparação com o MEGAN 6 CE - Classificação taxonômica {.smaller}
+
+- O resultado obtido pelo MEDUSA era mais padronizado que o fornecido pelo MEGAN.
+  - O resultado do MEGAN possui descrições como “NCBI” e “organismos celulares”, que, apesar de contarem como classificações válidas, não extrai muita informação biológica dos dados de sequenciamento.
+  
+- Os gêneros e espécies menos abundantes foram detectados apenas pelo MEDUSA.
+
+- 51% das espécies identificadas pelo MEGAN contra 95% do MEDUSA.
+
+![](https://i.imgur.com/FnIq9dh.png){fig-align="center"}
+
+## Comparação com o MEGAN 6 CE - Anotação funcional {.smaller}
+
+- Em D2, MEDUSA atribuiu 303 termos GO distintos, enquanto MEGAN atribuiu apenas 48.
+
+- As atribuições realizadas pelo MEGAN tendem a ser termos vagos - Termos advindos de raízes ontológicas
+
+![](https://i.imgur.com/koUit0y.png){width="800" fig-align="center"}
+
+---
+
+![](https://i.imgur.com/7r1o4rW.png){fig-align="center"}
+
+## Conclusões
+
+::: {.r-fit-text}
+- O MEDUSA é um fluxo de trabalho para análise metagenômica disponibilizado através de um ambiente Conda e gerenciado pelo Snakemake
+
+- Também introduzimos no fluxo de trabalho o annotate, uma ferramenta para transferência de anotações, e o MicroView, uma ferramenta para visualizar resultados de classificações taxonômicas
+
+- O MEDUSA é fácil de adquirir, configurar e executar, simplificando análises metagenômicas
+
+- Maior flexibilidade e sensibilidade do que o MEGAN 6 CE, além de possibilitar uma análise totalmente automatizada.
+
+- Por sua natureza modular, também é possível substituir ferramentas do MEDUSA por outras que produzam um resultado compatível
+:::
+
+# Desenvolvimento de ferramentas para a análise de metagenomas {style="text-align: center; display: grid; place-items: center;"}
+João Vitor Cavalcante

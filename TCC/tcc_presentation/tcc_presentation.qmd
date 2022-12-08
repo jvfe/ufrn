@@ -214,7 +214,7 @@ Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no 
 
 ### Perspectivas futuras
 
-- Continuar desenvolvendo *MicroView*:
+- Continuar desenvolvendo o *MicroView*:
     
     - Ler resultados de mais classificadores taxonômicos
     

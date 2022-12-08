@@ -44,6 +44,10 @@ e de uma interface gráfica pouco parametrizável.
 
 ## Surge o MEDUSA
 
+- Um fluxo de trabalho modular e completamente executável da linha de comando
+
+- Que se equipara ou supera a alternativas existentes
+
 - Busca e desenvolvimentos de ferramentas no sentido de desenvolver uma análise completamente automatizável que permita maior modularidade e flexibilidade.
 
 ---
@@ -190,8 +194,11 @@ Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no 
 
 ---
 
+::: {.r-stack}
 ![](https://i.imgur.com/7r1o4rW.png){fig-align="center"}
 
+![](https://i.imgur.com/XwIN6P5.png){.fragment fig-align="center"}
+:::
 ## Conclusões
 
 ::: {.r-fit-text}

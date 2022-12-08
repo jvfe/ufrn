@@ -211,17 +211,19 @@ Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no 
 - Maior flexibilidade e sensibilidade do que o MEGAN 6 CE, além de possibilitar uma análise totalmente automatizada.
 
 - Por sua natureza modular, também é possível substituir ferramentas do MEDUSA por outras que produzam um resultado compatível
+:::
 
-### Perspectivas futuras
+## Perspectivas futuras
+
+- Mestrado!
 
 - Continuar desenvolvendo o *MicroView*:
     
     - Ler resultados de mais classificadores taxonômicos
     
-    - Calcular mais métricas de diversidade e abundância
+    - Calcular mais/outras métricas - Refinar a metodologia
     
-- Reescrever o MEDUSA em outros gerenciadores de *pipeline*, como o Nextflow, assim potencialmente expandido sua usabilidade.
-:::
+- Reescrever o MEDUSA em outros gerenciadores de *pipeline*, como o Nextflow, assim potencialmente expandindo sua usabilidade.
 
 # Desenvolvimento de ferramentas para a análise de metagenomas {style="text-align: center; display: grid; place-items: center;"}
 João Vitor Cavalcante

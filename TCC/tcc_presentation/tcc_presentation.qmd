@@ -17,9 +17,9 @@ format:
 
 - Duas metodologias distintas: metataxonômica e metagenômica (MARCHESI; RAVEL, 2015).
 
----
+## Comparação entre a metagenômica e o sequenciamento amplicon
 
-![](https://i.imgur.com/ma0INe4.png)
+![](https://i.imgur.com/ma0INe4.png){fig-align="center"}
 
 ::: {.notes}
 No sequenciamento de genes marcadores são desenhados primers de reação em cadeia da polimerase (PCR) para genes marcadores como 16S em bactérias e 18S em eucariotos, com o produto resultante sendo então sequenciado. As sequências são então agrupadas em unidades taxonômicas operacionais (OTUs) que são comparadas entre as amostras.
@@ -211,6 +211,16 @@ Os benefícios de fastp produzir o relatório se sobrepõem ao baixo aumento no 
 - Maior flexibilidade e sensibilidade do que o MEGAN 6 CE, além de possibilitar uma análise totalmente automatizada.
 
 - Por sua natureza modular, também é possível substituir ferramentas do MEDUSA por outras que produzam um resultado compatível
+
+### Perspectivas futuras
+
+- Continuar desenvolvendo *MicroView*:
+    
+    - Ler resultados de mais classificadores taxonômicos
+    
+    - Calcular mais métricas de diversidade e abundância
+    
+- Reescrever o MEDUSA em outros gerenciadores de *pipeline*, como o Nextflow, assim potencialmente expandido sua usabilidade.
 :::
 
 # Desenvolvimento de ferramentas para a análise de metagenomas {style="text-align: center; display: grid; place-items: center;"}

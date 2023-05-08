@@ -1,0 +1,115 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: dark
+    slide-number: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/ubcr3rS.png)
+
+### João Vitor Cavalcante
+
+10 de Maio de 2023
+:::
+
+------------------------------------------------------------------------
+
+### Como o Microbioma influencia o Sistema Nervoso Central? {.smaller}
+
+::: r-stack
+![Cryan et al, 2019](https://i.imgur.com/AEgnQTq.png){width="750" fig-align="center" text-align="center"}
+
+![](https://i.imgur.com/fIv7AGb.png){.fragment width="750" fig-align="center"}
+
+![](https://i.imgur.com/u4cLvJe.png){.fragment width="550" fig-align="center"}
+:::
+
+::: notes
+Schematic outlining the various known bidirectional pathways of communication between the gut-microbiota and the brain, including hepatic and gallbladder metabolism, immune-modulatory responses, neuronal innervation, enteroendocrine, and microbial metabolite signaling. CCK, cholecystokinin; GLP-1, glu- cagon-like peptide-1; IL, interleukin; PYY, peptide YY; TNF, tumor necrosis factor; SCFA, short-chain fatty acid.
+:::
+
+------------------------------------------------------------------------
+
+### Microbioma, Neuroinflamação e Doenças Psiquiátricas
+
+![Peirce & Alviña, 2019](https://onlinelibrary.wiley.com/cms/asset/77926c1f-168c-4ff1-afda-20f53ea1fd5d/jnr24476-fig-0001-m.jpg){width="850" fig-align="center"}
+
+::: notes
+Bidirectional communication between the gut microbiome and the CNS is affected by stress. Stress (a) activates the HPA axis and results in increased intestinal permeability (b). Intestinal permeability lets bacterial endotoxins leak out of the gut lumen (c) and enter blood circulation. (d) Endotoxins initiate peripheral inflammation. The immune response then spreads to the CNS (e) and neuroinflammation compromises mental health. Stress primes microglial cells (f) as part of the neuroinflammatory response.
+:::
+
+------------------------------------------------------------------------
+
+### Mas e o artigo?
+
+-   Investigar a relação entre diversidade e composição do microbioma fecal e sintomas depressivos em **1.054** participantes do 'Estudo de Rotterdam' (RS) e validar esses achados em participantes do 'Estudo HELIUS' em Amsterdam (**1.539**)
+
+-   Identificaram 12 gêneros e 1 família associados com sintomas depressivos
+
+-   Táxons que já foram associados com a produção de neurotransmissores
+
+------------------------------------------------------------------------
+
+## Como identificaram indivíduos depressivos? {.smaller}
+
+-   Em RS foram avaliados com a escala CES-D.
+    -   Um questionário com 20 itens que identifica sintomas associados à depressão, como culpa, ansiedade, perda de apetite, insônia e retardo psico-motor.
+    -   Score de 0-60.
+    -   **Todos os participantes são de ascendência européia**.
+-   Em HELIUS foram avaliados com a escala PHQ-9.
+    -   Pontua sintomas do DSM-IV de 0 (não apresenta) a 3 (apresenta todos os dias).
+    -   O score total vai de 0-21, com scores \>= 10 identificando indivíduos com MDD.
+    -   É uma coorte multiétnica, porém no estudo atual só foram utilizados dados de indivíduos europeus e que não utilizavam anti-depressivos.
+        -   Bosch et al, 2022, afirma que associações microbioma-depressão independem de etnia.
+
+------------------------------------------------------------------------
+
+## Como identificaram indivíduos depressivos? {.smaller}
+
+::: r-stack
+![](https://i.imgur.com/nvK9FSz.png){fig-align="center"}
+
+::: fragment
+![](https://i.imgur.com/VUKLm9F.png){fig-align="center"}
+
+-   Todo mundo erra...
+:::
+:::
+
+---
+
+## E como associar o microbioma com os sintomas depressivos? {.smaller}
+
+::: r-stack
+-   Através de uma regressão linear! Usando alfa-diversidade e a presença-ausência de táxons.
+
+    -   Ajustaram com covariáveis como idade, sexo, uso de álcool, etc.
+
+-   Para associar a beta-diversidade com os scores, foi utilizada uma PERMANOVA construída da mesma forma que o modelo acima.
+
+-   Uma regressão com random forest também foi utilizada, RS sendo o dado de treinamento e HELIUS o de teste.
+
+-   Eles nunca falaram como normalizaram os scores 😶
+:::
+
+---
+
+![](https://i.imgur.com/Prug9BK.png){width="650" fig-align="center"}
+
+---
+
+## O que esses táxons têm a ver com a depressão?{.smaller}
+
+- A depleção de *Coprococcus* já foi observada em camundongos com comportamento depressivo.
+
+- *Sellimonas* se apresenta em vários casos de disbiose, além de estar ligada a doenças inflamatórias
+
+- A maioria dos táxons estão envolvidos na síntese de glutamato e butirato.
+  - Níveis séricos de glutamato já foram associados com distúrbios de humor.
+  - Butirato é capaz de atravessar a barreira hemato-encefálica e já foi implicado no aumento de atividade colinérgica. Butirato de sódio possui efeitos anti-depressivos em modelos animais.
+
+- *Egerthella* já foi observado em 8 estudos e está associada com a produção de serotonina
+  - Serotonina entérica não passa da BHE, mas altera sua permeabilidade, podendo gerar inflamação.

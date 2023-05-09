@@ -331,9 +331,8 @@
 <p>10 de Maio de 2023</p>
 </div>
 </section>
-<section class="slide level2">
-
-<h3 class="smaller" id="como-o-microbioma-influencia-o-sistema-nervoso-central">Como o Microbioma influencia o Sistema Nervoso Central?</h3>
+<section id="como-o-microbioma-influencia-o-sistema-nervoso-central" class="slide level2 smaller">
+<h2>Como o Microbioma influencia o Sistema Nervoso Central?</h2>
 <div class="r-stack">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -366,9 +365,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
-<h3 id="microbioma-neuroinflamação-e-doenças-psiquiátricas">Microbioma, Neuroinflamação e Doenças Psiquiátricas</h3>
+<section id="microbioma-neuroinflamação-e-doenças-psiquiátricas" class="slide level2">
+<h2>Microbioma, Neuroinflamação e Doenças Psiquiátricas</h2>
 
 <img data-src="https://onlinelibrary.wiley.com/cms/asset/77926c1f-168c-4ff1-afda-20f53ea1fd5d/jnr24476-fig-0001-m.jpg" width="850" class="r-stretch quarto-figure-center"><p class="caption">Peirce &amp; Alviña, 2019</p><aside class="notes">
 <p>Bidirectional communication between the gut microbiome and the CNS is affected by stress. Stress (a) activates the HPA axis and results in increased intestinal permeability (b). Intestinal permeability lets bacterial endotoxins leak out of the gut lumen (c) and enter blood circulation. (d) Endotoxins initiate peripheral inflammation. The immune response then spreads to the CNS (e) and neuroinflammation compromises mental health. Stress primes microglial cells (f) as part of the neuroinflammatory response.</p>
@@ -384,9 +382,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section class="slide level2">
-
-<h3 id="mas-e-o-artigo">Mas e o artigo?</h3>
+<section id="mas-e-o-artigo" class="slide level2">
+<h2>Mas e o artigo?</h2>
 <ul>
 <li><p>Investigar a relação entre diversidade e composição do microbioma fecal e sintomas depressivos em <strong>1.054</strong> participantes do ‘Estudo de Rotterdam’ (RS) e validar esses achados em participantes do ‘Estudo HELIUS’ em Amsterdam (<strong>1.539</strong>)</p></li>
 <li><p>Identificaram 12 gêneros e 1 família associados com sintomas depressivos</p></li>
@@ -441,9 +438,9 @@
 <ul>
 <li>Ajustaram com covariáveis como idade, sexo, uso de álcool, etc.</li>
 </ul></li>
-<li><p>Para associar a beta-diversidade com os scores, foi utilizada uma PERMANOVA construída da mesma forma que o modelo acima.</p></li>
+<li><p>Para associar a beta-diversidade com os scores, foi utilizada uma PERMANOVA.</p></li>
 <li><p>Uma regressão com random forest também foi utilizada, RS sendo o dado de treinamento e HELIUS o de teste.</p></li>
-<li><p>Eles nunca falaram como normalizaram os scores 😶</p></li>
+<li><p>Eles nunca falaram como/se normalizaram os scores 😶</p></li>
 </ul>
 </div>
 </section>
@@ -451,6 +448,39 @@
 
 
 <img data-src="https://i.imgur.com/Prug9BK.png" width="650" class="r-stretch quarto-figure-center"></section>
+<section id="links-causais" class="slide level2 smaller">
+<h2>Links causais</h2>
+<ul>
+<li><em>Mendelian Randomization</em>
+<ul>
+<li>Utilizando dados de dois estudos GWAS - um de depressão e outro de composição de microbioma (Two-sample MR).</li>
+<li>Usando SNPs associados com depressão, estimaram o efeito desses SNPs na presença/ausência de certos táxons a partir do GWAS composicional.
+<ul>
+<li>Para utilizar SNPs associados com os táxons que eles encontraram no estudo do GWAs de microbioma, tiveram que usar um filtro de p&lt;10<sup>-05</sup>.</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<img data-src="https://i.imgur.com/0moYrPR.png" width="850" class="r-stretch quarto-figure-center"><ul>
+<li><em>Eggerthella</em> mostrou resultados significativos (effect = 0.237, p value=0.027)</li>
+</ul>
+<aside class="notes">
+<p>Se um SNP tá associado com depressão, e indivíduos com esse SNP apresentam maior quantidade de um táxon no microbioma, esse SNP tá associado com esse táxon</p>
+<ul>
+<li>Two sample MR -&gt;</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="o-que-esses-táxons-têm-a-ver-com-a-depressão" class="slide level2 smaller">
 <h2>O que esses táxons têm a ver com a depressão?</h2>
 <ul>
@@ -466,8 +496,16 @@
 <li>Serotonina entérica não passa da BHE, mas altera sua permeabilidade, podendo gerar inflamação.</li>
 </ul></li>
 </ul>
+</section>
+<section class="slide level2">
 
-<img src="https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="https://i.imgur.com/ubcr3rS.png"></p>
+<h3 id="joão-vitor-cavalcante-1">João Vitor Cavalcante</h3>
+<p>10 de Maio de 2023</p>
+</div>
+<p><img src="https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 
 </div>
 </section>

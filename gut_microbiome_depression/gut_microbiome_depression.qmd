@@ -15,9 +15,7 @@ format:
 10 de Maio de 2023
 :::
 
-------------------------------------------------------------------------
-
-### Como o Microbioma influencia o Sistema Nervoso Central? {.smaller}
+## Como o Microbioma influencia o Sistema Nervoso Central? {.smaller}
 
 ::: r-stack
 ![Cryan et al, 2019](https://i.imgur.com/AEgnQTq.png){width="750" fig-align="center" text-align="center"}
@@ -31,9 +29,7 @@ format:
 Schematic outlining the various known bidirectional pathways of communication between the gut-microbiota and the brain, including hepatic and gallbladder metabolism, immune-modulatory responses, neuronal innervation, enteroendocrine, and microbial metabolite signaling. CCK, cholecystokinin; GLP-1, glu- cagon-like peptide-1; IL, interleukin; PYY, peptide YY; TNF, tumor necrosis factor; SCFA, short-chain fatty acid.
 :::
 
-------------------------------------------------------------------------
-
-### Microbioma, Neuroinflamação e Doenças Psiquiátricas
+## Microbioma, Neuroinflamação e Doenças Psiquiátricas
 
 ![Peirce & Alviña, 2019](https://onlinelibrary.wiley.com/cms/asset/77926c1f-168c-4ff1-afda-20f53ea1fd5d/jnr24476-fig-0001-m.jpg){width="850" fig-align="center"}
 
@@ -41,17 +37,13 @@ Schematic outlining the various known bidirectional pathways of communication be
 Bidirectional communication between the gut microbiome and the CNS is affected by stress. Stress (a) activates the HPA axis and results in increased intestinal permeability (b). Intestinal permeability lets bacterial endotoxins leak out of the gut lumen (c) and enter blood circulation. (d) Endotoxins initiate peripheral inflammation. The immune response then spreads to the CNS (e) and neuroinflammation compromises mental health. Stress primes microglial cells (f) as part of the neuroinflammatory response.
 :::
 
-------------------------------------------------------------------------
-
-### Mas e o artigo?
+## Mas e o artigo?
 
 -   Investigar a relação entre diversidade e composição do microbioma fecal e sintomas depressivos em **1.054** participantes do 'Estudo de Rotterdam' (RS) e validar esses achados em participantes do 'Estudo HELIUS' em Amsterdam (**1.539**)
 
 -   Identificaram 12 gêneros e 1 família associados com sintomas depressivos
 
 -   Táxons que já foram associados com a produção de neurotransmissores
-
-------------------------------------------------------------------------
 
 ## Como identificaram indivíduos depressivos? {.smaller}
 
@@ -65,8 +57,6 @@ Bidirectional communication between the gut microbiome and the CNS is affected b
     -   É uma coorte multiétnica, porém no estudo atual só foram utilizados dados de indivíduos europeus e que não utilizavam anti-depressivos.
         -   Bosch et al, 2022, afirma que associações microbioma-depressão independem de etnia.
 
-------------------------------------------------------------------------
-
 ## Como identificaram indivíduos depressivos? {.smaller}
 
 ::: r-stack
@@ -79,8 +69,6 @@ Bidirectional communication between the gut microbiome and the CNS is affected b
 :::
 :::
 
----
-
 ## E como associar o microbioma com os sintomas depressivos? {.smaller}
 
 ::: r-stack
@@ -88,18 +76,33 @@ Bidirectional communication between the gut microbiome and the CNS is affected b
 
     -   Ajustaram com covariáveis como idade, sexo, uso de álcool, etc.
 
--   Para associar a beta-diversidade com os scores, foi utilizada uma PERMANOVA construída da mesma forma que o modelo acima.
+-   Para associar a beta-diversidade com os scores, foi utilizada uma PERMANOVA.
 
 -   Uma regressão com random forest também foi utilizada, RS sendo o dado de treinamento e HELIUS o de teste.
 
--   Eles nunca falaram como normalizaram os scores 😶
+-   Eles nunca falaram como/se normalizaram os scores 😶
 :::
 
----
+------------------------------------------------------------------------
 
 ![](https://i.imgur.com/Prug9BK.png){width="650" fig-align="center"}
 
----
+## Links causais {.smaller}
+
+- *Mendelian Randomization*
+  - Utilizando dados de dois estudos GWAS - um de depressão e outro de composição de microbioma (Two-sample MR).
+  - Usando SNPs associados com depressão, estimaram o efeito desses SNPs na presença/ausência de certos táxons a partir do GWAS composicional.
+    - Para utilizar SNPs associados com os táxons que eles encontraram no estudo do GWAs de microbioma, tiveram que usar um filtro de p<10<sup>-05</sup>.
+
+![](https://i.imgur.com/0moYrPR.png){width="850" fig-align="center"}
+    
+- *Eggerthella* mostrou resultados significativos (effect = 0.237, p value=0.027)
+
+::: {.notes}
+Se um SNP tá associado com depressão, e indivíduos com esse SNP apresentam maior quantidade de um táxon no microbioma, esse SNP tá associado com esse táxon
+
+- Two sample MR -> 
+:::
 
 ## O que esses táxons têm a ver com a depressão?{.smaller}
 
@@ -113,3 +116,13 @@ Bidirectional communication between the gut microbiome and the CNS is affected b
 
 - *Egerthella* já foi observado em 8 estudos e está associada com a produção de serotonina
   - Serotonina entérica não passa da BHE, mas altera sua permeabilidade, podendo gerar inflamação.
+  
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/ubcr3rS.png)
+
+### João Vitor Cavalcante
+
+10 de Maio de 2023
+:::

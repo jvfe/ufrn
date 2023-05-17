@@ -12,7 +12,7 @@ format:
 
 ### João Vitor Cavalcante
 
-10 de Maio de 2023
+17 de Maio de 2023
 :::
 
 ## Como o Microbioma influencia o Sistema Nervoso Central? {.smaller}
@@ -89,40 +89,42 @@ Bidirectional communication between the gut microbiome and the CNS is affected b
 
 ## Links causais {.smaller}
 
-- *Mendelian Randomization*
-  - Utilizando dados de dois estudos GWAS - um de depressão e outro de composição de microbioma (Two-sample MR).
-  - Usando SNPs associados com depressão, estimaram o efeito desses SNPs na presença/ausência de certos táxons a partir do GWAS composicional.
-    - Para utilizar SNPs associados com os táxons que eles encontraram no estudo do GWAs de microbioma, tiveram que usar um filtro de p<10<sup>-05</sup>.
+-   *Mendelian Randomization*
+    -   Utilizando dados de dois estudos GWAS - um de depressão e outro de composição de microbioma (Two-sample MR).
+    -   Usando SNPs associados com depressão, estimaram o efeito desses SNPs na presença/ausência de certos táxons a partir do GWAS composicional.
+        -   Para utilizar SNPs associados com os táxons que eles encontraram no estudo do GWAs de microbioma, tiveram que usar um filtro de p\<10<sup>-05</sup>.
 
 ![](https://i.imgur.com/0moYrPR.png){width="850" fig-align="center"}
-    
-- *Eggerthella* mostrou resultados significativos (effect = 0.237, p value=0.027)
 
-::: {.notes}
+-   *Eggerthella* mostrou resultados significativos (effect = 0.237, p value=0.027)
+
+::: notes
 Se um SNP tá associado com depressão, e indivíduos com esse SNP apresentam maior quantidade de um táxon no microbioma, esse SNP tá associado com esse táxon
 
-- Two sample MR -> 
+-   Two sample MR -\>
 :::
 
-## O que esses táxons têm a ver com a depressão?{.smaller}
+## O que esses táxons têm a ver com a depressão? {.smaller}
 
-- A depleção de *Coprococcus* já foi observada em camundongos com comportamento depressivo.
+-   A depleção de *Coprococcus* já foi observada em camundongos com comportamento depressivo.
 
-- *Sellimonas* se apresenta em vários casos de disbiose, além de estar ligada a doenças inflamatórias
+-   *Sellimonas* se apresenta em vários casos de disbiose, além de estar ligada a doenças inflamatórias
 
-- A maioria dos táxons estão envolvidos na síntese de glutamato e butirato.
-  - Níveis séricos de glutamato já foram associados com distúrbios de humor.
-  - Butirato é capaz de atravessar a barreira hemato-encefálica e já foi implicado no aumento de atividade colinérgica. Butirato de sódio possui efeitos anti-depressivos em modelos animais.
+-   A maioria dos táxons estão envolvidos na síntese de glutamato e butirato.
 
-- *Egerthella* já foi observado em 8 estudos e está associada com a produção de serotonina
-  - Serotonina entérica não passa da BHE, mas altera sua permeabilidade, podendo gerar inflamação.
-  
----
+    -   Níveis séricos de glutamato já foram associados com distúrbios de humor.
+    -   Butirato é capaz de atravessar a barreira hemato-encefálica e já foi implicado no aumento de atividade colinérgica. Butirato de sódio possui efeitos anti-depressivos em modelos animais.
+
+-   *Egerthella* já foi observado em 8 estudos e está associada com a produção de serotonina
+
+    -   Serotonina entérica não passa da BHE, mas altera sua permeabilidade, podendo gerar inflamação.
+
+------------------------------------------------------------------------
 
 ::: {style="text-align: center; display: grid; place-items: center;"}
 ![](https://i.imgur.com/ubcr3rS.png)
 
 ### João Vitor Cavalcante
 
-10 de Maio de 2023
+17 de Maio de 2023
 :::

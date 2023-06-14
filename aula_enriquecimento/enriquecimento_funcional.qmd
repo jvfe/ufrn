@@ -1,0 +1,37 @@
+---
+title: "Enriquecimento Funcional"
+subtitle: "DBQ0044 - Introdução a Biologia de Sistemas"
+author: "João Cavalcante"
+format: beamer
+---
+
+# Enriquecimento Funcional
+
+- Como extrair informação funcional de uma expressão diferencial?
+- Ou, o que esses 1500 genes diferencialmente expressos querem dizer?
+
+# Over-representation analysis 
+
+![](tuzKh0r.png)
+
+# O Teste Hipergeométrico
+
+- A probabilidade de observar um número específico de genes do conjunto de genes em uma categoria ou anotação específica.
+
+```
+P(X = k) = (C(m, k) * C(N-m, n-k)) / C(N, n)
+```
+
+Onde:
+
+- N é o número total de genes no conjunto de fundo.
+- n é o número total de genes no conjunto de genes.
+- m é o número total de genes na categoria ou anotação.
+- k é o número de genes do conjunto de genes que pertencem à categoria ou anotação.
+- C(a, b) denota o número de combinações de b elementos selecionados de um conjunto de a elementos.
+
+---
+
+## Ok, cansei de teoria!
+
+- https://tinyurl.com/enriquecimento-aula

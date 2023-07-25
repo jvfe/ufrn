@@ -1,0 +1,172 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: dark
+    slide-number: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+# Jornadas pela metagenômica
+
+**26 de Julho de 2023**
+
+João Vitor Cavalcante
+:::
+
+
+## Clusters gênicos biosintéticos e petróleo {.smaller}
+
+- Microorganismos promovem ciclos biogeoquímicos e suportam cadeias alimentares e sua diversidade funcional potencializa a descoberta de novas enzimas, compostos e produtos naturais.
+
+
+- MAGs surgem como um caminho para a investigação de microbiomas de conteúdo taxonômico e funcional ainda não catalogado pelos bancos de dados referência.
+
+- **Objetivo**: Averiguar o potencial biosintético do microbioma de poços de petróleo a partir da detecção de grupos de genes biosintéticos (BGCs) em *contigs* de MAGs. Buscar potencial para o metabolismo de carbono.
+
+## O que é um BGC? {.smaller}
+
+- Conjuntos de genes não-homólogos e fisicamente próximos no genoma que geralmente são co-regulados e
+participam de uma mesma via metabólica
+
+- Ocorrem sobretudo em bactérias, archaea e fungos, mas também são encontrados em outros organismos.
+
+- Geralmente surgem por meio de rearranjos genômicos, duplicação de genes ou transferência horizontal.
+
+![](https://www.mdpi.com/marinedrugs/marinedrugs-13-04331/article_deploy/html/images/marinedrugs-13-04331-g002.png)^[Lukassen, M.B.; Saei, W.; Sondergaard, T.E.; Tamminen, A.; Kumar, A.; Kempken, F.; Wiebe, M.G.; Sørensen, J.L. Identification of the Scopularide Biosynthetic Gene Cluster in Scopulariopsis brevicaulis. Mar. Drugs 2015, 13, 4331-4343. https://doi.org/10.3390/md13074331]
+
+## Metodologia
+
+- Dados adquiridos do PRJNA635524 - 3 amostras de água de produção de um campo petrolífero da China. Acompanha também 3 amostras de metatranscriptômica.
+
+- QC, montagem, *binning* e classificação taxonômica realizada com nf-core/mag v2.2.1
+
+- Detecção de BGCs com nf-core/funcscan v1.0.1 (antiSMASH/gecco)
+
+## Resultados {.smaller}
+
+- Geramos 93 MAGs, anotados tanto para táxons de Archaea quanto de Bacteria.
+
+- Entre eles, foram detectados 88 BGCs.
+
+::: r-stack
+![](bgc_classes.png){width="750" fig-align="center"}
+
+![](bgc_completeness.png){.fragment width="750" fig-align="center"}
+
+![](bgc_by_genus.png){.fragment width="750" fig-align="center"}
+:::
+
+## Perspectivas futuras
+
+- Investigar vias de metabolismo de carbono que possam envolver os BGCs
+
+- Montar árvore filogenética dos táxons identificados
+
+- Analisar dados de metatranscriptômica
+
+- Possíveis colaborações
+
+---
+
+---
+
+## Como o Microbioma influencia o Sistema Nervoso Central? {.smaller}
+
+::: r-stack
+![Cryan et al, 2019](https://i.imgur.com/AEgnQTq.png){width="750" fig-align="center" text-align="center"}
+
+![](https://i.imgur.com/fIv7AGb.png){.fragment width="750" fig-align="center"}
+
+![](https://i.imgur.com/u4cLvJe.png){.fragment width="550" fig-align="center"}
+:::
+
+::: notes
+Schematic outlining the various known bidirectional pathways of communication between the gut-microbiota and the brain, including hepatic and gallbladder metabolism, immune-modulatory responses, neuronal innervation, enteroendocrine, and microbial metabolite signaling. CCK, cholecystokinin; GLP-1, glu- cagon-like peptide-1; IL, interleukin; PYY, peptide YY; TNF, tumor necrosis factor; SCFA, short-chain fatty acid.
+:::
+
+## Microbioma, Neuroinflamação e Doenças Psiquiátricas
+
+![Peirce & Alviña, 2019](https://onlinelibrary.wiley.com/cms/asset/77926c1f-168c-4ff1-afda-20f53ea1fd5d/jnr24476-fig-0001-m.jpg){width="850" fig-align="center"}
+
+::: notes
+Bidirectional communication between the gut microbiome and the CNS is affected by stress. Stress (a) activates the HPA axis and results in increased intestinal permeability (b). Intestinal permeability lets bacterial endotoxins leak out of the gut lumen (c) and enter blood circulation. (d) Endotoxins initiate peripheral inflammation. The immune response then spreads to the CNS (e) and neuroinflammation compromises mental health. Stress primes microglial cells (f) as part of the neuroinflammatory response.
+:::
+
+## Métodos
+
+-   Dados adquiridos do PRJNA762199 - metagenomas fecais de indivíduos russos 
+com MDD, contendo informação de **sexo** e **idade**.
+  -   Dados gerados em 2021 e ainda sem publicação associada.
+
+-   **Objetivo**: Investigar diferenças composicionais entre indivíduos do sexo masculino e feminino, tanto em uma perspectiva taxonômica quanto uma funcional.
+
+## Resultados preliminares
+
+-   Realizei a montagem dos contigs em cada amostra usando o MEGAHIT, em seguida
+anotei os contigs com o EGGNOGG-Mapper
+    -   Resultados gerais até demais, coisa que já havíamos verificado quando desenvolvemos o MEDUSA.
+
+-   Tentando executar o MEDUSA...
+
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](bp_terms_pheatmap.png){width="750" fig-align="center"}
+:::
+
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](kegg_pheatmap.png){width="750" fig-align="center"}
+:::
+
+## Perspectivas futuras
+
+- Associar resultados com outros já obtidos em sequenciamentos *amplicon*.
+
+- Executar o MEDUSA com anotação GO (atualmente tentando).
+
+- Buscar outros bancos de anotação funcional que não os tradicionais GO/KEGG.
+
+---
+
+---
+
+## dalmolingroup/euryale {.smaller}
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](euryale.png){width="550" fig-align="center"}
+:::
+
+## dalmolingroup/euryale
+
+-   O que está faltando?
+    - Adicionar construção de índice com Kaiju ao Pipeline
+    - Adicionar opção para realizar o download do nr/id_mapping do Uniprot
+    
+---
+
+---
+
+## Desenvolvimento em Metagenômica {.smaller}
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](artigo_opiniao.png)
+:::
+
+- **Sustentabilidade de software em metagenômica**
+  - Reproducibilidade
+  - Curadoria de software
+  - Gerenciadores de *workflow*
+  - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
+  
+::: {style="text-align: center; display: grid; place-items: center;"}
+# Jornadas pela metagenômica
+
+**26 de Julho de 2023**
+
+João Vitor Cavalcante
+:::

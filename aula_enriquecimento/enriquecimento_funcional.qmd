@@ -12,7 +12,7 @@ format: beamer
 
 # Over-representation analysis 
 
-![](tuzKh0r.png)
+![Denault et al, 2021](tuzKh0r.png)
 
 # O Teste Hipergeométrico
 

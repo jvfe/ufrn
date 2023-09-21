@@ -1,0 +1,118 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: dark
+    slide-number: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/ubcr3rS.png)
+
+### João Vitor Cavalcante
+
+September 19 2023
+:::
+
+## How does the microbiome influence the nervous system? {.smaller}
+
+::: r-stack
+![Cryan et al, 2019](https://i.imgur.com/AEgnQTq.png){alt="Cryan et al, 2019" width="750" fig-align="center" text-align="center"}
+
+![](https://i.imgur.com/fIv7AGb.png){.fragment width="750" fig-align="center"}
+
+![](https://i.imgur.com/u4cLvJe.png){.fragment width="550" fig-align="center"}
+:::
+
+::: notes
+Schematic outlining the various known bidirectional pathways of communication between the gut-microbiota and the brain, including hepatic and gallbladder metabolism, immune-modulatory responses, neuronal innervation, enteroendocrine, and microbial metabolite signaling. CCK, cholecystokinin; GLP-1, glu- cagon-like peptide-1; IL, interleukin; PYY, peptide YY; TNF, tumor necrosis factor; SCFA, short-chain fatty acid.
+:::
+
+## Summary {.smaller}
+
+- Investigate the relation between the gut microbiome's diversity and composition and depressive symptoms in **1.054** subjects of the 'Rotterdam Study' (RS) and validate the findings in participants of the 'HELIUS Study' in Amsterdam (**1.539**).
+
+- Alpha diversity is negatively associated with depressive symptoms
+
+- Beta diversity is positively associated (in RS)
+
+- 12 genera and 1 family associated with depressive symptoms were identified.
+  - Taxa that were previously associated with neurotransmisser production.
+
+- With major depression as the exposure, Eggerthella, showed significant MR results (effect = 0.237, p value = 0.027).
+
+
+## How did they evaluate the depressive symptoms? {.smaller}
+
+- In RS they were evaluated with the CES-D scale.
+  - A 20 item questionnaire that identifies depressive symptoms.
+  - **All participants are of european heritage**
+
+- In HELIUS they were evaluated with the PHQ-9 scale.
+  - Scores DSM-IV symptoms in a scale of 0 to 3.
+  - Total score goes from 0-21 with scores \>= 10 identifying depressive subjects.
+  - Multiethnic cohort but filtered down to only contain individuals of European heritage.
+
+## How did they evaluate the depressive symptoms? {.smaller}
+
+::: r-stack
+![](https://i.imgur.com/nvK9FSz.png){fig-align="center"}
+
+::: fragment
+![](https://i.imgur.com/VUKLm9F.png){fig-align="center"}
+
+:::
+:::
+
+## How did they associate taxa and depressive symptoms? {.smaller}
+
+::: r-stack
+- Through a linear regression! Using alfa-diversity and the presence-absence of taxa as the input variables and depression scores as the outcomes.
+    -   Adjusted by covariates like age, sex, alcohol use, BMI, smoking, medication use, etc.
+
+-   To associate beta-diversity with the scores, they used a PERMANOVA.
+
+-   A random forest regression was also used, RS being the training dataset and HELIUS being the test dataset.
+
+-   Results were combined in a meta-analysis, using sample-size weighted meta-analysis to combine results. Adjustment for multiple testing was performed using false discovery rate (FDR) using Benjamini-Hochberg correction.
+
+:::
+
+------------------------------------------------------------------------
+
+![](https://i.imgur.com/Prug9BK.png){width="650" fig-align="center"}
+
+## Causal inference {.smaller}
+
+-   *Mendelian Randomization*
+    - A two-sample MR was used,  using the results of the largest genome-wide association studies of both microbiome and major depression.
+    -   For major depression we used genome-wide significant single nucleotide polymorphisms (SNPs) as instruments to estimate the effect of these SNPs on the presence/absence of taxa.
+    -   For microbiome there were none to a very few SNPs that were genome-wide significantly associated with the identified microbiota, so they used SNPs with a p-value \<10<sup>-05</sup> as instruments.
+
+-   With major depression as the exposure, *Eggerthella*, showed significant MR results under the IVW method (effect = 0.237, p value=0.027) .
+  -   The Steiger test for directionality suggests that Eggerthella is more likely to be causally associated with MDD
+
+## What do these taxa have to do with depression? {.smaller}
+
+- *Coprococcus* depletion has been observed in animal models of depression.
+-   *Sellimonas* presents itself in various cases of disbiosis, besides being linked to inflammatory diseases
+
+-   The majority of taxa are associated with the synthesis of glutamate and butyrate.
+
+    -   Serum levels of glutamate have been associated with mood disorders.
+    -   Butyrate is capable of crossing the blood-brain barrier and has been implicated in the increase of cholinergic activity. Sodium butyrate has shown anti-depressive effects in animals models.
+
+-   *Eggerthella* has been observed in 8 depression-related studies and is associated with the production of serotonin
+
+    -   Gut serotonin doesn't cross the BBB, but alters its permeability, potentially favouring inflammation.
+
+------------------------------------------------------------------------
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/ubcr3rS.png)
+
+### João Vitor Cavalcante
+
+September 19 2023
+:::

@@ -1,0 +1,199 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: dark
+    slide-number: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/oMvQZ4l.png)
+
+### João Vitor Cavalcante
+
+27 de Setembro de 2023
+:::
+
+# Introdução
+
+## O que é um ciclo biogeoquímico?
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig2_HTML.png?as=webp){width="850" fig-align="center"}
+
+## Introdução {.smaller}
+
+
+- Processos biogeoquímicos são tipicamente mediados ou orquestrados por comunidade microbianas.
+  - Servem como forças importante da transformação cíclica de elementos, energia e água.
+  
+- Vários processos metabólicos possuem suas funções separadas entre microorganismos diferentes,
+que são interdependentes. A troca que ocorre de um organismo para outro num mesmo ciclo metabólico
+é denominado *metabolic handoff*.
+
+- Abordagens para estudar o papel funcional de microorganismos no contexto da biogeoquímica e montar
+redes funcionais a nível de comunidade são escassas.
+  - E, quando existem, podem fornecer o usuários com informações muito detalhadas ou complexas, o
+    que pode dificultar a interpretação.
+    
+- METABOLIC (METabolic And BiogeOchemistry anaLyses In miCrobes), um *pipeline* para caracterizar traços
+biogeoquímicos e montar redes funcionais em comunidades microbianas a partir da análise de genomas.
+  - Produz tabelas e figuras acessíveis e simples de interpretar.
+
+::: notes
+Vocês deve destacar o método científico (perguntas por traz de cada ensaio, hipóteses, desenho experimental, resultados, discussão e conclusões. Além disso que ferramentas computacionais foram utilizadas para solucionar problemas. 
+:::
+
+## O que é o METABOLIC?
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig1_HTML.png?as=webp){width="650" fig-align="center"}
+
+## Metodologia {.smaller}
+
+- HMMER hmmsearch busca em vários bancos de dados de informação proteica/metabólica.
+  - Perfil customizado inclui HMMs que mapeiam para 31 passos distintos de ciclos biogeoquímicos
+  - A partir das *matches* aos bancos acima, é inferida a presença de vias metabólicas específicas.
+  
+- Tipicamente HMMs têm dificuldade de separar famílias proteicas com alta identidade porém com função distinta. Então, os autores do trabalho implementaram um método de validação de motivos proteicos.
+
+- METABOLIC-G roda o pipeline de anotação e METABOLIC-C incorpora as *reads* metagenômicas originais para calcular a cobertura dos grupos gênicos funcionais no dado de sequenciamento.
+  - Aplicam um *cut-off* a partir dessa cobertura para verificar se os módulos funcionais estão realmente presentes.
+
+- Classificação taxonômica feita pelo GTDB-tk
+  - Informação utilizada nas análises de comunidade
+
+::: notes
+TC: scores of the lowest-scoring hit(s) that were included as true member(s) of the
+Pfam family.
+
+NC: scores of the highest-scoring hit(s) that were not included as true members
+of the Pfam family
+::
+
+
+## MW-score
+- *Metabolic-weight score* pontua a capacidade funcional e a abundância de uma comunidade microbiana para uma função específica.
+
+- Para cada filo detectado, é calculada a sua contribuição para a função biogeoquímica.
+
+- O cálculo soma a cobertura dos grupos gênicos desse filo que contribuem para essa função no dado original de             sequenciamento e normaliza esse valor pelo total de cobertura dos grupos gênicos desse filo para todas as funções. 
+
+# Resultados
+
+- Utilizaram um conjunto de 98 MAGs provenientes de uma fonte hidrotermal da bacia de Guaymas no oceano pacífico
+
+---
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig3_HTML.png?as=webp){width="700" fig-align="center"}
+
+::: notes
+Número absoluto de genomas envolvidos na reação
+Porcentagem de genomas na comunidade envolvidos na reação
+:::
+
+---
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig4_HTML.png?as=webp){width="850" fig-align="center"}
+
+::: notes
+The size of the node was depicted according to the degree (number of connections to each node). The thickness of the edge was depicted according to the average gene coverage values of the two connected biogeochemical cycling steps
+:::
+
+## MW-Score
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig5_HTML.png?as=webp){width="3500" fig-align="center"}
+
+::: notes
+a higher MW-score indicates a higher representation of a specific function within the microbial community, based on gene presence and abundance. This score can be used to compare the relative importance of different functions within the community and to identify the microbial groups (e.g., phyla) that contribute the most to these functions. Therefore, a high MW-score for a specific function indicates that this function is more represented by the microbial community and is likely to play a more important role in the biogeochemical processes of the ecosystem.
+:::
+
+---
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig6_HTML.png?as=webp){width="3500" fig-align="center"}
+
+::: notes
+Metabolic Sankey diagram representing the contributions of microbial genomes to individual metabolic and biogeochemical processes, and entire elemental cycles. Microbial genomes are represented at the phylum-level resolution. The three columns from left to right represent taxonomic groups scaled by the number of genomes, the contribution to each metabolic function by microbial groups calculated based on genome coverage, and the contribution to each functional category/biogeochemical cycle. 
+:::
+
+## Como o MW-score pode diferenciar ecossistemas
+
+::: r-stack
+- A comunidade microbiana das fontes hidrotermais do fundo do mar possui funções metabólicas mais abundantes associadas à metanotrofia e oxidação de hidrogênio.
+
+- O subsolo terrestre contém genomas que abrangem mais etapas do ciclo do enxofre em comparação com o subsolo marinho (7 etapas contra 3 etapas)
+
+- A comunidade microbiana das fontes hidrotermais do fundo do mar apresenta um viés no metabolismo do enxofre voltado para a oxidação do enxofre.
+
+::: fragment
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig8_HTML.png?as=webp){width="650" fig-align="center"}
+:::
+:::
+
+## METABOLIC e o microbioma humano em diferentes condições
+
+- Demonstramos que existiam 28 marcadores com variações > 10% em termos das frações do genoma contendo marcadores entre essas duas amostras.
+
+- Esses 28 marcadores abrangiam todas as dez categorias metabólicas, exceto o metabolismo de lipídios e a tradução, sugerindo amplas diferenças funcionais entre essas duas amostras.
+
+---
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig10_HTML.png?as=webp){width="350" fig-align="center"}
+
+## Reconstrução do metabolismo de microorganismos {.smaller}
+
+- Para *Hadesarchaea archaeon 1244-C3-H4-B1*, os resultados do METABOLIC condizem com a perda
+  de formas anaeróbicas da desidrogenase de monóxido de carbono, algo já caracterizado na literatura.
+  
+- Para *Nitrospirae*, os resultados ilustram uma bactéria capaz de oxidação de nitrto e um estilo de 
+  vida autotrófico, também já visto na literatura.
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig9_HTML.png?as=webp){width="850" fig-align="center"}
+
+## Comparações com outras ferramentas
+
+- As anotações de proteínas preditas por softwares e *webservers* foram comparadas com suas anotações originais fornecidas pelo banco de dados NCBI.
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40168-021-01213-8/MediaObjects/40168_2021_1213_Fig7_HTML.png?as=webp){width="750" fig-align="center"}
+
+::: notes
+1) recall (also referred to
+as sensi tivity) as the true positive rate, (2) precision (also
+referred to as the positive predictive value) which indi-
+cates the reproducibility and repeatability of a measure-
+ment system, (3) accuracy which indicates the closeness
+of measurements to their true values, and (4) F1 value
+which is the harmonic mean of precision and recall
+
+METABOLIC consistently placed it amongst the top
+3 and top 2 software for recall and F1 and the top 1 and
+top 2 software for precision and accuracy. 
+:::
+
+## Algumas desvantagens observadas
+
+- Pouca modularização presente no código, o que dificulta seu entendimento e modificação posterior.
+
+- Uso do formato excel como único formato de output pode gerar fragilidade
+
+- Problemas de instalação associados ao Perl
+
+- Problemas com reprodutibilidade foram apontados no repositório do GitHub.
+
+## Conclusões
+
+- Comparações paralelas entre comunidades ou amostras é muito fácil de se visualizar com o METABOLIC
+
+- Abrange vários bancos de dados de informação funcional
+
+- Possui vários passos de validação no sentido de remover falsos positivos
+
+- METABOLIC capacita pesquisadores a melhor interpretar avaliações de metabolismo microbiano e biogeoquímica de metagenomas.
+
+---
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/oMvQZ4l.png)
+
+### João Vitor Cavalcante
+
+27 de Setembro de 2023
+:::

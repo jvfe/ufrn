@@ -41,6 +41,11 @@ biogeoquímicos e montar redes funcionais em comunidades microbianas a partir da
   - Produz tabelas e figuras acessíveis e simples de interpretar.
 
 ::: notes
+
+1. Técnicas de sequenciamento de alta escala podem fornecer um entendimento compreensivo de traços funcionais e o metabolismo de comunidades microbianas. Identificando clados-chave que são importantes para processos biogeoquímicos.
+2. Como melhor identificar esses grandes orquestradores funcionais numa comunidade microbiana?
+3. Através de METABOLIC. Testado em diferentes ambientes e condições para validar sua funcionalidade.
+
 Vocês deve destacar o método científico (perguntas por traz de cada ensaio, hipóteses, desenho experimental, resultados, discussão e conclusões. Além disso que ferramentas computacionais foram utilizadas para solucionar problemas. 
 :::
 
@@ -167,6 +172,8 @@ which is the harmonic mean of precision and recall
 METABOLIC consistently placed it amongst the top
 3 and top 2 software for recall and F1 and the top 1 and
 top 2 software for precision and accuracy. 
+
+Specifically, they randomly picked 100 protein sequences from individual genomes and submitted them to annotation by six different software/online servers. Predicted protein annotations by individual software and online servers were compared to their original annotations that were provided by the NCBI database.
 :::
 
 ## Algumas desvantagens observadas

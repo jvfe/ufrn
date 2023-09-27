@@ -12,6 +12,8 @@ format:
 
 ### João Vitor Cavalcante
 
+BIF0030 - METAGENÔMICA
+
 27 de Setembro de 2023
 :::
 
@@ -27,14 +29,10 @@ format:
 - Processos biogeoquímicos são tipicamente mediados ou orquestrados por comunidade microbianas.
   - Servem como forças importante da transformação cíclica de elementos, energia e água.
   
-- Vários processos metabólicos possuem suas funções separadas entre microorganismos diferentes,
-que são interdependentes. A troca que ocorre de um organismo para outro num mesmo ciclo metabólico
-é denominado *metabolic handoff*.
+- Processos metabólicos possuem suas funções separadas entre microorganismos diferentes e interdependentes: *metabolic handoffs*.
 
-- Abordagens para estudar o papel funcional de microorganismos no contexto da biogeoquímica e montar
-redes funcionais a nível de comunidade são escassas.
-  - E, quando existem, podem fornecer o usuários com informações muito detalhadas ou complexas, o
-    que pode dificultar a interpretação.
+- Abordagens para estudar o papel funcional de microorganismos no contexto da biogeoquímica são escassas.
+  - Quando existem, podem fornecer aos usuários informações muito complexas e de difícil interpretação.
     
 - METABOLIC (METabolic And BiogeOchemistry anaLyses In miCrobes), um *pipeline* para caracterizar traços
 biogeoquímicos e montar redes funcionais em comunidades microbianas a partir da análise de genomas.
@@ -48,6 +46,14 @@ biogeoquímicos e montar redes funcionais em comunidades microbianas a partir da
 
 Vocês deve destacar o método científico (perguntas por traz de cada ensaio, hipóteses, desenho experimental, resultados, discussão e conclusões. Além disso que ferramentas computacionais foram utilizadas para solucionar problemas. 
 :::
+
+## Introdução
+
+- Técnicas de sequenciamento de alta escala podem fornecer um entendimento compreensivo de traços funcionais e o metabolismo de comunidades microbianas. Identificando clados-chave que são importantes para processos biogeoquímicos.
+
+- Como melhor identificar esses grandes orquestradores funcionais numa comunidade microbiana?
+
+- **Hipótese**: METABOLIC é capaz de diferenciar ambientes e condições de acordo com o conteúdo funcional, é acurado ao determinar a contribuição de cada táxon ao perfil funcional e supera alternativas existentes.
 
 ## O que é o METABOLIC?
 
@@ -68,12 +74,13 @@ Vocês deve destacar o método científico (perguntas por traz de cada ensaio, h
   - Informação utilizada nas análises de comunidade
 
 ::: notes
+
 TC: scores of the lowest-scoring hit(s) that were included as true member(s) of the
 Pfam family.
 
 NC: scores of the highest-scoring hit(s) that were not included as true members
 of the Pfam family
-::
+:::
 
 
 ## MW-score
@@ -180,9 +187,7 @@ Specifically, they randomly picked 100 protein sequences from individual genomes
 
 - Pouca modularização presente no código, o que dificulta seu entendimento e modificação posterior.
 
-- Uso do formato excel como único formato de output pode gerar fragilidade
-
-- Problemas de instalação associados ao Perl
+- Uso do formato excel como formato de output pode gerar fragilidade.
 
 - Problemas com reprodutibilidade foram apontados no repositório do GitHub.
 
@@ -192,7 +197,7 @@ Specifically, they randomly picked 100 protein sequences from individual genomes
 
 - Abrange vários bancos de dados de informação funcional
 
-- Possui vários passos de validação no sentido de remover falsos positivos
+- Possui vários passos de validação no sentido de remover falsos positivos, sendo superior a alternativas existentes.
 
 - METABOLIC capacita pesquisadores a melhor interpretar avaliações de metabolismo microbiano e biogeoquímica de metagenomas.
 
@@ -201,6 +206,8 @@ Specifically, they randomly picked 100 protein sequences from individual genomes
 ![](https://i.imgur.com/oMvQZ4l.png)
 
 ### João Vitor Cavalcante
+
+BIF0030 - METAGENÔMICA
 
 27 de Setembro de 2023
 :::

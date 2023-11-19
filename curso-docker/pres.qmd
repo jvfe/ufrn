@@ -1,0 +1,197 @@
+---
+title: "Navegando em containers"
+subtitle: "Deixe sua análise isolada e reproduzível com Docker"
+author: "João Cavalcante e Gleison Medeiros"
+lang: pt
+format: 
+  revealjs:
+    theme: night
+    slide-number: true
+    footer: "Workshop PPG-Bioinfo 2023"
+    preview-links: true
+    chalkboard: true
+    multiplex: true # audience can follow along w/ mobile devices
+    transition: slide # slide # none | fade | convex | concave | zoom
+    fragments: true
+    logo: "https://www.melbournebioinformatics.org.au/tutorials/tutorials/docker/media/assets/docker_logo.png"
+---
+
+
+## O que veremos hoje? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.incremental}
+- **Docker, Containers e Imagens**
+  - O que é Docker e pra que ele Serve?
+  - Terminologia necessária
+
+- **Rodando containers**
+  - `docker run`
+  - Volumes
+  - Limpe o seu sistema!
+:::
+:::
+
+::: {.column width="50%"}
+::: {.incremental}
+- **Dockerfiles**
+  - Como e quando escrever Dockerfiles
+  - Dockerizando o samtools
+  
+- **Docker e HPC**
+  - Docker em HPC
+  - Singularity vs Docker
+:::
+:::
+
+::::
+
+
+
+# Parte 1 - Docker, Containers e Imagens
+
+## O que é Docker?
+
+- Uma tecnologia de conteinerização.
+  - Permitir múltiplos sistemas operacionais isolados dentro de um hospedeiro.
+  
+- `chroot` - Rodar uma aplicação sem acesso ao sistema
+
+- "_a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it: code, runtime, system tools, system libraries, settings_"
+
+
+## Para que serve o Docker?
+
+- *Deploy* de aplicações web
+
+- Testes e integração contínua
+
+- **Análises auto-contidas**
+
+- **_Pipelines_ de análise que requerem vários _runtimes_ e/ou ferramentas**
+
+![](https://i.imgur.com/b1gmyf6.png){fig-align="center"}
+
+## Imagens vs Containers
+
+- Uma imagem é um arquivo contendo todos os dados e software necessário para rodar uma aplicação
+
+- Quando se roda uma imagem, ela cria um **container**, que você pode iniciar, pausar e deletar sem afetar a imagem original.
+
+![](https://www.melbournebioinformatics.org.au/tutorials/tutorials/docker/media/assets/Image_Container.svg){fig-align="center"}
+
+## Imagens vs Containers
+
+- Se pode ter vários containers rodando a mesma imagem
+
+- Classes vs Objetos
+
+![](https://www.melbournebioinformatics.org.au/tutorials/tutorials/docker/media/assets/Host.svg){fig-align="center"}
+
+## Repositórios de Imagens
+
+- Quando Docker não encontra sua imagem localmente, ela puxa de um repositório de imagens na nuvem, isto é,
+um _registry_.
+
+- A maioria das aplicações de bioinformática podem ser encontradas no [Docker Hub](http://hub.docker.com/) ou na [Quay.io](http://quay.io/)
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20230419170724/Docker-hub-registry.webp){text-align="center" fig-align="center"}
+
+# Parte 2 - Rodando Containers
+
+## docker run {.smaller}
+
+- `docker images` e `docker container ls` 
+
+- Fazendo o pull e/ou rodando: 
+  - `docker image pull hello-world`
+  - `docker run hello-world`
+
+- Rodar um comando dentro de um container: 
+  - `docker container run python cat /etc/os-release`
+
+- Rodando de forma interativa com interface para o terminal: 
+  - `docker run -it python python`
+  - `docker run -it python bash`
+
+## Volumes
+
+- Por padrão, o Docker não pode acessar dados no sistema do hospedeiro.
+  - Todos os dados no container são perdidos na saída.
+  
+## Exercício - 10 min {.smaller}
+
+- Crie um novo container da imagem python ligando um volume a ele (com `-v`)
+  - **Dica**: Tente rodar o container de forma interativa com `-it`
+
+- Escreva "olá mundo" para um arquivo chamado `teste`:
+  - `echo 'olá mundo' > teste`
+  
+- Saia do container e acesse o conteúdo do arquivo na sua máquina hospedeira:
+  - `cat teste`
+
+## Limpando o seu sistema {.smaller}
+
+- Removendo uma imagem:
+  - `docker image rm hello-world` ou `docker rmi hello-world`
+  
+- Que containers estão rodando?
+  - `docker container ls`
+  - `docker container ls --all`
+  
+- `docker container prune`
+
+::: {.incremental}
+
+- Tá se sentindo **apocalíptico**? 
+  - `docker system prune`
+  
+:::
+
+# Intervalo - 10 min
+
+# Parte 3 - Dockerfiles
+
+## O que é um Dockerfile?
+
+## 10 regras para se escrever Dockerfiles
+
+## Você precisa escrever Dockerfiles?
+
+## Vamos dockerizar o Samtools! - 10min
+
+- Escreva um Dockerfile para rodar a ferramenta [Samtools](http://www.htslib.org/)
+
+- Faça o `build` desse Dockerfile
+
+- Teste!
+
+## Docker e pipelines
+
+# Parte 4 - Docker, HPC e críticas
+
+## Porquê não posso usar docker no supercomputador?
+
+## O que é Singularity?
+
+## Convertendo Docker para Singularity
+
+## O Docker realmente é a melhor solução?
+
+# Obrigado!
+
+# Referências
+
+<!-- O que é o Docker.
+Imagens e containers. 
+Docker Hub e repositórios de imagens. 
+Rodando containers. 
+Limpando containers e imagens do seu sistema. 
+Volumes e montagens. 
+Dockerfiles. 
+10 regras para escrever Dockerfiles. 
+Dockerizando ferramentas de bioinformática e pipelines. 
+Docker e HPC. 
+Convertendo uma imagem Docker para Singularity. -->

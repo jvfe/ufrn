@@ -116,7 +116,7 @@ um _registry_.
   - `docker run -it python python`
   - `docker run -it python bash`
 
-## Volumes
+## Volumes - A fazer
 
 - Por padrão, o Docker não pode acessar dados no sistema do hospedeiro.
   - Todos os dados no container são perdidos na saída.
@@ -156,42 +156,157 @@ um _registry_.
 
 ## O que é um Dockerfile?
 
-## 10 regras para se escrever Dockerfiles
+:::: {.columns}
+
+::: {.column width="50%"}
+- A receita de como definir uma nova imagem Docker
+
+- Sempre possuem o nome `Dockerfile` e devem ter um diretório próprio.
+:::
+
+::: {.column width="50%"}
+![](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1008316.g002){fig-align="center" width=700}
+:::
+
+::::
+
+## Comandos de um Dockerfile
+
+Um Dockerfile é uma lista de comandos que progressivamente constroem uma imagem:
+
+- `FROM` descreve a imagem "base"
+- `RUN` executa um comando de terminal
+- `COPY` copia dados do hospedeiro para a imagem
+- `ENTRYPOINT` configura o comando padrão a ser executado quando um container é iniciado
+- `WORKDIR`, como `cd`, configura o diretório de trabalho para a execução da build e/ou do container
+
+
+## Dockerfile - Exemplo
+
+```Dockerfile
+FROM docker.io/rocker/verse:3.6.2
+
+### INSTALL BASE SOFTWARE #####
+# Install Java, needed for package rJava
+RUN apt-get update && \
+  apt-get install -y default-jdk && \
+  rm -rf /var/lib/apt/lists/*
+
+### INSTALL WORKFLOW TOOLS #####
+# Install system dependencies for R packages
+RUN apt-get update && \
+  apt-get install -y \
+    # needed for RNetCDF, found via https://sysreqs.r-hub.io/pkg/RNetCDF
+    libnetcdf-dev libudunits2-dev \
+    # needed for git2r:
+    libgit2-dev
+
+# Install R packages, 
+# based on https://github.com/rocker-org/geospatial/blob/master/Dockerfile
+RUN install2.r --error \
+    RColorBrewer \
+    RNetCDF \
+    git2r \
+    rJava
+
+WORKDIR /tmp
+
+# Install Python tools and their system dependencies
+RUN apt-get update && \
+  apt-get install -y python-pip && \
+  rm -rf /var/lib/apt/lists/*
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+# Download superduper image converter
+RUN wget https://downloads.apache.org/pdfbox/2.0.19/pdfbox-app-2.0.19.jar
+
+### ADD MY OWN SCRIPTS #########
+# Add workflow scripts
+WORKDIR /work
+COPY myscript.sh myscript.sh
+COPY analysis.py analysis.py
+COPY plots.R plots.R
+```
+
+---
+
+![](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1008316.g001){fig-align="center" width=700}
 
 ## Você precisa escrever Dockerfiles?
 
-## Vamos dockerizar o Samtools! - 10min
+- Sempre busque por Dockerfiles já existentes
+
+- Imagem por ferramenta vs Imagem por análise
+
+- Ferramentas para geração de containers:  
+  - [repo2docker](https://github.com/jupyterhub/repo2docker)
+  - [dockta](https://github.com/stencila/dockta)
+  - [containerit](https://github.com/o2r-project/containerit)
+
+## Vamos dockerizar o Samtools! - 15min {.smaller}
 
 - Escreva um Dockerfile para rodar a ferramenta [Samtools](http://www.htslib.org/)
+  - `apt-get install -y samtools`
 
 - Faça o `build` desse Dockerfile
 
-- Teste!
-
-## Docker e pipelines
+- Teste com o arquivo .sam que enviamos por email!
+  - `docker run -i my_samtools samtools view --count - < toy.sam`
+  - O comando acima conta o número de _matches_, que nesse arquivo é 12.
+  
+- Útil: [Dockerfile reference (Inglês)](https://docs.docker.com/engine/reference/builder/)
 
 # Parte 4 - Docker, HPC e críticas
 
 ## Porquê não posso usar docker no supercomputador?
 
+- Segurança! Afinal:
+  - Se você tem acesso a Docker, você tem acesso de superusuário sobre basicamente o sistema operacional inteiro.
+  - O que possibilitaria usuários do Docker a acessar arquivos aos quais eles não teriam permissão
+
+- Algumas alternativas existem, mas a mais relevante para nós será: [Singularity/Apptainer](https://apptainer.org/documentation/)
+  
 ## O que é Singularity?
+
+- Uma reimplementação do Docker com uma interface bem diferente
+
+- "_Apptainer allows unprivileged users to use containers and prohibits privilege escalation within the container; users are the same inside and outside the container._"
+
+:::{.incremental}
+- Felizmente, é totalmente compatível com Docker! Você pode utilizar suas imagens Docker com Singularity sem perder nada em segurança e portabilidade
+  - _Geralmente..._
+:::
 
 ## Convertendo Docker para Singularity
 
-## O Docker realmente é a melhor solução?
+- As imagens do Singularity são um único arquivo, sem as várias camadas do Docker.
 
-# Obrigado!
+- Convertendo nossa imagem docker para Singularity:
+  `singularity build my_samtools.sif docker-daemon://my_samtools:latest`
 
-# Referências
+## O Docker realmente é a melhor solução?{.smaller}
 
-<!-- O que é o Docker.
-Imagens e containers. 
-Docker Hub e repositórios de imagens. 
-Rodando containers. 
-Limpando containers e imagens do seu sistema. 
-Volumes e montagens. 
-Dockerfiles. 
-10 regras para escrever Dockerfiles. 
-Dockerizando ferramentas de bioinformática e pipelines. 
-Docker e HPC. 
-Convertendo uma imagem Docker para Singularity. -->
+![](https://i.imgur.com/D7SuZrt.png){fig-align="center"}
+
+- "_However, when reproducing an analysis using a container, two core questions need to be addressed:_"
+  1. "_how to inspect the binary container for validating the results_" 
+  2. "_how to reproduce later this container. Containers defeat the criterion of long term because it is not practically affordable to retain them at scale._"
+
+# Obrigado e até a próxima!
+
+# Referências {.smaller}
+
+- Containerised Bioinformatics - Docker and other tools for reproducible analysis.
+[Melbourne Bioinformatics](https://www.melbournebioinformatics.org.au/tutorials/tutorials/docker/media/#1).
+  
+- Reproducible Computational Environments Using Containers: Introduction to Docker.
+[Software Carpentry](https://carpentries-incubator.github.io/docker-introduction/).
+  
+- Nüst D, Sochat V, Marwick B, Eglen SJ, Head T, Hirst T, et al. (2020) 
+Ten simple rules for writing Dockerfiles for reproducible data science.
+PLoS Comput Biol 16(11): e1008316. [doi.org/10.1371/journal.pcbi.1008316](https://doi.org/10.1371/journal.pcbi.1008316)
+
+- Jeffrey M. Perkel. (2020) 
+Challenge to scientists: does your ten-year-old code still run?
+Nature 584: 656-658. [doi.org/10.1038/d41586-020-02462-7](https://doi.org/10.1038/d41586-020-02462-7)

@@ -116,21 +116,34 @@ um _registry_.
   - `docker run -it python python`
   - `docker run -it python bash`
 
-## Volumes - A fazer
+## Volumes e _bind mounts_ {.smaller}
+
+:::{.r-stack}
 
 - Por padrão, o Docker não pode acessar dados no sistema do hospedeiro.
   - Todos os dados no container são perdidos na saída.
   
+- O docker possui algumas soluções para esse problema:
+  - `-v /caminho/no/hospedeiro:/caminho/no/container` - _bind mounts_: A montagem de um arquivo ou diretório do hospedeiro no container. Dessa forma, o Docker
+  tem acesso direto ao seu sistema de arquivos (a partir do diretório de entrada)
+  - `-v nome_do_volume:/caminho/no/container` - _volumes_: Monta um volume no container, que estará separado do restante dos seus arquivos e será totalmente gerenciado pelo Docker.
+
+![](https://docs.docker.com/storage/images/types-of-mounts-bind.webp?w=450&h=300){.fragment}
+
+:::
+
 ## Exercício - 10 min {.smaller}
 
-- Crie um novo container da imagem python ligando um volume a ele (com `-v`)
+- Crie um novo container da imagem python ligando um diretório do hospedeiro a ele (com `-v`)
   - **Dica**: Tente rodar o container de forma interativa com `-it`
 
-- Escreva "olá mundo" para um arquivo chamado `teste`:
+- Dentro do container, escreva "olá mundo" para um arquivo chamado `teste`:
   - `echo 'olá mundo' > teste`
   
 - Saia do container e acesse o conteúdo do arquivo na sua máquina hospedeira:
   - `cat teste`
+
+- Útil: [Bind mounts manual (Inglês)](https://docs.docker.com/storage/bind-mounts/#start-a-container-with-a-bind-mount)
 
 ## Limpando o seu sistema {.smaller}
 

@@ -514,23 +514,31 @@ João Cavalcante e Gleison Medeiros
 </ul></li>
 </ul>
 </section>
-<section id="volumes---a-fazer" class="slide level2">
-<h2>Volumes - A fazer</h2>
+<section id="volumes-e-bind-mounts" class="slide level2 smaller">
+<h2>Volumes e <em>bind mounts</em></h2>
+<div class="r-stack">
 <ul>
 <li>Por padrão, o Docker não pode acessar dados no sistema do hospedeiro.
 <ul>
 <li>Todos os dados no container são perdidos na saída.</li>
 </ul></li>
+<li>O docker possui algumas soluções para esse problema:
+<ul>
+<li><code>-v /caminho/no/hospedeiro:/caminho/no/container</code> - <em>bind mounts</em>: A montagem de um arquivo ou diretório do hospedeiro no container. Dessa forma, o Docker tem acesso direto ao seu sistema de arquivos (a partir do diretório de entrada)</li>
+<li><code>-v nome_do_volume:/caminho/no/container</code> - <em>volumes</em>: Monta um volume no container, que estará separado do restante dos seus arquivos e será totalmente gerenciado pelo Docker.</li>
+</ul></li>
 </ul>
+<p><img data-src="https://docs.docker.com/storage/images/types-of-mounts-bind.webp?w=450&amp;h=300" class="fragment"></p>
+</div>
 </section>
 <section id="exercício---10-min" class="slide level2 smaller">
 <h2>Exercício - 10 min</h2>
 <ul>
-<li>Crie um novo container da imagem python ligando um volume a ele (com <code>-v</code>)
+<li>Crie um novo container da imagem python ligando um diretório do hospedeiro a ele (com <code>-v</code>)
 <ul>
 <li><strong>Dica</strong>: Tente rodar o container de forma interativa com <code>-it</code></li>
 </ul></li>
-<li>Escreva “olá mundo” para um arquivo chamado <code>teste</code>:
+<li>Dentro do container, escreva “olá mundo” para um arquivo chamado <code>teste</code>:
 <ul>
 <li><code>echo 'olá mundo' &gt; teste</code></li>
 </ul></li>
@@ -538,6 +546,7 @@ João Cavalcante e Gleison Medeiros
 <ul>
 <li><code>cat teste</code></li>
 </ul></li>
+<li>Útil: <a href="https://docs.docker.com/storage/bind-mounts/#start-a-container-with-a-bind-mount">Bind mounts manual (Inglês)</a></li>
 </ul>
 </section>
 <section id="limpando-o-seu-sistema" class="slide level2 smaller">

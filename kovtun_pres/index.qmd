@@ -1,0 +1,155 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: night
+    slide-number: true
+    preview-links: true
+    chalkboard: true
+    multiplex: true # audience can follow along w/ mobile devices
+    transition: slide # slide # none | fade | convex | concave | zoom
+    fragments: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+
+![](https://i.imgur.com/n5kB1bA.png)
+
+**29 de Novembro de 2023**
+
+João Vitor Cavalcante
+:::
+
+## Introduction {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- "Inflammation is now considered one of the primary pathologies that lead to depression."
+
+- "The main process when suppressing inflammation is the activation of the immune response, in particular, the production of cytokines. This affects the levels of neuro-compounds, which in turn leads to the development of MDD. "
+:::
+
+::: {.column width="55%"}
+![Cryan et al, 2019](https://i.imgur.com/u4cLvJe.png)
+:::
+
+::::
+
+## Introduction {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- "GM also produces microbial compounds that mediate crosstalk with the immune system of the host and play an important role in the GBA"
+
+- "In this work, we used whole metagenome sequencing analysis, which gave us an opportunity to profile functional representations and metabolic pathways in the bacterial community."
+:::
+
+::: {.column width="55%"}
+![McGuiness et al, 2022](https://i.imgur.com/Xvk3Ysf.png)
+:::
+
+::::
+
+## Methods {.smaller}
+
+- Fecal samples; Illumina HiSeqX Ten (PRJNA762199)
+
+- Patients with depressive outbreaks of medium or high severity (ICD-10)
+
+- Healthy volunteers (group HC) were chosen for the control group by the following criteria: no diagnosed psychiatric disease; CES-D < 18; GAD-7 < 5; etc.
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/KCe8Tas.png){width=700}
+:::
+
+## Methods
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/v5XXPHM.png){width=800}
+:::
+  
+## Taxonomic results
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- There were no significant differences in alpha-diversity.
+
+- This is consistent with numerous studies that have also reported no differences in alpha-diversity between MDD and control groups
+:::
+
+::: {.column width="55%"}
+![](https://i.imgur.com/gdOxv3W.png)
+:::
+
+::::
+
+## Taxonomic results
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- “The beta diversity analysis, on the other hand, demonstrated a difference at the ‘Species’ level between the two groups (p-value = 0.001, PERMANOVA test”
+:::
+
+::: {.column width="55%"}
+![](https://i.imgur.com/huhHJfH.png)
+:::
+
+::::
+
+## Taxonomic results {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- “Decreased levels of Faecalibacterium and Roseburia may contribute to disease pathology, as depression is associated with a mild chronic inflammatory response.”
+
+- "Genus Escherichia was also significantly increased in the PwD metagenomes. Overgrowth of Escherichia bacteria could lead to gut inflammation and increase permeability of the gut wall"
+:::
+
+::: {.column width="55%"}
+![](https://i.imgur.com/MW9Ls9V.png)
+:::
+
+::::
+
+## Functional results {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- “There was a connection between severity of disease and decreased abundances of the genes involved in the metabolic pathways of 17-beta-estradiol, asparagine, GLU, and conjugated linoleic”
+
+- "The decreased abundance of the gene involved in the degradation of 17β-estradiol (E2) also corresponded with a decrease in the genus Faecalibacterium. E2 is the most potent naturally circulating estrogen, which affects cognition, anxiety, depression, and the GM"
+:::
+
+::: {.column width="55%"}
+![](https://i.imgur.com/4l4PIde.png)
+:::
+
+::::
+
+## Conclusions {.smaller}
+
+- "Our analyses revealed statistically significant decreases in the levels of genes encoding enzymes involved in the production of amino acids in the GM of patients with depression."
+
+- "Our data demonstrated a decrease in beneficial bacteria, such as Faecalibacterium, Roseburia, and Lachnospira, along with an increase in abundances of opportunistic pathogens, such as Ruthenibacterium and Escherichia"
+
+- “Stimulating growth of diminished beneficial bacteria and reducing numbers of undesirable bacteria may be a strategy for the correction of GM in depressive patients."
+
+- **“Using a broader reference may lead to the identification of additional metabolites correlated with manifestations of depressive disorder.”**
+
+
+---
+::: {style="text-align: center; display: grid; place-items: center;"}
+
+![](https://i.imgur.com/n5kB1bA.png)
+
+**29 de Novembro de 2023**
+
+João Vitor Cavalcante
+:::

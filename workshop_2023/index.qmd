@@ -24,7 +24,7 @@ João Vitor Cavalcante
 ## Minha jornada até agora {.smaller}
 
 - TCC - desenvolvimento de ferramentas para metagenômica
-  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences
+  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences (Morais et al, 2022)
 
 ::: {.r-stack}
 ![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){.fragment width=400}

@@ -33,7 +33,7 @@ João Vitor Cavalcante
 
 ![](https://i.imgur.com/xtlpjbZ.png){.fragment}
 
-#### Veja mais no nosso pôster! {.fragment style="color: #e7ad52;"}
+#### Veja mais no nosso pôster! {.fragment style="color: #e7ad52;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"}
 :::
 
 ---

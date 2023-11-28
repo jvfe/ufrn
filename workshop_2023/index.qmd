@@ -58,13 +58,13 @@ João Vitor Cavalcante
 
 :::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="50%"}
 - Transtornos psiquiátricos têm sido fundamentalmente considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal (McGuinness et al, 2022)
 
 - Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM (Naseribafrouei et al, 2014; Catena Del'Osso et al, 2012) 
 :::
 
-::: {.column width="55%"}
+::: {.column width="50%"}
 ![Cryan et al, 2019](https://i.imgur.com/u4cLvJe.png)
 :::
 

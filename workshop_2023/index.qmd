@@ -1,0 +1,189 @@
+---
+lang: pt
+format: 
+  revealjs:
+    theme: night
+    slide-number: true
+    footer: "Workshop PPg-Bioinfo 2023"
+    preview-links: true
+    chalkboard: true
+    multiplex: true # audience can follow along w/ mobile devices
+    transition: slide # slide # none | fade | convex | concave | zoom
+    fragments: true
+    logo: https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png
+---
+
+## Diferenças funcionais na microbiota intestinal de pacientes com TDM {.smaller .center style="text-align: center;"}
+
+**05 de Dezembro de 2023**
+
+João Vitor Cavalcante
+
+# Antes, um breve interlúdio...
+
+## Minha jornada até agora {.smaller}
+
+- TCC - desenvolvimento de ferramentas para metagenômica
+  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences
+
+::: {.r-stack}
+![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){.fragment width=400}
+
+![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_workflow.drawio.png){.fragment}
+
+![](https://i.imgur.com/xtlpjbZ.png){.fragment}
+
+#### Veja mais no nosso pôster! {.fragment style="color: #e7ad52;"}
+:::
+
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/hJMr1H4.png)
+:::
+
+:::: {.r-stack}
+- Sustentabilidade de software em metagenômica
+  - Reprodutibilidade
+  - Gerenciadores de workflow
+  - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
+
+![](https://i.imgur.com/cVJ2lBg.png){.fragment}
+::::
+
+
+# Diferenças funcionais na microbiota intestinal de pacientes com TDM
+
+## Introdução {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- Transtornos psiquiátricos têm sido fundamentalmente considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal (McGuinness et al, 2022)
+
+- Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM (Naseribafrouei et al, 2014; Catena Del'Osso et al, 2012) 
+:::
+
+::: {.column width="55%"}
+![Cryan et al, 2019](https://i.imgur.com/u4cLvJe.png)
+:::
+
+::::
+
+## Introdução {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- Estudos anteriores já verificaram a existência de assinaturas transcricionais sexo-específicas em indivíduos com TDM (Labonté et al, 2017; de Souza et al, *under review*)
+
+- Regulação hormonal de mecanismos controladores da microbiota pode resultar em composição microbiana distinta entre homens e mulheres (Chen et al, 2018) e há associações entre abundância de certas espécies bacterianas e produção de estrogênio (Kovtun et al, 2022)
+:::
+
+::: {.column width="55%"}
+![McGuiness et al, 2022](https://i.imgur.com/Xvk3Ysf.png)
+:::
+
+::::
+
+# Objetivo
+
+- Determinar a influência do sexo biológico na composição taxonômica e funcional da microbiota intestinal de indivíduos com TDM
+
+## Métodos {.smaller}
+
+- Aquisição de dados do *BioProject* PRJNA762199
+  - Microbiota intestinal de 74 indivíduos russos saudáveis e diagnosticados com TDM
+
+- Pré-processamento e montagem de contigs com **dalmolingroup/euryale**
+
+- Anotação funcional e classificação taxonômica com HUMAnN e MetaPhlan
+  - Abundâncias de vias metabólicas (MetaCyc) estratificadas por táxon
+  
+- Abundância diferencial com MaAsLin2 e diversidade com vegan
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/KCe8Tas.png){width=700}
+:::
+
+<!-- ## alfa-Diversidade -->
+
+<!-- :::  {.r-stack} -->
+<!-- ![](alpha_plot.png) -->
+<!-- ::: -->
+
+<!-- ::: {.notes} -->
+<!-- - Nenhuma diferença significativa entre a alfa-diversidade dos indivíduos, o que é consistente com outras análises de depressão (McGuiness et al, 2022) -->
+<!-- ::: -->
+
+<!-- ## alfa-Diversidade -->
+
+<!-- ![McGuinness et al, 2022](https://i.imgur.com/PwATgqJ.png) -->
+
+## beta-Diversidade {.smaller}
+
+:::: {.columns}
+
+::: {.column width="45%"}
+- Diferença signitificativa da beta-diversidade a nível de espécie entre os grupos (PERMANOVA; p < 0.05)
+  - Consistente com outras análises da microbiota intestinal de TDM (McGuinness et al, 2022), mas nenhuma havia incorporado a interação do sexo biológico.
+  
+- Há uma dissimilaridade composicional entre as espécies presentes em TDM de homens e mulheres, o que pode refletir numa diversidade funcional.
+:::
+
+::: {.column width="55%"}
+![](beta_nmds_plot.png)
+:::
+
+::::
+
+## Caracterização funcional
+
+- 42 vias metabólicas diferencialmente abundantes entre os 4 grupos (p<0.05)
+
+- Se destacam algumas vias já descritas como associadas a TDM:
+   - Decréscimo na biossíntese de Triptofano (Lai et al, 2021; McGuinness et al, 2022)
+   - Aumento na degradação de Arginina e decréscimo de sua biossíntese (Hess et al, 2022)
+
+::: {.notes}
+
+More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation
+
+L-arginine has been proposed as a serum biomarker for MDD and its production is intrisically linked to the gut microbiota
+
+NO is a gas synthesized from Larginine (a conditionally essential amino acid) and oxygen by endothelial nitric oxide synthase (eNOS)
+Decreased endothelial production of NO has also been associated with numerous cardiovascular (CV) risk factors, including hypercholesterolemia, hypertension, diabetes, hyperhomocysteinemia and increased inflammation
+
+:::
+
+## Caracterização funcional
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/WXosjtj.png)
+:::
+
+## Caracterização funcional
+
+![](arginine_degradation.png)
+
+::: {.notes}
+Escherichia is linked to lactate production, a pro-inflammatory product if accumulated in the gut.
+:::
+
+## Conclusões e perspectivas futuras {.smaller}
+
+- Há diferenças significativas na composição da microbiota intestinal associada ao sexo biológico de indivíduos com TDM
+
+- Devemos explorar mais a fundo as vias metabólicas diferencialmente abundantes e suas possíveis ligações com a hipótese inflamatória do TDM
+
+- Analisar redes de similaridade composicional em cada uma das condições e verificar mudanças em suas dinâmicas
+
+- Meta inicial: Abril de 2024
+
+## Diferenças funcionais na microbiota intestinal de pacientes com TDM {.smaller .center style="text-align: center;"}
+
+**05 de Dezembro de 2023**
+
+João Vitor Cavalcante
+
+

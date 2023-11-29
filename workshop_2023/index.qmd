@@ -82,7 +82,7 @@ João Vitor Cavalcante
 ::: {.column width="45%"}
 - Estudos anteriores já verificaram a existência de assinaturas transcricionais sexo-específicas em indivíduos com TDM (Labonté et al, 2017; de Souza et al, *under review*)
 
-- Regulação hormonal de mecanismos controladores da microbiota pode resultar em composição microbiana distinta entre homens e mulheres (Chen et al, 2018) e há associações entre abundância de certas espécies bacterianas e produção de estrogênio (Kovtun et al, 2022)
+- Regulação hormonal de mecanismos controladores da microbiota pode resultar em composição microbiana distinta entre homens e mulheres (Baker et al, 2017; Chen et al, 2018) e há associações entre abundância de certas espécies bacterianas e produção de estrogênio (Kovtun et al, 2022)
 :::
 
 ::: {.column width="55%"}
@@ -144,7 +144,7 @@ João Vitor Cavalcante
 
 ## Caracterização funcional
 
-- 42 vias metabólicas diferencialmente abundantes entre os 4 grupos (p<0.05)
+- 82 vias metabólicas diferencialmente abundantes entre os 4 grupos (p<0.05)
 
 - Se destacam algumas vias já descritas como associadas a TDM:
    - Decréscimo na biossíntese de Triptofano (Lai et al, 2021; McGuinness et al, 2022)

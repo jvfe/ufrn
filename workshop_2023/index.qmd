@@ -48,8 +48,13 @@ João Vitor Cavalcante
   - Gerenciadores de workflow
   - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
 
-![](https://i.imgur.com/cVJ2lBg.png){.fragment}
+::: {.fragment style="display:grid; place-items:center;"}
+![](https://i.imgur.com/cVJ2lBg.png)
+![](https://i.imgur.com/gj6Ccrb.png)
+:::
+
 ::::
+
 
 
 # Diferenças funcionais na microbiota intestinal de pacientes com TDM
@@ -179,6 +184,24 @@ Escherichia is linked to lactate production, a pro-inflammatory product if accum
 - Analisar redes de similaridade composicional em cada uma das condições e verificar mudanças em suas dinâmicas
 
 - Meta inicial: Abril de 2024
+
+## Agradecimentos
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Identidade_Visual_CAPES.png/640px-Identidade_Visual_CAPES.png){width=200}
+![](https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Fbiome-square-512.png&w=384&q=75){width=300}
+:::
+
+::: {.column width="50%"}
+![](https://dalmolingroup.imd.ufrn.br/wp-content/themes/wpeducon-dalmolin/images/logo.png){width=300}
+![](./biome_photo.png)
+:::
+::::
+
+
 
 ## Diferenças funcionais na microbiota intestinal de pacientes com TDM {.smaller .center style="text-align: center;"}
 

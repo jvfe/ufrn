@@ -25,6 +25,8 @@ João Vitor Cavalcante
 
 - TCC - desenvolvimento de ferramentas para metagenômica
   - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences (Morais et al, 2022)
+  
+- Entrada no mestrado - Março 2023
 
 ::: {.r-stack}
 ![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){.fragment width=400}
@@ -130,7 +132,7 @@ João Vitor Cavalcante
 :::: {.columns}
 
 ::: {.column width="45%"}
-- Diferença signitificativa da beta-diversidade a nível de espécie entre os grupos (PERMANOVA; p < 0.05)
+- Diferença significativa da beta-diversidade a nível de espécie entre os grupos (PERMANOVA; p < 0.05)
   - Consistente com outras análises da microbiota intestinal de TDM (McGuinness et al, 2022), mas nenhuma havia incorporado a interação do sexo biológico.
   
 - Há uma dissimilaridade composicional entre as espécies presentes em TDM de homens e mulheres, o que pode refletir numa diversidade funcional.
@@ -144,7 +146,7 @@ João Vitor Cavalcante
 
 ## Caracterização funcional
 
-- 82 vias metabólicas diferencialmente abundantes entre os 4 grupos (p<0.05)
+- 42 vias metabólicas diferencialmente abundantes entre os 4 grupos (p<0.05)
 
 - Se destacam algumas vias já descritas como associadas a TDM:
    - Decréscimo na biossíntese de Triptofano (Lai et al, 2021; McGuinness et al, 2022)
@@ -164,7 +166,7 @@ Decreased endothelial production of NO has also been associated with numerous ca
 ## Caracterização funcional
 
 ::: {style="text-align: center; display: grid; place-items: center;"}
-![](https://i.imgur.com/WXosjtj.png)
+![](trp_plot.png){width=800}
 :::
 
 ## Caracterização funcional
@@ -183,7 +185,9 @@ Escherichia is linked to lactate production, a pro-inflammatory product if accum
 
 - Analisar redes de similaridade composicional em cada uma das condições e verificar mudanças em suas dinâmicas
 
-- Meta inicial: Abril de 2024
+- Previsão inicial: Abril de 2024
+- Defesa: Março de 2025
+
 
 ## Agradecimentos
 

@@ -7,7 +7,7 @@ format:
   revealjs:
     theme: night
     slide-number: true
-    footer: "Workshop PPG-Bioinfo 2023"
+    footer: "Workshop PPg-Bioinfo 2023"
     preview-links: true
     chalkboard: true
     multiplex: true # audience can follow along w/ mobile devices

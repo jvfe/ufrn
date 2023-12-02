@@ -297,6 +297,17 @@ COPY plots.R plots.R
 
 - Convertendo nossa imagem docker para Singularity:
   `singularity build my_samtools.sif docker-daemon://my_samtools:latest`
+  
+- `singularity exec my_samtools.sif bash`
+
+## Você precisa usar o Docker diretamente?
+
+![](https://i.imgur.com/bGHT2Tx.png){fig-align="center"}
+
+![](https://i.imgur.com/OZwW6lA.png){fig-align="center"}
+
+- [https://codeocean.com/product/](https://codeocean.com/product/)
+
 
 ## O Docker realmente é a melhor solução?{.smaller}
 

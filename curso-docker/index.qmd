@@ -132,7 +132,7 @@ um _registry_.
 
 :::
 
-## Exercício - 10 min {.smaller}
+## Exercício - 15 min {.smaller}
 
 - Crie um novo container da imagem python ligando um diretório do hospedeiro a ele (com `-v`)
   - **Dica**: Tente rodar o container de forma interativa com `-it`
@@ -260,6 +260,7 @@ COPY plots.R plots.R
 ## Vamos dockerizar o Samtools! - 15min {.smaller}
 
 - Escreva um Dockerfile para rodar a ferramenta [Samtools](http://www.htslib.org/)
+  - Use a imagem base `ubuntu:latest`
   - `apt-get install -y samtools`
 
 - Faça o `build` desse Dockerfile

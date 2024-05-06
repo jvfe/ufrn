@@ -1,0 +1,111 @@
+---
+title: "Future Innovators Mentorship"
+subtitle: "BioData Developers Network"  
+author: 
+  - "João Vitor Cavalcante"
+date: 'May 16th, 2024'
+output:
+  xaringan::moon_reader:
+    css: ["custom.css", "xaringan-themer.css"]
+    nature:
+      slideNumberFormat: "%current%/%total%"
+      highlightStyle: solarized-dark
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(primary_color = "#0F4257", secondary_color = "#F97B64")
+```
+
+```{r xaringan-animate-all, echo=FALSE}
+xaringanExtra::use_animate_all("fade")
+```
+
+class: inverse center middle
+
+# Software Project
+
+---
+
+# beiko-lab/ARETE
+
+- A bioinformatics best-practice analysis pipeline for profiling the genomic repertoire and evolutionary dynamics of microorganisms with a particular focus on pathogens.
+  - Pangenome inference, coevolution and lateral gene transfer analysis are some of its features. 
+
+- Originally ideated by Finlay Maguire and Alex Manuele in 2021, mostly implemented by me from 2023 onwards.
+
+- Intended to run in HPC environments, through Docker or Singularity.
+
+<center><img src="https://raw.githubusercontent.com/beiko-lab/arete/master/assets/arete-logo-transparent.png" alt="ARETE logo" width="600px" /></center>
+---
+
+![ARETE diagram](diagram.png)
+
+---
+
+# Some highlights
+
+- Based on a customized version of the [nf-core Pipeline template](https://github.com/nf-core/tools?tab=readme-ov-file#creating-a-new-pipeline), same as the Tree of Life workflows.
+
+- Public [documentation website](https://beiko-lab.github.io/arete/) built with [MkDocs](https://www.mkdocs.org/) and served through GitHub Pages.
+
+- Full test suite for every subworkflow included in the pipeline, implemented in [nf-test](https://www.nf-test.com/) and executed through GitHub Actions.
+  - Standard end-to-end testing is also executed in GitHub actions, for both Singularity and Docker.
+  
+- Different [resource allocation profiles](https://github.com/beiko-lab/arete/tree/master/conf), allowing for fine-grained customization in different environments.
+
+- Contributions to the nf-core community, seen through modules such as [IslandPath](https://nf-co.re/modules/islandpath) and [PhiSpy](https://nf-co.re/modules/phispy), both originally implemented in this pipeline.
+
+<center>
+<img src="https://avatars.githubusercontent.com/u/6698688?s=280&v=4" alt="nextflow logo" width="100px" />
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fopensource.scilifelab.se%2Fwp-content%2Fuploads%2F2018%2F08%2Fnf-core-logo-square.png&f=1&nofb=1&ipt=1f50d06bb2787ce1dbafdedd7626086bcc175f11a7cba59550a2b295d7931f24&ipo=images" alt="nf-core logo" width="100px" />
+<img src="https://seeklogo.com/images/G/github-actions-logo-031704BDC6-seeklogo.com.png" alt="GithHub Actions logo" width="100px" />
+</center>
+
+---
+class: inverse center middle
+
+# Mentorship Project
+## Genome After-Party:
+### A global database of ready-made genome analyses
+
+---
+
+## What skills can I contribute to the project?
+
+.font-larger[
+- I have deep knowledge of Nextflow and nf-core;
+
+- I have extensively worked in the past, through both ARETE and other projects, in implementing analyses from researchers in workflows;
+
+- I have implemented many wrappers in both Python and Shell in workflows I've developed, like ARETE itself;
+
+- Through both my MSc and Undergrad research, I have become acquainted with many bioinformatics tools, which will facilitate getting started integrating them in curated workflows.
+]
+
+---
+class: middle center
+
+# Future Innovators Mentorship
+
+## BioData Developers Network
+
+### João Vitor Cavalcante
+
+### May 16th, 2024

@@ -1,0 +1,217 @@
+---
+title: "Seminários de Bioinformática 2024.1"
+author: "João Vitor Cavalcante"
+lang: pt
+bibliography: refs.bib
+format: 
+  revealjs:
+    theme: "night"
+    slide-number: true
+    multiplex: true # audience can follow along w/ mobile devices
+    fragments: true
+    logo: https://i.imgur.com/ena8fiz.png
+---
+
+
+## Acesse essa apresentação
+
+<center>
+
+<https://tinyurl.com/seminarios-joao>
+
+![](https://imgur.com/WY3IHRV)
+
+</center>
+## Quem é esse cara? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Minha formação:
+
+- Bacharel em Biomedicina, UFRN
+- Mestrando em Bioinformática, UFRN
+
+Meus interesses:
+
+- Em Bioinfo: Metagenômica, RNA-seq e 
+  Desenvolvimento de Software e Pipelines em Bioinformática.
+
+- No geral: Open Source, Linux, NeoVim
+:::
+
+::: {.column width="40%"}
+<center>
+![](me.png)
+
+[GitHub](https://github.com/jvfe) //
+[LinkedIn](https://www.linkedin.com/in/joao-vitor-cavalcante/) //
+[ORCID](https://orcid.org/0000-0001-7513-7376)
+</center>
+
+:::
+::::
+
+# O que eu fiz no meu mestrado até agora?
+
+---
+
+<center>
+![](Jornada.png){width=750}
+</center>
+
+---
+
+- TCC - desenvolvimento de ferramentas para metagenômica
+  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences [@moraisMEDUSAPipelineSensitive2022]
+  
+:::: {.columns}
+::: {.column width="30%"}
+![](https://i.imgur.com/HuX4Q74.png)
+:::
+
+::: {.column width="50%"}
+![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png)
+:::
+::::
+---
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](https://i.imgur.com/hJMr1H4.png)
+:::
+
+:::: {.r-stack}
+- Sustentabilidade de software em metagenômica [@cavalcanteBridgingGapsMetaOmic2023]
+  - Reprodutibilidade
+  - Gerenciadores de workflow
+  - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
+
+::: {.fragment style="display:grid; place-items:center;"}
+![](https://i.imgur.com/cVJ2lBg.png)
+![](https://i.imgur.com/gj6Ccrb.png)
+:::
+
+::::
+
+# Alterações funcionais na microbiota no Transtorno Depressivo Maior
+
+# Você é 10% humano
+
+## Como a Microbiota influencia na saúde mental? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Transtornos psiquiátricos têm sido considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal [@mcguinnessSystematicReviewGut2022]
+
+- Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM [@naseribafroueiCorrelationHumanFecal2014] [@catena-dellossoInflammatoryNeurodegenerativePathways] 
+:::
+
+::: {.column width="50%"}
+![[@cryanMicrobiotaGutBrainAxis2019b]](https://i.imgur.com/u4cLvJe.png)
+:::
+
+::::
+
+# Objetivo
+
+- Determinar diferenças composicionais e funcionais na microbiota intestinal de indivíduos com TDM através de uma meta-análise
+
+# Metodologia - Metagenômica
+
+## Seleção dos datasets {.smaller}
+
+| Abreviação | BioProject  | CTRL | TDM | Citação                                           |
+|------------|-------------|------|-----|---------------------------------------------------|
+| A1         | PRJNA846994 | 48   | 92  | [@lingChangesFecalMicrobiota2022]                 |
+| A2         | PRJNA776170 | 44   | 41  | [@liuGutMicrobiomeComposition2022]                |
+| S1         | PRJNA762199 | 38   | 36  | [@kovtunAlterationsCompositionNeurometabolic2022] |
+
+- Em todos os casos: 
+  - Os indivíduos não estavam utilizando antidepressivos
+  - Foram diagnosticados através do DSM-IV ou DSM-V
+
+## Metodologia {.smaller}
+
+- Processamento dos dados Amplicon com [nf-core/ampliseq](https://github.com/nf-core/ampliseq) [@straubInterpretationsEnvironmentalMicrobial2020], que utiliza DADA2, QIIME e PiCrust2.
+  - Abundância diferencial com ggpicrust2 [@yangGgpicrust2PackagePICRUSt22023]
+
+- Processamento do dataset Shotgun com [dalmolingroup/euryale](https://github.com/dalmolingroup/euryale) (Cavalcante et al, *sob revisão*)
+  - Quantificação de vias metabólicas com Humann3 [@beghiniIntegratingTaxonomicFunctional2021]
+  - Taxonomia com MetaPhlan4 [@blanco-miguezExtendingImprovingMetagenomic2023]
+  - Abundância diferencial com MaAsLin2 [@mallickMultivariableAssociationDiscovery2021]
+
+- Meta-análise da A.D. através do método de Fisher, como implementado no pacote R [metap](https://cran.r-project.org/web/packages/metap/index.html) (padj < 0.05).
+
+# Metodologia - Randomização Mendeliana
+
+## Seleção dos datasets {.smaller}
+
+|  Citação                             | N                 | Notas                                                                       |
+|--------------------------------------|-------------------|-----------------------------------------------------------------------------|
+| @lopera-mayaEffectHostGenetics2022 |   7738 |     SNPs associados com a abundância de 205 vias metabólicas na microbiota. |
+| @blabla                                  | numero            | SNPs associados com o Transtorno Depressivo Maior                           |
+
+## Metodologia
+
+![](https://www.researchgate.net/publication/344407603/figure/fig5/AS:959980534501383@1605888603761/Mendelian-Randomization-unbiased-causal-associations-and-assumptions-Mendelian.png)
+
+- Aplicado com a ferramenta [GSMR](https://yanglab.westlake.edu.cn/software/gsmr/) [@zhuCausalAssociationsRisk2018]
+
+# Resultados
+
+## beta-Diversidade
+
+- Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
+
+## Abundância Diferencial
+
+## Vias do Triptofano
+
+## Vias da Histidina
+
+## Vias da degradação de Lactose
+
+## Vias da Randomização Mendeliana
+
+## Conclusões {.smaller}
+
+- Há diferenças metabólicas evidentes na microbiota de indivíduos com TDM
+  - Algumas dessas vias indicam influência causal na manifestação do TDM
+  
+- No entanto há uma série de limitações:
+  - Estudos de metagenômica são apenas uma inferência indireta da atividade metabólica,
+  sobretudo os de 16S.
+  - Um estudo de metatranscriptômica ou metabolômica podem apontar resultados mais concretos
+  e ser uma possível validação da análise.
+  
+  
+## Agradecimentos
+
+:::: {.columns}
+::: {.column width="70%"}
+![](https://dalmolingroup.github.io/images/grupo_foto2.jpg)
+
+::: {#funders layout-ncol=2}
+![](https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Ficons%2Flogo-cortado.png&w=640&q=100)
+
+![](https://i.imgur.com/QRIihhe.png)
+:::
+
+:::
+
+:::{.column width="30%"}
+<center>
+![](https://avatars.githubusercontent.com/u/19909582?v=4)
+
+![](https://i.imgur.com/pF91JlX.png){width=215}
+</center>
+:::
+::::
+
+---
+### References {.scrollable}
+
+::: {#refs}
+:::

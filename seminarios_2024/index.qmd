@@ -268,7 +268,7 @@ com a abundância diferencial.
 
 ![](https://i.imgur.com/QRIihhe.png)
 
-![](http://npad.ufrn.br/assets/logo.png)
+![](https://i.imgur.com/EE8QpvX.png)
 :::
 
 :::
@@ -282,8 +282,7 @@ com a abundância diferencial.
 :::
 ::::
 
----
-### Referências {.scrollable}
+# Referências {.scrollable}
 
 ::: {#refs}
 :::

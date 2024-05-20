@@ -38,7 +38,7 @@ Meus interesses:
 - Em Bioinfo: Metagenômica, RNA-seq e 
   Desenvolvimento de Software e Pipelines em Bioinformática.
 
-- No geral: Open Source, Linux, NeoVim
+- No geral: Open Source, Linux, NeoVim, RPG
 :::
 
 ::: {.column width="40%"}
@@ -61,20 +61,19 @@ Meus interesses:
 ![](Jornada.png){width=750}
 </center>
 
----
-
+# {.smaller}
 - TCC - desenvolvimento de ferramentas para metagenômica
   - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences [@moraisMEDUSAPipelineSensitive2022]
+  - [MicroView](https://microview-bio.readthedocs.io/en/latest/) - A reporting tool for aggregating results from taxonomic classification analyses
   
-:::: {.columns}
-::: {.column width="30%"}
-![](https://i.imgur.com/HuX4Q74.png)
-:::
+<center>
+- Que agora são:
+</center>
 
-::: {.column width="50%"}
-![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png)
-:::
-::::
+<center>
+[![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}](https://dalmolingroup.github.io/euryale/)
+</center>
+
 ---
 
 ::: {style="text-align: center; display: grid; place-items: center;"}
@@ -122,11 +121,11 @@ Meus interesses:
 
 ## Seleção dos datasets {.smaller}
 
-| Abreviação | BioProject  | CTRL | TDM | Citação                                           |
-|------------|-------------|------|-----|---------------------------------------------------|
-| A1         | PRJNA846994 | 48   | 92  | [@lingChangesFecalMicrobiota2022]                 |
-| A2         | PRJNA776170 | 44   | 41  | [@liuGutMicrobiomeComposition2022]                |
-| S1         | PRJNA762199 | 38   | 36  | [@kovtunAlterationsCompositionNeurometabolic2022] |
+| Abreviação | BioProject  | CTRL | TDM | Citação                                         |
+|------------|-------------|------|-----|-------------------------------------------------|
+| A1         | PRJNA846994 | 48   | 92  | @lingChangesFecalMicrobiota2022                 |
+| A2         | PRJNA776170 | 44   | 41  | @liuGutMicrobiomeComposition2022                |
+| S1         | PRJNA762199 | 38   | 36  | @kovtunAlterationsCompositionNeurometabolic2022 |
 
 - Em todos os casos: 
   - Os indivíduos não estavam utilizando antidepressivos
@@ -150,8 +149,13 @@ Meus interesses:
 
 |  Citação                             | N                 | Notas                                                                       |
 |--------------------------------------|-------------------|-----------------------------------------------------------------------------|
-| @lopera-mayaEffectHostGenetics2022 |   7738 |     SNPs associados com a abundância de 205 vias metabólicas na microbiota. |
-| @blabla                                  | numero            | SNPs associados com o Transtorno Depressivo Maior                           |
+| @lopera-mayaEffectHostGenetics2022 |   7.738 |     SNPs associados com a abundância de 205 vias metabólicas na microbiota. |
+| @wrayGenomewideAssociationAnalyses2018                                  | 16.823 (TDM)            | SNPs associados com o Transtorno Depressivo Maior                           |
+
+- Para @wrayGenomewideAssociationAnalyses2018, foi considerado apenas indivíduos diagnosticados com MDD através do DSM-IV, ICD-9 ou ICD-10.
+  - O estudo contou com **25.632 indivíduos controle**.
+  
+- Ambos estudos utilizaram apenas indivíduos de origem europeia.
 
 ## Metodologia
 
@@ -163,6 +167,10 @@ Meus interesses:
 
 ## beta-Diversidade
 
+<center>
+![](betadiv.png){width=700}
+</center>
+
 - Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
 
 ## Abundância Diferencial
@@ -173,12 +181,14 @@ Meus interesses:
 
 ## Vias da degradação de Lactose
 
-## Vias da Randomização Mendeliana
+## Randomização Mendeliana
 
 ## Conclusões {.smaller}
 
 - Há diferenças metabólicas evidentes na microbiota de indivíduos com TDM
-  - Algumas dessas vias indicam influência causal na manifestação do TDM
+  - Claro desbalanço na disponibilidade de aminoácidos essenciais, sobretudo Triptofano e Histidina.
+  - Possível influência do catabolismo de Lactose e Galactose.
+  - Algumas dessas vias indicam influência causal na manifestação do TDM.
   
 - No entanto há uma série de limitações:
   - Estudos de metagenômica são apenas uma inferência indireta da atividade metabólica,

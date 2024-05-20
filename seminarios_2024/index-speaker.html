@@ -376,7 +376,7 @@ João Vitor Cavalcante
 <p>Meus interesses:</p>
 <ul>
 <li><p>Em Bioinfo: Metagenômica, RNA-seq e Desenvolvimento de Software e Pipelines em Bioinformática.</p></li>
-<li><p>No geral: Open Source, Linux, NeoVim</p></li>
+<li><p>No geral: Open Source, Linux, NeoVim, RPG</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <center>
@@ -396,22 +396,25 @@ João Vitor Cavalcante
 <center>
 <img data-src="Jornada.png" width="750">
 </center>
-</section>
-<section class="slide level2">
-
+</section></section>
+<section>
+<section id="section" class="title-slide slide level1 smaller center">
+<h1></h1>
 <ul>
 <li>TCC - desenvolvimento de ferramentas para metagenômica
 <ul>
 <li>MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences <span class="citation" data-cites="moraisMEDUSAPipelineSensitive2022">(<a href="#/references" role="doc-biblioref" onclick="">Morais et al. 2022</a>)</span></li>
+<li><a href="https://microview-bio.readthedocs.io/en/latest/">MicroView</a> - A reporting tool for aggregating results from taxonomic classification analyses</li>
 </ul></li>
 </ul>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="https://i.imgur.com/HuX4Q74.png"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png"></p>
-</div>
-</div>
+<center>
+<ul>
+<li>Que agora são:</li>
+</ul>
+</center>
+<center>
+<a href="https://dalmolingroup.github.io/euryale/"><img data-src="https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png" width="400"></a>
+</center>
 </section>
 <section class="slide level2">
 
@@ -476,11 +479,11 @@ João Vitor Cavalcante
 <h2>Seleção dos datasets</h2>
 <table>
 <colgroup>
-<col style="width: 13%">
 <col style="width: 14%">
-<col style="width: 6%">
+<col style="width: 15%">
+<col style="width: 7%">
 <col style="width: 5%">
-<col style="width: 58%">
+<col style="width: 57%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -497,21 +500,21 @@ João Vitor Cavalcante
 <td>PRJNA846994</td>
 <td>48</td>
 <td>92</td>
-<td><span class="citation" data-cites="lingChangesFecalMicrobiota2022">(<a href="#/references" role="doc-biblioref" onclick="">Ling et al. 2022</a>)</span></td>
+<td><span class="citation" data-cites="lingChangesFecalMicrobiota2022">Ling et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
 </tr>
 <tr class="even">
 <td>A2</td>
 <td>PRJNA776170</td>
 <td>44</td>
 <td>41</td>
-<td><span class="citation" data-cites="liuGutMicrobiomeComposition2022">(<a href="#/references" role="doc-biblioref" onclick="">Liu et al. 2022</a>)</span></td>
+<td><span class="citation" data-cites="liuGutMicrobiomeComposition2022">Liu et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
 </tr>
 <tr class="odd">
 <td>S1</td>
 <td>PRJNA762199</td>
 <td>38</td>
 <td>36</td>
-<td><span class="citation" data-cites="kovtunAlterationsCompositionNeurometabolic2022">(<a href="#/references" role="doc-biblioref" onclick="">Kovtun et al. 2022</a>)</span></td>
+<td><span class="citation" data-cites="kovtunAlterationsCompositionNeurometabolic2022">Kovtun et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
 </tr>
 </tbody>
 </table>
@@ -562,16 +565,23 @@ João Vitor Cavalcante
 <tbody>
 <tr class="odd">
 <td><span class="citation" data-cites="lopera-mayaEffectHostGenetics2022">Lopera-Maya et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
-<td>7738</td>
+<td>7.738</td>
 <td>SNPs associados com a abundância de 205 vias metabólicas na microbiota.</td>
 </tr>
 <tr class="even">
-<td><span class="citation" data-cites="blabla">(<a href="#/references" role="doc-biblioref" onclick=""><strong>blabla?</strong></a>)</span></td>
-<td>numero</td>
+<td><span class="citation" data-cites="wrayGenomewideAssociationAnalyses2018">Wray et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></td>
+<td>16.823 (TDM)</td>
 <td>SNPs associados com o Transtorno Depressivo Maior</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>Para <span class="citation" data-cites="wrayGenomewideAssociationAnalyses2018">Wray et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>, foi considerado apenas indivíduos diagnosticados com MDD através do DSM-IV, ICD-9 ou ICD-10.
+<ul>
+<li>O estudo contou com <strong>25.632 indivíduos controle</strong>.</li>
+</ul></li>
+<li>Ambos estudos utilizaram apenas indivíduos de origem europeia.</li>
+</ul>
 </section>
 <section id="metodologia-1" class="slide level2">
 <h2>Metodologia</h2>
@@ -587,6 +597,9 @@ João Vitor Cavalcante
 </section>
 <section id="beta-diversidade" class="slide level2">
 <h2>beta-Diversidade</h2>
+<center>
+<img data-src="betadiv.png" width="700">
+</center>
 <ul>
 <li>Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p&lt;0.05).</li>
 </ul>
@@ -603,15 +616,17 @@ João Vitor Cavalcante
 <section id="vias-da-degradação-de-lactose" class="slide level2">
 <h2>Vias da degradação de Lactose</h2>
 </section>
-<section id="vias-da-randomização-mendeliana" class="slide level2">
-<h2>Vias da Randomização Mendeliana</h2>
+<section id="randomização-mendeliana" class="slide level2">
+<h2>Randomização Mendeliana</h2>
 </section>
 <section id="conclusões" class="slide level2 smaller">
 <h2>Conclusões</h2>
 <ul>
 <li>Há diferenças metabólicas evidentes na microbiota de indivíduos com TDM
 <ul>
-<li>Algumas dessas vias indicam influência causal na manifestação do TDM</li>
+<li>Claro desbalanço na disponibilidade de aminoácidos essenciais, sobretudo Triptofano e Histidina.</li>
+<li>Possível influência do catabolismo de Lactose e Galactose.</li>
+<li>Algumas dessas vias indicam influência causal na manifestação do TDM.</li>
 </ul></li>
 <li>No entanto há uma série de limitações:
 <ul>
@@ -688,6 +703,9 @@ Naseribafrouei, A., K. Hestad, E. Avershina, M. Sekelja, A. Linløkken, R. Wilso
 </div>
 <div id="ref-straubInterpretationsEnvironmentalMicrobial2020" class="csl-entry" role="listitem">
 Straub, Daniel, Nia Blackwell, Adrian Langarica-Fuentes, Alexander Peltzer, Sven Nahnsen, e Sara Kleindienst. 2020. <span>«Interpretations of <span>Environmental Microbial Community Studies Are Biased</span> by the <span>Selected 16S rRNA</span> (<span>Gene</span>) <span>Amplicon Sequencing Pipeline</span>»</span>. <em>Frontiers in Microbiology</em> 11 (outubro). <a href="https://doi.org/10.3389/fmicb.2020.550420">https://doi.org/10.3389/fmicb.2020.550420</a>.
+</div>
+<div id="ref-wrayGenomewideAssociationAnalyses2018" class="csl-entry" role="listitem">
+Wray, Naomi R., Stephan Ripke, Manuel Mattheisen, Maciej Trzaskowski, Enda M. Byrne, Abdel Abdellaoui, Mark J. Adams, et al. 2018. <span>«Genome-Wide Association Analyses Identify 44 Risk Variants and Refine the Genetic Architecture of Major Depression»</span>. <em>Nature Genetics</em> 50 (5): 668–81. <a href="https://doi.org/10.1038/s41588-018-0090-3">https://doi.org/10.1038/s41588-018-0090-3</a>.
 </div>
 <div id="ref-yangGgpicrust2PackagePICRUSt22023" class="csl-entry" role="listitem">
 Yang, Chen, Jiahao Mai, Xuan Cao, Aaron Burberry, Fabio Cominelli, e Liangliang Zhang. 2023. <span>«Ggpicrust2: An <span>R</span> Package for <span>PICRUSt2</span> Predicted Functional Profile Analysis and Visualization»</span>. <em>Bioinformatics</em> 39 (8): btad470. <a href="https://doi.org/10.1093/bioinformatics/btad470">https://doi.org/10.1093/bioinformatics/btad470</a>.

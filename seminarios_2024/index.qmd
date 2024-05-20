@@ -81,25 +81,29 @@ Meus interesses:
 ![](https://i.imgur.com/hJMr1H4.png)
 :::
 
-:::: {.r-stack}
 - Sustentabilidade de software em metagenômica [@cavalcanteBridgingGapsMetaOmic2023]
   - Reprodutibilidade
   - Gerenciadores de workflow
   - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
 
-::: {.fragment style="display:grid; place-items:center;"}
+---
+
+<center>
+![](https://i.imgur.com/abP6l9Y.png)
+
 ![](https://i.imgur.com/cVJ2lBg.png)
 ![](https://i.imgur.com/gj6Ccrb.png)
-:::
-
-::::
+</center>
 
 # Alterações funcionais na microbiota no Transtorno Depressivo Maior
 
 # Você é 10% humano
 
-## Como a Microbiota influencia na saúde? {.smaller}
+## Como a Microbiota influencia na saúde mental? {.smaller}
 
+::: {style="text-align: center; display: grid; place-items: center;"}
+![[@houMicrobiotaHealthDiseases2022]](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41392-022-00974-4/MediaObjects/41392_2022_974_Fig2_HTML.png)
+:::
 
 ## Como a Microbiota influencia na saúde mental? {.smaller}
 
@@ -192,9 +196,16 @@ Meus interesses:
 - Apesar do aumento na biossíntese de TRP, há um aumento em igual proporção em diversas
 vias de degradação de TRP também.
 
-## Vias do Triptofano
+## Vias do Triptofano {.smaller}
 
-More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation (@laiShotgunMetagenomicsReveals2021; @mcguinnessSystematicReviewGut2022)
+- As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana.
+
+- Queda do TRP plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
+(@ogawaPlasmaAminoAcid2018, @laiShotgunMetagenomicsReveals2021) e já foi implicado na promoção de TDM, associado à inflamação [@dantzerInflammationassociatedDepressionSerotonin2011].
+
+- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica (@laiShotgunMetagenomicsReveals2021a, @mcguinnessSystematicReviewGut2022)
+
+- Os 5% restantes é convertido é serotonina intestinal, que exerce efeito local na neurotransmissão.
 
 ## Vias da Histidina
 
@@ -206,13 +217,22 @@ More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modul
 
 ## Vias da Histidina
 
-- Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression [@youContributionPolyaminePathway2024], mas o mecanismo pelo qual isso acontece ainda não foi compreendido.
+- Como o Trp, a His é um aminoácido essencial, cujas principais fontes são alimentação e biossíntese microbiana.
+
+- Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression (@ogawaPlasmaAminoAcid2018, @youContributionPolyaminePathway2024)
+
+- O mecanismo pelo qual isso acontece ou como a histidina pode estar atuando na TDM ainda não foram compreendidos.
 
 ## Vias da degradação de Lactose {.smaller}
 
-Lactose malabsorption may play a role in the development of mental depression. In lactose malabsorption high intestinal lactose concentrations may interfere with L-tryptophanmetabolism and 5-hydroxytryptamine (serotonin) availability. Lactose malabsorption should be considered inpatients with signs of mental depression [@ledochowskiLactoseMalabsorptionAssociated1998]
+- Em casos de alta disponibilidade de lactose no intestino (por mal-absorção do organismo),
+o metabolismo bacteriano de lactose e galactose aumenta, o que, além do descomforto abdominal, traz consequências metabólicas.
 
-"Our results showed a 100% gene mutations enrichment of both LCT and SI dimers in MDD patients, which could render maldigested and malabsorbed lactose and fructose, leaving extra lactose and fructose retention in the small intestine. These abnormally retented lactose and fructose could interfere with tryptophan absorption, leading to an excessive formation of complexes of tryptophan, the precursor of serotonin. The resultant decreased serotonin synthesis compromises serotonergic neurotransmission, which is common in the central nervous system in major depression" [@zhangDigestionDietaryCarbohydrate2024]
+- Lactose forma complexos com triptofano, o que pode levar a um *shift* do triptofano disponível para a produção de Kyn. Algo que já foi proposto como explicação para associações encontradas entre mal-absorção de lactose e depressão em mulheres [@ledochowskiLactoseMalabsorptionAssociated1998].
+
+- Mutações da lactase já foram associadas com pacientes com TDM [@zhangDigestionDietaryCarbohydrate2024], o que pode implicar em mal-absorção.
+
+- A menor disponibilidade de triptofano pode impactar na neurotransmissão serotoninérgica local.
 
 ## Randomização Mendeliana{.smaller}
 

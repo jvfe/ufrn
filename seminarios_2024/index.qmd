@@ -287,3 +287,7 @@ com a abundância diferencial.
 
 ::: {#refs}
 :::
+
+# Seminários de Bioinformática 2024.1 {style="text-align: center;"}
+
+João Vitor Cavalcante

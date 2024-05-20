@@ -194,7 +194,7 @@ vias de degradação de TRP também.
 
 ## Vias do Triptofano
 
-More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation (Lai et al, 2021; McGuinness et al, 2022)
+More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation (@laiShotgunMetagenomicsReveals2021; @mcguinnessSystematicReviewGut2022)
 
 ## Vias da Histidina
 

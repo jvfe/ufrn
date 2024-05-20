@@ -6,6 +6,7 @@ bibliography: refs.bib
 format: 
   revealjs:
     theme: "night"
+    transition: fade
     slide-number: true
     multiplex: true # audience can follow along w/ mobile devices
     fragments: true
@@ -97,6 +98,9 @@ Meus interesses:
 
 # Você é 10% humano
 
+## Como a Microbiota influencia na saúde? {.smaller}
+
+
 ## Como a Microbiota influencia na saúde mental? {.smaller}
 
 :::: {.columns}
@@ -152,7 +156,7 @@ Meus interesses:
 | @lopera-mayaEffectHostGenetics2022 |   7.738 |     SNPs associados com a abundância de 205 vias metabólicas na microbiota. |
 | @wrayGenomewideAssociationAnalyses2018                                  | 16.823 (TDM)            | SNPs associados com o Transtorno Depressivo Maior                           |
 
-- Para @wrayGenomewideAssociationAnalyses2018, foi considerado apenas indivíduos diagnosticados com MDD através do DSM-IV, ICD-9 ou ICD-10.
+- Para @wrayGenomewideAssociationAnalyses2018, foi considerado apenas indivíduos diagnosticados com TDM através do DSM-IV, ICD-9 ou ICD-10.
   - O estudo contou com **25.632 indivíduos controle**.
   
 - Ambos estudos utilizaram apenas indivíduos de origem europeia.
@@ -175,13 +179,49 @@ Meus interesses:
 
 ## Abundância Diferencial
 
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](mutual_amplicon_heatmap_marked.png){width=900}
+:::
+
 ## Vias do Triptofano
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](tryptophan_paths.png){width=800}
+:::
+
+- Apesar do aumento na biossíntese de TRP, há um aumento em igual proporção em diversas
+vias de degradação de TRP também.
+
+## Vias do Triptofano
+
+More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation (Lai et al, 2021; McGuinness et al, 2022)
 
 ## Vias da Histidina
 
-## Vias da degradação de Lactose
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](histidine_paths.png){width=800}
+:::
 
-## Randomização Mendeliana
+- Apesar da queda em HISDEG-PWY. há um aumento em PWY-5028, mostrando uma possível via alternativa de degradação.
+
+## Vias da Histidina
+
+- Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression [@youContributionPolyaminePathway2024], mas o mecanismo pelo qual isso acontece ainda não foi compreendido.
+
+## Vias da degradação de Lactose {.smaller}
+
+Lactose malabsorption may play a role in the development of mental depression. In lactose malabsorption high intestinal lactose concentrations may interfere with L-tryptophanmetabolism and 5-hydroxytryptamine (serotonin) availability. Lactose malabsorption should be considered inpatients with signs of mental depression [@ledochowskiLactoseMalabsorptionAssociated1998]
+
+"Our results showed a 100% gene mutations enrichment of both LCT and SI dimers in MDD patients, which could render maldigested and malabsorbed lactose and fructose, leaving extra lactose and fructose retention in the small intestine. These abnormally retented lactose and fructose could interfere with tryptophan absorption, leading to an excessive formation of complexes of tryptophan, the precursor of serotonin. The resultant decreased serotonin synthesis compromises serotonergic neurotransmission, which is common in the central nervous system in major depression" [@zhangDigestionDietaryCarbohydrate2024]
+
+## Randomização Mendeliana{.smaller}
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](pathways_plot_marked.png){width=900}
+:::
+
+- Vias da histidina e da degradação de lactose/galactose apontam resultados concordantes
+com a abundância diferencial.
 
 ## Conclusões {.smaller}
 
@@ -203,10 +243,12 @@ Meus interesses:
 ::: {.column width="70%"}
 ![](https://dalmolingroup.github.io/images/grupo_foto2.jpg)
 
-::: {#funders layout-ncol=2}
+::: {#funders layout-ncol=3}
 ![](https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Ficons%2Flogo-cortado.png&w=640&q=100)
 
 ![](https://i.imgur.com/QRIihhe.png)
+
+![](http://npad.ufrn.br/assets/logo.png)
 :::
 
 :::
@@ -221,7 +263,7 @@ Meus interesses:
 ::::
 
 ---
-### References {.scrollable}
+### Referências {.scrollable}
 
 ::: {#refs}
 :::

@@ -445,6 +445,9 @@ João Vitor Cavalcante
 <h1>Você é 10% humano</h1>
 
 </section>
+<section id="como-a-microbiota-influencia-na-saúde" class="slide level2 smaller">
+<h2>Como a Microbiota influencia na saúde?</h2>
+</section>
 <section id="como-a-microbiota-influencia-na-saúde-mental" class="slide level2 smaller">
 <h2>Como a Microbiota influencia na saúde mental?</h2>
 <div class="columns">
@@ -576,7 +579,7 @@ João Vitor Cavalcante
 </tbody>
 </table>
 <ul>
-<li>Para <span class="citation" data-cites="wrayGenomewideAssociationAnalyses2018">Wray et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>, foi considerado apenas indivíduos diagnosticados com MDD através do DSM-IV, ICD-9 ou ICD-10.
+<li>Para <span class="citation" data-cites="wrayGenomewideAssociationAnalyses2018">Wray et al. (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>, foi considerado apenas indivíduos diagnosticados com TDM através do DSM-IV, ICD-9 ou ICD-10.
 <ul>
 <li>O estudo contou com <strong>25.632 indivíduos controle</strong>.</li>
 </ul></li>
@@ -606,18 +609,51 @@ João Vitor Cavalcante
 </section>
 <section id="abundância-diferencial" class="slide level2">
 <h2>Abundância Diferencial</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="mutual_amplicon_heatmap_marked.png" width="900"></p>
+</div>
 </section>
 <section id="vias-do-triptofano" class="slide level2">
 <h2>Vias do Triptofano</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="tryptophan_paths.png" width="800"></p>
+</div>
+<ul>
+<li>Apesar do aumento na biossíntese de TRP, há um aumento em igual proporção em diversas vias de degradação de TRP também.</li>
+</ul>
+</section>
+<section id="vias-do-triptofano-1" class="slide level2">
+<h2>Vias do Triptofano</h2>
+<p>More than 95% of Trp gets converted into Kyn, 5% into gut serotonin, which modulates neuroplasticity and/or exerts neurotoxic effects, at least in part by its effect on N-methyl-D-aspartate (NMDA) receptor signaling and glutamatergic neurotransmission, as previously shown in patients with depression in the context of inflammation (Lai et al, 2021; McGuinness et al, 2022)</p>
 </section>
 <section id="vias-da-histidina" class="slide level2">
 <h2>Vias da Histidina</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="histidine_paths.png" width="800"></p>
+</div>
+<ul>
+<li>Apesar da queda em HISDEG-PWY. há um aumento em PWY-5028, mostrando uma possível via alternativa de degradação.</li>
+</ul>
 </section>
-<section id="vias-da-degradação-de-lactose" class="slide level2">
+<section id="vias-da-histidina-1" class="slide level2">
+<h2>Vias da Histidina</h2>
+<ul>
+<li>Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression <span class="citation" data-cites="youContributionPolyaminePathway2024">(<a href="#/references" role="doc-biblioref" onclick="">You et al. 2024</a>)</span>, mas o mecanismo pelo qual isso acontece ainda não foi compreendido.</li>
+</ul>
+</section>
+<section id="vias-da-degradação-de-lactose" class="slide level2 smaller">
 <h2>Vias da degradação de Lactose</h2>
+<p>Lactose malabsorption may play a role in the development of mental depression. In lactose malabsorption high intestinal lactose concentrations may interfere with L-tryptophanmetabolism and 5-hydroxytryptamine (serotonin) availability. Lactose malabsorption should be considered inpatients with signs of mental depression <span class="citation" data-cites="ledochowskiLactoseMalabsorptionAssociated1998">(<a href="#/references" role="doc-biblioref" onclick="">Ledochowski, Sperner-Unterweger, e Fuchs 1998</a>)</span></p>
+<p>“Our results showed a 100% gene mutations enrichment of both LCT and SI dimers in MDD patients, which could render maldigested and malabsorbed lactose and fructose, leaving extra lactose and fructose retention in the small intestine. These abnormally retented lactose and fructose could interfere with tryptophan absorption, leading to an excessive formation of complexes of tryptophan, the precursor of serotonin. The resultant decreased serotonin synthesis compromises serotonergic neurotransmission, which is common in the central nervous system in major depression” <span class="citation" data-cites="zhangDigestionDietaryCarbohydrate2024">(<a href="#/references" role="doc-biblioref" onclick="">Zhang et al. 2024</a>)</span></p>
 </section>
-<section id="randomização-mendeliana" class="slide level2">
+<section id="randomização-mendeliana" class="slide level2 smaller">
 <h2>Randomização Mendeliana</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="pathways_plot_marked.png" width="900"></p>
+</div>
+<ul>
+<li>Vias da histidina e da degradação de lactose/galactose apontam resultados concordantes com a abundância diferencial.</li>
+</ul>
 </section>
 <section id="conclusões" class="slide level2 smaller">
 <h2>Conclusões</h2>
@@ -640,13 +676,16 @@ João Vitor Cavalcante
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><img data-src="https://dalmolingroup.github.io/images/grupo_foto2.jpg"></p>
-<div id="funders" class="quarto-layout-panel" data-layout-ncol="2">
+<div id="funders" class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
 <p><img data-src="https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Ficons%2Flogo-cortado.png&amp;w=640&amp;q=100"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
 <p><img data-src="https://i.imgur.com/QRIihhe.png"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img data-src="http://npad.ufrn.br/assets/logo.png"></p>
 </div>
 </div>
 </div>
@@ -660,7 +699,7 @@ João Vitor Cavalcante
 </section>
 <section class="slide level2 smaller scrollable" id="references">
 
-<h3 class="scrollable" id="references">References</h3>
+<h3 class="scrollable" id="referências">Referências</h3>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-beghiniIntegratingTaxonomicFunctional2021" class="csl-entry" role="listitem">
 Beghini, Francesco, Lauren J McIver, Aitor Blanco-Míguez, Leonard Dubois, Francesco Asnicar, Sagun Maharjan, Ana Mailyan, et al. 2021. <span>«Integrating Taxonomic, Functional, and Strain-Level Profiling of Diverse Microbial Communities with <span>bioBakery</span> 3»</span>. Editado por Peter Turnbaugh, Eduardo Franco, e C Titus Brown. <em>eLife</em> 10: e65088. <a href="https://doi.org/10.7554/eLife.65088">https://doi.org/10.7554/eLife.65088</a>.
@@ -679,6 +718,9 @@ Cryan, John F., Kenneth J. O’Riordan, Caitlin S. M. Cowan, Kiran V. Sandhu, Th
 </div>
 <div id="ref-kovtunAlterationsCompositionNeurometabolic2022" class="csl-entry" role="listitem">
 Kovtun, Alexey S., Olga V. Averina, Irina Y. Angelova, Roman A. Yunes, Yana A. Zorkina, Anna Y. Morozova, Alexey V. Pavlichenko, et al. 2022. <span>«Alterations of the <span>Composition</span> and <span>Neurometabolic Profile</span> of <span>Human Gut Microbiota</span> in <span>Major Depressive Disorder</span>»</span>. <em>Biomedicines</em> 10 (9): 2162. <a href="https://doi.org/10.3390/biomedicines10092162">https://doi.org/10.3390/biomedicines10092162</a>.
+</div>
+<div id="ref-ledochowskiLactoseMalabsorptionAssociated1998" class="csl-entry" role="listitem">
+Ledochowski, M., B. Sperner-Unterweger, e D. Fuchs. 1998. <span>«Lactose <span>Malabsorption Is Associated</span> with <span>Early Signs</span> of <span>Mental Depression</span> in <span>Females</span> (<span>A Preliminary Report</span>)»</span>. <em>Digestive Diseases and Sciences</em> 43 (11): 2513–17. <a href="https://doi.org/10.1023/A:1026654820461">https://doi.org/10.1023/A:1026654820461</a>.
 </div>
 <div id="ref-lingChangesFecalMicrobiota2022" class="csl-entry" role="listitem">
 Ling, Zongxin, Yiwen Cheng, Feng Chen, Xiumei Yan, Xia Liu, Li Shao, Guolin Jin, et al. 2022. <span>«Changes in Fecal Microbiota Composition and the Cytokine Expression Profile in School-Aged Children with Depression: <span>A</span> Case-Control Study»</span>. <em>Frontiers in Immunology</em> 13 (agosto). <a href="https://doi.org/10.3389/fimmu.2022.964910">https://doi.org/10.3389/fimmu.2022.964910</a>.
@@ -709,6 +751,12 @@ Wray, Naomi R., Stephan Ripke, Manuel Mattheisen, Maciej Trzaskowski, Enda M. By
 </div>
 <div id="ref-yangGgpicrust2PackagePICRUSt22023" class="csl-entry" role="listitem">
 Yang, Chen, Jiahao Mai, Xuan Cao, Aaron Burberry, Fabio Cominelli, e Liangliang Zhang. 2023. <span>«Ggpicrust2: An <span>R</span> Package for <span>PICRUSt2</span> Predicted Functional Profile Analysis and Visualization»</span>. <em>Bioinformatics</em> 39 (8): btad470. <a href="https://doi.org/10.1093/bioinformatics/btad470">https://doi.org/10.1093/bioinformatics/btad470</a>.
+</div>
+<div id="ref-youContributionPolyaminePathway2024" class="csl-entry" role="listitem">
+You, Zerui, Chengyu Wang, Xiaofeng Lan, Weicheng Li, Dewei Shang, Fan Zhang, Yanxiang Ye, Haiyan Liu, Yanling Zhou, e Yuping Ning. 2024. <span>«The Contribution of Polyamine Pathway to Determinations of Diagnosis for Treatment-Resistant Depression: <span>A</span> Metabolomic Analysis»</span>. <em>Progress in Neuro-Psychopharmacology and Biological Psychiatry</em> 128 (janeiro): 110849. <a href="https://doi.org/10.1016/j.pnpbp.2023.110849">https://doi.org/10.1016/j.pnpbp.2023.110849</a>.
+</div>
+<div id="ref-zhangDigestionDietaryCarbohydrate2024" class="csl-entry" role="listitem">
+Zhang, Ni, Jin Li, Zaiquan Dong, Yongbo Hu, Zhihui Zhong, Qiyong Gong, e Weihong Kuang. 2024. <span>«The Digestion and Dietary Carbohydrate Pathway Contains 100% Gene Mutations Enrichment Among 117 Patients with Major Depressive Disorder»</span>. <em>Frontiers in Psychiatry</em> 15 (abril). <a href="https://doi.org/10.3389/fpsyt.2024.1362612">https://doi.org/10.3389/fpsyt.2024.1362612</a>.
 </div>
 <div id="ref-zhuCausalAssociationsRisk2018" class="csl-entry" role="listitem">
 Zhu, Zhihong, Zhili Zheng, Futao Zhang, Yang Wu, Maciej Trzaskowski, Robert Maier, Matthew R. Robinson, et al. 2018. <span>«Causal Associations Between Risk Factors and Common Diseases Inferred from <span>GWAS</span> Summary Data»</span>. <em>Nature Communications</em> 9 (1): 224. <a href="https://doi.org/10.1038/s41467-017-02317-2">https://doi.org/10.1038/s41467-017-02317-2</a>.
@@ -880,7 +928,7 @@ Zhu, Zhihong, Zhili Zheng, Futao Zhang, Yang Wu, Maciej Trzaskowski, Robert Maie
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'none',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',

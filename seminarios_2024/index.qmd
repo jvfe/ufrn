@@ -23,7 +23,7 @@ format:
 ![](https://imgur.com/WY3IHRV)
 
 </center>
-## Quem é esse cara? {.smaller}
+## Quem é você? {.smaller}
 
 :::: {.columns}
 
@@ -31,15 +31,15 @@ format:
 
 Minha formação:
 
-- Bacharel em Biomedicina, UFRN
+- Bacharel em Biomedicina, UFRN, 2023
 - Mestrando em Bioinformática, UFRN
 
-Meus interesses:
+Meus interesses em bioinformática:
 
-- Em Bioinfo: Metagenômica, RNA-seq e 
-  Desenvolvimento de Software e Pipelines em Bioinformática.
+- Metagenômica
+- RNA-seq
+- Desenvolvimento de Software e Pipelines
 
-- No geral: Open Source, Linux, NeoVim, RPG
 :::
 
 ::: {.column width="40%"}
@@ -171,6 +171,21 @@ Meus interesses:
 
 - Aplicado com a ferramenta [GSMR](https://yanglab.westlake.edu.cn/software/gsmr/) [@zhuCausalAssociationsRisk2018]
 
+::: {.notes}
+Exemplo Simplificado:
+
+SNP Instrumental: Suponha que o SNP rs1234 afete a abundância de uma via metabólica.
+Sumstats de mbQTL: rs1234 aumenta a abundância dessa via em 0.1 unidade.
+Sumstats de TDM: rs1234 está associado a um aumento de 0.05 no risco de TDM.
+
+Para cada SNP:
+
+Calculamos o efeito esperado no desfecho baseado no efeito na exposição.
+Ponderamos essas estimativas pela inversa de sua variância (mais confiança, mais peso).
+
+Combinamos as estimativas ponderadas para obter um efeito causal geral entre colesterol e risco de doença cardíaca.
+:::
+
 # Resultados
 
 ## beta-Diversidade
@@ -201,11 +216,21 @@ vias de degradação de TRP também.
 - As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana.
 
 - Queda do TRP plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
-(@ogawaPlasmaAminoAcid2018, @laiShotgunMetagenomicsReveals2021) e já foi implicado na promoção de TDM, associado à inflamação [@dantzerInflammationassociatedDepressionSerotonin2011].
+(@ogawaPlasmaAminoAcid2018, @laiShotgunMetagenomicsReveals2021) e já foi implicado na promoção de TDM, associado à atividade inflamatória [@dantzerInflammationassociatedDepressionSerotonin2011].
 
-- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica (@laiShotgunMetagenomicsReveals2021a, @mcguinnessSystematicReviewGut2022)
+- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e/ou exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica (@laiShotgunMetagenomicsReveals2021a, @mcguinnessSystematicReviewGut2022).
+A síntese de Kyn é favorecida em quadros de baixa disponibilidade de Trp [@kennedyKynureninePathwayMetabolism2017].
 
 - Os 5% restantes é convertido é serotonina intestinal, que exerce efeito local na neurotransmissão.
+
+::: {.notes}
+- Kyn pode formar tanto acido kyureninico, quanto acido quinolinico.
+- A. K tem capacidade neuroprotetora enquanto A. Q tem capacidade excitotoxica.
+<https://ars.els-cdn.com/content/image/1-s2.0-S002839081630288X-gr2.jpg>
+
+- Testes clinicos duplo cego ja mostraram que reducao da disponibilidade da concentracao
+de Kyn atraves de probioticos tem a capacidade de melhorar a funcao cognitiva em pacientes com TDM.
+:::
 
 ## Vias da Histidina
 
@@ -256,9 +281,11 @@ com a abundância diferencial.
   - Um estudo de metatranscriptômica ou metabolômica podem apontar resultados mais concretos
   e ser uma possível validação da análise.
   
-  
 ## Agradecimentos
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLwSNjXT4wZnG66-dn2Q5sGoueTfmLsSlSL8kspjQuA&s)
+
+## Agradecimentos
 :::: {.columns}
 ::: {.column width="70%"}
 ![](https://dalmolingroup.github.io/images/grupo_foto2.jpg)

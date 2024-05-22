@@ -229,7 +229,7 @@ A síntese de Kyn é favorecida em quadros de baixa disponibilidade de Trp [@ken
 <https://ars.els-cdn.com/content/image/1-s2.0-S002839081630288X-gr2.jpg>
 
 - Testes clinicos duplo cego ja mostraram que reducao da disponibilidade da concentracao
-de Kyn atraves de probioticos tem a capacidade de melhorar a funcao cognitiva em pacientes com TDM.
+de Kyn atraves de probioticos tem a capacidade de melhorar a funcao cognitiva em pacientes com TDM. [@rudzkiProbioticLactobacillusPlantarum2019]
 :::
 
 ## Vias da Histidina

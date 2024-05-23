@@ -146,6 +146,13 @@ Meus interesses em bioinformática:
 
 ## Metodologia {.smaller}
 
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](methodology_dark.png)
+:::
+
+- Meta-análise da A.D. através do método de Fisher, como implementado no pacote R [metap](https://cran.r-project.org/web/packages/metap/index.html) (padj < 0.05).
+
+::: {.notes}
 - Processamento dos dados Amplicon com [nf-core/ampliseq](https://github.com/nf-core/ampliseq) [-@straubInterpretationsEnvironmentalMicrobial2020], que utiliza DADA2, QIIME e PiCrust2.
   - Abundância diferencial com ggpicrust2 [-@yangGgpicrust2PackagePICRUSt22023]
 
@@ -153,8 +160,7 @@ Meus interesses em bioinformática:
   - Quantificação de vias metabólicas com Humann3 [-@beghiniIntegratingTaxonomicFunctional2021]
   - Taxonomia com MetaPhlan4 [-@blanco-miguezExtendingImprovingMetagenomic2023]
   - Abundância diferencial com MaAsLin2 [-@mallickMultivariableAssociationDiscovery2021]
-
-- Meta-análise da A.D. através do método de Fisher, como implementado no pacote R [metap](https://cran.r-project.org/web/packages/metap/index.html) (padj < 0.05).
+:::
 
 # Metodologia - Randomização Mendeliana
 
@@ -270,6 +276,8 @@ o metabolismo bacteriano de lactose e galactose aumenta, o que, além do descomf
 ![](pathways_plot_marked.png){width=900}
 :::
 
+- De 205 vias, 16 (acima) indicam um possível efeito causal no TDM.
+
 - Vias da histidina e da degradação de lactose/galactose apontam resultados concordantes
 com a abundância diferencial.
 
@@ -289,7 +297,7 @@ com a abundância diferencial.
 ## Agradecimentos
 :::: {.columns}
 ::: {.column width="70%"}
-![](https://dalmolingroup.github.io/images/grupo_foto2.jpg)
+![](https://dalmolingroup.github.io/images/group_foto.jpg)
 
 ::: {#funders layout-ncol=3}
 ![](https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Ficons%2Flogo-cortado.png&w=640&q=100)

@@ -3,6 +3,7 @@ title: "Seminários de Bioinformática 2024.1"
 author: "João Vitor Cavalcante"
 lang: pt
 bibliography: refs.bib
+csl: diabetologia.csl
 format: 
   revealjs:
     theme: "night"
@@ -64,7 +65,7 @@ Meus interesses em bioinformática:
 
 # {.smaller}
 - TCC - desenvolvimento de ferramentas para metagenômica
-  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences [@moraisMEDUSAPipelineSensitive2022]
+  - MEDUSA - A Pipeline for Sensitive Taxonomic Classification and Flexible Functional Annotation of Metagenomic Shotgun Sequences [-@moraisMEDUSAPipelineSensitive2022]
   - [MicroView](https://microview-bio.readthedocs.io/en/latest/) - A reporting tool for aggregating results from taxonomic classification analyses
   
 <center>
@@ -81,7 +82,7 @@ Meus interesses em bioinformática:
 ![](https://i.imgur.com/hJMr1H4.png)
 :::
 
-- Sustentabilidade de software em metagenômica [@cavalcanteBridgingGapsMetaOmic2023]
+- Sustentabilidade de software em metagenômica [-@cavalcanteBridgingGapsMetaOmic2023]
   - Reprodutibilidade
   - Gerenciadores de workflow
   - O ecossistema computacional de Metatranscriptômica e integração de dados de microbioma
@@ -102,7 +103,7 @@ Meus interesses em bioinformática:
 ## Como a Microbiota influencia na saúde mental? {.smaller}
 
 ::: {style="text-align: center; display: grid; place-items: center;"}
-![[@houMicrobiotaHealthDiseases2022]](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41392-022-00974-4/MediaObjects/41392_2022_974_Fig2_HTML.png)
+![[-@houMicrobiotaHealthDiseases2022]](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41392-022-00974-4/MediaObjects/41392_2022_974_Fig2_HTML.png)
 :::
 
 ## Como a Microbiota influencia na saúde mental? {.smaller}
@@ -110,9 +111,9 @@ Meus interesses em bioinformática:
 :::: {.columns}
 
 ::: {.column width="50%"}
-- Transtornos psiquiátricos têm sido considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal [@mcguinnessSystematicReviewGut2022]
+- Transtornos psiquiátricos têm sido considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal [-@mcguinnessSystematicReviewGut2022]
 
-- Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM [@naseribafroueiCorrelationHumanFecal2014] [@catena-dellossoInflammatoryNeurodegenerativePathways] 
+- Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM [-@naseribafroueiCorrelationHumanFecal2014] [-@catena-dellossoInflammatoryNeurodegenerativePathways] 
 :::
 
 ::: {.column width="50%"}
@@ -120,6 +121,10 @@ Meus interesses em bioinformática:
 :::
 
 ::::
+
+## O que é metagenômica?
+
+## O que é uma variante genética?
 
 # Objetivo
 
@@ -141,13 +146,13 @@ Meus interesses em bioinformática:
 
 ## Metodologia {.smaller}
 
-- Processamento dos dados Amplicon com [nf-core/ampliseq](https://github.com/nf-core/ampliseq) [@straubInterpretationsEnvironmentalMicrobial2020], que utiliza DADA2, QIIME e PiCrust2.
-  - Abundância diferencial com ggpicrust2 [@yangGgpicrust2PackagePICRUSt22023]
+- Processamento dos dados Amplicon com [nf-core/ampliseq](https://github.com/nf-core/ampliseq) [-@straubInterpretationsEnvironmentalMicrobial2020], que utiliza DADA2, QIIME e PiCrust2.
+  - Abundância diferencial com ggpicrust2 [-@yangGgpicrust2PackagePICRUSt22023]
 
-- Processamento do dataset Shotgun com [dalmolingroup/euryale](https://github.com/dalmolingroup/euryale) (Cavalcante et al, *sob revisão*)
-  - Quantificação de vias metabólicas com Humann3 [@beghiniIntegratingTaxonomicFunctional2021]
-  - Taxonomia com MetaPhlan4 [@blanco-miguezExtendingImprovingMetagenomic2023]
-  - Abundância diferencial com MaAsLin2 [@mallickMultivariableAssociationDiscovery2021]
+- Processamento do dataset Shotgun com [dalmolingroup/euryale](https://github.com/dalmolingroup/euryale)
+  - Quantificação de vias metabólicas com Humann3 [-@beghiniIntegratingTaxonomicFunctional2021]
+  - Taxonomia com MetaPhlan4 [-@blanco-miguezExtendingImprovingMetagenomic2023]
+  - Abundância diferencial com MaAsLin2 [-@mallickMultivariableAssociationDiscovery2021]
 
 - Meta-análise da A.D. através do método de Fisher, como implementado no pacote R [metap](https://cran.r-project.org/web/packages/metap/index.html) (padj < 0.05).
 
@@ -169,7 +174,7 @@ Meus interesses em bioinformática:
 
 ![](https://www.researchgate.net/publication/344407603/figure/fig5/AS:959980534501383@1605888603761/Mendelian-Randomization-unbiased-causal-associations-and-assumptions-Mendelian.png)
 
-- Aplicado com a ferramenta [GSMR](https://yanglab.westlake.edu.cn/software/gsmr/) [@zhuCausalAssociationsRisk2018]
+- Aplicado com a ferramenta [GSMR](https://yanglab.westlake.edu.cn/software/gsmr/) [-@zhuCausalAssociationsRisk2018]
 
 ::: {.notes}
 Exemplo Simplificado:
@@ -216,10 +221,10 @@ vias de degradação de TRP também.
 - As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana.
 
 - Queda do TRP plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
-(@ogawaPlasmaAminoAcid2018, @laiShotgunMetagenomicsReveals2021) e já foi implicado na promoção de TDM, associado à atividade inflamatória [@dantzerInflammationassociatedDepressionSerotonin2011].
+@ogawaPlasmaAminoAcid2018 @laiShotgunMetagenomicsReveals2021 e já foi implicado na promoção de TDM, associado à atividade inflamatória [-@dantzerInflammationassociatedDepressionSerotonin2011].
 
-- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e/ou exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica (@laiShotgunMetagenomicsReveals2021a, @mcguinnessSystematicReviewGut2022).
-A síntese de Kyn é favorecida em quadros de baixa disponibilidade de Trp [@kennedyKynureninePathwayMetabolism2017].
+- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e/ou exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica @laiShotgunMetagenomicsReveals2021a @mcguinnessSystematicReviewGut2022.
+A síntese de Kyn é favorecida em quadros de baixa disponibilidade de Trp [-@kennedyKynureninePathwayMetabolism2017].
 
 - Os 5% restantes é convertido é serotonina intestinal, que exerce efeito local na neurotransmissão.
 
@@ -244,7 +249,7 @@ de Kyn atraves de probioticos tem a capacidade de melhorar a funcao cognitiva em
 
 - Como o Trp, a His é um aminoácido essencial, cujas principais fontes são alimentação e biossíntese microbiana.
 
-- Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression (@ogawaPlasmaAminoAcid2018, @youContributionPolyaminePathway2024)
+- Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression @ogawaPlasmaAminoAcid2018 @youContributionPolyaminePathway2024
 
 - O mecanismo pelo qual isso acontece ou como a histidina pode estar atuando na TDM ainda não foram compreendidos.
 
@@ -280,10 +285,6 @@ com a abundância diferencial.
   sobretudo os de 16S.
   - Um estudo de metatranscriptômica ou metabolômica podem apontar resultados mais concretos
   e ser uma possível validação da análise.
-  
-## Agradecimentos
-
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLwSNjXT4wZnG66-dn2Q5sGoueTfmLsSlSL8kspjQuA&s)
 
 ## Agradecimentos
 :::: {.columns}

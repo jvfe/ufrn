@@ -116,15 +116,36 @@ Meus interesses em bioinformática:
 - Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM [-@naseribafroueiCorrelationHumanFecal2014] [-@catena-dellossoInflammatoryNeurodegenerativePathways] 
 :::
 
-::: {.column width="50%"}
+::: {.column width="50%" style="text-align: center;"}
 ![[@cryanMicrobiotaGutBrainAxis2019b]](https://i.imgur.com/u4cLvJe.png)
 :::
 
 ::::
 
-## O que é metagenômica?
+## O que é metagenômica? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Consiste em sequenciar o conteúdo genético de uma amostra ambiental, seja este ambiente
+um tecido no hospedeiro, como a pele, seja uma amostra de solo, etc.
+
+- Possui duas príncipais estratégias, a que utiliza amplicom e a *shotgun* ou sequenciamento de metagenoma completo [@wooleyPrimerMetagenomics2010]
+
+- Tipicamente estuda-se dados metagenômicos a partir de um olhar composicional, com um foco na
+táxons microbianos presentes em uma amostra [@breitwieserReviewMethodsDatabases2019a]
+:::
+
+::: {.column width="50%"}
+![](ampliconVSshotgun_text.png){width=500}
+:::
+
+::::
 
 ## O que é uma variante genética?
+
+[@uffelmannGenomewideAssociationStudies2021]
+[@visscher10YearsGWAS2017]
 
 # Objetivo
 
@@ -199,12 +220,13 @@ Combinamos as estimativas ponderadas para obter um efeito causal geral entre col
 
 # Resultados
 
-## beta-Diversidade
+## beta-Diversidade {.smaller}
 
 <center>
 ![](betadiv.png){width=700}
 </center>
 
+- beta-Diversidade mostra a dissimilaridade composicional entre ambientes
 - Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
 
 ## Abundância Diferencial
@@ -251,13 +273,14 @@ de Kyn atraves de probioticos tem a capacidade de melhorar a funcao cognitiva em
 
 - Apesar da queda em HISDEG-PWY. há um aumento em PWY-5028, mostrando uma possível via alternativa de degradação.
 
-## Vias da Histidina
+## Vias da Histidina {.smaller}
 
 - Como o Trp, a His é um aminoácido essencial, cujas principais fontes são alimentação e biossíntese microbiana.
 
 - Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression @ogawaPlasmaAminoAcid2018 @youContributionPolyaminePathway2024
 
-- O mecanismo pelo qual isso acontece ou como a histidina pode estar atuando na TDM ainda não foram compreendidos.
+- O mecanismo pelo qual isso acontece ou como a histidina pode estar atuando na TDM ainda não foram compreendidos, mas HCDs como carnosina e balenina podem atuar fisiologicamente como 
+antioxidantes endógenos, neuroprotetores e neuromoduladores [@kabthymerCarnosineHistidinecontainingDipeptide2024] [@berezhnoyCarnosineEffectiveNeuroprotector2019]
 
 ## Vias da degradação de Lactose {.smaller}
 

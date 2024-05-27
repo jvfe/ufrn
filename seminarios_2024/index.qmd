@@ -142,10 +142,24 @@ táxons microbianos presentes em uma amostra [@breitwieserReviewMethodsDatabases
 
 ::::
 
-## O que é uma variante genética?
+## O que é uma variante genética? {.smaller}
 
-[@uffelmannGenomewideAssociationStudies2021]
-[@visscher10YearsGWAS2017]
+:::: {.columns}
+
+::: {.column width="50%"}
+- Uma das formas mais utilizadas de estudar a diferença genética entre indivíduos é através de
+polimorfismos de nucleotídeo único (SNPs) [@visscher10YearsGWAS2017]
+
+- *Genome-wide association studies* (GWAS) buscam associar essas variações a condições através de testes utilizando sua frequência em populações de ancestralidade similar [@visscher10YearsGWAS2017] [@uffelmannGenomewideAssociationStudies2021]
+
+- Após realizado o GWAS, o seu resultado pode ser utilizado por várias metodologias diferentes, 
+como cálculo de risco poligênico, **inferência de causalidade entre fenótipos**, etc
+:::
+
+::: {.column width="50%"}
+![[@uffelmannGenomewideAssociationStudies2021]](https://i.imgur.com/HFSZqSt.png){style="text-align: center;" width=300}
+:::
+::::
 
 # Objetivo
 

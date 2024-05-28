@@ -262,13 +262,13 @@ vias de degradação de TRP também.
 
 - As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana.
 
-- Queda do TRP plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
+- Queda do Trp plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
 @ogawaPlasmaAminoAcid2018 @laiShotgunMetagenomicsReveals2021 e já foi implicado na promoção de TDM, associado à atividade inflamatória [-@dantzerInflammationassociatedDepressionSerotonin2011].
 
-- 95% do TRP intestinal é convertido em Kyn, que modula a neuroplasticidade e/ou exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica @laiShotgunMetagenomicsReveals2021a @mcguinnessSystematicReviewGut2022.
+- Muito do Trp intestinal é convertido em Kyn, que modula a neuroplasticidade e/ou exerce neurotoxicidade, através de sua interação com receptores NMDA, afetando a neurotransmissão glutamatérgica @laiShotgunMetagenomicsReveals2021a @mcguinnessSystematicReviewGut2022.
 A síntese de Kyn é favorecida em quadros de baixa disponibilidade de Trp [-@kennedyKynureninePathwayMetabolism2017].
 
-- Os 5% restantes é convertido é serotonina intestinal, que exerce efeito local na neurotransmissão.
+- Uma pequena parte é convertido em serotonina intestinal.
 
 ::: {.notes}
 - Kyn pode formar tanto acido kyureninico, quanto acido quinolinico.
@@ -301,7 +301,7 @@ antioxidantes endógenos, neuroprotetores e neuromoduladores [@kabthymerCarnosin
 - Em casos de alta disponibilidade de lactose no intestino (por mal-absorção do organismo),
 o metabolismo bacteriano de lactose e galactose aumenta, o que, além do descomforto abdominal, traz consequências metabólicas.
 
-- Lactose forma complexos com triptofano, o que pode levar a um *shift* do triptofano disponível para a produção de Kyn. Algo que já foi proposto como explicação para associações encontradas entre mal-absorção de lactose e depressão em mulheres [@ledochowskiLactoseMalabsorptionAssociated1998].
+- Lactose forma complexos com Trp, o que também pode levar a um *shift* do Trp disponível para a produção de Kyn. Algo que já foi proposto como explicação para associações encontradas entre mal-absorção de lactose e depressão em mulheres [@ledochowskiLactoseMalabsorptionAssociated1998].
 
 - Mutações da lactase já foram associadas com pacientes com TDM [@zhangDigestionDietaryCarbohydrate2024], o que pode implicar em mal-absorção.
 

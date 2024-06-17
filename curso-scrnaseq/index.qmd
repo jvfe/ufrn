@@ -1,0 +1,88 @@
+---
+title: "Uma Exploração do scGPT"
+author: "João Vitor Cavalcante"
+lang: pt
+bibliography: dump.bib
+format: 
+  revealjs:
+    theme: "night"
+    transition: fade
+    slide-number: true
+    multiplex: true # audience can follow along w/ mobile devices
+    fragments: true
+    logo: https://i.imgur.com/ena8fiz.png
+---
+
+## O que é o scGPT? {.smaller}
+
+- Um modelo que utiliza a arquitetura de um transformer generativo pré-treinado (GPT) para
+realizar inferências a respeito de dados de single-cell RNA-Seq [@cuiScGPTBuildingFoundation2024a].
+
+- Foi treinado com 33 milhões de células (saudáveis) advindas do [CELLxGENE](https://cellxgene.cziscience.com/)
+  - Essas células e suas expressões gênicas se encontram, essencialmente, em um espaço vetorial, que constitui o modelo disponibilizado.
+  - A informação de novas células e expressões são então cruzadas com esses _tokens_, gerando um novo vetor.
+
+- Outros modelos, denominados _foundation models_, também existem, como o GeneFormer [@zhengGeneformerDeepLearning2023] e o scFoundation [@haoLargescaleFoundationModel2024]
+
+## O que ele pode fazer?
+
+::: r-stack
+![](https://i.imgur.com/8aU6Nho.png){fig-align="center" text-align="center"}
+
+::: fragment
+![](https://i.imgur.com/AMcG3lo.png){width=400 fig-align="center" text-align="center"}
+:::
+:::
+
+
+## Como ele foi usado aqui?
+
+- Utilizando o Tabula Sapiens [@thetabulasapiensconsortiumTabulaSapiensMultipleorgan2022] - Sangue como referência
+  - Os IDs foram transferidos para Symbol pois o modelo só tem Symbol em seu vocabulário.
+  - Integramos (_embedding_) e reanotamos o dado apresentado na aula com o scGPT.
+
+- Então comparamos os resultados obtidos com o scGPT aos resultados obtidos através do TransferLabels do Seurat.
+
+---
+
+![](umap.png)
+
+---
+
+![](https://i.imgur.com/kMOZM3A.png){fig-align="center" text-align="center"}
+
+
+## Métricas
+
+| Métrica   | Valor |
+|-----------|-------|
+| Accuracy  | 0.807 |
+| Precision | 0.525 |
+| Recall    | 0.417 |
+| F1        | 0.413 |
+
+## Dificuldades enfrentadas
+
+- Documentação escassa e dificuldades de instalação. 
+
+- Uma vibe de "vamos correr pra publicar isso aí".
+
+- Necessidade de se ter GPU.
+
+## Conclusões
+
+- Concordância de por volta de 80%
+
+- Alguns tipos celulares específicos mostraram maior discordância, como: Plaquetas, eritrócitos e neutrófilos.
+
+- Código: <https://github.com/jvfe/scgpt_experiments/>
+
+## Referências
+
+::: {#refs}
+:::
+
+# Uma Exploração do scGPT {style="text-align: center;"}
+
+João Vitor Cavalcante
+

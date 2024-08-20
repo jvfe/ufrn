@@ -1,0 +1,140 @@
+---
+format: 
+  revealjs:
+    theme: night
+    slide-number: true
+    footer: "EURYALE: A versatile Nextflow pipeline for
+taxonomic classification and functional annotation
+of metagenomics data"
+    preview-links: true
+    multiplex: true # audience can follow along w/ mobile devices
+    transition: slide # slide # none | fade | convex | concave | zoom
+    fragments: true
+    logo: https://i.imgur.com/ena8fiz.png
+---
+
+## EURYALE {.smaller .center style="text-align: center;"}
+
+### A versatile Nextflow pipeline for taxonomic classification and functional annotation of metagenomics data {.smaller .center style="text-align: center;"}
+
+**27 August 2024**
+
+João Vitor Cavalcante
+
+# Introduction
+
+## Metagenomics {.smaller}
+
+- Metagenomics consists of an approach to sequence the genetic content of an
+environmental sample, be that environment a host-associated tissue, like the human gut, be it something like a soil sample
+  
+- Metagenomics has typically been restricted, in the past, to amplicon sequencing
+
+- Whole-metagenome shotgun (WMS) data presents a more comprehensive view of the genetic content, allowing for multiple new analyses
+
+<center>
+![© 2024 University of Oxford](https://www.kennedy.ox.ac.uk/images/centre-for-microbiome-studies/ocms_website_tech.jpg){width=325}
+</center>
+
+## Challenges in Metagenomics {.smaller}
+
+- Performance issues and data storage, as metagenomic datasets can be large and unwieldy
+  - Can be improved by facilitating deployment of data pipelines in HPC/Cloud environments
+
+- Sequence contamination from other sources
+
+- Useful and easy-to-parse results, given the inherent complexity of these data
+
+<center>
+![](https://i.imgur.com/6ToOadf.png){width=600}
+</center>
+
+## Computational ecosystem in Metagenomics
+
+- One highlight among assembly-free methods is the MEDUSA pipeline
+  - Portability was limited
+  - Snakemake has proven hard to work with and maintain
+  - Hard-coded references in its code
+  
+
+---
+
+::: {.r-stack}
+<center>
+![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}
+
+![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_workflow.drawio.png){.fragment}
+</center>
+:::
+
+:::: {.notes}
+
+::::
+
+## Implementation details {.smaller}
+
+- New option for taxonomic classification, Kraken 2
+
+- Automated reporting with MultiQC and MicroView (in-house tool)
+  - Sequence QC
+  - Taxonomic abundance plots
+  - Diversity calculations
+
+- By using the nf-core template, EURYALE provides a high degree of parameterization for resource allocation, as well as
+native support of various HPC schedulers and cloud environments
+
+<center>
+![](https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png){width=300}
+
+![](https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png){width=300}
+</center>
+
+## Automated reports
+
+:::: {.columns}
+::: {.column width="50%"}
+![](https://i.imgur.com/PEFPb2f.png){width=400}
+:::
+
+::: {.column width="50%"}
+
+- α-diversity
+- Species richness
+- β-diversity (with PCoA)
+
+![](https://i.imgur.com/WFeicBR.png)
+:::
+::::
+
+## Conclusion
+
+- EURYALE keeps the sensitivity of MEDUSA
+
+- Makes it much more versatile and portable by adding support for Docker, Singularity
+and cloud environments
+
+- EURYALE builds upon MEDUSA by adding new automated reports, 
+enhancing the pipeline's usability
+
+## Acknowledgements
+
+:::: {.columns}
+::: {.column width="70%"}
+![](https://dalmolingroup.github.io/images/group_foto.jpg)
+:::
+
+:::{.column width="30%"}
+<center>
+![](https://i.imgur.com/ena8fiz.png)
+
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F36%2F02%2Fa5%2F3602a501f4ebfd2552706fa867b8966c.jpg&f=1&nofb=1&ipt=ee88c3cc178eb9b398a487d6169b1be8fccd9355d48250d6b275bf96ccbc0ebb&ipo=images)
+
+![](https://bioinfo.imd.ufrn.br/site/_next/image?url=%2Fsite%2Fimages%2Ficons%2Flogo-cortado.png&w=640&q=100)
+
+![](https://i.imgur.com/QRIihhe.png)
+
+![](https://i.imgur.com/EE8QpvX.png)
+</center>
+:::
+::::
+

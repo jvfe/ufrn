@@ -10,7 +10,8 @@ of metagenomics data"
     multiplex: true # audience can follow along w/ mobile devices
     transition: slide # slide # none | fade | convex | concave | zoom
     fragments: true
-    logo: https://i.imgur.com/ena8fiz.png
+    logo: https://i.imgur.com/RnMAImz.png
+    css: logo.css
 ---
 
 ## EURYALE {.smaller .center style="text-align: center;"}

@@ -26,16 +26,23 @@ João Vitor Cavalcante
 
 ## Metagenomics {.smaller}
 
+:::: {.columns}
+::: {.column width="50%"}
 - Metagenomics consists of an approach to sequence the genetic content of an
 environmental sample, be that environment a host-associated tissue, like the human gut, be it something like a soil sample
   
 - Metagenomics has typically been restricted, in the past, to amplicon sequencing
 
 - Whole-metagenome shotgun (WMS) data presents a more comprehensive view of the genetic content, allowing for multiple new analyses
+:::
 
+
+::: {.column width="50%"}
 <center>
-![© 2024 University of Oxford](https://www.kennedy.ox.ac.uk/images/centre-for-microbiome-studies/ocms_website_tech.jpg){width=325}
+![© 2024 University of Oxford](https://www.kennedy.ox.ac.uk/images/centre-for-microbiome-studies/ocms_website_tech.jpg){width=400}
 </center>
+:::
+::::
 
 ## Challenges in Metagenomics {.smaller}
 
@@ -52,9 +59,26 @@ environmental sample, be that environment a host-associated tissue, like the hum
 
 ## Computational ecosystem in Metagenomics
 
-- One highlight among assembly-free methods is the MEDUSA pipeline
-  - Portability was limited
-  - Snakemake has proven hard to work with and maintain
+- Assembly-free methods, i.e., those that rely on
+direct read classification
+
+- Assembly-based methods, i.e.,
+methods that first perform read assembly into contigs prior to
+classification and annotation
+  - [nf-core/mag](https://github.com/nf-core/mag)
+  - [metaphor](https://github.com/vinisalazar/metaphor)
+
+## Computational ecosystem in Metagenomics {.smaller}
+
+- One highlight among assembly-free methods is the [MEDUSA pipeline](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2022.814437/full) (Morais et al)
+
+- **Pros**:
+  - Sensitive taxonomic classification
+  - Flexible functional annotation
+
+- **Cons**:
+  - Portability was limited - No containerization technologies
+  - No visualizations or reports
   - Hard-coded references in its code
   
 
@@ -62,7 +86,7 @@ environmental sample, be that environment a host-associated tissue, like the hum
 
 ::: {.r-stack}
 <center>
-![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}
+[![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}](https://dalmolingroup.github.io/euryale/)
 
 ![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_workflow.drawio.png){.fragment}
 </center>
@@ -76,17 +100,17 @@ environmental sample, be that environment a host-associated tissue, like the hum
 
 - New option for taxonomic classification, Kraken 2
 
-- Automated reporting with MultiQC and MicroView (in-house tool)
+- Automated reporting with MultiQC and [MicroView](https://microview-bio.readthedocs.io/en/latest/) (in-house tool)
   - Sequence QC
-  - Taxonomic abundance plots
+  - Taxonomic abundance
   - Diversity calculations
 
-- By using the nf-core template, EURYALE provides a high degree of parameterization for resource allocation, as well as
+- By using the nf-core guidelines, [EURYALE](https://dalmolingroup.github.io/euryale/) provides a high degree of parameterization for resource allocation, as well as
 native support of various HPC schedulers and cloud environments
+  - GUI support through Seqera Cloud
 
 <center>
 ![](https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png){width=300}
-
 ![](https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png){width=300}
 </center>
 
@@ -109,13 +133,13 @@ native support of various HPC schedulers and cloud environments
 
 ## Conclusion
 
-- EURYALE keeps the sensitivity of MEDUSA
+- [EURYALE](https://dalmolingroup.github.io/euryale/) keeps the sensitivity of MEDUSA
 
 - Makes it much more versatile and portable by adding support for Docker, Singularity
 and cloud environments
 
 - EURYALE builds upon MEDUSA by adding new automated reports, 
-enhancing the pipeline's usability
+enhancing the pipeline's usability and facilitating the generation of scientific insights
 
 ## Acknowledgements
 
@@ -139,3 +163,10 @@ enhancing the pipeline's usability
 :::
 ::::
 
+## EURYALE {.smaller .center style="text-align: center;"}
+
+### A versatile Nextflow pipeline for taxonomic classification and functional annotation of metagenomics data {.smaller .center style="text-align: center;"}
+
+**27 August 2024**
+
+João Vitor Cavalcante

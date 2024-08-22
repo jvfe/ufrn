@@ -339,19 +339,24 @@
 </section>
 <section id="metagenomics" class="slide level2 smaller">
 <h2>Metagenomics</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li><p>Metagenomics consists of an approach to sequence the genetic content of an environmental sample, be that environment a host-associated tissue, like the human gut, be it something like a soil sample</p></li>
 <li><p>Metagenomics has typically been restricted, in the past, to amplicon sequencing</p></li>
 <li><p>Whole-metagenome shotgun (WMS) data presents a more comprehensive view of the genetic content, allowing for multiple new analyses</p></li>
 </ul>
+</div><div class="column" style="width:50%;">
 <center>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="https://www.kennedy.ox.ac.uk/images/centre-for-microbiome-studies/ocms_website_tech.jpg" width="325"></p>
+<p><img data-src="https://www.kennedy.ox.ac.uk/images/centre-for-microbiome-studies/ocms_website_tech.jpg" width="400"></p>
 <figcaption>© 2024 University of Oxford</figcaption>
 </figure>
 </div>
 </center>
+</div>
+</div>
 </section>
 <section id="challenges-in-metagenomics" class="slide level2 smaller">
 <h2>Challenges in Metagenomics</h2>
@@ -370,10 +375,27 @@
 <section id="computational-ecosystem-in-metagenomics" class="slide level2">
 <h2>Computational ecosystem in Metagenomics</h2>
 <ul>
-<li>One highlight among assembly-free methods is the MEDUSA pipeline
+<li><p>Assembly-free methods, i.e., those that rely on direct read classification</p></li>
+<li><p>Assembly-based methods, i.e., methods that first perform read assembly into contigs prior to classification and annotation</p>
 <ul>
-<li>Portability was limited</li>
-<li>Snakemake has proven hard to work with and maintain</li>
+<li><a href="https://github.com/nf-core/mag">nf-core/mag</a></li>
+<li><a href="https://github.com/vinisalazar/metaphor">metaphor</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="computational-ecosystem-in-metagenomics-1" class="slide level2 smaller">
+<h2>Computational ecosystem in Metagenomics</h2>
+<ul>
+<li><p>One highlight among assembly-free methods is the <a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2022.814437/full">MEDUSA pipeline</a> (Morais et al)</p></li>
+<li><p><strong>Pros</strong>:</p>
+<ul>
+<li>Sensitive taxonomic classification</li>
+<li>Flexible functional annotation</li>
+</ul></li>
+<li><p><strong>Cons</strong>:</p>
+<ul>
+<li>Portability was limited - No containerization technologies</li>
+<li>No visualizations or reports</li>
 <li>Hard-coded references in its code</li>
 </ul></li>
 </ul>
@@ -382,7 +404,7 @@
 
 <div class="r-stack">
 <center>
-<p><img data-src="https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png" width="400"></p>
+<p><a href="https://dalmolingroup.github.io/euryale/"><img data-src="https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png" width="400"></a></p>
 <img data-src="https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_workflow.drawio.png" class="fragment">
 </center>
 </div>
@@ -404,17 +426,19 @@
 <h2>Implementation details</h2>
 <ul>
 <li><p>New option for taxonomic classification, Kraken 2</p></li>
-<li><p>Automated reporting with MultiQC and MicroView (in-house tool)</p>
+<li><p>Automated reporting with MultiQC and <a href="https://microview-bio.readthedocs.io/en/latest/">MicroView</a> (in-house tool)</p>
 <ul>
 <li>Sequence QC</li>
-<li>Taxonomic abundance plots</li>
+<li>Taxonomic abundance</li>
 <li>Diversity calculations</li>
 </ul></li>
-<li><p>By using the nf-core template, EURYALE provides a high degree of parameterization for resource allocation, as well as native support of various HPC schedulers and cloud environments</p></li>
+<li><p>By using the nf-core guidelines, <a href="https://dalmolingroup.github.io/euryale/">EURYALE</a> provides a high degree of parameterization for resource allocation, as well as native support of various HPC schedulers and cloud environments</p>
+<ul>
+<li>GUI support through Seqera Cloud</li>
+</ul></li>
 </ul>
 <center>
-<p><img data-src="https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png" width="300"></p>
-<img data-src="https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png" width="300">
+<img data-src="https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png" width="300"> <img data-src="https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png" width="300">
 </center>
 </section>
 <section id="automated-reports" class="slide level2">
@@ -435,9 +459,9 @@
 <section id="conclusion" class="slide level2">
 <h2>Conclusion</h2>
 <ul>
-<li><p>EURYALE keeps the sensitivity of MEDUSA</p></li>
+<li><p><a href="https://dalmolingroup.github.io/euryale/">EURYALE</a> keeps the sensitivity of MEDUSA</p></li>
 <li><p>Makes it much more versatile and portable by adding support for Docker, Singularity and cloud environments</p></li>
-<li><p>EURYALE builds upon MEDUSA by adding new automated reports, enhancing the pipeline’s usability</p></li>
+<li><p>EURYALE builds upon MEDUSA by adding new automated reports, enhancing the pipeline’s usability and facilitating the generation of scientific insights</p></li>
 </ul>
 </section>
 <section id="acknowledgements" class="slide level2">
@@ -455,6 +479,12 @@
 </center>
 </div>
 </div>
+</section>
+<section id="euryale-1" class="slide level2 smaller center" style="text-align: center;">
+<h2>EURYALE</h2>
+<h3 class="smaller center" style="text-align: center;" id="a-versatile-nextflow-pipeline-for-taxonomic-classification-and-functional-annotation-of-metagenomics-data-1">A versatile Nextflow pipeline for taxonomic classification and functional annotation of metagenomics data</h3>
+<p><strong>27 August 2024</strong></p>
+<p>João Vitor Cavalcante</p>
 <div class="quarto-auto-generated-content">
 <p><img src="https://i.imgur.com/RnMAImz.png" class="slide-logo"></p>
 <div class="footer footer-default">

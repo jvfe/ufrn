@@ -79,7 +79,7 @@ classification and annotation
 - **Cons**:
   - Portability was limited - No containerization technologies
   - No visualizations or reports
-  - Hard-coded references in its code
+  - Hard-coded database references in its code
   
 
 ---
@@ -135,7 +135,7 @@ native support of various HPC schedulers and cloud environments
 
 - [EURYALE](https://dalmolingroup.github.io/euryale/) keeps the sensitivity of MEDUSA
 
-- Makes it much more versatile and portable by adding support for Docker, Singularity
+- Makes it much more versatile and portable by adding support for Docker, Singularity, HPC
 and cloud environments
 
 - EURYALE builds upon MEDUSA by adding new automated reports, 

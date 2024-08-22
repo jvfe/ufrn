@@ -1,6 +1,12 @@
 .reveal .slide-logo {
-  height: 150px !important;
-  width: 150px !important;
+  height: 3em !important;
+  width: 3em !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+@media (max-width: 1024px) {
+ .reveal .slide-logo {
+   display: none !important;
+ } 
 }

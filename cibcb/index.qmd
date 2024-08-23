@@ -107,11 +107,19 @@ classification and annotation
 
 - By using the nf-core guidelines, [EURYALE](https://dalmolingroup.github.io/euryale/) provides a high degree of parameterization for resource allocation, as well as
 native support of various HPC schedulers and cloud environments
-  - GUI support through Seqera Cloud
 
 <center>
 ![](https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png){width=300}
 ![](https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png){width=300}
+</center>
+
+## Implementation details
+
+- Nextflow features like easy parallelization and caching have been fundamental
+- GUI support through Seqera Platform
+
+<center>
+![](https://i.imgur.com/tJQYDvf.png){width=500}
 </center>
 
 ## Automated reports
@@ -133,12 +141,12 @@ native support of various HPC schedulers and cloud environments
 
 ## Conclusion
 
-- [EURYALE](https://dalmolingroup.github.io/euryale/) keeps the sensitivity of MEDUSA
+- [EURYALE](https://dalmolingroup.github.io/euryale/) keeps the sensitivity and flexibility of its predecessor
 
 - Makes it much more versatile and portable by adding support for Docker, Singularity, HPC
 and cloud environments
 
-- EURYALE builds upon MEDUSA by adding new automated reports, 
+- EURYALE adds new automated reports, 
 enhancing the pipeline's usability and facilitating the generation of scientific insights
 
 ## Acknowledgements

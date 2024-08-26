@@ -1,6 +1,7 @@
 ---
 format: 
   revealjs:
+    pagetitle: "EURYALE"
     theme: night
     slide-number: true
     footer: "EURYALE: A versatile Nextflow pipeline for
@@ -88,7 +89,7 @@ classification and annotation
 <center>
 [![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}](https://dalmolingroup.github.io/euryale/)
 
-![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_workflow.drawio.png){.fragment}
+![](pipeline.png){.fragment}
 </center>
 :::
 
@@ -109,7 +110,7 @@ classification and annotation
 native support of various HPC schedulers and cloud environments
 
 <center>
-![](https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png){width=300}
+![](https://raw.githubusercontent.com/nextflow-io/trademark/master/nextflow-logo-bg-dark.png){width=300 style="margin-right: 1em;"}
 ![](https://raw.githubusercontent.com/nf-core/logos/master/nf-core-logos/nf-core-logo-darkbg.png){width=300}
 </center>
 

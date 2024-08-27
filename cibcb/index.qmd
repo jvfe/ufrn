@@ -7,7 +7,6 @@ format:
     footer: "EURYALE: A versatile Nextflow pipeline for
 taxonomic classification and functional annotation
 of metagenomics data"
-    preview-links: true
     multiplex: true # audience can follow along w/ mobile devices
     transition: slide # slide # none | fade | convex | concave | zoom
     fragments: true
@@ -87,6 +86,9 @@ classification and annotation
 
 ::: {.r-stack}
 <center>
+[tinyurl.com/euryale-wf](https://tinyurl.com/euryale-wf)
+
+
 [![](https://github.com/dalmolingroup/euryale/raw/main/assets/euryale_logo.png){width=400}](https://dalmolingroup.github.io/euryale/)
 
 ![](pipeline.png){.fragment}

@@ -7,9 +7,8 @@ format:
     theme: night
     slide-number: true
     footer: "Use o easylayout!"
-    chalkboard: true
     fragments: true
-    logo: https://i.imgur.com/S7ZRJbj.png
+    logo: https://i.imgur.com/YHLYnK3.png
     smaller: true
     css: main.css
 ---
@@ -21,11 +20,12 @@ format:
   - Simulações de força são a forma mais comum de se gerar *layouts* 
   - Cytoscape é muito visual - cadê a reprodutibilidade?
     - R pode ajudar?
+    
 
-## O que é um sistema nó-aresta?
+<!-- ## O que é um sistema nó-aresta? -->
 
-<iframe width="100%" height="684" frameborder="0"
-  src="https://observablehq.com/embed/@d3/force-directed-graph-component?cells=chart" scrolling="no"></iframe>
+<!-- <iframe width="100%" height="684" frameborder="0" -->
+<!--   src="https://observablehq.com/embed/@d3/force-directed-graph-component?cells=chart" scrolling="no"></iframe> -->
 
 ## Mas como fazer layout fáceis, reproduzíveis e rápidos?
 
@@ -51,4 +51,3 @@ number_of_vertices <- igraph::vcount(g)
 
 layout <- easylayout(g)
 ```
-

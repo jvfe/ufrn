@@ -1,0 +1,26 @@
+---
+title: "Reunião DalmolinGroup 2025.1"
+author: "João Vitor Cavalcante"
+lang: pt
+format: 
+  revealjs:
+    theme: "night"
+    transition: fade
+    slide-number: true
+    multiplex: true # audience can follow along w/ mobile devices
+    fragments: true
+    logo: https://i.imgur.com/ena8fiz.png
+---
+
+
+# O quê você anda fazendo?
+- *Investigação de perfis metabólicos na microbiota de indivíduos com Transtorno Depressivo Maior*
+- *SCRATCH: Single-cell RNA-Seq Toolkit and Pipeline for Cancer Research*
+- *Microbioma do Arquipélago de São Pedro e São Paulo*
+
+
+# Perfis metabólicos na microbiota de TDM
+
+# SCRATCH
+
+# Microbioma

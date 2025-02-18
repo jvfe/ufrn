@@ -22,5 +22,61 @@ format:
 # Perfis metabólicos na microbiota de TDM
 
 # SCRATCH
+- Em colaboração com o Prof. André Fonseca
+
+## O que é o SCRATCH? {.smaller}
+
+<center>
+![](https://github.com/WangLab-ComputationalBiology/SCRATCH-CNV/blob/main/assets/template/logotype.png?raw=true){width=200}
+</center>
+
+- Uma ferramenta *end-to-end* para processamento de dados de scRNA-seq e TCR-seq de amostras de câncer.
+  - Interativa, possibilitando *checkpoints* para avaliar a análise 
+    - Com relatórios interativos em cada checkpoint
+  - Customizável, se adaptando a dados diferentes e realizando certas análises opcionalmente
+  - Modular, com módulos interoperáveis e facilmente portados para outras ferramentas e *pipelines*
+
+## O que ele faz? {.smaller}
+
+- QC
+  - Alinhamento (CellRanger GEX/VDJ)
+  - Doublet detection/Clustering
+  - Batch correction
+  
+- Estratificação de celulas tumorais/normais
+
+- SNV Calling
+
+- Trajetória (Pseudotempo)
+
+- Cell-cell communication
+
+- Caracterização do Microambiente tumoral/Metaprogramas (Spectra/Metatime)
+
+## O que ainda precisa ser feito? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://i.imgur.com/A2SqfoX.png){width=500}
+:::
+
+
+::: {.column width="50%"}
+- Melhorias de performance
+  - Limpeza de imagens docker/singularity
+  - Ausência de testes unitários
+
+- Implementação de novas ferramentas/análises
+  - CellBlender
+  - CellRanger Multi
+  
+- Escrever documentação
+
+- Escrever o artigo!
+:::
+::::
 
 # Microbioma
+
+# Obrigado!

@@ -29,7 +29,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -342,15 +361,112 @@ João Vitor Cavalcante
 <ul>
 <li><em>Investigação de perfis metabólicos na microbiota de indivíduos com Transtorno Depressivo Maior</em></li>
 <li><em>SCRATCH: Single-cell RNA-Seq Toolkit and Pipeline for Cancer Research</em></li>
-<li><em>Microbioma do Arquipélago de São Pedro e São Paulo</em></li>
 </ul>
 </section>
 
+<section>
 <section id="perfis-metabólicos-na-microbiota-de-tdm" class="title-slide slide level1 center">
 <h1>Perfis metabólicos na microbiota de TDM</h1>
 
 </section>
+<section id="como-a-microbiota-influencia-na-saúde-mental" class="slide level2 smaller">
+<h2>Como a Microbiota influencia na saúde mental?</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41392-022-00974-4/MediaObjects/41392_2022_974_Fig2_HTML.png"></p>
+<figcaption><span class="citation" data-cites="houMicrobiotaHealthDiseases2022">[<a href="#/obrigado" role="doc-biblioref" onclick="">1</a>]</span></figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="como-a-microbiota-influencia-na-saúde-mental-1" class="slide level2 smaller">
+<h2>Como a Microbiota influencia na saúde mental?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Transtornos psiquiátricos têm sido considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal <span class="citation" data-cites="mcguinnessSystematicReviewGut2022">[<a href="#/obrigado" role="doc-biblioref" onclick="">2</a>]</span></p></li>
+<li><p>Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM <span class="citation" data-cites="naseribafroueiCorrelationHumanFecal2014">[<a href="#/obrigado" role="doc-biblioref" onclick="">3</a>]</span> <span class="citation" data-cites="catena-dellossoInflammatoryNeurodegenerativePathways">[<a href="#/obrigado" role="doc-biblioref" onclick="">4</a>]</span></p></li>
+</ul>
+</div><div class="column" style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://i.imgur.com/u4cLvJe.png"></p>
+<figcaption><span class="citation" data-cites="cryanMicrobiotaGutBrainAxis2019b">[<a href="#/obrigado" role="doc-biblioref" onclick="">5</a>]</span></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="metodologia" class="slide level2 smaller">
+<h2>Metodologia</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="methodology_dark.png"></p>
+</div>
+<ul>
+<li>Meta-análise da A.D. através do método de Fisher, como implementado no pacote R <a href="https://cran.r-project.org/web/packages/metap/index.html">metap</a> (padj &lt; 0.05).</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Processamento dos dados Amplicon com <a href="https://github.com/nf-core/ampliseq">nf-core/ampliseq</a> <span class="citation" data-cites="straubInterpretationsEnvironmentalMicrobial2020">[<a href="#/obrigado" role="doc-biblioref" onclick="">6</a>]</span>, que utiliza DADA2, QIIME e PiCrust2.
+<ul>
+<li>Abundância diferencial com ggpicrust2 <span class="citation" data-cites="yangGgpicrust2PackagePICRUSt22023">[<a href="#/obrigado" role="doc-biblioref" onclick="">7</a>]</span></li>
+</ul></li>
+<li>Processamento do dataset Shotgun com <a href="https://github.com/dalmolingroup/euryale">dalmolingroup/euryale</a>
+<ul>
+<li>Quantificação de vias metabólicas com Humann3 <span class="citation" data-cites="beghiniIntegratingTaxonomicFunctional2021">[<a href="#/obrigado" role="doc-biblioref" onclick="">8</a>]</span></li>
+<li>Taxonomia com MetaPhlan4 <span class="citation" data-cites="blanco-miguezExtendingImprovingMetagenomic2023">[<a href="#/obrigado" role="doc-biblioref" onclick="">9</a>]</span></li>
+<li>Abundância diferencial com MaAsLin2 <span class="citation" data-cites="mallickMultivariableAssociationDiscovery2021">[<a href="#/obrigado" role="doc-biblioref" onclick="">10</a>]</span></li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="resultados" class="title-slide slide level1 center">
+<h1>Resultados</h1>
 
+</section>
+<section id="beta-diversidade" class="slide level2 smaller">
+<h2>beta-Diversidade</h2>
+<center>
+<img data-src="betadiv.png" width="700">
+</center>
+<ul>
+<li>beta-Diversidade mostra a dissimilaridade composicional entre ambientes</li>
+<li>Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p&lt;0.05).</li>
+</ul>
+</section>
+<section id="abundância-diferencial" class="slide level2">
+<h2>Abundância Diferencial</h2>
+<div style="text-align: center; display: grid; place-items: center;">
+<p><img data-src="mutual_amplicon_heatmap_marked.png" width="900"></p>
+</div>
+</section>
+<section id="resultados-1" class="slide level2 smaller">
+<h2>Resultados</h2>
+<ul>
+<li><p><strong>Vias do Triptofano</strong>: As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana. Queda do Trp plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura <span class="citation" data-cites="ogawaPlasmaAminoAcid2018">[<a href="#/obrigado" role="doc-biblioref" onclick="">11</a>]</span> <span class="citation" data-cites="laiShotgunMetagenomicsReveals2021">[<a href="#/obrigado" role="doc-biblioref" onclick="">12</a>]</span> e já foi implicado na promoção de TDM, associado à atividade inflamatória <span class="citation" data-cites="dantzerInflammationassociatedDepressionSerotonin2011">[<a href="#/obrigado" role="doc-biblioref" onclick="">13</a>]</span>.</p></li>
+<li><p><strong>Vias da Histidina</strong>: Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression <span class="citation" data-cites="ogawaPlasmaAminoAcid2018">[<a href="#/obrigado" role="doc-biblioref" onclick="">11</a>]</span> <span class="citation" data-cites="youContributionPolyaminePathway2024">[<a href="#/obrigado" role="doc-biblioref" onclick="">14</a>]</span>. HCDs como carnosina e balenina podem atuar fisiologicamente como antioxidantes endógenos, neuroprotetores e neuromoduladores <span class="citation" data-cites="kabthymerCarnosineHistidinecontainingDipeptide2024">[<a href="#/obrigado" role="doc-biblioref" onclick="">15</a>]</span> <span class="citation" data-cites="berezhnoyCarnosineEffectiveNeuroprotector2019">[<a href="#/obrigado" role="doc-biblioref" onclick="">16</a>]</span></p></li>
+</ul>
+</section>
+<section id="perspectivas-futuras" class="slide level2">
+<h2>Perspectivas futuras</h2>
+<ul>
+<li><p>Frente à exclusão da randomização mendeliana, avaliar se o artigo ainda é publicável.</p></li>
+<li><p>Se sim, formalizar a meta-análise</p></li>
+<li><p>E ver se alguma análise adicional que ainda pode complementar o estudo</p></li>
+</ul>
+</section></section>
 <section>
 <section id="scratch" class="title-slide slide level1 center">
 <h1>SCRATCH</h1>
@@ -414,17 +530,62 @@ João Vitor Cavalcante
 </div>
 </div>
 </section></section>
-<section id="microbioma" class="title-slide slide level1 center">
-<h1>Microbioma</h1>
-
-</section>
-
-<section id="obrigado" class="title-slide slide level1 center">
+<section id="obrigado" class="title-slide slide level1 smaller scrollable">
 <h1>Obrigado!</h1>
 <div class="quarto-auto-generated-content">
 <p><img src="https://i.imgur.com/ena8fiz.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
+</div>
+</div>
+<div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-houMicrobiotaHealthDiseases2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Hou K, Wu Z-X, Chen X-Y, et al (2022) Microbiota in Health and Diseases. Signal Transduction and Targeted Therapy 7(1):1–28. <a href="https://doi.org/10.1038/s41392-022-00974-4">https://doi.org/10.1038/s41392-022-00974-4</a></div>
+</div>
+<div id="ref-mcguinnessSystematicReviewGut2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">McGuinness AJ, Davis JA, Dawson SL, et al (2022) A Systematic Review of Gut Microbiota Composition in Observational Studies of Major Depressive Disorder, Bipolar Disorder and Schizophrenia. Molecular Psychiatry 27(4):1920–1935. <a href="https://doi.org/10.1038/s41380-022-01456-3">https://doi.org/10.1038/s41380-022-01456-3</a></div>
+</div>
+<div id="ref-naseribafroueiCorrelationHumanFecal2014" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Naseribafrouei A, Hestad K, Avershina E, et al (2014) Correlation between the Human Fecal Microbiota and Depression. Neurogastroenterology &amp; Motility 26(8):1155–1162. <a href="https://doi.org/10.1111/nmo.12378">https://doi.org/10.1111/nmo.12378</a></div>
+</div>
+<div id="ref-catena-dellossoInflammatoryNeurodegenerativePathways" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Catena-Dell’Osso M, Bellantuono C, Consoli G, Baroni S, Rotella F, Marazziti D Inflammatory and <span>Neurodegenerative Pathways</span> in <span>Depression A New Avenue</span> for <span>Antidepressant Development</span>? Current Medicinal Chemistry 18(2):245–255. <a href="https://doi.org/10.2174/092986711794088353">https://doi.org/10.2174/092986711794088353</a></div>
+</div>
+<div id="ref-cryanMicrobiotaGutBrainAxis2019b" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Cryan JF, O’Riordan KJ, Cowan CSM, et al (2019) The <span>Microbiota-Gut-Brain Axis</span>. Physiological Reviews 99(4):1877–2013. <a href="https://doi.org/10.1152/physrev.00018.2018">https://doi.org/10.1152/physrev.00018.2018</a></div>
+</div>
+<div id="ref-straubInterpretationsEnvironmentalMicrobial2020" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline">Straub D, Blackwell N, Langarica-Fuentes A, Peltzer A, Nahnsen S, Kleindienst S (2020) Interpretations of <span>Environmental Microbial Community Studies Are Biased</span> by the <span>Selected 16S rRNA</span> (<span>Gene</span>) <span>Amplicon Sequencing Pipeline</span>. Frontiers in Microbiology 11. <a href="https://doi.org/10.3389/fmicb.2020.550420">https://doi.org/10.3389/fmicb.2020.550420</a></div>
+</div>
+<div id="ref-yangGgpicrust2PackagePICRUSt22023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline">Yang C, Mai J, Cao X, Burberry A, Cominelli F, Zhang L (2023) Ggpicrust2: An <span>R</span> Package for <span>PICRUSt2</span> Predicted Functional Profile Analysis and Visualization. Bioinformatics 39(8):btad470. <a href="https://doi.org/10.1093/bioinformatics/btad470">https://doi.org/10.1093/bioinformatics/btad470</a></div>
+</div>
+<div id="ref-beghiniIntegratingTaxonomicFunctional2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline">Beghini F, McIver LJ, Blanco-Míguez A, et al (2021) Integrating Taxonomic, Functional, and Strain-Level Profiling of Diverse Microbial Communities with <span>bioBakery</span> 3. eLife 10:e65088. <a href="https://doi.org/10.7554/eLife.65088">https://doi.org/10.7554/eLife.65088</a></div>
+</div>
+<div id="ref-blanco-miguezExtendingImprovingMetagenomic2023" class="csl-entry" role="listitem">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline">Blanco-Míguez A, Beghini F, Cumbo F, et al (2023) Extending and Improving Metagenomic Taxonomic Profiling with Uncharacterized Species Using <span>MetaPhlAn</span> 4. Nature Biotechnology 41(11):1633–1644. <a href="https://doi.org/10.1038/s41587-023-01688-w">https://doi.org/10.1038/s41587-023-01688-w</a></div>
+</div>
+<div id="ref-mallickMultivariableAssociationDiscovery2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline">Mallick H, Rahnavard A, McIver LJ, et al (16 de nov. de 2021) Multivariable Association Discovery in Population-Scale Meta-Omics Studies. PLOS Computational Biology 17(11):e1009442. <a href="https://doi.org/10.1371/journal.pcbi.1009442">https://doi.org/10.1371/journal.pcbi.1009442</a></div>
+</div>
+<div id="ref-ogawaPlasmaAminoAcid2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline">Ogawa S, Koga N, Hattori K, et al (2018) Plasma Amino Acid Profile in Major Depressive Disorder: <span>Analyses</span> in Two Independent Case-Control Sample Sets. Journal of Psychiatric Research 96:23–32. <a href="https://doi.org/10.1016/j.jpsychires.2017.09.014">https://doi.org/10.1016/j.jpsychires.2017.09.014</a></div>
+</div>
+<div id="ref-laiShotgunMetagenomicsReveals2021" class="csl-entry" role="listitem">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline">Lai W, Deng W, Xu S, et al (2021) Shotgun Metagenomics Reveals Both Taxonomic and Tryptophan Pathway Differences of Gut Microbiota in Major Depressive Disorder Patients. Psychological Medicine 51(1):90–101. <a href="https://doi.org/10.1017/S0033291719003027">https://doi.org/10.1017/S0033291719003027</a></div>
+</div>
+<div id="ref-dantzerInflammationassociatedDepressionSerotonin2011" class="csl-entry" role="listitem">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline">Dantzer R, O’Connor JC, Lawson MA, Kelley KW (2011) Inflammation-Associated Depression: <span>From</span> Serotonin to Kynurenine. Psychoneuroendocrinology 36(3):426–436. <a href="https://doi.org/10.1016/j.psyneuen.2010.09.012">https://doi.org/10.1016/j.psyneuen.2010.09.012</a></div>
+</div>
+<div id="ref-youContributionPolyaminePathway2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline">You Z, Wang C, Lan X, et al (2024) The Contribution of Polyamine Pathway to Determinations of Diagnosis for Treatment-Resistant Depression: <span>A</span> Metabolomic Analysis. Progress in Neuro-Psychopharmacology and Biological Psychiatry 128:110849. <a href="https://doi.org/10.1016/j.pnpbp.2023.110849">https://doi.org/10.1016/j.pnpbp.2023.110849</a></div>
+</div>
+<div id="ref-kabthymerCarnosineHistidinecontainingDipeptide2024" class="csl-entry" role="listitem">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline">Kabthymer RH, Saadati S, Lee M, et al (2024) Carnosine/Histidine-Containing Dipeptide Supplementation Improves Depression and Quality of Life: Systematic Review and Meta-Analysis of Randomized Controlled Trials. Nutrition Reviews nuae021. <a href="https://doi.org/10.1093/nutrit/nuae021">https://doi.org/10.1093/nutrit/nuae021</a></div>
+</div>
+<div id="ref-berezhnoyCarnosineEffectiveNeuroprotector2019" class="csl-entry" role="listitem">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline">Berezhnoy DS, Stvolinsky SL, Lopachev AV, et al (2019) Carnosine as an Effective Neuroprotector in Brain Pathology and Potential Neuromodulator in Normal Conditions. Amino Acids 51(1):139–150. <a href="https://doi.org/10.1007/s00726-018-2667-7">https://doi.org/10.1007/s00726-018-2667-7</a></div>
 </div>
 </div>
 </section>

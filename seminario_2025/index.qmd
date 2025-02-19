@@ -2,6 +2,8 @@
 title: "Reunião DalmolinGroup 2025.1"
 author: "João Vitor Cavalcante"
 lang: pt
+bibliography: refs.bib
+csl: diabetologia.csl
 format: 
   revealjs:
     theme: "night"
@@ -16,10 +18,81 @@ format:
 # O quê você anda fazendo?
 - *Investigação de perfis metabólicos na microbiota de indivíduos com Transtorno Depressivo Maior*
 - *SCRATCH: Single-cell RNA-Seq Toolkit and Pipeline for Cancer Research*
-- *Microbioma do Arquipélago de São Pedro e São Paulo*
 
 
 # Perfis metabólicos na microbiota de TDM
+
+## Como a Microbiota influencia na saúde mental? {.smaller}
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![[-@houMicrobiotaHealthDiseases2022]](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41392-022-00974-4/MediaObjects/41392_2022_974_Fig2_HTML.png)
+:::
+
+## Como a Microbiota influencia na saúde mental? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Transtornos psiquiátricos têm sido considerados de origem no SNC, porém há uma quantidade montante de evidência apontando para a influência da microbiota intestinal [-@mcguinnessSystematicReviewGut2022]
+
+- Inflamação é geralmente considerada um dos mecanismos finais pelo qual estressores internos e externos levam a uma doença. Esse conceito tem sido extendido para transtornos neuropsiquiátricos, incluindo TDM [-@naseribafroueiCorrelationHumanFecal2014] [-@catena-dellossoInflammatoryNeurodegenerativePathways] 
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+![[@cryanMicrobiotaGutBrainAxis2019b]](https://i.imgur.com/u4cLvJe.png)
+:::
+
+::::
+
+## Metodologia {.smaller}
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](methodology_dark.png)
+:::
+
+- Meta-análise da A.D. através do método de Fisher, como implementado no pacote R [metap](https://cran.r-project.org/web/packages/metap/index.html) (padj < 0.05).
+
+::: {.notes}
+- Processamento dos dados Amplicon com [nf-core/ampliseq](https://github.com/nf-core/ampliseq) [-@straubInterpretationsEnvironmentalMicrobial2020], que utiliza DADA2, QIIME e PiCrust2.
+  - Abundância diferencial com ggpicrust2 [-@yangGgpicrust2PackagePICRUSt22023]
+
+- Processamento do dataset Shotgun com [dalmolingroup/euryale](https://github.com/dalmolingroup/euryale)
+  - Quantificação de vias metabólicas com Humann3 [-@beghiniIntegratingTaxonomicFunctional2021]
+  - Taxonomia com MetaPhlan4 [-@blanco-miguezExtendingImprovingMetagenomic2023]
+  - Abundância diferencial com MaAsLin2 [-@mallickMultivariableAssociationDiscovery2021]
+:::
+
+# Resultados
+
+## beta-Diversidade {.smaller}
+
+<center>
+![](betadiv.png){width=700}
+</center>
+
+- beta-Diversidade mostra a dissimilaridade composicional entre ambientes
+- Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
+
+## Abundância Diferencial
+
+::: {style="text-align: center; display: grid; place-items: center;"}
+![](mutual_amplicon_heatmap_marked.png){width=900}
+:::
+
+## Resultados {.smaller}
+
+- **Vias do Triptofano**: As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana. Queda do Trp plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
+@ogawaPlasmaAminoAcid2018 @laiShotgunMetagenomicsReveals2021 e já foi implicado na promoção de TDM, associado à atividade inflamatória [-@dantzerInflammationassociatedDepressionSerotonin2011].
+
+- **Vias da Histidina**: Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression @ogawaPlasmaAminoAcid2018 @youContributionPolyaminePathway2024. HCDs como carnosina e balenina podem atuar fisiologicamente como antioxidantes endógenos, neuroprotetores e neuromoduladores [@kabthymerCarnosineHistidinecontainingDipeptide2024] [@berezhnoyCarnosineEffectiveNeuroprotector2019]
+
+## Perspectivas futuras
+
+- Frente à exclusão da randomização mendeliana, avaliar se o artigo ainda é publicável.
+
+- Se sim, formalizar a meta-análise
+
+- E ver se alguma análise adicional que ainda pode complementar o estudo
 
 # SCRATCH
 - Em colaboração com o Prof. André Fonseca
@@ -76,7 +149,5 @@ format:
 - Escrever o artigo!
 :::
 ::::
-
-# Microbioma
 
 # Obrigado!

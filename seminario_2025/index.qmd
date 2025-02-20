@@ -88,11 +88,11 @@ format:
 
 ## Perspectivas futuras
 
-- Frente à exclusão da randomização mendeliana, avaliar se o artigo ainda é publicável.
+- Frente à exclusão da randomização mendeliana, re-avaliar a viabilidade do estudo.
 
-- Se sim, formalizar a meta-análise
+- Se sim, formalizar a meta-análise.
 
-- E ver se alguma análise adicional que ainda pode complementar o estudo
+- E ver se alguma análise adicional que ainda pode complementar o estudo.
 
 # SCRATCH
 - Em colaboração com o Prof. André Fonseca
@@ -149,5 +149,10 @@ format:
 - Escrever o artigo!
 :::
 ::::
+
+# Referências {.smaller}
+
+::: {#refs}
+:::
 
 # Obrigado!

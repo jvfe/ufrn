@@ -14,6 +14,35 @@ format:
     logo: https://i.imgur.com/ena8fiz.png
 ---
 
+## Quem é você? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+
+- Mestre em Bioinformática, UFRN
+- Doutorando em Bioinformática, UFRN
+  - Metagenômica, transcriptômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
+- Colaborador no [BioDev Network/Sanger Institute](https://www.sanger.ac.uk/programme/tree-of-life/)
+
+Outras coisas:
+
+- [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html)
+- Instructor, Anaconda Inc.
+- O que mais eu conseguir encaixar no meu horário
+
+:::
+
+::: {.column width="40%"}
+<center>
+![](./headshot.png)
+
+[joao.bio.br](https://joao.bio.br)
+</center>
+
+:::
+::::
 
 # O quê você anda fazendo?
 - *Investigação de perfis metabólicos na microbiota de indivíduos com Transtorno Depressivo Maior*

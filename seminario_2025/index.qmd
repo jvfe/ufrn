@@ -24,13 +24,13 @@ format:
 - Mestre em Bioinformática, UFRN
 - Doutorando em Bioinformática, UFRN
   - Metagenômica, transcriptômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
-- Colaborador no [BioDev Network/Sanger Institute](https://www.sanger.ac.uk/programme/tree-of-life/)
+- Coordenador do Hub Local da [BioDev Network/Sanger Institute](https://www.sanger.ac.uk/programme/tree-of-life/) (Cursos, Eventos, Hackathons, etc)
 
 Outras coisas:
 
 - [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html)
 - Instructor, Anaconda Inc.
-- O que mais eu conseguir encaixar no meu horário
+- Colaborações e o que mais eu conseguir encaixar no horário
 
 :::
 
@@ -93,15 +93,6 @@ Outras coisas:
 
 # Resultados
 
-## beta-Diversidade {.smaller}
-
-<center>
-![](betadiv.png){width=700}
-</center>
-
-- beta-Diversidade mostra a dissimilaridade composicional entre ambientes
-- Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
-
 ## Abundância Diferencial
 
 ::: {style="text-align: center; display: grid; place-items: center;"}
@@ -110,18 +101,28 @@ Outras coisas:
 
 ## Resultados {.smaller}
 
+- beta-Diversidade mostra a dissimilaridade composicional entre ambientes
+  - Há uma diferença significativa entre Controle e TDM nos três datasets (PERMANOVA p<0.05).
+
 - **Vias do Triptofano**: As duas principais fontes de Trp no organismo são via alimentação e via síntese microbiana. Queda do Trp plasmático é um dos biomarcadores séricos de TDM mais bem replicados na literatura 
 @ogawaPlasmaAminoAcid2018 @laiShotgunMetagenomicsReveals2021 e já foi implicado na promoção de TDM, associado à atividade inflamatória [-@dantzerInflammationassociatedDepressionSerotonin2011].
 
 - **Vias da Histidina**: Níveis séricos diminuídos de L-histidina já foram propostos como marcadores metabolômicos de treatment-resistant depression @ogawaPlasmaAminoAcid2018 @youContributionPolyaminePathway2024. HCDs como carnosina e balenina podem atuar fisiologicamente como antioxidantes endógenos, neuroprotetores e neuromoduladores [@kabthymerCarnosineHistidinecontainingDipeptide2024] [@berezhnoyCarnosineEffectiveNeuroprotector2019]
 
+## O que mudou?
+
+- Resultados negativos da randomização mendeliana 
+  - Demorou, hein
+
+- Buscando métodos alternativos para se realizar a meta-análise
+
 ## Perspectivas futuras
 
-- Frente à exclusão da randomização mendeliana, re-avaliar a viabilidade do estudo.
+- Formalizar a meta-análise.
 
-- Se sim, formalizar a meta-análise.
+- Re-avaliar a viabilidade do estudo.
 
-- E ver se alguma análise adicional que ainda pode complementar o estudo.
+- Ver se alguma análise adicional que ainda pode complementar o estudo.
 
 # SCRATCH
 - Em colaboração com o Prof. André Fonseca

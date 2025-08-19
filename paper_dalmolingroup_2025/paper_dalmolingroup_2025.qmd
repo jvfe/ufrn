@@ -1,0 +1,163 @@
+---
+title: "Network Propagation for GWAS Analysis"
+author: "João Cavalcante (Based on Visonà et al. 2024)"
+format: 
+  revealjs:
+    theme: sky
+    slide-number: true
+    chalkboard: true
+    smaller: true
+---
+
+# First, What is Network Propagation?
+
+---
+
+### The Social Network Analogy
+
+Imagine you have a piece of important news (a "signal"). You tell a few of your closest friends ("seeds").
+
+* They are likely to tell *their* close friends.
+* The news "propagates" through the social network.
+* People who hear the news from multiple sources are likely important or central to that information flow.
+
+---
+
+![Dai Shizuka, 2023](https://dshizuka.github.io/networkanalysis/assets/images/sample_diffusion2.gif){fig-align="center"}
+
+---
+
+### In Biology: From Genes to Pathways
+
+Network propagation applies this same idea to biological networks (e.g., protein-protein interactions).
+
+* **Signal:** A list of genes weakly associated with a disease from a GWAS.
+* **Network:** A map of how genes/proteins interact with each other.
+* **Propagation:** A computational algorithm "spreads" the disease signal from the initial seed genes to their neighbors, and their neighbors' neighbors...
+
+This helps us find clusters of related genes that, as a group, have a strong connection to the disease, even if each individual gene's signal was weak.
+
+---
+
+## Why GWAS?
+
+`Boosting Weak Signals in a Noisy World`
+
+![](https://i.imgur.com/k8VPKz5.jpeg){fig-align="center"}
+
+---
+
+### The Limits of GWAS
+
+Genome-Wide Association Studies (GWAS) are powerful but have limitations:
+
+* **Low Statistical Power:** They often require huge sample sizes to find significant associations. Many true disease genes with small effects are missed.
+* **The "Missing Heritability" Problem:** The genes found often don't explain all of the genetic risk for a disease.
+
+We need a way to add more biological context to find the signals hidden in the noise.
+
+# The Paper: A Practical Guide
+
+---
+
+![](https://i.imgur.com/IpaAznZ.png){fig-align="center"}
+
+---
+
+![](https://i.imgur.com/boQ9VFM.png){fig-align="center"}
+
+---
+
+### Step 1: From GWAS Hits to Gene Scores
+
+How do you represent the initial "signal"?
+
+* **Option A: "Seed Genes" (Binary):** A simple list of genes that passed a significance threshold. (Yes/No)
+* **Option B: "Gene Scores" (Weighted):** Assign a score to *every* gene based on its GWAS P-value (e.g., -log10(P-value)).
+
+> **Finding 1:** Using weighted **gene scores** is far more effective. It preserves more information from the GWAS and leads to better performance.
+
+---
+
+### Step 2: Choosing the Right Network
+
+The map you use to spread the signal is critical.
+
+* There are many types: Protein-Protein Interaction (PPI), co-expression, etc.
+* They vary in size (number of genes) and density (number of connections).
+
+> **Finding 2:** **Larger and more comprehensive networks** generally perform better. While they might have more "noise" (false connections), the benefit of including more true connections outweighs the downside.
+
+---
+
+### Step 3: Combining Multiple Networks
+
+Why rely on just one map?
+
+* **Single Network:** Convenient, but provides a limited view of gene relationships.
+* **Ensemble Method:** Propagate the signal across several different networks and combine the results (e.g., by averaging the final gene ranks).
+
+> **Finding 3:** **Ensemble methods are a game-changer.** Averaging ranks across multiple networks was more robust and outperformed single-network approaches, especially for finding disease genes that are not immediate neighbors of the initial seeds.
+
+# Results
+
+---
+
+### Gene Scores > Seed Genes
+
+The plots show the performance of finding true disease genes.
+
+![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f2.jpeg?Expires=1758650780&Signature=BeaREPx2EpzrMsmc948Zdo8Y1wfb1ZSzoa5r6TGfAPrXmjEAmSpBVwtAQp-IPV8JBRRKwSnoqSR4oVYWMtpSrZbGJ5cpNzUbKho5iSlvQOagepZC2B4ozWkdOnrjhE819Cr262zp~UmM5kXjbxXgR-AnMEkB0KRm4JMuITPCAiv37Sb4ERtEXcwAevUR1uIzf1dcxJ4fjxTDeMqMh1kYstaYOvAkgCnvSsTzpuITgS8NB0W0qaW6NslWIY1aAYjeh0LqonaDTZON1XzGhO7l-PCNn7kyv2S~czBjvzs1aNoj01S0dRSpEro2BYTth9qv7FJ5mZZb3RG9DLP6KPMMLQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+
+* **Green Line (Scores):** Consistently higher performance, especially for conservative propagation (low α).
+* **Orange Line (Seeds):** Less effective, as it discards valuable information.
+
+---
+
+### Network Size & Density Matter
+
+![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f3.jpeg?Expires=1758650864&Signature=RTK3o8~HK0rTxtqFy1ZAFp1LHkEFadyaQldCrMay2kfU~0nQAk76UJN4Ud-K680V5pFRQTGRQzSa-s~CLsso4y3AsDdOtdyOPaeCXe6MPmj1-9JiYGqL21jyx1noZRhvPTGkLiUNXQuklMmjR7U77N9RJjVMgc7tntk~MtC1Y-NG293jOaJRHRlt6e08j6TdJE7TVIqoQDB0slcqHGeixAqs1MZagJrQ~PWS9ogXtqW5-OQdBPYIXd3NVI3iu~l~X3N8WklosavxR2~ysHDaPogoZAs0K0wpgmq-Tt2SyZ5KBIAb2hBSlUjHOh8Z9xzm76LqiygLy0ntsr2GAJyioA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+
+* **Performance vs. Size:** A clear trend shows that as the number of nodes (genes) in a network increases, so does the performance.
+* **Performance vs. Density:** There's a "sweet spot." Networks that are too sparse *or* too dense hinder performance.
+
+---
+
+### Ensembles Offer Robust Performance
+
+Combining networks leads to the best and most stable results.
+
+![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f4.jpeg?Expires=1758650731&Signature=iVE3ulRO38R76ROROZE5-rWh0MLROtk80TE7DHijosArw1EICnCV8aONB1svOBR~p2bh5XW48iSy5aA5ohBixo5dkquw2TKEGed4pD89CJm5-6P~dz-ykeNnv6OSJL32Kn1pqdLm3U-wNEzDHYun3v-x2pO5b7hpys3PzGFuwJErA3pQloayWEYk7PmqXz9RQQeAF-mLtWl7wyTOaMA17h7vaNVBDrTXj4omqaHDz8~zXH-BnPOnBdw08mmQh5sL~0cHI8il69DxT3SSwDNFTNUujxU2E0VD3xovxefakZF1Z7CKDrpDaSvQPA7x2rPACz1n7XG8HsXrnGgh5TdLCA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+
+* **Green Line (Avg. Rank):** The ensemble method outperforms the typical single network (shaded area).
+* It remains effective even when the propagation explores further out into the network (higher α).
+
+---
+
+### A Powerful Tool, If Used Wisely
+
+* Network propagation is a valuable method to **increase the power of GWAS** and uncover hidden disease genes.
+* Success is not automatic; it depends on a series of crucial design choices.
+
+**Practical Recommendations:**
+
+1.  **Use P-value based scores**, not just a binary list of seed genes.
+2.  **Favor larger, more comprehensive networks** where possible.
+3.  **Combine multiple networks** using an ensemble approach for the most robust results.
+
+# Why is this relevant?
+
+---
+
+### Cell-specific networks of Sjögren’s Disease through multi-layer network propagation
+
+-   Cell-specific markers, active TFs (estimation) and cell-surface receptors as seeds to network propagation
+-   phuEGO
+-   Search for targets within networks
+-   Cell-specific drug perturbation with scRank
+
+---
+
+![](https://i.imgur.com/SNMLIck.png){fig-align="center"}
+
+# Obrigado!

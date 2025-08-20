@@ -3,7 +3,7 @@ title: "Network Propagation for GWAS Analysis"
 author: "João Cavalcante (Based on Visonà et al. 2024)"
 format: 
   revealjs:
-    theme: sky
+    theme: moon
     slide-number: true
     chalkboard: true
     smaller: true

@@ -1,0 +1,287 @@
+---
+title: "Desvendando a Função Microbiana"
+subtitle: "Da Taxonomia 16S à Metagenômica Shotgun"
+author: "João Cavalcante"
+date: "2025-09-02"
+format: 
+  revealjs:
+    theme: solarized
+    slide-number: true
+    chalkboard: true
+    footer: "Pós-Graduação em Bioquímica e Biologia Molecular"
+    smaller: true
+lang: pt
+---
+
+## Olá! {.inverse}
+
+<br>
+
+### **O que vamos discutir hoje?**
+
+O universo invisível do microbioma.
+
+---
+
+## Quem sou eu?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Atividade de Pesquisa:
+
+- Doutorando em Bioinformática, UFRN
+  - Metagenômica, single-cell transcriptômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
+
+Atividade Profissional:
+
+- [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html), Seqera
+- Instructor, Anaconda Inc.
+- Bioinformatician, Sepal AI
+:::
+
+::: {.column width="40%"}
+<center>
+![](https://i.imgur.com/0akE6u2.png)
+João V. F. Cavalcante
+</center>
+:::
+::::
+
+---
+
+## O Grande Problema da Placa de Petri
+
+::: {layout-ncol=2}
+![](https://upload.wikimedia.org/wikipedia/commons/4/40/Anthrax_culture.jpg){fig-align="center" width="70%"}
+
+-   Estima-se que **>99%** dos microrganismos na Terra não podem ser cultivados em laboratório.
+-   O que cultivamos é apenas a "ponta do iceberg".
+-   Como estudar a diversidade e a função do universo microbiano que não conseguimos ver?
+:::
+
+---
+
+## Metagenômica: Lendo o Livro da Vida Microbiana
+
+**Metagenoma:** O estudo do material genético coletivo recuperado diretamente de amostras ambientais.
+
+. . .
+
+#### Duas Lentes Principais para o Universo Microbiano:
+
+::: {layout-ncol=2}
+**1. Metagenômica de Amplicons (16S)**
+
+-   **Pergunta:** "Quem está lá?"
+-   **Técnica:** Sequencia um gene marcador específico (o 16S rRNA em procariontes).
+
+**2. Metagenômica Shotgun (WMS)**
+
+-   **Pergunta:** "Quem está lá E o que eles podem fazer?"
+-   **Técnica:** Sequencia *todo* o DNA da amostra.
+:::
+
+---
+
+## As duas lentes
+
+![](https://i.imgur.com/PQ957Dl.png){fig-align="center"}
+
+---
+
+## Lente 1: O Censo com 16S rRNA
+
+::: {layout-ncol=2}
+### Por que o gene 16S rRNA?
+
+-   **Onipresente:** Presente em todos os procariontes.
+-   **Estrutura Mosaico:**
+    -   **Regiões Conservadas:** Ótimas para desenhar primers universais de PCR.
+    -   **Regiões Hipervariáveis (V1-V9):** Funcionam como um "código de barras" para identificação taxonômica.
+
+![](https://microbenotes.com/wp-content/uploads/2024/07/16S-rRNA-Gene-Sequencing.jpeg){fig-align="center" width="90%"}
+:::
+
+---
+
+## Fluxo de Análise e Inferências do 16S
+
+**Dados Brutos (FASTQ)** ➞ **Controle de Qualidade** ➞ **Agrupamento (ASVs/OTUs)** ➞ **Tabela de Contagens**
+
+#### Softwares Chave: `QIIME 2`, `DADA2`
+
+#### Análises Possíveis:
+
+-   **Taxonomia:** Quem são as bactérias e arquéias presentes?
+    -   *Gráficos de barras, sunbursts, etc.*
+-   **Diversidade Alfa (dentro da amostra):**
+    -   Quão rica e diversa é uma única amostra? (Índices de Shannon, Chao1)
+-   **Diversidade Beta (entre amostras):**
+    -   Quão similares/diferentes são as comunidades entre grupos (e.g., Controle vs. Tratado)? (Gráficos PCoA, NMDS)
+-   **Predição Funcional (Inferência):**
+    -   O que a comunidade *potencialmente* faz? (PICRUSt2)
+
+---
+
+## Lente 2: A Biblioteca Genética com Shotgun (WMS)
+
+**Princípio:** Fragmentar e sequenciar aleatoriamente **TODO** o DNA da amostra.
+
+### Vantagens:
+-   **Função Direta:** Acessamos diretamente os genes funcionais.
+-   **Alta Resolução Taxonômica:** Identificação em nível de espécie e cepa.
+-   **Descoberta de Genes:** Encontramos novos genes e vias metabólicas.
+-   **Montagem de Genomas (MAGs):** Podemos reconstruir genomas de organismos não cultiváveis.
+
+---
+
+![](https://www.researchgate.net/publication/367521035/figure/fig3/AS:11431281131852261@1680182035726/Schematic-of-the-major-steps-involved-in-the-analysis-of-whole-metagenome-shotgun.jpg){fig-align="center" width="90%"}
+
+---
+
+## Fluxo de Análise e Inferências do Shotgun
+
+**Dados Brutos (FASTQ)** ➞ **Controle de Qualidade & Remoção do Hospiro** ➞ **Análise**
+
+. . .
+
+::: {layout-ncol=2}
+**1. Read-based (baseada nas leituras)**
+
+-   **O quê:** Mapeia as sequências curtas diretamente em bancos de dados de genes/proteínas.
+-   **Softwares:** `HUMAnN3`, `Kaiju`.
+-   **Inferência:** Perfil funcional e taxonômico da comunidade.
+
+**2. Assembly-based (baseada na montagem)**
+
+-   **O quê:** Tenta reconstruir os genomas originais a partir das leituras.
+-   **Softwares:** `MEGAHIT` (montagem), `MetaBAT2` (binning), `PROKKA` (anotação).
+-   **Inferência:** Descoberta de genes, MAGs, vias metabólicas completas.
+:::
+
+---
+
+## A Classificação Taxonômica
+
+![Ye et al, 2019](https://dalmolingroup.github.io/metagenome-course/content/images/sabeti_2019.jpg)
+
+---
+
+## O que é Montagem?
+
+![Bioinformaticamente](https://dalmolingroup.github.io/metagenome-course/content/images/read_assembly.jpg)
+
+---
+
+### Exemplo: Doença Metabólica
+
+::: incremental
+1.  **Observação (16S):** Um estudo com 16S mostra que pacientes com esteatose hepática têm uma diminuição de bactérias do gênero *Akkermansia*.
+    -   *Ok, interessante. Mas por quê? Qual o mecanismo?*
+2.  **Mecanismo (Shotgun):** Uma análise shotgun revela que os metagenomas desses pacientes têm menos genes para a síntese de **propionato**, um ácido graxo de cadeia curta que sinaliza para reduzir a lipogênese no fígado.
+3.  **Validação (Bioquímica/Biologia Molecular):**
+    -   Quantificar propionato nas amostras fecais (cromatografia).
+    -   Testar o efeito do propionato em culturas de hepatócitos, medindo a expressão de genes da via lipogênica (RT-qPCR).
+    -   Administrar propionato ou *Akkermansia* em modelos animais e observar o fenótipo.
+:::
+
+---
+
+## Bioprospecção de Novas Enzimas
+
+A "mineração" de metagenomas é uma das fronteiras da biotecnologia.
+
+. . .
+
+#### Workflow:
+1.  **Amostra:** Coleta de solo de um mangue com alta salinidade.
+2.  **Sequenciamento:** Metagenômica shotgun.
+3.  **Bioinformática:** Montagem de MAGs e anotação de sequências proteicas.
+4.  **Descoberta:** Encontramos um gene de uma celulase putativa em um MAG de uma bactéria desconhecida. O gene possui motivos que sugerem termo e halo-tolerância.
+5.  **Validação em Laboratório:**
+    -   **Síntese e Clonagem:** O gene é sintetizado e clonado em *E. coli*.
+    -   **Expressão e Purificação:** A proteína é expressa e purificada (cromatografia de afinidade).
+    -   **Caracterização Bioquímica:** Testar a atividade enzimática em diferentes temperaturas, pHs e concentrações de sal.
+
+---
+
+![Paoli et al, 2022 (Nature)](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-022-04862-3/MediaObjects/41586_2022_4862_Fig1_HTML.png?as=webp){fig-align="center" width="90%"}
+
+---
+
+## Desafios e a Escolha Certa
+
+| Critério | Metagenômica 16S | Metagenômica Shotgun |
+| :--- | :--- | :--- |
+| **Custo por amostra** | $ | $$$ |
+| **Complexidade Comput.** | Baixa | Alta |
+| **Foco Principal** | Taxonomia | **Função** |
+| **Resolução** | Gênero | Espécie / Cepa |
+| **Ideal para...** | Estudos com muitas amostras (N grande), mapeamento de perfis | Estudos de mecanismo, descoberta de genes, N menor |
+
+. . .
+
+**Principais Desafios:**
+
+-   Viés na extração de DNA e amplificação por PCR (16S).
+-   Contaminação com DNA do hospedeiro (shotgun).
+-   "Matéria escura" genômica: muitos genes têm função desconhecida.
+
+---
+
+## Onde Encontrar Dados Públicos? {.smaller}
+
+Para seus projetos, você pode baixar e reanalisar dados de repositórios públicos.
+
+::: {layout-ncol=2}
+**Repositórios de Dados Brutos (FASTQ):**
+
+-   **NCBI SRA (Sequence Read Archive):** O maior repositório de dados de sequenciamento do mundo.
+-   **EBI ENA (European Nucleotide Archive):** O equivalente europeu, totalmente sincronizado com o SRA.
+
+**Repositórios com Dados Processados:**
+
+-   **QIITA (QIIME-compatible data):** Focado em dados de microbioma (16S, ITS, shotgun) já processados ou prontos para processar, com metadados bem curados. Ótimo para começar.
+-   **MG-RAST:** Repositório com dados de shotgun já analisados funcional e taxonomicamente.
+:::
+
+---
+
+## Prática Rápida: Explorando Dados de 16S {.smaller}
+
+#### **MicrobiomeAnalyst: Análise estatística e visual para dados de microbioma.**
+
+-   Ferramenta web, não precisa de bioinformática.
+-   Ótima para ter uma primeira visão dos dados e gerar gráficos.
+
+#### Atividade (5 min):
+
+1.  Acesse `www.microbiomeanalyst.ca`.
+2.  Clique em **"Marker Data Profiling (MDP)"**.
+3.  No menu **"Data Upload"** selecione **"Try our examples"**. Selecione o dataset **"Pediatric IBD"**.
+4.  Explore as abas de análise. Tente o seguinte:
+    -   Vá em **"Analysis Overview"** ➞ **"Community Profiling"** ➞ **"Alpha Diversity"**. Calcule e veja os boxplots.
+
+## Resumo e Conclusões
+
+-   Metagenômica abriu uma janela para o mundo microbiano não cultivável.
+-   **16S** é excelente para um **censo taxonômico** (Quem está lá?).
+-   **Shotgun** é a ferramenta definitiva para investigar o **potencial funcional** (O que eles podem fazer?).
+-   A maior força está na **integração** da metagenômica com a bioquímica e a biologia molecular para validar hipóteses e elucidar mecanismos.
+
+---
+
+## Onde aprender mais sobre metagenômica?
+
+- [Orchestrating Microbiome Analysis](https://microbiome.github.io/OMA/docs/devel/pages/miaverse.html)
+  - Curso do Bioconductor sobretudo voltado para 16S, mas com metodologias comuns a ambas abordagens
+- [Análise de dados de metagenômica - Dalmolin Group](https://dalmolingroup.github.io/metagenome-course/)
+  - Voltado para *shotgun*
+
+## Perguntas? {.inverse}
+
+<br>
+
+**Obrigado!**

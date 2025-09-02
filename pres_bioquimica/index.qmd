@@ -45,6 +45,10 @@ Atividade Profissional:
 <center>
 ![](https://i.imgur.com/0akE6u2.png)
 João V. F. Cavalcante
+
+[GitHub](https://github.com/jvfe) //
+[LinkedIn](https://www.linkedin.com/in/joao-v-cavalcante/) //
+[ORCID](https://orcid.org/0000-0001-7513-7376)
 </center>
 :::
 ::::

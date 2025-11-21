@@ -1,0 +1,233 @@
+---
+title: "Jornadas pela Bioinformática"
+subtitle: "Navegando entre a academia e a indústria"
+author: "João Cavalcante"
+date: "2025-11-27"
+format:
+  revealjs:
+    theme: moon
+    slide-number: true
+    smaller: true
+    transition: fade
+lang: pt
+---
+
+## **O Microscópio do Século 21**  {background-color="\#002b36"}
+
+::: {.r-fit-text}  
+Quando a Biologia tornou-se uma Ciência de Dados.  
+:::  
+
+## Quem sou eu?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+**Atividade de Pesquisa**:
+
+- Doutorando em Bioinformática, UFRN
+  - Metagenômica, single-cell transcriptômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
+
+**Atividade Profissional**:
+
+- Bioinformatician, Sepal AI
+- [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html), Seqera
+:::
+
+::: {.column width="40%"}
+<center>
+![](https://i.imgur.com/0akE6u2.png)
+
+João Cavalcante
+
+[joao.bio.br](https://joao.bio.br)
+</center>
+:::
+::::
+
+# **Parte 1: De Onde Viemos?**
+
+## **O Início: Antes do "Big Data"**
+
+:::: {.columns}  
+::: {.column width="60%"}
+
+### **Margaret Dayhoff (1925–1983)**
+
+* A "Mãe da Bioinformática".  
+* **Feito:** Criou o primeiro *Atlas of Protein Sequence and Structure* (1965).  
+* **Método:** Completamente manual. Recortava sequências de aminoácidos e buscava padrões visualmente.  
+* **Legado**: Código de uma letra para aminoácidos e as matrizes PAM (essenciais para o BLAST hoje).  
+:::
+
+::: {.column width="40%"}  
+![](https://i.imgur.com/rUD3ITw.png)  
+:::  
+::::  
+
+## **O "Moonshot" da Biologia: PGH**
+
+### **O Projeto Genoma Humano (1990–2003)**
+
+:::: {.columns}  
+::: {.column width="60%"}
+
+* **O Desafio:** Ler 3 bilhões de pares de bases.  
+* **O Custo:** \~3 Bilhões de dólares.  
+* **O Tempo:** 13 anos.  
+* **A** Mudança de **Paradigma:**  
+  * A biologia deixou de ser "artesanal" para ser "industrial".  
+  * Surgimento das tecnologias de Sequenciamento de Nova Geração (NGS).
+:::
+
+::: {.column width="40%"}  
+![](https://i.imgur.com/agnAqjM.png)
+:::  
+::::  
+
+. . .  
+Hoje, sequenciamos um genoma humano em **horas** por menos de **$1000**.  
+
+## **A Complexidade: Network Medicine**
+
+:::: {.columns}  
+::: {.column width="60%"}
+**Não somos uma lista de peças, somos uma rede.**
+
+* **Reducionismo vs. Holismo:**  
+  * *Passado:* "Um gene, uma doença".  
+  * *Presente:* O **Interactoma**.  
+* **Network Medicine:**  
+  * Doenças são perturbações em redes complexas de interações (Proteína-Proteína, Metabólicas).  
+  * Se o Gene A está quebrado, ele afeta B, C e D.  
+:::
+
+::: {.column width="40%"}  
+![](https://i.imgur.com/Vq50J9f.png)
+:::  
+:::: 
+
+
+::: {.notes}  
+Aqui entra a complexidade. Descobrimos que ter a "lista de peças" (o genoma) não explicava como o carro andava. Precisávamos saber como as peças interagem. A bioinformática passou a usar Teoria dos Grafos para entender doenças. Uma doença raramente é isolada; ela puxa uma teia de conexões.  
+:::
+
+## **A Fronteira Atual: IA e AlphaFold**
+
+:::: {.columns}  
+::: {.column width="60%"}
+
+### **O Problema de 50 Anos**
+
+* **O Desafio:** Dada uma sequência de aminoácidos, qual a forma 3D da proteína?  
+* **A** Solução **(2020/2021):** **AlphaFold** (Google DeepMind).  
+* **O Impacto:**  
+  * Previu a estrutura de quase todas as proteínas conhecidas pela ciência (+200 milhões).  
+  * Acelerou o *Drug Discovery* em anos.  
+  * Não é apenas "análise de dados", é **Inteligência Artificial Generativa** aplicada à biologia.
+:::
+
+::: {.column width="40%"}  
+![](https://i.imgur.com/FW3ufdU.png)
+:::  
+:::: 
+
+# **Parte 2: O Ecossistema**
+
+## **Academia e Indústria: Um Ciclo Virtuoso**
+
+A Bioinformática é a ponte que conecta a descoberta à aplicação.  
+
+:::: {.columns}  
+
+::: {.column width="50%"}
+
+### **🏛️ Academia**
+
+* **Foco:** Pesquisa Básica, "*Blue Sky Science*".  
+* **Output:** Conhecimento, Artigos, Algoritmos inovadores, Provas de Conceito.  
+
+:::
+
+::: {.column width="50%"}
+
+### **🏭 Indústria**
+
+* **Foco:** Escalabilidade, Reprodutibilidade, Produto.  
+* **Output:** Diagnósticos, Fármacos, Vacinas, Software (SaaS).  
+
+:::
+
+::::  
+
+. . .  
+**A Intersecção:** Startups de Biotecnologia e Spin-offs universitárias.
+
+# **Parte 3: O Brasil no Mapa**
+
+## **Bioinfo no Brasil**
+
+![](https://i.imgur.com/vQQHQBk.png){fig-align="center"}
+
+## **PPI BioinfoBR (COP30)**
+
+* **Programa** Prioritário de **Interesse Nacional em Bioinformática**  
+* **Contexto:** Lançamento na COP30.  
+* **Objetivo:** Soberania nacional em dados genômicos e biodiversidade.
+
+![](https://i.imgur.com/MQDvfmC.png){fig-align="center"}
+
+# **Parte 4: Minhas experiências**
+
+## **Como tudo começou?**
+
+- Eu quero bioinformática, o que fazer como graduação?
+
+## **Primeiras experiências profissionais**
+
+## **O mestrado e os novos caminhos**
+
+## **E agora?**
+
+## **E depois?**
+
+# **Parte 5: Perfil Profissional**
+
+## **Bioinformática é para mim?**
+
+![](https://i.imgur.com/whNMzEp.png){fig-align="center" width="90%"}
+
+1. **Paixão pela Biologia:** (Genética, Imunologia, Biol. Molecular) \- É a base das perguntas.  
+2. **Gosto por Programação:** Não ter medo de errar e ver telas de erro.  
+3. **Resiliência:** 90% do tempo é resolvendo problemas de dados, 10% é a descoberta.
+
+## **Biomed-informáticos nascidos e criados na UFRN**
+
+
+# **Parte 6: Onde Estamos?**
+
+## **Bioinformática na UFRN**
+
+
+
+# **Obrigado\!**
+
+:::: {.columns}  
+::: {.column width="60%"}
+
+<center>
+![](https://i.imgur.com/0akE6u2.png)
+
+**João Cavalcante**
+
+[joao.bio.br](https://joao.bio.br)
+</center>
+
+:::
+
+::: {.column width="40%"}
+
+:::
+
+::::

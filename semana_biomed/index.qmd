@@ -12,156 +12,146 @@ format:
 lang: pt
 ---
 
-## **O Microscópio do Século 21**  {background-color="\#002b36"}
+## **O Microscópio do Século 21** {background-color="#002b36"}
 
-::: {.r-fit-text}  
-Quando a Biologia tornou-se uma Ciência de Dados.  
-:::  
+::: r-fit-text
+Quando a Biologia tornou-se uma Ciência de Dados.
+:::
 
 ## Quem sou eu?
 
-:::: {.columns}
-
+::::: columns
 ::: {.column width="60%"}
-
 **Atividade de Pesquisa**:
 
-- Doutorando em Bioinformática, UFRN
-  - Metagenômica, single-cell transcriptômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
+-   Doutorando em Bioinformática, UFRN
+    -   Single-cell transcriptômica, metagenômica e desenvolvimento de software no [Dalmolin Group](https://dalmolingroup.github.io/)
 
 **Atividade Profissional**:
 
-- Bioinformatician, Sepal AI
-- [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html), Seqera
+-   Bioinformatics Expert, Sepal AI
+-   [Nextflow Ambassador](https://www.nextflow.io/ambassadors.html), Seqera
 :::
 
 ::: {.column width="40%"}
 <center>
+
 ![](https://i.imgur.com/0akE6u2.png)
 
 João Cavalcante
 
 [joao.bio.br](https://joao.bio.br)
+
 </center>
 :::
-::::
+:::::
 
 # **Parte 1: De Onde Viemos?**
 
 ## **O Início: Antes do "Big Data"**
 
-:::: {.columns}  
+::::: columns
 ::: {.column width="60%"}
-
 ### **Margaret Dayhoff (1925–1983)**
 
-* A "Mãe da Bioinformática".  
-* **Feito:** Criou o primeiro *Atlas of Protein Sequence and Structure* (1965).  
-* **Método:** Completamente manual. Recortava sequências de aminoácidos e buscava padrões visualmente.  
-* **Legado**: Código de uma letra para aminoácidos e as matrizes PAM (essenciais para o BLAST hoje).  
+-   A "Mãe da Bioinformática".\
+-   **Feito:** Criou o primeiro *Atlas of Protein Sequence and Structure* (1965).\
+-   **Método:** Completamente manual. Recortava sequências de aminoácidos e buscava padrões visualmente.\
+-   **Legado**: Código de uma letra para aminoácidos e as matrizes PAM (essenciais para o BLAST hoje).\
 :::
 
-::: {.column width="40%"}  
-![](https://i.imgur.com/rUD3ITw.png)  
-:::  
-::::  
+::: {.column width="40%"}
+![](https://i.imgur.com/rUD3ITw.png)
+:::
+:::::
 
 ## **O "Moonshot" da Biologia: PGH**
 
 ### **O Projeto Genoma Humano (1990–2003)**
 
-:::: {.columns}  
+::::: columns
 ::: {.column width="60%"}
-
-* **O Desafio:** Ler 3 bilhões de pares de bases.  
-* **O Custo:** \~3 Bilhões de dólares.  
-* **O Tempo:** 13 anos.  
-* **A** Mudança de **Paradigma:**  
-  * A biologia deixou de ser "artesanal" para ser "industrial".  
-  * Surgimento das tecnologias de Sequenciamento de Nova Geração (NGS).
+-   **O Desafio:** Ler 3 bilhões de pares de bases.\
+-   **O Custo:** \~3 Bilhões de dólares.\
+-   **O Tempo:** 13 anos.\
+-   **A** Mudança de **Paradigma:**
+    -   A biologia deixou de ser "artesanal" para ser "industrial".\
+    -   Surgimento das tecnologias de Sequenciamento de Nova Geração (NGS).
 :::
 
-::: {.column width="40%"}  
+::: {.column width="40%"}
 ![](https://i.imgur.com/agnAqjM.png)
-:::  
-::::  
+:::
+:::::
 
-. . .  
-Hoje, sequenciamos um genoma humano em **horas** por menos de **$1000**.  
+. . .\
+Hoje, sequenciamos um genoma humano em **horas** por menos de **\$1000**.
 
 ## **A Complexidade: Network Medicine**
 
-:::: {.columns}  
+::::: columns
 ::: {.column width="60%"}
 **Não somos uma lista de peças, somos uma rede.**
 
-* **Reducionismo vs. Holismo:**  
-  * *Passado:* "Um gene, uma doença".  
-  * *Presente:* O **Interactoma**.  
-* **Network Medicine:**  
-  * Doenças são perturbações em redes complexas de interações (Proteína-Proteína, Metabólicas).  
-  * Se o Gene A está quebrado, ele afeta B, C e D.  
+-   **Reducionismo vs. Holismo:**
+    -   *Passado:* "Um gene, uma doença".\
+    -   *Presente:* O **Interactoma**.\
+-   **Network Medicine:**
+    -   Doenças são perturbações em redes complexas de interações (Proteína-Proteína, Metabólicas).\
+    -   Se o Gene A está quebrado, ele afeta B, C e D.\
 :::
 
-::: {.column width="40%"}  
+::: {.column width="40%"}
 ![](https://i.imgur.com/Vq50J9f.png)
-:::  
-:::: 
+:::
+:::::
 
-
-::: {.notes}  
-Aqui entra a complexidade. Descobrimos que ter a "lista de peças" (o genoma) não explicava como o carro andava. Precisávamos saber como as peças interagem. A bioinformática passou a usar Teoria dos Grafos para entender doenças. Uma doença raramente é isolada; ela puxa uma teia de conexões.  
+::: notes
+Aqui entra a complexidade. Descobrimos que ter a "lista de peças" (o genoma) não explicava como o carro andava. Precisávamos saber como as peças interagem. A bioinformática passou a usar Teoria dos Grafos para entender doenças. Uma doença raramente é isolada; ela puxa uma teia de conexões.
 :::
 
 ## **A Fronteira Atual: IA e AlphaFold**
 
-:::: {.columns}  
+::::: columns
 ::: {.column width="60%"}
-
 ### **O Problema de 50 Anos**
 
-* **O Desafio:** Dada uma sequência de aminoácidos, qual a forma 3D da proteína?  
-* **A** Solução **(2020/2021):** **AlphaFold** (Google DeepMind).  
-* **O Impacto:**  
-  * Previu a estrutura de quase todas as proteínas conhecidas pela ciência (+200 milhões).  
-  * Acelerou o *Drug Discovery* em anos.  
-  * Não é apenas "análise de dados", é **Inteligência Artificial Generativa** aplicada à biologia.
+-   **O Desafio:** Dada uma sequência de aminoácidos, qual a forma 3D da proteína?\
+-   **A** Solução **(2020/2021):** **AlphaFold** (Google DeepMind).\
+-   **O Impacto:**
+    -   Previu a estrutura de quase todas as proteínas conhecidas pela ciência (+200 milhões).\
+    -   Acelerou o *Drug Discovery* em anos.\
+    -   Não é apenas "análise de dados", é **Inteligência Artificial Generativa** aplicada à biologia.
 :::
 
-::: {.column width="40%"}  
+::: {.column width="40%"}
 ![](https://i.imgur.com/FW3ufdU.png)
-:::  
-:::: 
+:::
+:::::
 
 # **Parte 2: O Ecossistema**
 
 ## **Academia e Indústria: Um Ciclo Virtuoso**
 
-A Bioinformática é a ponte que conecta a descoberta à aplicação.  
+A Bioinformática é a ponte que conecta a descoberta à aplicação.
 
-:::: {.columns}  
-
+::::: columns
 ::: {.column width="50%"}
-
 ### **🏛️ Academia**
 
-* **Foco:** Pesquisa Básica, "*Blue Sky Science*".  
-* **Output:** Conhecimento, Artigos, Algoritmos inovadores, Provas de Conceito.  
-
+-   **Foco:** Pesquisa Básica, "*Blue Sky Science*".\
+-   **Output:** Conhecimento, Artigos, Algoritmos inovadores, Provas de Conceito.
 :::
 
 ::: {.column width="50%"}
-
 ### **🏭 Indústria**
 
-* **Foco:** Escalabilidade, Reprodutibilidade, Produto.  
-* **Output:** Diagnósticos, Fármacos, Vacinas, Software (SaaS).  
-
+-   **Foco:** Escalabilidade, Reprodutibilidade, Produto.\
+-   **Output:** Diagnósticos, Fármacos, Vacinas, Software (SaaS).
 :::
+:::::
 
-::::  
-
-. . .  
+. . .\
 **A Intersecção:** Startups de Biotecnologia e Spin-offs universitárias.
 
 # **Parte 3: O Brasil no Mapa**
@@ -172,25 +162,106 @@ A Bioinformática é a ponte que conecta a descoberta à aplicação.
 
 ## **PPI BioinfoBR (COP30)**
 
-* **Programa** Prioritário de **Interesse Nacional em Bioinformática**  
-* **Contexto:** Lançamento na COP30.  
-* **Objetivo:** Soberania nacional em dados genômicos e biodiversidade.
+-   **Programa** Prioritário de **Interesse Nacional em Bioinformática**\
+-   **Contexto:** Lançamento na COP30.\
+-   **Objetivo:** Soberania nacional em dados genômicos e biodiversidade.
 
 ![](https://i.imgur.com/MQDvfmC.png){fig-align="center"}
 
 # **Parte 4: Minhas experiências**
 
-## **Como tudo começou?**
-
-- Eu quero bioinformática, o que fazer como graduação?
+# **Como tudo começou?**
 
 ## **Primeiras experiências profissionais**
 
-## **O mestrado e os novos caminhos**
+::::: columns
+::: {.column width="60%"}
+-   **2018** (Iniciação Científica): Início como voluntário no grupo do Prof. Rodrigo Dalmolin. O primeiro contato com a pesquisa real.
 
-## **E agora?**
+-   **2021** (Google Summer of Code):
 
-## **E depois?**
+    -   Student Developer no projeto do R Consortium.
+
+    -   Aprimoramento em Ciência de Dados generalista.
+
+-   **2022** (LatchBio):
+
+    -   Consultor de Bioinformática.
+
+    -   A ponte entre a teoria da graduação e a aplicação na indústria biotecnológica americana.
+:::
+
+::: {.column width="40%"}
+![](https://i.imgur.com/7bKbvVm.png){fig-align="center" width="300"}
+
+![](https://dalmolingroup.github.io/images/group_photo_3.png){fig-align="center" width="300"}
+:::
+:::::
+
+## O mestrado e os novos caminhos
+
+::::: columns
+::: {.column width="40%"}
+![](https://i.imgur.com/X66VGsZ.png){fig-align="center" width="400"}
+![](https://beiko-lab.github.io/arete/assets/arete-logo-transparent.png){fig-align="center" width="400"}
+:::
+
+::: {.column width="60%"}
+-   **2023** (Mestrado):
+
+    -   Início do Mestrado em Bioinformática.
+
+    -   Research Assistant (Remoto) na Dalhousie University (Grupo do Prof. Rob Beiko). Foco total em desenvolvimento de pipelines Nextflow.
+
+-   **A Comunidade Nextflow**:
+
+    -   Tornar-se Nextflow Ambassador abriu portas para o ensino.
+    - Instrutor na plataforma de ensino da Anaconda.
+:::
+:::::
+
+## 2024
+
+::::: columns
+::: {.column width="60%"}
+-   **Experiências no Sanger Institute**
+
+    -   Selecionado entre pesquisadores do Sul Global para estágio em Cambridge.
+
+    -   Imersão na infraestrutura do Tree of Life no Instituto Sanger.
+
+    -   Vivência em um dos maiores centros de genômica do mundo.
+
+-   **O Retorno à Base**
+
+    -   Final de 2024: Início do Doutorado em Bioinformática na UFRN.
+:::
+
+::: {.column width="40%"}
+![](https://i.imgur.com/cD0hvkJ.jpeg){fig-align="center" width="400"}
+![](https://i.imgur.com/wnkDzp7.jpeg){fig-align="center" width="400"}
+:::
+:::::
+
+## E agora?
+
+:::::::: columns
+::: {.column width="40%"}
+![](https://i.imgur.com/Q5rhzzl.png){fig-align="center" width="500"}
+
+:::
+
+:::::: {.column width="60%"}
+-   Instrutor de cursos de Nextflow
+
+-   Especialista em Bioinformática na Sepal AI
+
+![](https://i.imgur.com/RMC3YIZ.png){fig-align="center" width="4https://i.imgur.com/cD0hvkJ.jpeg00"}
+
+- E o que mais vier pela frente!
+
+::::::
+::::::::
 
 # **Parte 5: Perfil Profissional**
 
@@ -198,36 +269,133 @@ A Bioinformática é a ponte que conecta a descoberta à aplicação.
 
 ![](https://i.imgur.com/whNMzEp.png){fig-align="center" width="90%"}
 
-1. **Paixão pela Biologia:** (Genética, Imunologia, Biol. Molecular) \- É a base das perguntas.  
-2. **Gosto por Programação:** Não ter medo de errar e ver telas de erro.  
-3. **Resiliência:** 90% do tempo é resolvendo problemas de dados, 10% é a descoberta.
+1.  **Paixão pela Biologia:** (Genética, Imunologia, Biol. Molecular) - É a base das perguntas.\
+2.  **Gosto por Programação:** Não ter medo de errar e ver telas de erro.\
+3.  **Resiliência:** 90% do tempo é resolvendo problemas de dados, 10% é a descoberta.
 
 ## **Biomed-informáticos nascidos e criados na UFRN**
 
+:::: {.columns}
+::: {.column width="30%"}
+![](https://dalmolingroup.github.io/images/team/iara_de_souza.jpg){width=200px style="border-radius: 50%; border: 4px solid #002b36;"}
+:::
+
+::: {.column width="70%"}
+
+#### Iara Souza
+
+**Graduada em Biomedicina** e Estatística, com Mestrado e Doutorado em Bioinformática, tudo pela UFRN. Atualmente, é co-fundadora da startup Lexanomics e atua como **Professora na Ohio State University** (EUA).
+
+:::
+::::
+
+:::: {.columns}
+::: {.column width="30%"}
+![](https://dalmolingroup.github.io/images/team/danilo_imparato.jpg){width=200px style="border-radius: 50%; border: 4px solid #002b36;"}
+:::
+
+::: {.column width="70%"}
+
+#### Danilo Imparato
+
+**Graduado em Biomedicina** e Mestrado em Bioinformática pela UFRN. Atuou na **Mendelics**, o maior laboratório de diagnóstico genético da América Latina. Foi Pesquisador Visitante na **University of Science and Technology of China** (USTC), onde trabalhou com Inteligência Artificial aplicada ao design de proteínas.
+
+:::
+::::
 
 # **Parte 6: Onde Estamos?**
 
-## **Bioinformática na UFRN**
+#### **Bioinformática na UFRN**
 
+## Prof. Marcelo Fernandes
 
+![](https://i.imgur.com/asIWchf.jpeg){.absolute top=0 right=0 width=120 height=120 style="border-radius: 50%; border: 3px solid #002b36; margin: 20px; object-fit: cover;"}
 
-# **Obrigado\!**
+:::: {.columns}
 
-:::: {.columns}  
+::: {.column width="40%"}
+
+- **Foco**: Inteligência Artificial, Hardware e Genômica.
+
+  - **IA & Genômica Viral**: Classificação de genomas de SARS-CoV-2 usando Deep Learning e Processamento Digital de Sinais.
+
+  - **Farmacogenômica (PharmaGenoNet)**: Plataforma de Deep Learning para predição de interações fármaco-alvo.
+
+:::
+
+::: {.column width="60%" style="text-align: center;"}
+
+![](https://i.imgur.com/FOQuYoL.png){width=100% style="opacity: 0.9; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding-top:50px; border-radius: 8px;"}
+
+:::
+
+::::
+
+## Prof. Rodrigo Dalmolin
+
+![](https://i.imgur.com/Kk2EWuh.png){.absolute top=0 right=0 width=120 height=120 style="border-radius: 50%; border: 3px solid #002b36; margin: 20px; object-fit: cover;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- **Foco**: Biologia de Sistemas, Transcriptômica e Desenvolvimento de Ferramentas.
+
+  - **Biologia de Sistemas e Transcriptômica**: Anotação funcional de transcriptomas complexos; Análise de redes em condições patológicas.
+
+  - **Desenvolvimento de Ferramentas em Bioinformática**: Algoritmos para integrar dados de evolução molecular com redes biológicas.
+
+:::
+
+::: {.column width="60%" style="text-align: center;"}
+
+![](https://dalmolingroup.github.io/images/lines/transcriptomics_1.jpg){width=100% style="opacity: 0.9; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding-top:50px; border-radius: 8px;"}
+
+:::
+
+::::
+
+## Prof. Marcos Costa
+
+![](https://i.imgur.com/BUM7ER7.png){.absolute top=0 right=0 width=120 height=120 style="border-radius: 50%; border: 3px solid #002b36; margin: 20px; object-fit: cover;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+- **Foco**: Neurociências, Terapia Gênica e Células-Tronco.
+
+  - **Alzheimer & Genética Molecular**: Investigação de genes de risco e seus impactos na vulnerabilidade neuronal e atividade sináptica.
+
+  - **Terapia Gênica Regenerativa**: Desenvolvimento de biofármacos utilizando vetores virais para entrega de microRNAs. 
+
+:::
+
+::: {.column width="60%" style="text-align: center;"}
+
+![](https://i.imgur.com/nCOFgo6.png){width=100% style="opacity: 0.9; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding-top:50px; border-radius: 8px;"}
+
+:::
+
+::::
+
+# Se vocês se interessaram um pouco, missão cumprida!
+
+# **Obrigado!**
+
+::::: columns
 ::: {.column width="60%"}
-
 <center>
+
 ![](https://i.imgur.com/0akE6u2.png)
 
 **João Cavalcante**
 
 [joao.bio.br](https://joao.bio.br)
-</center>
 
+</center>
 :::
 
 ::: {.column width="40%"}
-
 :::
-
-::::
+:::::

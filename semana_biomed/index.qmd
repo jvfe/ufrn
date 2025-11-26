@@ -303,6 +303,14 @@ A Bioinformática é a ponte que conecta a descoberta à aplicação.
 :::
 ::::
 
+## Empresas que contratam bioinformatas
+
+![](https://i.imgur.com/4qzzEc0.jpeg)
+
+## Perfil típico de bioinformatas
+
+![](https://i.imgur.com/qpYvuo3.png)
+
 # **Parte 6: Onde Estamos?**
 
 #### **Bioinformática na UFRN**
@@ -397,5 +405,6 @@ A Bioinformática é a ponte que conecta a descoberta à aplicação.
 :::
 
 ::: {.column width="40%"}
+![](https://i.imgur.com/937ZnGu.png)
 :::
 :::::

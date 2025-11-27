@@ -387,6 +387,30 @@ A Bioinformática é a ponte que conecta a descoberta à aplicação.
 
 ::::
 
+## Como se envolver?
+
+::::: columns
+::: {.column width="60%"}
+-   **Programa de Pós-graduação em Bioinformática**
+    - Processo seletivo de mestrado e doutorado 2x ao ano
+  
+- IMD0605 - Seminários em Bioinformática (4M56)
+
+- Redes Sociais:
+    - Instagram: @biomeoficial
+    - Site: bioinfo.imd.ufrn.br
+:::
+
+::: {.column width="40%"}
+![](https://i.imgur.com/hIrgnAS.png){fig-align="center" width="400"}
+![](https://i.imgur.com/w9EGkty.png){fig-align="center" width="400"}
+:::
+:::::
+
+## Como se envolver?
+
+![](https://i.imgur.com/FQalMUT.png){fig-align="center"}
+
 # Se vocês se interessaram um pouco, missão cumprida!
 
 # **Obrigado!**

@@ -107,7 +107,7 @@ Why rely on just one map?
 
 The plots show the performance of finding true disease genes.
 
-![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f2.jpeg?Expires=1758650780&Signature=BeaREPx2EpzrMsmc948Zdo8Y1wfb1ZSzoa5r6TGfAPrXmjEAmSpBVwtAQp-IPV8JBRRKwSnoqSR4oVYWMtpSrZbGJ5cpNzUbKho5iSlvQOagepZC2B4ozWkdOnrjhE819Cr262zp~UmM5kXjbxXgR-AnMEkB0KRm4JMuITPCAiv37Sb4ERtEXcwAevUR1uIzf1dcxJ4fjxTDeMqMh1kYstaYOvAkgCnvSsTzpuITgS8NB0W0qaW6NslWIY1aAYjeh0LqonaDTZON1XzGhO7l-PCNn7kyv2S~czBjvzs1aNoj01S0dRSpEro2BYTth9qv7FJ5mZZb3RG9DLP6KPMMLQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+![](https://i.imgur.com/TdsxI6n.png){fig-align="center"}
 
 * **Green Line (Scores):** Consistently higher performance, especially for conservative propagation (low α).
 * **Orange Line (Seeds):** Less effective, as it discards valuable information.
@@ -116,7 +116,7 @@ The plots show the performance of finding true disease genes.
 
 ### Network Size & Density Matter
 
-![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f3.jpeg?Expires=1758650864&Signature=RTK3o8~HK0rTxtqFy1ZAFp1LHkEFadyaQldCrMay2kfU~0nQAk76UJN4Ud-K680V5pFRQTGRQzSa-s~CLsso4y3AsDdOtdyOPaeCXe6MPmj1-9JiYGqL21jyx1noZRhvPTGkLiUNXQuklMmjR7U77N9RJjVMgc7tntk~MtC1Y-NG293jOaJRHRlt6e08j6TdJE7TVIqoQDB0slcqHGeixAqs1MZagJrQ~PWS9ogXtqW5-OQdBPYIXd3NVI3iu~l~X3N8WklosavxR2~ysHDaPogoZAs0K0wpgmq-Tt2SyZ5KBIAb2hBSlUjHOh8Z9xzm76LqiygLy0ntsr2GAJyioA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+![](https://i.imgur.com/vAvBpAM.png){fig-align="center"}
 
 * **Performance vs. Size:** A clear trend shows that as the number of nodes (genes) in a network increases, so does the performance.
 * **Performance vs. Density:** There's a "sweet spot." Networks that are too sparse *or* too dense hinder performance.
@@ -127,7 +127,7 @@ The plots show the performance of finding true disease genes.
 
 Combining networks leads to the best and most stable results.
 
-![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bib/25/2/10.1093_bib_bbae014/1/bbae014f4.jpeg?Expires=1758650731&Signature=iVE3ulRO38R76ROROZE5-rWh0MLROtk80TE7DHijosArw1EICnCV8aONB1svOBR~p2bh5XW48iSy5aA5ohBixo5dkquw2TKEGed4pD89CJm5-6P~dz-ykeNnv6OSJL32Kn1pqdLm3U-wNEzDHYun3v-x2pO5b7hpys3PzGFuwJErA3pQloayWEYk7PmqXz9RQQeAF-mLtWl7wyTOaMA17h7vaNVBDrTXj4omqaHDz8~zXH-BnPOnBdw08mmQh5sL~0cHI8il69DxT3SSwDNFTNUujxU2E0VD3xovxefakZF1Z7CKDrpDaSvQPA7x2rPACz1n7XG8HsXrnGgh5TdLCA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){fig-align="center"}
+![](https://i.imgur.com/DTMzrRU.png){fig-align="center"}
 
 * **Green Line (Avg. Rank):** The ensemble method outperforms the typical single network (shaded area).
 * It remains effective even when the propagation explores further out into the network (higher α).

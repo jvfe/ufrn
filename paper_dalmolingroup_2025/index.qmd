@@ -149,15 +149,16 @@ Combining networks leads to the best and most stable results.
 
 ---
 
-### Cell-specific networks of Sjögren’s Disease through multi-layer network propagation
+## Network approaches for understanding Sjögren’s Disease {.smaller}
 
--   Cell-specific markers, active TFs (estimation) and cell-surface receptors as seeds to network propagation
--   phuEGO
--   Search for targets within networks
--   Cell-specific drug perturbation with scRank
+![](https://i.imgur.com/iQKMTKf.png){fig-align="center"}
+
+## Preliminary findings
+
+![](https://i.imgur.com/Ih3pxl3.png){fig-align="center"}
 
 ---
 
-![](https://i.imgur.com/SNMLIck.png){fig-align="center"}
+![](https://i.imgur.com/bCd3vj4.png){fig-align="center"}
 
 # Obrigado!
